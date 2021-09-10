@@ -1,5 +1,5 @@
 {
-  "name": "mercury-core-events",
+  "name": "@sprucelabs/mercury-core-events",
   "version": "0.0.1",
   "description": "Events Mercury provides out of the box.",
   "skill": {
@@ -10,8 +10,11 @@
   },
   "scripts": {
     "build.ci": "yarn build.tsc && yarn build.resolve-paths && yarn lint",
-    "build.dev": "yarn build.tsc --sourceMap ; yarn resolve-paths.lint",
     "build.copy-files": "mkdir -p build && rsync -avzq --exclude='*.ts' ./src/ ./build/",
+    "build.dev": "yarn build.tsc --sourceMap ; yarn resolve-paths.lint",
+    "build.dist": "yarn clean && yarn build.tsc && yarn build.resolve-paths && yarn build.esm",
+    "build.esm": "tsc --project tsconfig.dist.json && yarn build.resolve-paths.esm && yarn build.esm-postbuild",
+    "build.esm-postbuild": "esm-postbuild --target esm --patterns '**/*.js'",
     "build.resolve-paths": "resolve-path-aliases --target build --patterns '**/*.js,**/*.d.ts'",
     "build.tsc": "yarn build.copy-files && tsc",
     "clean": "yarn clean.build",
@@ -23,9 +26,10 @@
     "lint.tsc": "tsc -p . --noEmit",
     "post.watch.build": "yarn build.copy-files && yarn build.resolve-paths",
     "rebuild": "yarn clean.all && yarn && yarn build.dev",
-    "update.dependencies": "yarn clean.dependencies && yarn",
+    "release": "semantic-release",
     "resolve-paths.lint": "yarn build.resolve-paths ; yarn lint",
     "test": "jest",
+    "update.dependencies": "yarn clean.dependencies && yarn",
     "upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint ; true",
     "upgrade.packages.all": "yarn install && yarn upgrade.packages",
     "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
@@ -37,6 +41,7 @@
   "devDependencies": {
     "@sprucelabs/jest-json-reporter": "^6.0.31",
     "@sprucelabs/resolve-path-aliases": "^1.0.71",
+    "@sprucelabs/semantic-release": "^4.0.6",
     "@sprucelabs/spruce-test-fixtures": "^5.4.45",
     "@sprucelabs/test": "^7.7.58",
     "@sprucelabs/test-utils": "^3.0.54",
