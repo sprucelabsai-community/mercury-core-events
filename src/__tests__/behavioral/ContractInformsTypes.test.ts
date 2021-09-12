@@ -1,5 +1,6 @@
 import { SkillEventContract } from '@sprucelabs/mercury-types'
 import AbstractSpruceTest, { test } from '@sprucelabs/test'
+import TestClient from '../../tests/TestClient'
 
 export default class ContractInformsTypesTest extends AbstractSpruceTest {
 	@test('Handles core contract (always passes, types will fail)')
