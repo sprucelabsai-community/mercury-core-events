@@ -16,6 +16,7 @@
     "build.esm": "tsc --project tsconfig.dist.json && yarn build.resolve-paths.esm && yarn build.esm-postbuild",
     "build.esm-postbuild": "esm-postbuild --target esm --patterns '**/*.js'",
     "build.resolve-paths": "resolve-path-aliases --target build --patterns '**/*.js,**/*.d.ts'",
+    "build.resolve-paths.esm": "TS_NODE_PROJECT=`pwd`/tsconfig.dist.json resolve-path-aliases --target build/esm --patterns '**/*.js,**/*.d.ts'",
     "build.tsc": "yarn build.copy-files && tsc",
     "clean": "yarn clean.build",
     "clean.all": "yarn clean.dependencies && yarn clean.build",
