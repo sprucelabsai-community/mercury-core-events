@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import requestPinEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/requestPinEmitTargetAndPayload.schema'
 import requestPinResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/requestPinResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const requestPinEventContract = buildEventContract({
 	eventSignatures: {

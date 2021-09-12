@@ -10,7 +10,7 @@ const getPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmi
 	name: '',
 	    fields: {
 	            /** . */
-	            'includePrivateFields': {
+	            'shouldIncludePrivateFields': {
 	                type: 'boolean',
 	                options: undefined
 	            },

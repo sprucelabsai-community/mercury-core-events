@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import listPeopleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listPeopleEmitTargetAndPayload.schema'
 import listPeopleResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listPeopleResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const listPeopleEventContract = buildEventContract({
 	eventSignatures: {

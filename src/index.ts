@@ -7,9 +7,10 @@ export { default as permissionContractSchema } from './.spruce/schemas/mercury/v
 export { default as statusFlagsSchema } from './.spruce/schemas/mercury/v2020_12_25/statusFlags.schema'
 
 export * from './.spruce/schemas/schemas.types'
+import { SkillEventContract } from '@sprucelabs/mercury-types'
 import { default as coreEventContractsSplit } from '#spruce/events/events.contract'
 
-export const coreEventContracts: [CoreEventContract] = [
+export const coreEventContracts: [SkillEventContract] = [
 	//@ts-ignore
 	coreEventContractsSplit.reduce(
 		(contract, current) => {
@@ -23,5 +24,4 @@ export const coreEventContracts: [CoreEventContract] = [
 	),
 ]
 
-export { SkillEventContract as CoreEventContract } from './types/mercury.types'
 export * from '#spruce/events/events.contract'

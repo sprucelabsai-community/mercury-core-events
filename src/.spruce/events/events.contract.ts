@@ -194,7 +194,7 @@ export default [
 	mercuryWhoamiEventContract_v2020_12_25,
 ]
 
-declare module '../../types/mercury.types' {
+declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface SkillEventSignatures {
 		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
 

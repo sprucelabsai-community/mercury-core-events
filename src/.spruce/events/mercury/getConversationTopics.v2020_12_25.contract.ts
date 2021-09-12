@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import getConversationTopicsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getConversationTopicsEmitTargetAndPayload.schema'
 import getConversationTopicsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getConversationTopicsResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const getConversationTopicsEventContract = buildEventContract({
 	eventSignatures: {

@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import deleteRoleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/deleteRoleEmitTargetAndPayload.schema'
 import deleteRoleResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/deleteRoleResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const deleteRoleEventContract = buildEventContract({
 	eventSignatures: {

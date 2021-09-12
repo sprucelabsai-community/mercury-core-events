@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import getLocationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getLocationEmitTargetAndPayload.schema'
 import getLocationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getLocationResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const getLocationEventContract = buildEventContract({
 	eventSignatures: {

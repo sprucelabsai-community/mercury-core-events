@@ -1,7 +1,7 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
+import { buildPermissionContract } from '@sprucelabs/mercury-types'
 import didMessageEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didMessageEmitTargetAndPayload.schema'
 import didMessageResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didMessageResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
-import { buildPermissionContract } from '../../../utilities'
 
 const didMessageEventContract = buildEventContract({
 	eventSignatures: {

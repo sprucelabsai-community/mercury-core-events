@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import createRoleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/createRoleEmitTargetAndPayload.schema'
 import createRoleResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/createRoleResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const createRoleEventContract = buildEventContract({
 	eventSignatures: {

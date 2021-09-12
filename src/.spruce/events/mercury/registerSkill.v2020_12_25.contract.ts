@@ -1,6 +1,6 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import registerSkillEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerSkillEmitTargetAndPayload.schema'
 import registerSkillResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerSkillResponsePayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const registerSkillEventContract = buildEventContract({
 	eventSignatures: {

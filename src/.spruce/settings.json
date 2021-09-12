@@ -14,8 +14,8 @@
     "lastSync": {
       "contractDestinationDir": "#spruce/events",
       "schemaTypesLookupDir": "#spruce/schemas",
-      "skillEventContractTypesFile": "../../types/mercury.types",
-      "eventBuilderFile": "../../../utilities",
+      "skillEventContractTypesFile": "@sprucelabs/mercury-types/build/types/mercury.types",
+      "eventBuilderFile": "@sprucelabs/mercury-types",
       "shouldSyncOnlyCoreEvents": "true"
     }
   }

@@ -1,5 +1,5 @@
+import { buildEventContract } from '@sprucelabs/mercury-types'
 import registerListenersEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerListenersEmitTargetAndPayload.schema'
-import { buildEventContract } from '../../../utilities'
 
 const registerListenersEventContract = buildEventContract({
 	eventSignatures: {
