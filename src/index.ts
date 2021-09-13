@@ -25,3 +25,4 @@ export const coreEventContracts: [SkillEventContract] = [
 ]
 
 export * from '#spruce/events/events.contract'
+export { SkillEventContract } from '@sprucelabs/mercury-types'
