@@ -10,8 +10,7 @@
     "upgradeIgnoreList": [
       "@sprucelabs/spruce-event-plugin",
       "@sprucelabs/spruce-test-fixtures",
-      "@sprucelabs/mercury-client",
-      "@sprucelabs/spruce-event-utils"
+      "@sprucelabs/mercury-client"
     ]
   },
   "files": [
@@ -81,7 +80,8 @@
   "dependencies": {
     "@sprucelabs/mercury-types": "^26.1.2",
     "@sprucelabs/schema": "^25.3.1",
-    "@sprucelabs/spruce-core-schemas": "^22.5.49"
+    "@sprucelabs/spruce-core-schemas": "^22.5.49",
+    "@sprucelabs/spruce-event-utils": "^16.0.3"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
