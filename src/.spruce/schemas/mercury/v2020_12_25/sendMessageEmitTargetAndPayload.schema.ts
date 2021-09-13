@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import eventSourceSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/eventSource.schema'
+import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
 import sendMessageTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/sendMessageTargetPayload.schema'
 import sendMessageEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/sendMessageEmitPayload.schema'
 
@@ -15,7 +15,7 @@ const sendMessageEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.S
 	            'source': {
 	                label: 'Source',
 	                type: 'schema',
-	                options: {schema: eventSourceSchema_v2020_12_25,}
+	                options: {schema: eventSourceSchema_v2021_09_13,}
 	            },
 	            /** . */
 	            'target': {
