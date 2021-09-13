@@ -6,7 +6,13 @@
     "namespace": "mercury-core-events",
     "commandOverrides": {
       "sync.events": "--shouldSyncOnlyCoreEvents true"
-    }
+    },
+    "upgradeIgnoreList": [
+      "@sprucelabs/spruce-event-plugin",
+      "@sprucelabs/spruce-test-fixtures",
+      "@sprucelabs/mercury-client",
+      "@sprucelabs/spruce-event-utils"
+    ]
   },
   "files": [
     "build"
@@ -57,7 +63,6 @@
     "@sprucelabs/jest-json-reporter": "^6.0.33",
     "@sprucelabs/resolve-path-aliases": "^1.0.74",
     "@sprucelabs/semantic-release": "^4.0.6",
-    "@sprucelabs/spruce-test-fixtures": "^5.4.49",
     "@sprucelabs/test": "^7.7.60",
     "@sprucelabs/test-utils": "^3.0.55",
     "@types/node": "^16.9.1",
@@ -74,12 +79,9 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@sprucelabs/mercury-client": "^16.10.44",
-    "@sprucelabs/mercury-types": "^26.1.0",
+    "@sprucelabs/mercury-types": "^26.1.2",
     "@sprucelabs/schema": "^25.3.1",
-    "@sprucelabs/spruce-core-schemas": "^22.5.48",
-    "@sprucelabs/spruce-event-plugin": "^5.4.49",
-    "@sprucelabs/spruce-event-utils": "^16.0.3"
+    "@sprucelabs/spruce-core-schemas": "^22.5.49"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
