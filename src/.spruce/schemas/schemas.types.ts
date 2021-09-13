@@ -5510,35 +5510,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface EventSource {
-			
-				/** Proxy token. */
-				'proxyToken'?: string| undefined | null
-		}
-
-		interface EventSourceSchema extends SpruceSchema.Schema {
-			id: 'eventSource',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Proxy token. */
-			            'proxyToken': {
-			                label: 'Proxy token',
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		type EventSourceEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSourceSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface UpdatePersonEmitTargetAndPayload {
 			
 				/** Source. */
