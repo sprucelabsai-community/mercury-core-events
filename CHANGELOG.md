@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.1.0...v1.2.0) (2021-09-13)
+
+
+### Features
+
+* enhanced event source ([5f78878](https://github.com/sprucelabsai/mercury-core-events/commit/5f78878))
+
 # [1.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.0.1...v1.1.0) (2021-09-13)
 
 
