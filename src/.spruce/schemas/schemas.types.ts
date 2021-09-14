@@ -10,6 +10,7 @@ import { default as SchemaEntity } from '@sprucelabs/schema'
 import * as SpruceSchema from '@sprucelabs/schema'
 
 import '@sprucelabs/mercury-types'
+import '@sprucelabs/spruce-event-utils'
 
 declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schemas.types' {
 
@@ -1887,7 +1888,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
-			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 			    fields: {
 			            /** . */
 			            'contracts': {

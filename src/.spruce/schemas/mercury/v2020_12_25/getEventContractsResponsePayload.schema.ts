@@ -8,7 +8,6 @@ const getEventContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
-	importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 	    fields: {
 	            /** . */
 	            'contracts': {
