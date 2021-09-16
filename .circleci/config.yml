@@ -87,13 +87,8 @@ jobs:
             git config --global user.email "$GIT_AUTHOR_EMAIL"
             git config --global user.name "$GIT_AUTHOR_NAME"
             ~/.yarn/bin/spruce upgrade
-
             if [[ $(git status) != *"modified"* ]]; then 
               echo "No modifications detected.  No push/PR necessary 👊"
-              circleci-agent step halt
-            fi
-            if [[ ! -f yarn.lock  ]]; then
-              echo "Upgrade errored and removed the yarn.lock. Likely due to a package version missing"
               circleci-agent step halt
             fi
       - run:
