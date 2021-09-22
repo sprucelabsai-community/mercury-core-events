@@ -15,6 +15,12 @@ const doesHonorPermissionContractEmitPayloadSchema: SpruceSchemas.Mercury.v2020_
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'skillId': {
+	                type: 'id',
+	                isRequired: true,
+	                options: undefined
+	            },
 	    }
 }
 

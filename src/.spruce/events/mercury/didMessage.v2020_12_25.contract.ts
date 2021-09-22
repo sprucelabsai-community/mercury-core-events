@@ -18,6 +18,9 @@ const didMessageEventContract = buildEventContract({
 					{
 						id: 'can-emit-did-message-event',
 						name: 'Emit did-message event',
+						defaults: {
+							skill: false,
+						},
 					},
 				],
 			}),
@@ -30,6 +33,9 @@ const didMessageEventContract = buildEventContract({
 					{
 						id: 'can-listen-to-did-message-event',
 						name: 'Listen to did-message event',
+						defaults: {
+							skill: false,
+						},
 					},
 				],
 			}),
