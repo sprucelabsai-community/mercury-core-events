@@ -18,18 +18,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface InstallSkillEmitTargetAndPayload {
+		interface DeleteOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target': SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTarget
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitPayload
+				'target': SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationTargetPayload
 		}
 
-		interface InstallSkillEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'installSkillEmitTargetAndPayload',
+		interface DeleteOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'deleteOrganizationEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -44,18 +42,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'target': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitPayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationTargetPayloadSchema,}
 			            },
 			    }
 		}
 
-		type InstallSkillEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTargetAndPayloadSchema>
+		type DeleteOrganizationEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationEmitTargetAndPayloadSchema>
 
 	}
 
@@ -1440,43 +1432,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface DeleteOrganizationEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationTargetPayload
-		}
-
-		interface DeleteOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'deleteOrganizationEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationTargetPayloadSchema,}
-			            },
-			    }
-		}
-
-		type DeleteOrganizationEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface DeleteOrgResponsePayload {
 			
 				
@@ -1662,6 +1617,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'id': string
+				
+				'skillId'?: string| undefined | null
+				
+				'fqen'?: string| undefined | null
 		}
 
 		interface DoesHonorPermissionContractEmitPayloadSchema extends SpruceSchema.Schema {
@@ -1674,6 +1633,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'id': {
 			                type: 'id',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'fqen': {
+			                type: 'text',
 			                options: undefined
 			            },
 			    }
@@ -2600,6 +2569,51 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type InstallSkillEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface InstallSkillEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTarget
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitPayload
+		}
+
+		interface InstallSkillEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'installSkillEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type InstallSkillEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTargetAndPayloadSchema>
 
 	}
 
@@ -3560,6 +3574,36 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface RegisterEventsEmitPayload {
+			
+				
+				'contract': SpruceSchemas.Mercury.v2020_12_25.EventContract
+		}
+
+		interface RegisterEventsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerEventsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
+			    fields: {
+			            /** . */
+			            'contract': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema,}
+			            },
+			    }
+		}
+
+		type RegisterEventsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterEventsEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface RegisterEventsEmitTargetAndPayload {
 			
 				/** Source. */
@@ -3590,36 +3634,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type RegisterEventsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterEventsEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface RegisterEventsEmitPayload {
-			
-				
-				'contract': SpruceSchemas.Mercury.v2020_12_25.EventContract
-		}
-
-		interface RegisterEventsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerEventsEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
-			    fields: {
-			            /** . */
-			            'contract': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema,}
-			            },
-			    }
-		}
-
-		type RegisterEventsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterEventsEmitPayloadSchema>
 
 	}
 
@@ -4416,6 +4430,163 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type SetRoleResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SetRoleResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SyncPermissionContractsEmitPayload {
+			
+				/** Contracts. */
+				'contracts': SpruceSchemas.Mercury.v2020_12_25.PermissionContract[]
+		}
+
+		interface SyncPermissionContractsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Contracts. */
+			            'contracts': {
+			                label: 'Contracts',
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
+			            },
+			    }
+		}
+
+		type SyncPermissionContractsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SyncPermissionContractsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.SyncPermissionContractsTargetPayload| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayload
+		}
+
+		interface SyncPermissionContractsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.SyncPermissionContractsTargetPayloadSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type SyncPermissionContractsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SyncPermissionContractsResponsePayload {
+			
+				
+				'contractRecords': SpruceSchemas.Mercury.v2020_12_25.FullPermissionContract[]
+		}
+
+		interface SyncPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'contractRecords': {
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
+			            },
+			    }
+		}
+
+		type SyncPermissionContractsResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface FullPermissionContract {
+			
+				
+				'id': string
+				
+				'skillId'?: string| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'contract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
+		}
+
+		interface FullPermissionContractSchema extends SpruceSchema.Schema {
+			id: 'fullPermissionContract',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'id': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'contract': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
+			            },
+			    }
+		}
+
+		type FullPermissionContractEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema>
 
 	}
 
