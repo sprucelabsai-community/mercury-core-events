@@ -3643,6 +3643,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		
 		interface RegisterEventsResponsePayload {
 			
+				/** Fully qualified event names. */
+				'fqens': string[]
 		}
 
 		interface RegisterEventsResponsePayloadSchema extends SpruceSchema.Schema {
@@ -3651,6 +3653,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
+			            /** Fully qualified event names. */
+			            'fqens': {
+			                label: 'Fully qualified event names',
+			                type: 'text',
+			                isRequired: true,
+			                isArray: true,
+			                options: undefined
+			            },
 			    }
 		}
 
