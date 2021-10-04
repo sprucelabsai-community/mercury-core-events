@@ -9,6 +9,14 @@ const registerEventsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Reg
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
+	            /** Fully qualified event names. */
+	            'fqens': {
+	                label: 'Fully qualified event names',
+	                type: 'text',
+	                isRequired: true,
+	                isArray: true,
+	                options: undefined
+	            },
 	    }
 }
 
