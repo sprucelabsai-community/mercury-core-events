@@ -10,7 +10,8 @@
     "upgradeIgnoreList": [
       "@sprucelabs/spruce-event-plugin",
       "@sprucelabs/spruce-test-fixtures",
-      "@sprucelabs/mercury-client"
+      "@sprucelabs/mercury-client",
+      "@sprucelabs/mercury-core-events"
     ]
   },
   "files": [
@@ -78,7 +79,6 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@sprucelabs/mercury-core-events": "^1.2.376",
     "@sprucelabs/mercury-types": "^26.1.317",
     "@sprucelabs/schema": "^25.3.257",
     "@sprucelabs/spruce-core-schemas": "^22.5.324",
