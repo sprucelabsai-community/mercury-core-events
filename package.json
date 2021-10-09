@@ -80,9 +80,9 @@
   },
   "dependencies": {
     "@sprucelabs/mercury-types": "^26.1.338",
-    "@sprucelabs/schema": "^25.3.270",
+    "@sprucelabs/schema": "^25.3.271",
     "@sprucelabs/spruce-core-schemas": "^22.5.338",
-    "@sprucelabs/spruce-event-utils": "^16.0.375"
+    "@sprucelabs/spruce-event-utils": "^16.0.376"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
