@@ -147,6 +147,8 @@ import mercuryWhoamiEventContract_v2020_12_25, {
 } from '#spruce/events/mercury/whoami.v2020_12_25.contract'
 
 export default [
+	mercuryDidInstallEventContract_v2020_12_25,
+	mercuryDidMessageEventContract_v2020_12_25,
 	mercuryAuthenticateEventContract_v2020_12_25,
 	mercuryCanListenEventContract_v2020_12_25,
 	mercuryConfirmPinEventContract_v2020_12_25,
@@ -194,12 +196,14 @@ export default [
 	mercuryUpdatePersonEventContract_v2020_12_25,
 	mercuryUpdateRoleEventContract_v2020_12_25,
 	mercuryWhoamiEventContract_v2020_12_25,
-	mercuryDidInstallEventContract_v2020_12_25,
-	mercuryDidMessageEventContract_v2020_12_25,
 ]
 
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface SkillEventSignatures {
+		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
+
+		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
+
 		'authenticate::v2020_12_25': MercuryAuthenticateEventContract_v2020_12_25['eventSignatures']['authenticate::v2020_12_25']
 
 		'can-listen::v2020_12_25': MercuryCanListenEventContract_v2020_12_25['eventSignatures']['can-listen::v2020_12_25']
@@ -293,9 +297,5 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'update-role::v2020_12_25': MercuryUpdateRoleEventContract_v2020_12_25['eventSignatures']['update-role::v2020_12_25']
 
 		'whoami::v2020_12_25': MercuryWhoamiEventContract_v2020_12_25['eventSignatures']['whoami::v2020_12_25']
-
-		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
-
-		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
 	}
 }
