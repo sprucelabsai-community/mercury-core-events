@@ -1,6 +1,6 @@
 {
   "name": "@sprucelabs/mercury-core-events",
-  "version": "1.2.377",
+  "version": "1.2.554",
   "description": "Events Mercury provides out of the box.",
   "skill": {
     "namespace": "mercury-core-events",
@@ -59,30 +59,31 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.251",
-    "@sprucelabs/jest-json-reporter": "^6.0.187",
-    "@sprucelabs/resolve-path-aliases": "^1.0.208",
+    "@sprucelabs/esm-postbuild": "^1.0.266",
+    "@sprucelabs/jest-json-reporter": "^6.0.211",
+    "@sprucelabs/resolve-path-aliases": "^1.0.215",
     "@sprucelabs/semantic-release": "^4.0.7",
-    "@sprucelabs/test": "^7.7.189",
-    "@sprucelabs/test-utils": "^3.0.174",
-    "@types/node": "^16.10.2",
+    "@sprucelabs/test": "^7.7.199",
+    "@sprucelabs/test-utils": "^3.0.212",
+    "@types/node": "^16.11.1",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-spruce": "^10.10.13",
-    "jest": "^27.2.4",
-    "jest-circus": "^27.2.4",
+    "eslint": "^8.0.1",
+    "eslint-config-spruce": "^10.10.15",
+    "jest": "^27.3.1",
+    "jest-circus": "^27.3.1",
     "prettier": "^2.4.1",
-    "ts-node": "^10.2.1",
+    "ts-node": "^10.3.0",
     "tsc-watch": "^4.5.0",
     "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.4.3"
+    "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^26.1.317",
-    "@sprucelabs/schema": "^25.3.257",
-    "@sprucelabs/spruce-core-schemas": "^22.5.324",
-    "@sprucelabs/spruce-event-utils": "^16.0.351"
+    "@sprucelabs/mercury-types": "^26.1.467",
+    "@sprucelabs/schema": "^25.3.340",
+    "@sprucelabs/spruce-core-schemas": "^22.5.438",
+    "@sprucelabs/spruce-event-utils": "^16.0.473",
+    "@sprucelabs/spruce-skill-utils": "^20.6.283"
   },
   "jest": {
     "testRunner": "jest-circus/runner",

@@ -1,3 +1,357 @@
+## [1.2.554](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.553...v1.2.554) (2021-10-19)
+
+## [1.2.553](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.552...v1.2.553) (2021-10-19)
+
+## [1.2.552](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.551...v1.2.552) (2021-10-19)
+
+## [1.2.551](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.550...v1.2.551) (2021-10-19)
+
+## [1.2.550](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.549...v1.2.550) (2021-10-19)
+
+## [1.2.549](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.548...v1.2.549) (2021-10-19)
+
+## [1.2.548](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.547...v1.2.548) (2021-10-19)
+
+## [1.2.547](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.546...v1.2.547) (2021-10-19)
+
+## [1.2.546](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.545...v1.2.546) (2021-10-19)
+
+## [1.2.545](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.544...v1.2.545) (2021-10-19)
+
+## [1.2.544](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.543...v1.2.544) (2021-10-19)
+
+## [1.2.543](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.542...v1.2.543) (2021-10-18)
+
+## [1.2.542](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.541...v1.2.542) (2021-10-18)
+
+## [1.2.541](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.540...v1.2.541) (2021-10-18)
+
+## [1.2.540](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.539...v1.2.540) (2021-10-18)
+
+## [1.2.539](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.538...v1.2.539) (2021-10-18)
+
+## [1.2.538](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.537...v1.2.538) (2021-10-18)
+
+## [1.2.537](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.536...v1.2.537) (2021-10-18)
+
+## [1.2.536](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.535...v1.2.536) (2021-10-18)
+
+## [1.2.535](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.534...v1.2.535) (2021-10-18)
+
+## [1.2.534](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.533...v1.2.534) (2021-10-18)
+
+## [1.2.533](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.532...v1.2.533) (2021-10-18)
+
+## [1.2.532](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.531...v1.2.532) (2021-10-18)
+
+## [1.2.531](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.530...v1.2.531) (2021-10-18)
+
+## [1.2.530](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.529...v1.2.530) (2021-10-18)
+
+## [1.2.529](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.528...v1.2.529) (2021-10-18)
+
+## [1.2.528](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.527...v1.2.528) (2021-10-18)
+
+## [1.2.527](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.526...v1.2.527) (2021-10-18)
+
+## [1.2.526](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.525...v1.2.526) (2021-10-18)
+
+## [1.2.525](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.524...v1.2.525) (2021-10-18)
+
+## [1.2.524](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.523...v1.2.524) (2021-10-17)
+
+## [1.2.523](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.522...v1.2.523) (2021-10-17)
+
+## [1.2.522](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.521...v1.2.522) (2021-10-17)
+
+## [1.2.521](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.520...v1.2.521) (2021-10-17)
+
+## [1.2.520](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.519...v1.2.520) (2021-10-17)
+
+## [1.2.519](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.518...v1.2.519) (2021-10-17)
+
+## [1.2.518](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.517...v1.2.518) (2021-10-17)
+
+## [1.2.517](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.516...v1.2.517) (2021-10-17)
+
+## [1.2.516](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.515...v1.2.516) (2021-10-17)
+
+## [1.2.515](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.514...v1.2.515) (2021-10-17)
+
+## [1.2.514](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.513...v1.2.514) (2021-10-17)
+
+## [1.2.513](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.512...v1.2.513) (2021-10-17)
+
+## [1.2.512](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.511...v1.2.512) (2021-10-17)
+
+## [1.2.511](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.510...v1.2.511) (2021-10-17)
+
+## [1.2.510](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.509...v1.2.510) (2021-10-17)
+
+## [1.2.509](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.508...v1.2.509) (2021-10-17)
+
+## [1.2.508](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.507...v1.2.508) (2021-10-17)
+
+## [1.2.507](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.506...v1.2.507) (2021-10-17)
+
+## [1.2.506](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.505...v1.2.506) (2021-10-16)
+
+## [1.2.505](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.504...v1.2.505) (2021-10-16)
+
+## [1.2.504](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.503...v1.2.504) (2021-10-16)
+
+## [1.2.503](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.502...v1.2.503) (2021-10-16)
+
+## [1.2.502](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.501...v1.2.502) (2021-10-16)
+
+## [1.2.501](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.500...v1.2.501) (2021-10-16)
+
+## [1.2.500](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.499...v1.2.500) (2021-10-16)
+
+## [1.2.499](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.498...v1.2.499) (2021-10-16)
+
+## [1.2.498](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.497...v1.2.498) (2021-10-16)
+
+## [1.2.497](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.496...v1.2.497) (2021-10-16)
+
+## [1.2.496](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.495...v1.2.496) (2021-10-16)
+
+## [1.2.495](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.494...v1.2.495) (2021-10-16)
+
+## [1.2.494](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.493...v1.2.494) (2021-10-16)
+
+## [1.2.493](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.492...v1.2.493) (2021-10-16)
+
+## [1.2.492](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.491...v1.2.492) (2021-10-16)
+
+## [1.2.491](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.490...v1.2.491) (2021-10-16)
+
+## [1.2.490](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.489...v1.2.490) (2021-10-16)
+
+## [1.2.489](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.488...v1.2.489) (2021-10-16)
+
+## [1.2.488](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.487...v1.2.488) (2021-10-16)
+
+## [1.2.487](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.486...v1.2.487) (2021-10-16)
+
+## [1.2.486](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.485...v1.2.486) (2021-10-16)
+
+## [1.2.485](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.484...v1.2.485) (2021-10-15)
+
+## [1.2.484](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.483...v1.2.484) (2021-10-15)
+
+## [1.2.483](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.482...v1.2.483) (2021-10-15)
+
+## [1.2.482](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.481...v1.2.482) (2021-10-15)
+
+## [1.2.481](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.480...v1.2.481) (2021-10-15)
+
+## [1.2.480](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.479...v1.2.480) (2021-10-15)
+
+## [1.2.479](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.478...v1.2.479) (2021-10-15)
+
+## [1.2.478](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.477...v1.2.478) (2021-10-15)
+
+## [1.2.477](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.476...v1.2.477) (2021-10-15)
+
+## [1.2.476](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.475...v1.2.476) (2021-10-15)
+
+## [1.2.475](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.474...v1.2.475) (2021-10-15)
+
+## [1.2.474](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.473...v1.2.474) (2021-10-15)
+
+## [1.2.473](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.472...v1.2.473) (2021-10-15)
+
+## [1.2.472](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.471...v1.2.472) (2021-10-15)
+
+## [1.2.471](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.470...v1.2.471) (2021-10-15)
+
+## [1.2.470](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.469...v1.2.470) (2021-10-15)
+
+## [1.2.469](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.468...v1.2.469) (2021-10-15)
+
+## [1.2.468](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.467...v1.2.468) (2021-10-15)
+
+## [1.2.467](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.466...v1.2.467) (2021-10-15)
+
+## [1.2.466](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.465...v1.2.466) (2021-10-15)
+
+## [1.2.465](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.464...v1.2.465) (2021-10-15)
+
+## [1.2.464](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.463...v1.2.464) (2021-10-15)
+
+## [1.2.463](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.462...v1.2.463) (2021-10-15)
+
+## [1.2.462](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.461...v1.2.462) (2021-10-15)
+
+## [1.2.461](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.460...v1.2.461) (2021-10-14)
+
+## [1.2.460](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.459...v1.2.460) (2021-10-14)
+
+## [1.2.459](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.458...v1.2.459) (2021-10-14)
+
+## [1.2.458](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.457...v1.2.458) (2021-10-14)
+
+## [1.2.457](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.456...v1.2.457) (2021-10-14)
+
+## [1.2.456](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.455...v1.2.456) (2021-10-14)
+
+## [1.2.455](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.454...v1.2.455) (2021-10-14)
+
+## [1.2.454](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.453...v1.2.454) (2021-10-14)
+
+## [1.2.453](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.452...v1.2.453) (2021-10-14)
+
+## [1.2.452](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.451...v1.2.452) (2021-10-14)
+
+## [1.2.451](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.450...v1.2.451) (2021-10-14)
+
+## [1.2.450](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.449...v1.2.450) (2021-10-14)
+
+## [1.2.449](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.448...v1.2.449) (2021-10-14)
+
+## [1.2.448](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.447...v1.2.448) (2021-10-14)
+
+## [1.2.447](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.446...v1.2.447) (2021-10-14)
+
+## [1.2.446](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.445...v1.2.446) (2021-10-14)
+
+## [1.2.445](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.444...v1.2.445) (2021-10-13)
+
+## [1.2.444](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.443...v1.2.444) (2021-10-13)
+
+## [1.2.443](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.442...v1.2.443) (2021-10-13)
+
+## [1.2.442](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.441...v1.2.442) (2021-10-13)
+
+## [1.2.441](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.440...v1.2.441) (2021-10-13)
+
+## [1.2.440](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.439...v1.2.440) (2021-10-13)
+
+## [1.2.439](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.438...v1.2.439) (2021-10-13)
+
+## [1.2.438](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.437...v1.2.438) (2021-10-13)
+
+## [1.2.437](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.436...v1.2.437) (2021-10-13)
+
+## [1.2.436](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.435...v1.2.436) (2021-10-13)
+
+## [1.2.435](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.434...v1.2.435) (2021-10-13)
+
+## [1.2.434](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.433...v1.2.434) (2021-10-13)
+
+## [1.2.433](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.432...v1.2.433) (2021-10-13)
+
+## [1.2.432](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.431...v1.2.432) (2021-10-13)
+
+## [1.2.431](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.430...v1.2.431) (2021-10-13)
+
+## [1.2.430](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.429...v1.2.430) (2021-10-13)
+
+## [1.2.429](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.428...v1.2.429) (2021-10-13)
+
+## [1.2.428](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.427...v1.2.428) (2021-10-13)
+
+## [1.2.427](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.426...v1.2.427) (2021-10-13)
+
+## [1.2.426](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.425...v1.2.426) (2021-10-13)
+
+## [1.2.425](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.424...v1.2.425) (2021-10-13)
+
+## [1.2.424](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.423...v1.2.424) (2021-10-13)
+
+## [1.2.423](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.422...v1.2.423) (2021-10-13)
+
+## [1.2.422](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.421...v1.2.422) (2021-10-12)
+
+## [1.2.421](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.420...v1.2.421) (2021-10-12)
+
+## [1.2.420](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.419...v1.2.420) (2021-10-12)
+
+## [1.2.419](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.418...v1.2.419) (2021-10-12)
+
+## [1.2.418](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.417...v1.2.418) (2021-10-12)
+
+## [1.2.417](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.416...v1.2.417) (2021-10-12)
+
+## [1.2.416](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.415...v1.2.416) (2021-10-12)
+
+## [1.2.415](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.414...v1.2.415) (2021-10-12)
+
+## [1.2.414](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.413...v1.2.414) (2021-10-12)
+
+## [1.2.413](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.412...v1.2.413) (2021-10-12)
+
+## [1.2.412](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.411...v1.2.412) (2021-10-12)
+
+## [1.2.411](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.410...v1.2.411) (2021-10-09)
+
+## [1.2.410](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.409...v1.2.410) (2021-10-09)
+
+## [1.2.409](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.408...v1.2.409) (2021-10-09)
+
+## [1.2.408](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.407...v1.2.408) (2021-10-09)
+
+## [1.2.407](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.406...v1.2.407) (2021-10-09)
+
+## [1.2.406](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.405...v1.2.406) (2021-10-09)
+
+## [1.2.405](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.404...v1.2.405) (2021-10-09)
+
+## [1.2.404](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.403...v1.2.404) (2021-10-09)
+
+## [1.2.403](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.402...v1.2.403) (2021-10-09)
+
+## [1.2.402](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.401...v1.2.402) (2021-10-09)
+
+## [1.2.401](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.400...v1.2.401) (2021-10-09)
+
+## [1.2.400](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.399...v1.2.400) (2021-10-09)
+
+## [1.2.399](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.398...v1.2.399) (2021-10-09)
+
+## [1.2.398](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.397...v1.2.398) (2021-10-09)
+
+## [1.2.397](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.396...v1.2.397) (2021-10-09)
+
+## [1.2.396](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.395...v1.2.396) (2021-10-09)
+
+## [1.2.395](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.394...v1.2.395) (2021-10-08)
+
+## [1.2.394](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.393...v1.2.394) (2021-10-08)
+
+## [1.2.393](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.392...v1.2.393) (2021-10-08)
+
+## [1.2.392](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.391...v1.2.392) (2021-10-08)
+
+## [1.2.391](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.390...v1.2.391) (2021-10-08)
+
+## [1.2.390](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.389...v1.2.390) (2021-10-08)
+
+## [1.2.389](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.388...v1.2.389) (2021-10-08)
+
+## [1.2.388](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.387...v1.2.388) (2021-10-08)
+
+## [1.2.387](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.386...v1.2.387) (2021-10-08)
+
+## [1.2.386](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.385...v1.2.386) (2021-10-08)
+
+## [1.2.385](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.384...v1.2.385) (2021-10-06)
+
+## [1.2.384](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.383...v1.2.384) (2021-10-06)
+
+## [1.2.383](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.382...v1.2.383) (2021-10-06)
+
+## [1.2.382](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.381...v1.2.382) (2021-10-05)
+
+## [1.2.381](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.380...v1.2.381) (2021-10-05)
+
+## [1.2.380](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.379...v1.2.380) (2021-10-05)
+
+## [1.2.379](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.378...v1.2.379) (2021-10-05)
+
+## [1.2.378](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.377...v1.2.378) (2021-10-05)
+
 ## [1.2.377](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.376...v1.2.377) (2021-10-05)
 
 ## [1.2.376](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.375...v1.2.376) (2021-10-05)
