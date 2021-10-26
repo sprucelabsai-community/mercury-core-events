@@ -79,11 +79,11 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^26.1.598",
+    "@sprucelabs/mercury-types": "^26.1.599",
     "@sprucelabs/schema": "^25.3.405",
-    "@sprucelabs/spruce-core-schemas": "^22.5.543",
-    "@sprucelabs/spruce-event-utils": "^16.0.614",
-    "@sprucelabs/spruce-skill-utils": "^20.6.355"
+    "@sprucelabs/spruce-core-schemas": "^22.5.544",
+    "@sprucelabs/spruce-event-utils": "^16.0.615",
+    "@sprucelabs/spruce-skill-utils": "^20.6.356"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
