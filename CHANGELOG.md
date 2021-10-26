@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.686...v1.3.0) (2021-10-26)
+
+
+### Features
+
+* namespaces in get-event-contracts ([2001e8f](https://github.com/sprucelabsai/mercury-core-events/commit/2001e8f))
+
 ## [1.2.686](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.685...v1.2.686) (2021-10-26)
 
 ## [1.2.685](https://github.com/sprucelabsai/mercury-core-events/compare/v1.2.684...v1.2.685) (2021-10-26)
