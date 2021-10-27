@@ -147,8 +147,6 @@ import mercuryWhoamiEventContract_v2020_12_25, {
 } from '#spruce/events/mercury/whoami.v2020_12_25.contract'
 
 export default [
-	mercuryDidInstallEventContract_v2020_12_25,
-	mercuryDidMessageEventContract_v2020_12_25,
 	mercuryAuthenticateEventContract_v2020_12_25,
 	mercuryCanListenEventContract_v2020_12_25,
 	mercuryConfirmPinEventContract_v2020_12_25,
@@ -159,6 +157,8 @@ export default [
 	mercuryDeleteLocationEventContract_v2020_12_25,
 	mercuryDeleteOrganizationEventContract_v2020_12_25,
 	mercuryDeleteRoleEventContract_v2020_12_25,
+	mercuryDidInstallEventContract_v2020_12_25,
+	mercuryDidMessageEventContract_v2020_12_25,
 	mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
 	mercuryGetConversationTopicsEventContract_v2020_12_25,
 	mercuryGetEventContractsEventContract_v2020_12_25,
@@ -200,10 +200,6 @@ export default [
 
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface SkillEventSignatures {
-		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
-
-		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
-
 		'authenticate::v2020_12_25': MercuryAuthenticateEventContract_v2020_12_25['eventSignatures']['authenticate::v2020_12_25']
 
 		'can-listen::v2020_12_25': MercuryCanListenEventContract_v2020_12_25['eventSignatures']['can-listen::v2020_12_25']
@@ -223,6 +219,10 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'delete-organization::v2020_12_25': MercuryDeleteOrganizationEventContract_v2020_12_25['eventSignatures']['delete-organization::v2020_12_25']
 
 		'delete-role::v2020_12_25': MercuryDeleteRoleEventContract_v2020_12_25['eventSignatures']['delete-role::v2020_12_25']
+
+		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
+
+		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
 
 		'does-honor-permission-contract::v2020_12_25': MercuryDoesHonorPermissionContractEventContract_v2020_12_25['eventSignatures']['does-honor-permission-contract::v2020_12_25']
 
