@@ -80,10 +80,10 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^26.1.667",
-    "@sprucelabs/schema": "^25.3.436",
-    "@sprucelabs/spruce-core-schemas": "^22.5.599",
-    "@sprucelabs/spruce-event-utils": "^16.0.696"
+    "@sprucelabs/mercury-types": "^26.1.668",
+    "@sprucelabs/schema": "^25.3.437",
+    "@sprucelabs/spruce-core-schemas": "^22.5.600",
+    "@sprucelabs/spruce-event-utils": "^16.0.697"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
