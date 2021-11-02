@@ -15,6 +15,12 @@ const updateOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmi
 	                type: 'text',
 	                options: undefined
 	            },
+	            /** Address. */
+	            'address': {
+	                label: 'Address',
+	                type: 'address',
+	                options: undefined
+	            },
 	            /** . */
 	            'dateCreated': {
 	                type: 'number',
