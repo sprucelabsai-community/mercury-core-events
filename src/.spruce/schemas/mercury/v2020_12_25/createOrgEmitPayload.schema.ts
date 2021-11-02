@@ -16,6 +16,12 @@ const createOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateOrgEmi
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** Address. */
+	            'address': {
+	                label: 'Address',
+	                type: 'address',
+	                options: undefined
+	            },
 	            /** . */
 	            'slug': {
 	                type: 'text',

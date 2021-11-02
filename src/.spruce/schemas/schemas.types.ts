@@ -898,6 +898,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** Name. */
 				'name': string
+				/** Address. */
+				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				
 				'slug'?: string| undefined | null
 				
@@ -915,6 +917,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Name',
 			                type: 'text',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Address. */
+			            'address': {
+			                label: 'Address',
+			                type: 'address',
 			                options: undefined
 			            },
 			            /** . */
@@ -5345,6 +5353,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** Name. */
 				'name'?: string| undefined | null
+				/** Address. */
+				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				
 				'dateCreated'?: number| undefined | null
 				
@@ -5361,6 +5371,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'name': {
 			                label: 'Name',
 			                type: 'text',
+			                options: undefined
+			            },
+			            /** Address. */
+			            'address': {
+			                label: 'Address',
+			                type: 'address',
 			                options: undefined
 			            },
 			            /** . */
@@ -5432,6 +5448,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** Name. */
 				'name'?: string| undefined | null
+				/** Address. */
+				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				/** Slug. */
 				'slug'?: string| undefined | null
 				
@@ -5450,6 +5468,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'name': {
 			                label: 'Name',
 			                type: 'text',
+			                options: undefined
+			            },
+			            /** Address. */
+			            'address': {
+			                label: 'Address',
+			                type: 'address',
 			                options: undefined
 			            },
 			            /** Slug. */

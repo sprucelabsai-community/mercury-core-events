@@ -15,6 +15,12 @@ const updateOrgSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgSchema  = {
 	                type: 'text',
 	                options: undefined
 	            },
+	            /** Address. */
+	            'address': {
+	                label: 'Address',
+	                type: 'address',
+	                options: undefined
+	            },
 	            /** Slug. */
 	            'slug': {
 	                label: 'Slug',
