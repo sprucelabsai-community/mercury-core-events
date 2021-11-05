@@ -142,6 +142,9 @@ import mercuryUpdatePersonEventContract_v2020_12_25, {
 import mercuryUpdateRoleEventContract_v2020_12_25, {
 	UpdateRoleEventContract as MercuryUpdateRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/updateRole.v2020_12_25.contract'
+import mercuryVoteForFeatureEventContract_v2020_12_25, {
+	VoteForFeatureEventContract as MercuryVoteForFeatureEventContract_v2020_12_25,
+} from '#spruce/events/mercury/voteForFeature.v2020_12_25.contract'
 import mercuryWhoamiEventContract_v2020_12_25, {
 	WhoamiEventContract as MercuryWhoamiEventContract_v2020_12_25,
 } from '#spruce/events/mercury/whoami.v2020_12_25.contract'
@@ -195,6 +198,7 @@ export default [
 	mercuryUpdateOrganizationEventContract_v2020_12_25,
 	mercuryUpdatePersonEventContract_v2020_12_25,
 	mercuryUpdateRoleEventContract_v2020_12_25,
+	mercuryVoteForFeatureEventContract_v2020_12_25,
 	mercuryWhoamiEventContract_v2020_12_25,
 ]
 
@@ -295,6 +299,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'update-person::v2020_12_25': MercuryUpdatePersonEventContract_v2020_12_25['eventSignatures']['update-person::v2020_12_25']
 
 		'update-role::v2020_12_25': MercuryUpdateRoleEventContract_v2020_12_25['eventSignatures']['update-role::v2020_12_25']
+
+		'vote-for-feature::v2020_12_25': MercuryVoteForFeatureEventContract_v2020_12_25['eventSignatures']['vote-for-feature::v2020_12_25']
 
 		'whoami::v2020_12_25': MercuryWhoamiEventContract_v2020_12_25['eventSignatures']['whoami::v2020_12_25']
 	}
