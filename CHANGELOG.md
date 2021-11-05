@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.3.145...v1.4.0) (2021-11-05)
+
+
+### Features
+
+* Developers can send votes using the Mercury client! ([4b24a49](https://github.com/sprucelabsai/mercury-core-events/commit/4b24a49))
+
 ## [1.3.145](https://github.com/sprucelabsai/mercury-core-events/compare/v1.3.144...v1.3.145) (2021-11-05)
 
 ## [1.3.144](https://github.com/sprucelabsai/mercury-core-events/compare/v1.3.143...v1.3.144) (2021-11-05)
