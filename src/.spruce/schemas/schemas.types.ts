@@ -902,8 +902,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				
 				'slug'?: string| undefined | null
-				
-				'dateDeleted'?: number| undefined | null
 		}
 
 		interface CreateOrgEmitPayloadSchema extends SpruceSchema.Schema {
@@ -928,11 +926,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'slug': {
 			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'dateDeleted': {
-			                type: 'number',
 			                options: undefined
 			            },
 			    }

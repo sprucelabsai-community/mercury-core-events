@@ -27,11 +27,6 @@ const createOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateOrgEmi
 	                type: 'text',
 	                options: undefined
 	            },
-	            /** . */
-	            'dateDeleted': {
-	                type: 'number',
-	                options: undefined
-	            },
 	    }
 }
 
