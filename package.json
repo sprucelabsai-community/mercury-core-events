@@ -80,8 +80,8 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^26.1.723",
-    "@sprucelabs/schema": "^25.3.461",
+    "@sprucelabs/mercury-types": "^26.1.724",
+    "@sprucelabs/schema": "^25.3.462",
     "@sprucelabs/spruce-core-schemas": "^22.6.33",
     "@sprucelabs/spruce-event-utils": "^17.0.2"
   },
