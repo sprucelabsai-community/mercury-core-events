@@ -9,6 +9,14 @@ const syncEventContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
+	            /** Event names. */
+	            'fqens': {
+	                label: 'Event names',
+	                type: 'text',
+	                isRequired: true,
+	                isArray: true,
+	                options: undefined
+	            },
 	    }
 }
 

@@ -4553,6 +4553,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		
 		interface SyncEventContractsResponsePayload {
 			
+				/** Event names. */
+				'fqens': string[]
 		}
 
 		interface SyncEventContractsResponsePayloadSchema extends SpruceSchema.Schema {
@@ -4561,6 +4563,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
+			            /** Event names. */
+			            'fqens': {
+			                label: 'Event names',
+			                type: 'text',
+			                isRequired: true,
+			                isArray: true,
+			                options: undefined
+			            },
 			    }
 		}
 
