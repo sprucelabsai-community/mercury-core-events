@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.4.64...v1.5.0) (2021-11-10)
+
+
+### Features
+
+* sync events response fix ([1121053](https://github.com/sprucelabsai/mercury-core-events/commit/1121053))
+
 ## [1.4.64](https://github.com/sprucelabsai/mercury-core-events/compare/v1.4.63...v1.4.64) (2021-11-10)
 
 ## [1.4.63](https://github.com/sprucelabsai/mercury-core-events/compare/v1.4.62...v1.4.63) (2021-11-10)
