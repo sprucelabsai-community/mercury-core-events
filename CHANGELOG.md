@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.5.90...v1.6.0) (2021-11-17)
+
+
+### Features
+
+* submitting error message feedback! ([e951b65](https://github.com/sprucelabsai/mercury-core-events/commit/e951b65))
+
 ## [1.5.90](https://github.com/sprucelabsai/mercury-core-events/compare/v1.5.89...v1.5.90) (2021-11-17)
 
 ## [1.5.89](https://github.com/sprucelabsai/mercury-core-events/compare/v1.5.88...v1.5.89) (2021-11-16)
