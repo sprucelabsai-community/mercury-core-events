@@ -112,6 +112,9 @@ import mercurySendMessageEventContract_v2020_12_25, {
 import mercurySetRoleEventContract_v2020_12_25, {
 	SetRoleEventContract as MercurySetRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/setRole.v2020_12_25.contract'
+import mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25, {
+	SubmitErrorMessageFeedbackEventContract as MercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
+} from '#spruce/events/mercury/submitErrorMessageFeedback.v2020_12_25.contract'
 import mercurySyncEventContractsEventContract_v2020_12_25, {
 	SyncEventContractsEventContract as MercurySyncEventContractsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/syncEventContracts.v2020_12_25.contract'
@@ -191,6 +194,7 @@ export default [
 	mercuryScrambleAccountEventContract_v2020_12_25,
 	mercurySendMessageEventContract_v2020_12_25,
 	mercurySetRoleEventContract_v2020_12_25,
+	mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
 	mercurySyncEventContractsEventContract_v2020_12_25,
 	mercurySyncPermissionContractsEventContract_v2020_12_25,
 	mercuryUninstallSkillEventContract_v2020_12_25,
@@ -283,6 +287,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'send-message::v2020_12_25': MercurySendMessageEventContract_v2020_12_25['eventSignatures']['send-message::v2020_12_25']
 
 		'set-role::v2020_12_25': MercurySetRoleEventContract_v2020_12_25['eventSignatures']['set-role::v2020_12_25']
+
+		'submit-error-message-feedback::v2020_12_25': MercurySubmitErrorMessageFeedbackEventContract_v2020_12_25['eventSignatures']['submit-error-message-feedback::v2020_12_25']
 
 		'sync-event-contracts::v2020_12_25': MercurySyncEventContractsEventContract_v2020_12_25['eventSignatures']['sync-event-contracts::v2020_12_25']
 
