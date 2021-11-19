@@ -2929,6 +2929,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
+			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.LocationSchema,}
 			            },
 			    }
@@ -3023,6 +3024,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
+			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.OrganizationSchema,}
 			            },
 			    }
