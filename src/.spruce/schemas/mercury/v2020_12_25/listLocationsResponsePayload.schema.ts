@@ -14,6 +14,7 @@ const listLocationsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.List
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: locationSchema_v2020_07_22,}
 	            },
 	    }

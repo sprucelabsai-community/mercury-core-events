@@ -14,6 +14,7 @@ const listOrgsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsR
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: organizationSchema_v2020_07_22,}
 	            },
 	    }
