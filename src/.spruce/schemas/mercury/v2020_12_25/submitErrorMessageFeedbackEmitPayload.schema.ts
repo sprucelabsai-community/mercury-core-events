@@ -29,6 +29,13 @@ const submitErrorMessageFeedbackEmitPayloadSchema: SpruceSchemas.Mercury.v2020_1
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** Href. */
+	            'fromHref': {
+	                label: 'Href',
+	                type: 'text',
+	                isRequired: true,
+	                options: undefined
+	            },
 	            /** . */
 	            'thoughts': {
 	                type: 'text',
