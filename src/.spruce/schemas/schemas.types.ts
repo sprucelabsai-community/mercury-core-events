@@ -4494,6 +4494,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'errorMessage': string
 				/** Stack traces. */
 				'stackTrace': string
+				/** Href. */
+				'fromHref': string
 				
 				'thoughts': string
 		}
@@ -4520,6 +4522,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** Stack traces. */
 			            'stackTrace': {
 			                label: 'Stack traces',
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Href. */
+			            'fromHref': {
+			                label: 'Href',
 			                type: 'text',
 			                isRequired: true,
 			                options: undefined
