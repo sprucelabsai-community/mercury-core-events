@@ -2946,7 +2946,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListOrgsEmitPayload {
 			
 				
-				'showMineOnly'?: boolean| undefined | null
+				'shouldOnlyShowMine'?: boolean| undefined | null
 		}
 
 		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2956,7 +2956,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: '',
 			    fields: {
 			            /** . */
-			            'showMineOnly': {
+			            'shouldOnlyShowMine': {
 			                type: 'boolean',
 			                options: undefined
 			            },
@@ -3274,9 +3274,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSkillsEmitPayload {
 			
 				
-				'showMineOnly'?: boolean| undefined | null
+				'shouldOnlyShowMine'?: boolean| undefined | null
 				
 				'namespaces'?: string[]| undefined | null
+				
+				'shouldShowGlobalSkills'?: boolean| undefined | null
 		}
 
 		interface ListSkillsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3286,7 +3288,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: '',
 			    fields: {
 			            /** . */
-			            'showMineOnly': {
+			            'shouldOnlyShowMine': {
 			                type: 'boolean',
 			                options: undefined
 			            },
@@ -3294,6 +3296,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'namespaces': {
 			                type: 'id',
 			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldShowGlobalSkills': {
+			                type: 'boolean',
 			                options: undefined
 			            },
 			    }
