@@ -10,7 +10,7 @@ const listSkillsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsE
 	name: '',
 	    fields: {
 	            /** . */
-	            'showMineOnly': {
+	            'shouldOnlyShowMine': {
 	                type: 'boolean',
 	                options: undefined
 	            },
@@ -18,6 +18,11 @@ const listSkillsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsE
 	            'namespaces': {
 	                type: 'id',
 	                isArray: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'shouldShowGlobalSkills': {
+	                type: 'boolean',
 	                options: undefined
 	            },
 	    }

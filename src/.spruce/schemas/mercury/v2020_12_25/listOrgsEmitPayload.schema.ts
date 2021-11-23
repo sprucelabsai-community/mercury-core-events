@@ -10,7 +10,7 @@ const listOrgsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitP
 	name: '',
 	    fields: {
 	            /** . */
-	            'showMineOnly': {
+	            'shouldOnlyShowMine': {
 	                type: 'boolean',
 	                options: undefined
 	            },
