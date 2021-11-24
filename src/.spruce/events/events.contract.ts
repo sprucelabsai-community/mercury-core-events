@@ -67,6 +67,9 @@ import mercuryInstallSkillEventContract_v2020_12_25, {
 import mercuryIsSkillInstalledEventContract_v2020_12_25, {
 	IsSkillInstalledEventContract as MercuryIsSkillInstalledEventContract_v2020_12_25,
 } from '#spruce/events/mercury/isSkillInstalled.v2020_12_25.contract'
+import mercuryListInstalledSkillsEventContract_v2020_12_25, {
+	ListInstalledSkillsEventContract as MercuryListInstalledSkillsEventContract_v2020_12_25,
+} from '#spruce/events/mercury/listInstalledSkills.v2020_12_25.contract'
 import mercuryListLocationsEventContract_v2020_12_25, {
 	ListLocationsEventContract as MercuryListLocationsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/listLocations.v2020_12_25.contract'
@@ -179,6 +182,7 @@ export default [
 	mercuryHealthEventContract_v2020_12_25,
 	mercuryInstallSkillEventContract_v2020_12_25,
 	mercuryIsSkillInstalledEventContract_v2020_12_25,
+	mercuryListInstalledSkillsEventContract_v2020_12_25,
 	mercuryListLocationsEventContract_v2020_12_25,
 	mercuryListOrganizationsEventContract_v2020_12_25,
 	mercuryListPeopleEventContract_v2020_12_25,
@@ -257,6 +261,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'install-skill::v2020_12_25': MercuryInstallSkillEventContract_v2020_12_25['eventSignatures']['install-skill::v2020_12_25']
 
 		'is-skill-installed::v2020_12_25': MercuryIsSkillInstalledEventContract_v2020_12_25['eventSignatures']['is-skill-installed::v2020_12_25']
+
+		'list-installed-skills::v2020_12_25': MercuryListInstalledSkillsEventContract_v2020_12_25['eventSignatures']['list-installed-skills::v2020_12_25']
 
 		'list-locations::v2020_12_25': MercuryListLocationsEventContract_v2020_12_25['eventSignatures']['list-locations::v2020_12_25']
 
