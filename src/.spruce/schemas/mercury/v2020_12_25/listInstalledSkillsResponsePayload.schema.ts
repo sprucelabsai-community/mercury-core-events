@@ -14,6 +14,7 @@ const listInstalledSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_2
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: listInstalledSkillsSkillsResponsePayloadSchema_v2020_12_25,}
 	            },
 	    }
