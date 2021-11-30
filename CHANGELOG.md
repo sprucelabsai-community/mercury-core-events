@@ -1,3 +1,5 @@
+## [1.6.150](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.149...v1.6.150) (2021-11-30)
+
 ## [1.6.149](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.148...v1.6.149) (2021-11-27)
 
 ## [1.6.148](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.147...v1.6.148) (2021-11-27)
