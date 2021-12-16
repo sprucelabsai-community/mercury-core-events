@@ -12,7 +12,11 @@ const listRolesEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmit
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'locationId': {
+	                type: 'id',
 	                options: undefined
 	            },
 	            /** . */

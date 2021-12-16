@@ -3381,7 +3381,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListRolesEmitTarget {
 			
 				
-				'organizationId': string
+				'organizationId'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
 				
 				'personId'?: string| undefined | null
 		}
@@ -3395,7 +3397,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'organizationId': {
 			                type: 'id',
-			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
 			                options: undefined
 			            },
 			            /** . */
@@ -3447,7 +3453,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target': SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTarget
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTarget| undefined | null
 				
 				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitPayload| undefined | null
 		}
@@ -3467,7 +3473,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
-			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTargetSchema,}
 			            },
 			            /** . */
