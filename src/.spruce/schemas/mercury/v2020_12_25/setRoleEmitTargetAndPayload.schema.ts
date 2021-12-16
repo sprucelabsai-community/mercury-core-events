@@ -20,7 +20,6 @@ const setRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SetRo
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: setRoleEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */

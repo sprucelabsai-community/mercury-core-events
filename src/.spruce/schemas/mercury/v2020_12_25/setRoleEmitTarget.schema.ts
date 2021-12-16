@@ -12,7 +12,11 @@ const setRoleEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTarg
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'locationId': {
+	                type: 'id',
 	                options: undefined
 	            },
 	    }
