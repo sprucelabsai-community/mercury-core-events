@@ -3279,7 +3279,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPeopleEmitPayload {
 			
 				
-				'ids'?: string[]| undefined | null
+				'personIds'?: string[]| undefined | null
+				
+				'roleIds'?: string[]| undefined | null
 		}
 
 		interface ListPeopleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3289,7 +3291,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: '',
 			    fields: {
 			            /** . */
-			            'ids': {
+			            'personIds': {
+			                type: 'id',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleIds': {
 			                type: 'id',
 			                isArray: true,
 			                options: undefined

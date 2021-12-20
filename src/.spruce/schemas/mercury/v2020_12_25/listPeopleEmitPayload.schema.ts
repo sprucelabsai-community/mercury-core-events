@@ -10,7 +10,13 @@ const listPeopleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleE
 	name: '',
 	    fields: {
 	            /** . */
-	            'ids': {
+	            'personIds': {
+	                type: 'id',
+	                isArray: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'roleIds': {
 	                type: 'id',
 	                isArray: true,
 	                options: undefined
