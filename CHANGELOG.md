@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.343...v1.7.0) (2021-12-21)
+
+
+### Features
+
+* messages now support links! ([feb8861](https://github.com/sprucelabsai/mercury-core-events/commit/feb8861))
+
 ## [1.6.343](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.342...v1.6.343) (2021-12-21)
 
 ## [1.6.342](https://github.com/sprucelabsai/mercury-core-events/compare/v1.6.341...v1.6.342) (2021-12-21)
