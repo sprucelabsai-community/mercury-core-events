@@ -4498,6 +4498,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'topicId'?: string| undefined | null
 				
+				'links'?: string[]| undefined | null
+				
 				'choices'?: SpruceSchemas.Spruce.v2020_07_22.FullMessageChoices[]| undefined | null
 		}
 
@@ -4528,6 +4530,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'topicId': {
 			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'links': {
+			                type: 'text',
+			                isArray: true,
 			                options: undefined
 			            },
 			            /** . */

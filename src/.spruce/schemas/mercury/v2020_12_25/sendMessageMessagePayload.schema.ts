@@ -33,6 +33,12 @@ const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMes
 	                options: undefined
 	            },
 	            /** . */
+	            'links': {
+	                type: 'text',
+	                isArray: true,
+	                options: undefined
+	            },
+	            /** . */
 	            'choices': {
 	                type: 'schema',
 	                isArray: true,
