@@ -10,22 +10,12 @@ const doesHonorPermissionContractEmitTargetSchema: SpruceSchemas.Mercury.v2020_1
 	name: '',
 	    fields: {
 	            /** . */
-	            'personId': {
-	                type: 'id',
-	                options: undefined
-	            },
-	            /** . */
 	            'organizationId': {
 	                type: 'id',
 	                options: undefined
 	            },
 	            /** . */
 	            'locationId': {
-	                type: 'id',
-	                options: undefined
-	            },
-	            /** . */
-	            'skillId': {
 	                type: 'id',
 	                options: undefined
 	            },

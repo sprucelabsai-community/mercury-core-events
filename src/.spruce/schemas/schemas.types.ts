@@ -1568,13 +1568,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DoesHonorPermissionContractEmitTarget {
 			
 				
-				'personId'?: string| undefined | null
-				
 				'organizationId'?: string| undefined | null
 				
 				'locationId'?: string| undefined | null
-				
-				'skillId'?: string| undefined | null
 		}
 
 		interface DoesHonorPermissionContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -1584,22 +1580,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: '',
 			    fields: {
 			            /** . */
-			            'personId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
 			            'organizationId': {
 			                type: 'id',
 			                options: undefined
 			            },
 			            /** . */
 			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'skillId': {
 			                type: 'id',
 			                options: undefined
 			            },
