@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const sendMessageTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetPayloadSchema  = {
-	id: 'sendMessageTargetPayload',
+const sendMessageTargetSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema  = {
+	id: 'sendMessageTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -42,6 +42,6 @@ const sendMessageTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMess
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(sendMessageTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(sendMessageTargetSchema)
 
-export default sendMessageTargetPayloadSchema
+export default sendMessageTargetSchema
