@@ -4380,7 +4380,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SendMessageTargetPayload {
+		interface SendMessageTarget {
 			
 				
 				'locationId'?: string| undefined | null
@@ -4396,8 +4396,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'phone'?: string| undefined | null
 		}
 
-		interface SendMessageTargetPayloadSchema extends SpruceSchema.Schema {
-			id: 'sendMessageTargetPayload',
+		interface SendMessageTargetSchema extends SpruceSchema.Schema {
+			id: 'sendMessageTarget',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -4435,7 +4435,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type SendMessageTargetPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetPayloadSchema>
+		type SendMessageTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema>
 
 	}
 
@@ -4448,7 +4448,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetPayload| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
 		}
@@ -4468,7 +4468,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetPayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
 			            },
 			            /** . */
 			            'payload': {
