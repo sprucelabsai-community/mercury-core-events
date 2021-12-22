@@ -30,6 +30,13 @@ const setRoleEventContract = buildEventContract({
 							},
 						},
 					},
+					{
+						id: 'hire-and-promote-when-not-installed',
+						name: 'Can hire even when not installed.',
+						defaults: {
+							skill: false,
+						},
+					},
 				],
 			}),
 		},
