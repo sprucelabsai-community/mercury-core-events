@@ -29,9 +29,9 @@ const listSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.L
 	                type: 'text',
 	                options: undefined
 	            },
-	            /** Slug. */
+	            /** Namespace. */
 	            'slug': {
-	                label: 'Slug',
+	                label: 'Namespace',
 	                type: 'text',
 	                isRequired: true,
 	                options: undefined
