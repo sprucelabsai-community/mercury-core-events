@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import roleSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/role.schema'
+import listRoleSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listRole.schema'
 
 const listRolesResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListRolesResponsePayloadSchema  = {
 	id: 'listRolesResponsePayload',
@@ -14,7 +14,7 @@ const listRolesResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListRole
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
-	                options: {schema: roleSchema_v2020_07_22,}
+	                options: {schema: listRoleSchema_v2020_12_25,}
 	            },
 	    }
 }
