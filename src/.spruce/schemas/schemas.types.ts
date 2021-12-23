@@ -2906,7 +2906,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name': string
 				/** Description. */
 				'description'?: string| undefined | null
-				/** Slug. */
+				/** Namespace. */
 				'slug': string
 				
 				'dateCreated': number
@@ -2940,9 +2940,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                options: undefined
 			            },
-			            /** Slug. */
+			            /** Namespace. */
 			            'slug': {
-			                label: 'Slug',
+			                label: 'Namespace',
 			                type: 'text',
 			                isRequired: true,
 			                options: undefined
@@ -3602,7 +3602,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name': string
 				/** Description. */
 				'description'?: string| undefined | null
-				/** Slug. */
+				/** Namespace. */
 				'slug': string
 				
 				'dateCreated': number
@@ -3636,9 +3636,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                options: undefined
 			            },
-			            /** Slug. */
+			            /** Namespace. */
 			            'slug': {
-			                label: 'Slug',
+			                label: 'Namespace',
 			                type: 'text',
 			                isRequired: true,
 			                options: undefined
@@ -4094,7 +4094,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name': string
 				/** Description. */
 				'description'?: string| undefined | null
-				/** Slug. */
+				/** Namespace. */
 				'slug'?: string| undefined | null
 		}
 
@@ -4117,9 +4117,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                options: undefined
 			            },
-			            /** Slug. */
+			            /** Namespace. */
 			            'slug': {
-			                label: 'Slug',
+			                label: 'Namespace',
 			                type: 'text',
 			                options: undefined
 			            },

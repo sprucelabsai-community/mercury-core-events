@@ -29,9 +29,9 @@ const listInstalledSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v202
 	                type: 'text',
 	                options: undefined
 	            },
-	            /** Slug. */
+	            /** Namespace. */
 	            'slug': {
-	                label: 'Slug',
+	                label: 'Namespace',
 	                type: 'text',
 	                isRequired: true,
 	                options: undefined
