@@ -18,43 +18,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface DidInstallEmitTarget {
-			
-				
-				'organizationId': string
-				
-				'skillId': string
-		}
-
-		interface DidInstallEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didInstallEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'skillId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		type DidInstallEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface DidInstallEmitTargetAndPayload {
 			
 				/** Source. */
@@ -85,6 +48,87 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type DidInstallEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListInstalledSkillsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTarget
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayload| undefined | null
+		}
+
+		interface ListInstalledSkillsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'listInstalledSkillsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type ListInstalledSkillsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidInstallEmitTarget {
+			
+				
+				'organizationId': string
+				
+				'skillId': string
+		}
+
+		interface DidInstallEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didInstallEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type DidInstallEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema>
 
 	}
 
@@ -297,6 +341,143 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type DidMessageResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface AddRoleEmitTarget {
+			
+				
+				'organizationId'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
+		}
+
+		interface AddRoleEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'addRoleEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type AddRoleEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface AddRoleEmitPayload {
+			
+				
+				'personId': string
+				
+				'roleId': string
+		}
+
+		interface AddRoleEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'addRoleEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type AddRoleEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface AddRoleEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayload
+		}
+
+		interface AddRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'addRoleEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type AddRoleEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface AddRoleResponsePayload {
+			
+		}
+
+		interface AddRoleResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'addRoleResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			    }
+		}
+
+		type AddRoleResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleResponsePayloadSchema>
 
 	}
 
@@ -2854,50 +3035,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListInstalledSkillsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTarget
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayload| undefined | null
-		}
-
-		interface ListInstalledSkillsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'listInstalledSkillsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		type ListInstalledSkillsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface ListInstalledSkillsSkillsResponsePayload {
 			
 				/** Id. */
@@ -4329,6 +4466,143 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface RemoveRoleEmitTarget {
+			
+				
+				'organizationId'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
+		}
+
+		interface RemoveRoleEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'removeRoleEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type RemoveRoleEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTargetSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RemoveRoleEmitPayload {
+			
+				
+				'personId': string
+				
+				'roleId': string
+		}
+
+		interface RemoveRoleEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'removeRoleEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type RemoveRoleEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RemoveRoleEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitPayload
+		}
+
+		interface RemoveRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'removeRoleEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type RemoveRoleEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RemoveRoleResponsePayload {
+			
+		}
+
+		interface RemoveRoleResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'removeRoleResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			    }
+		}
+
+		type RemoveRoleResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RemoveRoleResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface RequestPinEmitPayload {
 			
 				
@@ -4742,143 +5016,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SetRoleEmitTarget {
-			
-				
-				'organizationId'?: string| undefined | null
-				
-				'locationId'?: string| undefined | null
-		}
-
-		interface SetRoleEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'setRoleEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		type SetRoleEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTargetSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface SetRoleEmitPayload {
-			
-				
-				'personId': string
-				
-				'roleId': string
-		}
-
-		interface SetRoleEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'setRoleEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'personId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'roleId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		type SetRoleEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface SetRoleEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitPayload
-		}
-
-		interface SetRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'setRoleEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		type SetRoleEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface SetRoleResponsePayload {
-			
-		}
-
-		interface SetRoleResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'setRoleResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			    }
-		}
-
-		type SetRoleResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SetRoleResponsePayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface SubmitErrorMessageFeedbackEmitPayload {
 			
 				/** Error code. */
@@ -5078,6 +5215,38 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface SyncPermissionContractsEmitPayload {
+			
+				/** Contracts. */
+				'contracts': SpruceSchemas.Mercury.v2020_12_25.PermissionContract[]
+		}
+
+		interface SyncPermissionContractsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Contracts. */
+			            'contracts': {
+			                label: 'Contracts',
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
+			            },
+			    }
+		}
+
+		type SyncPermissionContractsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface SyncPermissionContractsEmitTargetAndPayload {
 			
 				/** Source. */
@@ -5115,36 +5284,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type SyncPermissionContractsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface SyncPermissionContractsResponsePayload {
-			
-				
-				'contractRecords': SpruceSchemas.Mercury.v2020_12_25.FullPermissionContract[]
-		}
-
-		interface SyncPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'syncPermissionContractsResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'contractRecords': {
-			                type: 'schema',
-			                isRequired: true,
-			                isArray: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
-			            },
-			    }
-		}
-
-		type SyncPermissionContractsResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsResponsePayloadSchema>
 
 	}
 
@@ -5203,31 +5342,29 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SyncPermissionContractsEmitPayload {
+		interface SyncPermissionContractsResponsePayload {
 			
-				/** Contracts. */
-				'contracts': SpruceSchemas.Mercury.v2020_12_25.PermissionContract[]
+				
+				'contractRecords': SpruceSchemas.Mercury.v2020_12_25.FullPermissionContract[]
 		}
 
-		interface SyncPermissionContractsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'syncPermissionContractsEmitPayload',
+		interface SyncPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsResponsePayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** Contracts. */
-			            'contracts': {
-			                label: 'Contracts',
+			            /** . */
+			            'contractRecords': {
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
 			            },
 			    }
 		}
 
-		type SyncPermissionContractsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayloadSchema>
+		type SyncPermissionContractsResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsResponsePayloadSchema>
 
 	}
 

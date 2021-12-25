@@ -2,11 +2,11 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import setRoleEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/setRoleEmitTarget.schema'
-import setRoleEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/setRoleEmitPayload.schema'
+import addRoleEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/addRoleEmitTarget.schema'
+import addRoleEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/addRoleEmitPayload.schema'
 
-const setRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitTargetAndPayloadSchema  = {
-	id: 'setRoleEmitTargetAndPayload',
+const addRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetAndPayloadSchema  = {
+	id: 'addRoleEmitTargetAndPayload',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -20,17 +20,17 @@ const setRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SetRo
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                options: {schema: setRoleEmitTargetSchema_v2020_12_25,}
+	                options: {schema: addRoleEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: setRoleEmitPayloadSchema_v2020_12_25,}
+	                options: {schema: addRoleEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(setRoleEmitTargetAndPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(addRoleEmitTargetAndPayloadSchema)
 
-export default setRoleEmitTargetAndPayloadSchema
+export default addRoleEmitTargetAndPayloadSchema

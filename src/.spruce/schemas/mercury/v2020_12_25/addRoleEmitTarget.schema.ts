@@ -3,27 +3,25 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const setRoleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SetRoleEmitPayloadSchema  = {
-	id: 'setRoleEmitPayload',
+const addRoleEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetSchema  = {
+	id: 'addRoleEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . */
-	            'personId': {
+	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
-	            'roleId': {
+	            'locationId': {
 	                type: 'id',
-	                isRequired: true,
 	                options: undefined
 	            },
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(setRoleEmitPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(addRoleEmitTargetSchema)
 
-export default setRoleEmitPayloadSchema
+export default addRoleEmitTargetSchema
