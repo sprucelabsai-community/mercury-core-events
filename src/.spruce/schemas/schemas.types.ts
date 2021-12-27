@@ -3405,6 +3405,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'personIds'?: string[]| undefined | null
 				
 				'roleIds'?: string[]| undefined | null
+				
+				'shouldIncludePrivateFields'?: boolean| undefined | null
 		}
 
 		interface ListPeopleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3423,6 +3425,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'roleIds': {
 			                type: 'id',
 			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldIncludePrivateFields': {
+			                type: 'boolean',
 			                options: undefined
 			            },
 			    }

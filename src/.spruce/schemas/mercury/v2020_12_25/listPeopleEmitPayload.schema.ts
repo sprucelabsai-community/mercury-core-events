@@ -21,6 +21,11 @@ const listPeopleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleE
 	                isArray: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'shouldIncludePrivateFields': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 
