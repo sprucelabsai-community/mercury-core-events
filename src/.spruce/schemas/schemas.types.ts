@@ -3564,6 +3564,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'shouldIncludePrivateRoles'?: boolean| undefined | null
 				
 				'shouldIncludeMetaRoles'?: boolean| undefined | null
+				
+				'shouldIncludeAllLocations'?: boolean| undefined | null
 		}
 
 		interface ListRolesEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3579,6 +3581,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'shouldIncludeMetaRoles': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldIncludeAllLocations': {
 			                type: 'boolean',
 			                options: undefined
 			            },
