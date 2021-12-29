@@ -14,6 +14,11 @@ const listRolesEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmi
 	                type: 'boolean',
 	                options: undefined
 	            },
+	            /** . */
+	            'shouldIncludeMetaRoles': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 
