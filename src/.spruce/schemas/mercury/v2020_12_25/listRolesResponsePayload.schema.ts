@@ -14,6 +14,7 @@ const listRolesResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListRole
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: listRoleSchema_v2020_12_25,}
 	            },
 	    }
