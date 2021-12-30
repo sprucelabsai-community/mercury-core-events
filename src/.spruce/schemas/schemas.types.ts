@@ -3404,6 +3404,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'personIds'?: string[]| undefined | null
 				
+				'roleBases'?: string[]| undefined | null
+				
 				'roleIds'?: string[]| undefined | null
 				
 				'shouldIncludePrivateFields'?: boolean| undefined | null
@@ -3418,6 +3420,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'personIds': {
 			                type: 'id',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleBases': {
+			                type: 'text',
 			                isArray: true,
 			                options: undefined
 			            },

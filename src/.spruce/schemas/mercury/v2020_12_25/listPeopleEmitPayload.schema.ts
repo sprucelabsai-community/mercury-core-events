@@ -16,6 +16,12 @@ const listPeopleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleE
 	                options: undefined
 	            },
 	            /** . */
+	            'roleBases': {
+	                type: 'text',
+	                isArray: true,
+	                options: undefined
+	            },
+	            /** . */
 	            'roleIds': {
 	                type: 'id',
 	                isArray: true,
