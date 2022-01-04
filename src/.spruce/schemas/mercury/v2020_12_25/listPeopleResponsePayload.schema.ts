@@ -14,6 +14,7 @@ const listPeopleResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeo
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: personSchema_v2020_07_22,}
 	            },
 	    }
