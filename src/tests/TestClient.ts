@@ -12,6 +12,29 @@ import { SchemaValues, Schema } from '@sprucelabs/schema'
 export default class TestClient<Contract extends EventContract>
 	implements MercuryEventEmitter<Contract>
 {
+	public async emitAndFlattenResponses<
+		EventName extends EventNames<Contract> = EventNames<Contract>,
+		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+			? IEventSignature['emitPayloadSchema']
+			: never,
+		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+			? IEventSignature['responsePayloadSchema']
+			: never,
+		ResponsePayload = ResponseSchema extends Schema
+			? SchemaValues<ResponseSchema>
+			: never
+	>(
+		_eventName: EventName,
+		_payload:
+			| (EmitSchema extends Schema ? SchemaValues<EmitSchema> : never)
+			| EmitCallback<Contract, EventName>
+			| undefined,
+		_cb?: EmitCallback<Contract, EventName> | undefined
+	): Promise<ResponsePayload[]> {
+		throw new Error('Not implemented')
+	}
+
 	public async emit<
 		EventName extends EventNames<Contract> = EventNames<Contract>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
