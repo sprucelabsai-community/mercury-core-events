@@ -1046,6 +1046,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				
 				'slug'?: string| undefined | null
+				/** Public. Is this organization viewable by guests? */
+				'isPublic'?: boolean| undefined | null
 		}
 
 		interface CreateOrgEmitPayloadSchema extends SpruceSchema.Schema {
@@ -1070,6 +1072,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'slug': {
 			                type: 'text',
+			                options: undefined
+			            },
+			            /** Public. Is this organization viewable by guests? */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
+			                hint: 'Is this organization viewable by guests?',
+			                defaultValue: false,
 			                options: undefined
 			            },
 			    }
@@ -3273,6 +3283,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'shouldOnlyShowMine'?: boolean| undefined | null
+				
+				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
 		}
 
 		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3283,6 +3295,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'shouldOnlyShowMine': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldIncludePrivateOrganizations': {
 			                type: 'boolean',
 			                options: undefined
 			            },
@@ -6110,6 +6127,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name'?: string| undefined | null
 				/** Address. */
 				'address'?: SpruceSchema.AddressFieldValue| undefined | null
+				/** Public. Is this organization viewable by guests? */
+				'isPublic'?: boolean| undefined | null
 				
 				'dateCreated'?: number| undefined | null
 				
@@ -6132,6 +6151,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'address': {
 			                label: 'Address',
 			                type: 'address',
+			                options: undefined
+			            },
+			            /** Public. Is this organization viewable by guests? */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
+			                hint: 'Is this organization viewable by guests?',
+			                defaultValue: false,
 			                options: undefined
 			            },
 			            /** . */
@@ -6163,6 +6190,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'address'?: SpruceSchema.AddressFieldValue| undefined | null
 				/** Slug. */
 				'slug'?: string| undefined | null
+				/** Public. Is this organization viewable by guests? */
+				'isPublic'?: boolean| undefined | null
 				
 				'dateCreated'?: number| undefined | null
 				
@@ -6191,6 +6220,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'slug': {
 			                label: 'Slug',
 			                type: 'text',
+			                options: undefined
+			            },
+			            /** Public. Is this organization viewable by guests? */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
+			                hint: 'Is this organization viewable by guests?',
+			                defaultValue: false,
 			                options: undefined
 			            },
 			            /** . */
