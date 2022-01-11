@@ -21,6 +21,14 @@ const updateOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmi
 	                type: 'address',
 	                options: undefined
 	            },
+	            /** Public. Is this organization viewable by guests? */
+	            'isPublic': {
+	                label: 'Public',
+	                type: 'boolean',
+	                hint: 'Is this organization viewable by guests?',
+	                defaultValue: false,
+	                options: undefined
+	            },
 	            /** . */
 	            'dateCreated': {
 	                type: 'number',

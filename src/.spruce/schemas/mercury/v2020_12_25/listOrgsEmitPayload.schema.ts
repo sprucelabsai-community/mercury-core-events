@@ -14,6 +14,11 @@ const listOrgsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitP
 	                type: 'boolean',
 	                options: undefined
 	            },
+	            /** . */
+	            'shouldIncludePrivateOrganizations': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 

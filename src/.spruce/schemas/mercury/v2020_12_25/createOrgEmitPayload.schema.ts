@@ -27,6 +27,14 @@ const createOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateOrgEmi
 	                type: 'text',
 	                options: undefined
 	            },
+	            /** Public. Is this organization viewable by guests? */
+	            'isPublic': {
+	                label: 'Public',
+	                type: 'boolean',
+	                hint: 'Is this organization viewable by guests?',
+	                defaultValue: false,
+	                options: undefined
+	            },
 	    }
 }
 
