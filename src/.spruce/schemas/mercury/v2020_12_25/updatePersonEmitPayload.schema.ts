@@ -29,16 +29,6 @@ const updatePersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdatePer
 	                type: 'schema',
 	                options: {schema: profileImageSchema_v2020_07_22,}
 	            },
-	            /** . */
-	            'dateCreated': {
-	                type: 'number',
-	                options: undefined
-	            },
-	            /** . */
-	            'dateScrambled': {
-	                type: 'number',
-	                options: undefined
-	            },
 	            /** Phone. A number that can be texted */
 	            'phone': {
 	                label: 'Phone',

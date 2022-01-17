@@ -6316,10 +6316,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'lastName'?: string| undefined | null
 				/** Profile photos. */
 				'profileImages'?: SpruceSchemas.Spruce.v2020_07_22.ProfileImage| undefined | null
-				
-				'dateCreated'?: number| undefined | null
-				
-				'dateScrambled'?: number| undefined | null
 				/** Phone. A number that can be texted */
 				'phone'?: string| undefined | null
 		}
@@ -6349,16 +6345,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Profile photos',
 			                type: 'schema',
 			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.ProfileImageSchema,}
-			            },
-			            /** . */
-			            'dateCreated': {
-			                type: 'number',
-			                options: undefined
-			            },
-			            /** . */
-			            'dateScrambled': {
-			                type: 'number',
-			                options: undefined
 			            },
 			            /** Phone. A number that can be texted */
 			            'phone': {
