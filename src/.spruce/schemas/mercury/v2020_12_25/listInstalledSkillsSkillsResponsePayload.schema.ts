@@ -38,13 +38,13 @@ const listInstalledSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v202
 	            },
 	            /** . */
 	            'dateCreated': {
-	                type: 'number',
+	                type: 'dateTime',
 	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
 	            'dateDeleted': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	    }

@@ -31,12 +31,12 @@ const updateOrgEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmi
 	            },
 	            /** . */
 	            'dateCreated': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	            /** . */
 	            'dateDeleted': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	    }
