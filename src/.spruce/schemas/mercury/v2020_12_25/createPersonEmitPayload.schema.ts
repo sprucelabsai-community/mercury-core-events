@@ -31,12 +31,12 @@ const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePer
 	            },
 	            /** . */
 	            'dateCreated': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	            /** . */
 	            'dateScrambled': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	            /** Phone. A number that can be texted */

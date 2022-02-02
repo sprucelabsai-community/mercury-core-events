@@ -37,12 +37,12 @@ const updateOrgSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgSchema  = {
 	            },
 	            /** . */
 	            'dateCreated': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	            /** . */
 	            'dateDeleted': {
-	                type: 'number',
+	                type: 'dateTime',
 	                options: undefined
 	            },
 	    }
