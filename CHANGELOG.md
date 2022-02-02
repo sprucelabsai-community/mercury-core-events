@@ -1,3 +1,5 @@
+## [2.0.17](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.16...v2.0.17) (2022-02-02)
+
 ## [2.0.16](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.15...v2.0.16) (2022-02-02)
 
 ## [2.0.15](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.14...v2.0.15) (2022-02-02)
