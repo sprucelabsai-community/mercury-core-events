@@ -2765,6 +2765,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'skillId': string
+				
+				'shouldNotifySkillOfInstall'?: boolean| undefined | null
 		}
 
 		interface InstallSkillEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2777,6 +2779,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'skillId': {
 			                type: 'id',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldNotifySkillOfInstall': {
+			                type: 'boolean',
 			                options: undefined
 			            },
 			    }

@@ -15,6 +15,11 @@ const installSkillEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.InstallSk
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'shouldNotifySkillOfInstall': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 
