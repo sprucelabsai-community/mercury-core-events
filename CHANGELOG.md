@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.133...v2.1.0) (2022-02-22)
+
+
+### Features
+
+* can disable notification of skills on install ([fc794a0](https://github.com/sprucelabsai/mercury-core-events/commit/fc794a0))
+
 ## [2.0.133](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.132...v2.0.133) (2022-02-22)
 
 ## [2.0.132](https://github.com/sprucelabsai/mercury-core-events/compare/v2.0.131...v2.0.132) (2022-02-22)
