@@ -1338,6 +1338,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'dateDeleted'?: number| undefined | null
 				/** Public. Should I let people that are not part of this organization this role? */
 				'isPublic'?: boolean| undefined | null
+				
+				'isMeta'?: boolean| undefined | null
 		}
 
 		interface CreateRoleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -1376,6 +1378,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Public',
 			                type: 'boolean',
 			                hint: 'Should I let people that are not part of this organization this role?',
+			                options: undefined
+			            },
+			            /** . */
+			            'isMeta': {
+			                type: 'boolean',
 			                options: undefined
 			            },
 			    }
@@ -3518,10 +3525,109 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface ListPerson {
+			
+				/** Id. */
+				'id': string
+				/** First name. */
+				'firstName'?: string| undefined | null
+				/** Last name. */
+				'lastName'?: string| undefined | null
+				/** Casual name. The name you can use when talking to this person. */
+				'casualName': string
+				/** Phone. A number that can be texted */
+				'phone'?: string| undefined | null
+				/** Profile photos. */
+				'profileImages'?: SpruceSchemas.Spruce.v2020_07_22.ProfileImage| undefined | null
+				
+				'dateCreated': SpruceSchema.DateTimeFieldValue
+				
+				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				
+				'roleIds'?: string[]| undefined | null
+		}
+
+		interface ListPersonSchema extends SpruceSchema.Schema {
+			id: 'list-person',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Id. */
+			            'id': {
+			                label: 'Id',
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** First name. */
+			            'firstName': {
+			                label: 'First name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Last name. */
+			            'lastName': {
+			                label: 'Last name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Casual name. The name you can use when talking to this person. */
+			            'casualName': {
+			                label: 'Casual name',
+			                type: 'text',
+			                isRequired: true,
+			                hint: 'The name you can use when talking to this person.',
+			                options: undefined
+			            },
+			            /** Phone. A number that can be texted */
+			            'phone': {
+			                label: 'Phone',
+			                type: 'phone',
+			                isPrivate: true,
+			                hint: 'A number that can be texted',
+			                options: undefined
+			            },
+			            /** Profile photos. */
+			            'profileImages': {
+			                label: 'Profile photos',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.ProfileImageSchema,}
+			            },
+			            /** . */
+			            'dateCreated': {
+			                type: 'dateTime',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'dateScrambled': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			            /** . */
+			            'roleIds': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type ListPersonEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListPersonSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface ListPeopleResponsePayload {
 			
 				
-				'people': SpruceSchemas.Spruce.v2020_07_22.Person[]
+				'people': SpruceSchemas.Mercury.v2020_12_25.ListPerson[]
 		}
 
 		interface ListPeopleResponsePayloadSchema extends SpruceSchema.Schema {
@@ -3536,7 +3642,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                isArray: true,
 			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPersonSchema,}
 			            },
 			    }
 		}
@@ -3761,6 +3867,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Public. Should I let people that are not part of this organization this role? */
 				'isPublic'?: boolean| undefined | null
 				
+				'isMeta'?: boolean| undefined | null
+				
 				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListSchemaTarget| undefined | null
 		}
 
@@ -3818,6 +3926,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Public',
 			                type: 'boolean',
 			                hint: 'Should I let people that are not part of this organization this role?',
+			                options: undefined
+			            },
+			            /** . */
+			            'isMeta': {
+			                type: 'boolean',
 			                options: undefined
 			            },
 			            /** . */
@@ -4901,50 +5014,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SendMessageEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
-		}
-
-		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'sendMessageEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		type SendMessageEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface SendMessageMessagePayload {
 			
 				
@@ -5035,6 +5104,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type SendMessageEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SendMessageEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
+		}
+
+		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'sendMessageEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type SendMessageEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema>
 
 	}
 
