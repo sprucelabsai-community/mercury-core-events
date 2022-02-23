@@ -41,6 +41,11 @@ const createRoleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateRoleE
 	                hint: 'Should I let people that are not part of this organization this role?',
 	                options: undefined
 	            },
+	            /** . */
+	            'isMeta': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 

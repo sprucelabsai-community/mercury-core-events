@@ -60,6 +60,11 @@ const listRoleSchema: SpruceSchemas.Mercury.v2020_12_25.ListRoleSchema  = {
 	                options: undefined
 	            },
 	            /** . */
+	            'isMeta': {
+	                type: 'boolean',
+	                options: undefined
+	            },
+	            /** . */
 	            'target': {
 	                type: 'schema',
 	                options: {schema: listSchemaTargetSchema_v2020_12_25,}
