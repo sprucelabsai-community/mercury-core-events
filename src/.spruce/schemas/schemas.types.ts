@@ -3190,34 +3190,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListLocationsEmitPayload {
-			
-				
-				'includePrivateLocations'?: boolean| undefined | null
-		}
-
-		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'listLocationsEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'includePrivateLocations': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			    }
-		}
-
-		type ListLocationsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface ListLocationsEmitTargetAndPayload {
 			
 				/** Source. */
@@ -3255,6 +3227,69 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type ListLocationsEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.SpruceEventUtils.v2021_09_13 {
+
+		
+		interface EventPaging {
+			
+				
+				'pageSize'?: number| undefined | null
+		}
+
+		interface EventPagingSchema extends SpruceSchema.Schema {
+			id: 'eventPaging',
+			version: 'v2021_09_13',
+			namespace: 'SpruceEventUtils',
+			name: 'Event Paging',
+			    fields: {
+			            /** . */
+			            'pageSize': {
+			                type: 'number',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type EventPagingEntity = SchemaEntity<SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListLocationsEmitPayload {
+			
+				
+				'includePrivateLocations'?: boolean| undefined | null
+				
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
+		}
+
+		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'listLocationsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'includePrivateLocations': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'paging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingSchema,}
+			            },
+			    }
+		}
+
+		type ListLocationsEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema>
 
 	}
 
@@ -3299,6 +3334,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'shouldOnlyShowMine'?: boolean| undefined | null
 				
 				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
+				
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
 		}
 
 		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3316,6 +3353,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'shouldIncludePrivateOrganizations': {
 			                type: 'boolean',
 			                options: undefined
+			            },
+			            /** . */
+			            'paging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingSchema,}
 			            },
 			    }
 		}
