@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v3.0.4...v3.1.0) (2022-03-03)
+
+
+### Features
+
+* new limiting in orgs and locations! ([9918456](https://github.com/sprucelabsai/mercury-core-events/commit/9918456))
+
 ## [3.0.4](https://github.com/sprucelabsai/mercury-core-events/compare/v3.0.3...v3.0.4) (2022-03-03)
 
 ## [3.0.3](https://github.com/sprucelabsai/mercury-core-events/compare/v3.0.2...v3.0.3) (2022-03-03)
