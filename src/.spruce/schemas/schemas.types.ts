@@ -3735,7 +3735,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListPermissionContractsResponsePayload {
+		interface ListPermissionContractsPermissionContracts {
 			
 				
 				'id': string
@@ -3743,14 +3743,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'skillId'?: string| undefined | null
 				
 				'contract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
-				
-				'permissionContracts': SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsResponsePayload[]
-				
-				'count': number
 		}
 
-		interface ListPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'listPermissionContractsResponsePayload',
+		interface ListPermissionContractsPermissionContractsSchema extends SpruceSchema.Schema {
+			id: 'listPermissionContractsPermissionContracts',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -3772,13 +3768,38 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
 			            },
+			    }
+		}
+
+		type ListPermissionContractsPermissionContractsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsPermissionContractsSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListPermissionContractsResponsePayload {
+			
+				
+				'permissionContracts': SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsPermissionContracts[]
+				
+				'count': number
+		}
+
+		interface ListPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'listPermissionContractsResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
 			            /** . */
 			            'permissionContracts': {
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
 			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsResponsePayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsPermissionContractsSchema,}
 			            },
 			            /** . */
 			            'count': {
