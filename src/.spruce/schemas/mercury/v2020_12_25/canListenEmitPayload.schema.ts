@@ -12,7 +12,7 @@ const canListenEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CanListenEmi
 	            /** . */
 	            'authorizerStatuses': {
 	                type: 'select',
-	                options: {choices: [{"label":"Clocked in","value":"clockedIn"},{"label":"Clocked out","value":"clockedOut"},{"label":"On premise","value":"onPrem"},{"label":"Off premise","value":"offPrem"}],}
+	                options: {choices: [{"label":"Clocked in","value":"clockedIn"},{"label":"Clocked out","value":"clockedOut"},{"label":"On premises","value":"onPrem"},{"label":"Off premises","value":"offPrem"}],}
 	            },
 	            /** . */
 	            'fullyQualifiedEventName': {
