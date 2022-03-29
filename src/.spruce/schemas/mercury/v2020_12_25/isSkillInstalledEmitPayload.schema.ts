@@ -11,8 +11,12 @@ const isSkillInstalledEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.IsSki
 	    fields: {
 	            /** . */
 	            'skillId': {
-	                type: 'text',
-	                isRequired: true,
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
+	            'namespace': {
+	                type: 'id',
 	                options: undefined
 	            },
 	    }

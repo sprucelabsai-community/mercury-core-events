@@ -26,7 +26,6 @@ const isSkillInstalledEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: isSkillInstalledEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }

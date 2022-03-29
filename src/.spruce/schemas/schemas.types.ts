@@ -2858,7 +2858,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface IsSkillInstalledEmitPayload {
 			
 				
-				'skillId': string
+				'skillId'?: string| undefined | null
+				
+				'namespace'?: string| undefined | null
 		}
 
 		interface IsSkillInstalledEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2869,8 +2871,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'skillId': {
-			                type: 'text',
-			                isRequired: true,
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'namespace': {
+			                type: 'id',
 			                options: undefined
 			            },
 			    }
@@ -2891,7 +2897,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledTargetPayload
 				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload| undefined | null
 		}
 
 		interface IsSkillInstalledEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -2915,7 +2921,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'payload': {
 			                type: 'schema',
-			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayloadSchema,}
 			            },
 			    }
