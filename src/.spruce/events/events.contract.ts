@@ -52,6 +52,9 @@ import mercuryGetLocationEventContract_v2020_12_25, {
 import mercuryGetOrganizationEventContract_v2020_12_25, {
 	GetOrganizationEventContract as MercuryGetOrganizationEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getOrganization.v2020_12_25.contract'
+import mercuryGetPermissionContractEventContract_v2020_12_25, {
+	GetPermissionContractEventContract as MercuryGetPermissionContractEventContract_v2020_12_25,
+} from '#spruce/events/mercury/getPermissionContract.v2020_12_25.contract'
 import mercuryGetPersonEventContract_v2020_12_25, {
 	GetPersonEventContract as MercuryGetPersonEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getPerson.v2020_12_25.contract'
@@ -157,6 +160,9 @@ import mercuryUpdatePersonEventContract_v2020_12_25, {
 import mercuryUpdateRoleEventContract_v2020_12_25, {
 	UpdateRoleEventContract as MercuryUpdateRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/updateRole.v2020_12_25.contract'
+import mercuryUpsertPermissionContractEventContract_v2020_12_25, {
+	UpsertPermissionContractEventContract as MercuryUpsertPermissionContractEventContract_v2020_12_25,
+} from '#spruce/events/mercury/upsertPermissionContract.v2020_12_25.contract'
 import mercuryVoteForFeatureEventContract_v2020_12_25, {
 	VoteForFeatureEventContract as MercuryVoteForFeatureEventContract_v2020_12_25,
 } from '#spruce/events/mercury/voteForFeature.v2020_12_25.contract'
@@ -183,6 +189,7 @@ export default [
 	mercuryGetEventContractsEventContract_v2020_12_25,
 	mercuryGetLocationEventContract_v2020_12_25,
 	mercuryGetOrganizationEventContract_v2020_12_25,
+	mercuryGetPermissionContractEventContract_v2020_12_25,
 	mercuryGetPersonEventContract_v2020_12_25,
 	mercuryGetRoleEventContract_v2020_12_25,
 	mercuryGetSkillEventContract_v2020_12_25,
@@ -218,6 +225,7 @@ export default [
 	mercuryUpdateOrganizationEventContract_v2020_12_25,
 	mercuryUpdatePersonEventContract_v2020_12_25,
 	mercuryUpdateRoleEventContract_v2020_12_25,
+	mercuryUpsertPermissionContractEventContract_v2020_12_25,
 	mercuryVoteForFeatureEventContract_v2020_12_25,
 	mercuryWhoamiEventContract_v2020_12_25,
 ]
@@ -259,6 +267,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'get-location::v2020_12_25': MercuryGetLocationEventContract_v2020_12_25['eventSignatures']['get-location::v2020_12_25']
 
 		'get-organization::v2020_12_25': MercuryGetOrganizationEventContract_v2020_12_25['eventSignatures']['get-organization::v2020_12_25']
+
+		'get-permission-contract::v2020_12_25': MercuryGetPermissionContractEventContract_v2020_12_25['eventSignatures']['get-permission-contract::v2020_12_25']
 
 		'get-person::v2020_12_25': MercuryGetPersonEventContract_v2020_12_25['eventSignatures']['get-person::v2020_12_25']
 
@@ -329,6 +339,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'update-person::v2020_12_25': MercuryUpdatePersonEventContract_v2020_12_25['eventSignatures']['update-person::v2020_12_25']
 
 		'update-role::v2020_12_25': MercuryUpdateRoleEventContract_v2020_12_25['eventSignatures']['update-role::v2020_12_25']
+
+		'upsert-permission-contract::v2020_12_25': MercuryUpsertPermissionContractEventContract_v2020_12_25['eventSignatures']['upsert-permission-contract::v2020_12_25']
 
 		'vote-for-feature::v2020_12_25': MercuryVoteForFeatureEventContract_v2020_12_25['eventSignatures']['vote-for-feature::v2020_12_25']
 
