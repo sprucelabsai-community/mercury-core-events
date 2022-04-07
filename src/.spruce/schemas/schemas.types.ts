@@ -2327,6 +2327,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'permissionContract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
+				
+				'skillId'?: string| undefined | null
 		}
 
 		interface GetPermissionContractResponsePayloadSchema extends SpruceSchema.Schema {
@@ -2340,6 +2342,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema,}
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                options: undefined
 			            },
 			    }
 		}

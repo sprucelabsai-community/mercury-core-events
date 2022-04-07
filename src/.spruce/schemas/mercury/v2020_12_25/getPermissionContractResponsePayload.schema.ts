@@ -15,6 +15,11 @@ const getPermissionContractResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12
 	                isRequired: true,
 	                options: {schema: permissionContractSchema_v2020_12_25,}
 	            },
+	            /** . */
+	            'skillId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 
