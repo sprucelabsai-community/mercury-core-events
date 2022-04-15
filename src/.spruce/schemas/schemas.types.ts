@@ -2248,7 +2248,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'organizationId': string
 				
-				'permissionContractId'?: string| undefined | null
+				'permissionContractId': string
 				
 				'roleId'?: string| undefined | null
 		}
@@ -2268,6 +2268,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'permissionContractId': {
 			                type: 'id',
+			                isRequired: true,
 			                options: undefined
 			            },
 			            /** . */
