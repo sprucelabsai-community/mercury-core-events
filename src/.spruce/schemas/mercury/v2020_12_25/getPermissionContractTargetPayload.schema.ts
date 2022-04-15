@@ -18,6 +18,7 @@ const getPermissionContractTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_2
 	            /** . */
 	            'permissionContractId': {
 	                type: 'id',
+	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
