@@ -3317,8 +3317,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'includePrivateLocations'?: boolean| undefined | null
 				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
-				
 				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
 		}
 
@@ -3330,11 +3328,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'includePrivateLocations': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'shouldOnlyShowWhereIAmEmployed': {
 			                type: 'boolean',
 			                options: undefined
 			            },
@@ -3434,8 +3427,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'shouldOnlyShowMine'?: boolean| undefined | null
 				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
-				
 				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
 				
 				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
@@ -3449,11 +3440,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'shouldOnlyShowMine': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'shouldOnlyShowWhereIAmEmployed': {
 			                type: 'boolean',
 			                options: undefined
 			            },
