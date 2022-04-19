@@ -15,6 +15,11 @@ const listLocationsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLoca
 	                options: undefined
 	            },
 	            /** . */
+	            'shouldOnlyShowWhereIAmEmployed': {
+	                type: 'boolean',
+	                options: undefined
+	            },
+	            /** . */
 	            'paging': {
 	                type: 'schema',
 	                options: {schema: eventPagingSchema_v2021_09_13,}
