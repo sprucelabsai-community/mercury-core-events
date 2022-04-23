@@ -3315,8 +3315,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListLocationsEmitPayload {
 			
 				
-				'includePrivateLocations'?: boolean| undefined | null
-				
 				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
 				
 				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
@@ -3328,11 +3326,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** . */
-			            'includePrivateLocations': {
-			                type: 'boolean',
-			                options: undefined
-			            },
 			            /** . */
 			            'shouldOnlyShowWhereIAmEmployed': {
 			                type: 'boolean',
