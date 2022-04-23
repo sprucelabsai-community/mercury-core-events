@@ -10,11 +10,6 @@ const listLocationsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLoca
 	name: '',
 	    fields: {
 	            /** . */
-	            'includePrivateLocations': {
-	                type: 'boolean',
-	                options: undefined
-	            },
-	            /** . */
 	            'shouldOnlyShowWhereIAmEmployed': {
 	                type: 'boolean',
 	                options: undefined
