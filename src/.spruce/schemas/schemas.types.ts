@@ -2053,14 +2053,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface GetLocationTargetPayload {
+		interface GetLocationTarget {
 			
 				
 				'locationId': string
 		}
 
-		interface GetLocationTargetPayloadSchema extends SpruceSchema.Schema {
-			id: 'getLocationTargetPayload',
+		interface GetLocationTargetSchema extends SpruceSchema.Schema {
+			id: 'getLocationTarget',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -2074,7 +2074,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type GetLocationTargetPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetLocationTargetPayloadSchema>
+		type GetLocationTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetLocationTargetSchema>
 
 	}
 
@@ -2087,7 +2087,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target': SpruceSchemas.Mercury.v2020_12_25.GetLocationTargetPayload
+				'target': SpruceSchemas.Mercury.v2020_12_25.GetLocationTarget
 		}
 
 		interface GetLocationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -2106,7 +2106,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'target': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetLocationTargetPayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetLocationTargetSchema,}
 			            },
 			    }
 		}
