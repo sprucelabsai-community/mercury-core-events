@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const getPersonTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonTargetPayloadSchema  = {
-	id: 'getPersonTargetPayload',
+const getPersonEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitTargetSchema  = {
+	id: 'getPersonEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -22,6 +22,6 @@ const getPersonTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonT
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(getPersonTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(getPersonEmitTargetSchema)
 
-export default getPersonTargetPayloadSchema
+export default getPersonEmitTargetSchema

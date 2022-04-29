@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const deleteOrganizationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationTargetPayloadSchema  = {
-	id: 'deleteOrganizationTargetPayload',
+const deleteOrganizationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationEmitTargetSchema  = {
+	id: 'deleteOrganizationEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -18,6 +18,6 @@ const deleteOrganizationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.D
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(deleteOrganizationTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(deleteOrganizationEmitTargetSchema)
 
-export default deleteOrganizationTargetPayloadSchema
+export default deleteOrganizationEmitTargetSchema

@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import deleteRoleTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/deleteRoleTargetPayload.schema'
+import deleteRoleEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/deleteRoleEmitTarget.schema'
 
 const deleteRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteRoleEmitTargetAndPayloadSchema  = {
 	id: 'deleteRoleEmitTargetAndPayload',
@@ -20,7 +20,7 @@ const deleteRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.De
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: deleteRoleTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: deleteRoleEmitTargetSchema_v2020_12_25,}
 	            },
 	    }
 }

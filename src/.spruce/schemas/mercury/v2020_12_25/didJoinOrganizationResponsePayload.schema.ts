@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import messagiingSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/messagiing.schema'
+import messagingSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/messaging.schema'
 
 const didJoinOrganizationResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationResponsePayloadSchema  = {
 	id: 'didJoinOrganizationResponsePayload',
@@ -12,7 +12,7 @@ const didJoinOrganizationResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_2
 	            /** . */
 	            'messaging': {
 	                type: 'schema',
-	                options: {schema: messagiingSchema_v2020_12_25,}
+	                options: {schema: messagingSchema_v2020_12_25,}
 	            },
 	    }
 }

@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import isSkillInstalledTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/isSkillInstalledTargetPayload.schema'
+import isSkillInstalledEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/isSkillInstalledEmitTarget.schema'
 import isSkillInstalledEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/isSkillInstalledEmitPayload.schema'
 
 const isSkillInstalledEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetAndPayloadSchema  = {
@@ -21,7 +21,7 @@ const isSkillInstalledEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: isSkillInstalledTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: isSkillInstalledEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {

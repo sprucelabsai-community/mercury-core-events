@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const getPermissionContractTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetPermissionContractTargetPayloadSchema  = {
-	id: 'getPermissionContractTargetPayload',
+const getPermissionContractEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.GetPermissionContractEmitTargetSchema  = {
+	id: 'getPermissionContractEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -29,6 +29,6 @@ const getPermissionContractTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_2
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(getPermissionContractTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(getPermissionContractEmitTargetSchema)
 
-export default getPermissionContractTargetPayloadSchema
+export default getPermissionContractEmitTargetSchema

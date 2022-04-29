@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import deleteOrganizationTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/deleteOrganizationTargetPayload.schema'
+import deleteOrganizationEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/deleteOrganizationEmitTarget.schema'
 
 const deleteOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationEmitTargetAndPayloadSchema  = {
 	id: 'deleteOrganizationEmitTargetAndPayload',
@@ -20,7 +20,7 @@ const deleteOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: deleteOrganizationTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: deleteOrganizationEmitTargetSchema_v2020_12_25,}
 	            },
 	    }
 }

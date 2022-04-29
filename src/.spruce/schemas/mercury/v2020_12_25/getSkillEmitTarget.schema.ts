@@ -3,14 +3,14 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const isSkillInstalledTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledTargetPayloadSchema  = {
-	id: 'isSkillInstalledTargetPayload',
+const getSkillEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.GetSkillEmitTargetSchema  = {
+	id: 'getSkillEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . */
-	            'organizationId': {
+	            'skillId': {
 	                type: 'id',
 	                isRequired: true,
 	                options: undefined
@@ -18,6 +18,6 @@ const isSkillInstalledTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.IsS
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(isSkillInstalledTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(getSkillEmitTargetSchema)
 
-export default isSkillInstalledTargetPayloadSchema
+export default getSkillEmitTargetSchema

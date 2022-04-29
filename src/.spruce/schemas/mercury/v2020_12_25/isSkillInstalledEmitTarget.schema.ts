@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const createLocationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateLocationTargetPayloadSchema  = {
-	id: 'createLocationTargetPayload',
+const isSkillInstalledEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetSchema  = {
+	id: 'isSkillInstalledEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -18,6 +18,6 @@ const createLocationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Creat
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(createLocationTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(isSkillInstalledEmitTargetSchema)
 
-export default createLocationTargetPayloadSchema
+export default isSkillInstalledEmitTargetSchema

@@ -10,6 +10,12 @@ const didJoinOrganizationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Di
 	name: '',
 	    fields: {
 	            /** . */
+	            'personId': {
+	                type: 'id',
+	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
 	            'roleId': {
 	                type: 'id',
 	                isRequired: true,
