@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import getSkillTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getSkillTargetPayload.schema'
+import getSkillEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getSkillEmitTarget.schema'
 import getSkillEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getSkillEmitPayload.schema'
 
 const getSkillEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetSkillEmitTargetAndPayloadSchema  = {
@@ -21,7 +21,7 @@ const getSkillEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetS
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: getSkillTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: getSkillEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {

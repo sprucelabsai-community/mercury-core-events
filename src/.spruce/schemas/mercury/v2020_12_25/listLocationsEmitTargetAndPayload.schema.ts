@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import listLocationsTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listLocationsTargetPayload.schema'
+import listLocationsEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listLocationsEmitTarget.schema'
 import listLocationsEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listLocationsEmitPayload.schema'
 
 const listLocationsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetAndPayloadSchema  = {
@@ -21,7 +21,7 @@ const listLocationsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: listLocationsTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: listLocationsEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {

@@ -3,14 +3,14 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const deleteLocationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteLocationTargetPayloadSchema  = {
-	id: 'deleteLocationTargetPayload',
+const createLocationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.CreateLocationEmitTargetSchema  = {
+	id: 'createLocationEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . */
-	            'locationId': {
+	            'organizationId': {
 	                type: 'id',
 	                isRequired: true,
 	                options: undefined
@@ -18,6 +18,6 @@ const deleteLocationTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Delet
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(deleteLocationTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(createLocationEmitTargetSchema)
 
-export default deleteLocationTargetPayloadSchema
+export default createLocationEmitTargetSchema

@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const listLocationsTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsTargetPayloadSchema  = {
-	id: 'listLocationsTargetPayload',
+const createRoleEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.CreateRoleEmitTargetSchema  = {
+	id: 'createRoleEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -18,6 +18,6 @@ const listLocationsTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLo
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(listLocationsTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(createRoleEmitTargetSchema)
 
-export default listLocationsTargetPayloadSchema
+export default createRoleEmitTargetSchema

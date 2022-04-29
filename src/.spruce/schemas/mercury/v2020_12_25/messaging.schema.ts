@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const messagiingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagiingSchema  = {
-	id: 'messagiing',
+const messagingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagingSchema  = {
+	id: 'messaging',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -12,11 +12,13 @@ const messagiingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagiingSchema  = {
 	            /** . */
 	            'nextINeedYouTo': {
 	                type: 'text',
+	                isArray: true,
 	                options: undefined
 	            },
 	            /** . */
 	            'youShouldKnowThat': {
 	                type: 'text',
+	                isArray: true,
 	                options: undefined
 	            },
 	            /** . */
@@ -28,6 +30,6 @@ const messagiingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagiingSchema  = {
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(messagiingSchema)
+SchemaRegistry.getInstance().trackSchema(messagingSchema)
 
-export default messagiingSchema
+export default messagingSchema

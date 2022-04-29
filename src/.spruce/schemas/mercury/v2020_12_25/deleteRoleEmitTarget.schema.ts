@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const deleteRoleTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteRoleTargetPayloadSchema  = {
-	id: 'deleteRoleTargetPayload',
+const deleteRoleEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteRoleEmitTargetSchema  = {
+	id: 'deleteRoleEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -24,6 +24,6 @@ const deleteRoleTargetPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteRol
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(deleteRoleTargetPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(deleteRoleEmitTargetSchema)
 
-export default deleteRoleTargetPayloadSchema
+export default deleteRoleEmitTargetSchema

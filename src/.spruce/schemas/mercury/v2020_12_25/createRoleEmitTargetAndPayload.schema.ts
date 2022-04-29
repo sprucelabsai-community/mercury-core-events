@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import createRoleTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/createRoleTargetPayload.schema'
+import createRoleEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/createRoleEmitTarget.schema'
 import createRoleEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/createRoleEmitPayload.schema'
 
 const createRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateRoleEmitTargetAndPayloadSchema  = {
@@ -21,7 +21,7 @@ const createRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Cr
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: createRoleTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: createRoleEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {

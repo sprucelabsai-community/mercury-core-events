@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
-import upsertPermissionContractTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/upsertPermissionContractTargetPayload.schema'
+import upsertPermissionContractEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/upsertPermissionContractEmitTarget.schema'
 import upsertPermissionContractsEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/upsertPermissionContractsEmitPayload.schema'
 
 const upsertPermissionContractEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpsertPermissionContractEmitTargetAndPayloadSchema  = {
@@ -21,7 +21,7 @@ const upsertPermissionContractEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: upsertPermissionContractTargetPayloadSchema_v2020_12_25,}
+	                options: {schema: upsertPermissionContractEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
