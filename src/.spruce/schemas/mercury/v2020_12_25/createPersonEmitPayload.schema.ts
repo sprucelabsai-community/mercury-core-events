@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import profileImageSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/profileImage.schema'
+
 
 const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayloadSchema  = {
 	id: 'createPersonEmitPayload',
@@ -23,11 +23,11 @@ const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePer
 	                isPrivate: true,
 	                options: undefined
 	            },
-	            /** Profile photos. */
-	            'profileImages': {
-	                label: 'Profile photos',
-	                type: 'schema',
-	                options: {schema: profileImageSchema_v2020_07_22,}
+	            /** Avatar src. */
+	            'avatar': {
+	                label: 'Avatar src',
+	                type: 'image',
+	                options: {requiredSizes: ["*"],}
 	            },
 	            /** . */
 	            'dateCreated': {
