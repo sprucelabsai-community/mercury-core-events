@@ -1,0 +1,25 @@
+import { SchemaRegistry } from '@sprucelabs/schema'
+import { SpruceSchemas } from '../../schemas.types'
+
+import getFeedPredicateSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getFeedPredicate.schema'
+
+const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayloadSchema  = {
+	id: 'getFeedEmitPayload',
+	version: 'v2020_12_25',
+	namespace: 'Mercury',
+	name: '',
+	    fields: {
+	            /** . */
+	            'predicates': {
+	                type: 'schema',
+	                isRequired: true,
+	                isArray: true,
+	                minArrayLength: 0,
+	                options: {schema: getFeedPredicateSchema_v2020_12_25,}
+	            },
+	    }
+}
+
+SchemaRegistry.getInstance().trackSchema(getFeedEmitPayloadSchema)
+
+export default getFeedEmitPayloadSchema

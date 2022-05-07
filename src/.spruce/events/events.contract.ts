@@ -49,6 +49,9 @@ import mercuryGetConversationTopicsEventContract_v2020_12_25, {
 import mercuryGetEventContractsEventContract_v2020_12_25, {
 	GetEventContractsEventContract as MercuryGetEventContractsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getEventContracts.v2020_12_25.contract'
+import mercuryGetFeedEventContract_v2020_12_25, {
+	GetFeedEventContract as MercuryGetFeedEventContract_v2020_12_25,
+} from '#spruce/events/mercury/getFeed.v2020_12_25.contract'
 import mercuryGetLocationEventContract_v2020_12_25, {
 	GetLocationEventContract as MercuryGetLocationEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getLocation.v2020_12_25.contract'
@@ -191,6 +194,7 @@ export default [
 	mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
 	mercuryGetConversationTopicsEventContract_v2020_12_25,
 	mercuryGetEventContractsEventContract_v2020_12_25,
+	mercuryGetFeedEventContract_v2020_12_25,
 	mercuryGetLocationEventContract_v2020_12_25,
 	mercuryGetOrganizationEventContract_v2020_12_25,
 	mercuryGetPermissionContractEventContract_v2020_12_25,
@@ -269,6 +273,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'get-conversation-topics::v2020_12_25': MercuryGetConversationTopicsEventContract_v2020_12_25['eventSignatures']['get-conversation-topics::v2020_12_25']
 
 		'get-event-contracts::v2020_12_25': MercuryGetEventContractsEventContract_v2020_12_25['eventSignatures']['get-event-contracts::v2020_12_25']
+
+		'get-feed::v2020_12_25': MercuryGetFeedEventContract_v2020_12_25['eventSignatures']['get-feed::v2020_12_25']
 
 		'get-location::v2020_12_25': MercuryGetLocationEventContract_v2020_12_25['eventSignatures']['get-location::v2020_12_25']
 
