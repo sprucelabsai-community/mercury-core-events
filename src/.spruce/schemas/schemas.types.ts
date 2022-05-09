@@ -3824,7 +3824,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
 				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
 		}
 
 		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3841,7 +3841,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'paging': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingSchema,}
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
 			            },
 			    }
 		}
@@ -3938,7 +3938,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
 				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPaging| undefined | null
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
 		}
 
 		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3965,7 +3965,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'paging': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingSchema,}
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
 			            },
 			    }
 		}
