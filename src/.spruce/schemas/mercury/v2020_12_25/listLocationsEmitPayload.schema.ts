@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import eventPagingRequestSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventPagingRequest.schema'
+import eventPagingSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventPaging.schema'
 
 const listLocationsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema  = {
 	id: 'listLocationsEmitPayload',
@@ -17,7 +17,7 @@ const listLocationsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLoca
 	            /** . */
 	            'paging': {
 	                type: 'schema',
-	                options: {schema: eventPagingRequestSchema_v2021_09_13,}
+	                options: {schema: eventPagingSchema_v2021_09_13,}
 	            },
 	    }
 }
