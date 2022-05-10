@@ -2361,6 +2361,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedEmitPayload {
 			
 				
+				'next'?: string| undefined | null
+				
+				'previous'?: string| undefined | null
+				
 				'predicates': SpruceSchemas.Mercury.v2020_12_25.GetFeedPredicate[]
 		}
 
@@ -2370,6 +2374,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
+			            /** . */
+			            'next': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'previous': {
+			                type: 'id',
+			                options: undefined
+			            },
 			            /** . */
 			            'predicates': {
 			                type: 'schema',
