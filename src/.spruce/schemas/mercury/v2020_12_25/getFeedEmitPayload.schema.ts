@@ -10,6 +10,16 @@ const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPay
 	name: '',
 	    fields: {
 	            /** . */
+	            'next': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
+	            'previous': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
 	            'predicates': {
 	                type: 'schema',
 	                isRequired: true,
