@@ -1,6 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
+import eventPagingRequestSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventPagingRequest.schema'
 import feedPredicateSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feedPredicate.schema'
 
 const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayloadSchema  = {
@@ -10,14 +11,9 @@ const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPay
 	name: '',
 	    fields: {
 	            /** . */
-	            'next': {
-	                type: 'id',
-	                options: undefined
-	            },
-	            /** . */
-	            'previous': {
-	                type: 'id',
-	                options: undefined
+	            'paging': {
+	                type: 'schema',
+	                options: {schema: eventPagingRequestSchema_v2021_09_13,}
 	            },
 	            /** . */
 	            'predicates': {
