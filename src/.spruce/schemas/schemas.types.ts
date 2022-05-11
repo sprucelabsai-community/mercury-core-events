@@ -2403,34 +2403,34 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface GetFeedPredicate {
+		interface FeedPredicate {
 			
 				
-				'target'?: (Record<string, any>)| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
 				
-				'source'?: (Record<string, any>)| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 		}
 
-		interface GetFeedPredicateSchema extends SpruceSchema.Schema {
-			id: 'getFeedPredicate',
+		interface FeedPredicateSchema extends SpruceSchema.Schema {
+			id: 'feedPredicate',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
 			            /** . */
 			            'target': {
-			                type: 'raw',
-			                options: {valueType: `Record<string, any>`,}
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
 			            },
 			            /** . */
 			            'source': {
-			                type: 'raw',
-			                options: {valueType: `Record<string, any>`,}
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
 			            },
 			    }
 		}
 
-		type GetFeedPredicateEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedPredicateSchema>
+		type FeedPredicateEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedPredicateSchema>
 
 	}
 
@@ -2445,7 +2445,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'previous'?: string| undefined | null
 				
-				'predicates': SpruceSchemas.Mercury.v2020_12_25.GetFeedPredicate[]
+				'predicates': SpruceSchemas.Mercury.v2020_12_25.FeedPredicate[]
 		}
 
 		interface GetFeedEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2470,7 +2470,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                isArray: true,
 			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetFeedPredicateSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FeedPredicateSchema,}
 			            },
 			    }
 		}

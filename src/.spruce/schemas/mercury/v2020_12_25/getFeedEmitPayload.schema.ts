@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import getFeedPredicateSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getFeedPredicate.schema'
+import feedPredicateSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feedPredicate.schema'
 
 const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayloadSchema  = {
 	id: 'getFeedEmitPayload',
@@ -25,7 +25,7 @@ const getFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPay
 	                isRequired: true,
 	                isArray: true,
 	                minArrayLength: 0,
-	                options: {schema: getFeedPredicateSchema_v2020_12_25,}
+	                options: {schema: feedPredicateSchema_v2020_12_25,}
 	            },
 	    }
 }
