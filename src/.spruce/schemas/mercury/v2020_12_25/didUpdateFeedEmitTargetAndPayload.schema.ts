@@ -3,6 +3,7 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
 import eventTargetSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventTarget.schema'
+import didUpdateFeedEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/didUpdateFeedEmitPayload.schema'
 
 const didUpdateFeedEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetAndPayloadSchema  = {
 	id: 'didUpdateFeedEmitTargetAndPayload',
@@ -20,6 +21,12 @@ const didUpdateFeedEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	            'target': {
 	                type: 'schema',
 	                options: {schema: eventTargetSchema_v2021_09_13,}
+	            },
+	            /** . */
+	            'payload': {
+	                type: 'schema',
+	                isRequired: true,
+	                options: {schema: didUpdateFeedEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }
