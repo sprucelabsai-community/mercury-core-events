@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const messagingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagingSchema  = {
-	id: 'messaging',
+const messageTemplateAddonsSchema: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema  = {
+	id: 'messageTemplateAddons',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -30,6 +30,6 @@ const messagingSchema: SpruceSchemas.Mercury.v2020_12_25.MessagingSchema  = {
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(messagingSchema)
+SchemaRegistry.getInstance().trackSchema(messageTemplateAddonsSchema)
 
-export default messagingSchema
+export default messageTemplateAddonsSchema

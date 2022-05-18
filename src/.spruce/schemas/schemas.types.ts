@@ -276,7 +276,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface Messaging {
+		interface MessageTemplateAddons {
 			
 				
 				'nextINeedYouTo'?: string[]| undefined | null
@@ -286,8 +286,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'links'?: string[]| undefined | null
 		}
 
-		interface MessagingSchema extends SpruceSchema.Schema {
-			id: 'messaging',
+		interface MessageTemplateAddonsSchema extends SpruceSchema.Schema {
+			id: 'messageTemplateAddons',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -313,7 +313,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type MessagingEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.MessagingSchema>
+		type MessageTemplateAddonsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema>
 
 	}
 
@@ -324,7 +324,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidJoinOrganizationResponsePayload {
 			
 				
-				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.Messaging| undefined | null
+				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddons| undefined | null
 		}
 
 		interface DidJoinOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
@@ -336,7 +336,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'messaging': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.MessagingSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema,}
 			            },
 			    }
 		}
