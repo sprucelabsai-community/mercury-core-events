@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.45...v4.1.0) (2022-05-18)
+
+
+### Features
+
+* messaging export ([fe7b6b8](https://github.com/sprucelabsai/mercury-core-events/commit/fe7b6b8))
+
 ## [4.0.45](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.44...v4.0.45) (2022-05-18)
 
 ## [4.0.44](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.43...v4.0.44) (2022-05-18)
