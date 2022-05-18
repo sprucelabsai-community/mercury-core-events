@@ -1,3 +1,71 @@
+## [4.0.45](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.44...v4.0.45) (2022-05-18)
+
+## [4.0.44](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.43...v4.0.44) (2022-05-18)
+
+## [4.0.43](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.42...v4.0.43) (2022-05-17)
+
+## [4.0.42](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.41...v4.0.42) (2022-05-17)
+
+## [4.0.41](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.40...v4.0.41) (2022-05-17)
+
+## [4.0.40](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.39...v4.0.40) (2022-05-17)
+
+## [4.0.39](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.38...v4.0.39) (2022-05-17)
+
+## [4.0.38](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.37...v4.0.38) (2022-05-16)
+
+## [4.0.37](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.36...v4.0.37) (2022-05-16)
+
+## [4.0.36](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.35...v4.0.36) (2022-05-16)
+
+## [4.0.35](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.34...v4.0.35) (2022-05-16)
+
+## [4.0.34](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.33...v4.0.34) (2022-05-16)
+
+## [4.0.33](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.32...v4.0.33) (2022-05-15)
+
+## [4.0.32](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.31...v4.0.32) (2022-05-15)
+
+## [4.0.31](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.30...v4.0.31) (2022-05-15)
+
+## [4.0.30](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.29...v4.0.30) (2022-05-15)
+
+## [4.0.29](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.28...v4.0.29) (2022-05-15)
+
+## [4.0.28](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.27...v4.0.28) (2022-05-14)
+
+## [4.0.27](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.26...v4.0.27) (2022-05-14)
+
+## [4.0.26](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.25...v4.0.26) (2022-05-14)
+
+## [4.0.25](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.24...v4.0.25) (2022-05-13)
+
+## [4.0.24](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.23...v4.0.24) (2022-05-13)
+
+## [4.0.23](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.22...v4.0.23) (2022-05-13)
+
+## [4.0.22](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.21...v4.0.22) (2022-05-13)
+
+## [4.0.21](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.20...v4.0.21) (2022-05-13)
+
+## [4.0.20](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.19...v4.0.20) (2022-05-12)
+
+## [4.0.19](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.18...v4.0.19) (2022-05-12)
+
+## [4.0.18](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.17...v4.0.18) (2022-05-12)
+
+## [4.0.17](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.16...v4.0.17) (2022-05-12)
+
+## [4.0.16](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.15...v4.0.16) (2022-05-11)
+
+## [4.0.15](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.14...v4.0.15) (2022-05-11)
+
+## [4.0.14](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.13...v4.0.14) (2022-05-11)
+
+## [4.0.13](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.12...v4.0.13) (2022-05-11)
+
+## [4.0.12](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.11...v4.0.12) (2022-05-11)
+
 ## [4.0.11](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.10...v4.0.11) (2022-05-11)
 
 ## [4.0.10](https://github.com/sprucelabsai/mercury-core-events/compare/v4.0.9...v4.0.10) (2022-05-10)
