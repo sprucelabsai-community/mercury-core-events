@@ -1,3 +1,10 @@
+# [6.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v5.0.1...v6.0.0) (2022-05-24)
+
+
+### Breaking Changes
+
+* upgrade ([2f25ecd](https://github.com/sprucelabsai/mercury-core-events/commit/2f25ecd))
+
 ## [5.0.1](https://github.com/sprucelabsai/mercury-core-events/compare/v5.0.0...v5.0.1) (2022-05-24)
 
 # [5.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v4.1.20...v5.0.0) (2022-05-24)
