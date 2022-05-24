@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-
+import linkSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/link.schema'
 
 const messageTemplateAddonsSchema: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema  = {
 	id: 'messageTemplateAddons',
@@ -23,9 +23,10 @@ const messageTemplateAddonsSchema: SpruceSchemas.Mercury.v2020_12_25.MessageTemp
 	            },
 	            /** . */
 	            'links': {
-	                type: 'text',
+	                type: 'schema',
 	                isArray: true,
-	                options: undefined
+	                minArrayLength: 0,
+	                options: {schema: linkSchema_v2020_07_22,}
 	            },
 	    }
 }
