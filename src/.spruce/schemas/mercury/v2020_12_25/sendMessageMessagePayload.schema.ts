@@ -2,7 +2,7 @@ import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
 import linkSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/link.schema'
-import choicesSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/choices.schema'
+import choiceSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/choice.schema'
 
 const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageMessagePayloadSchema  = {
 	id: 'sendMessageMessagePayload',
@@ -44,7 +44,7 @@ const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMes
 	            'choices': {
 	                type: 'schema',
 	                isArray: true,
-	                options: {schema: choicesSchema_v2020_07_22,}
+	                options: {schema: choiceSchema_v2020_07_22,}
 	            },
 	    }
 }
