@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v6.0.4...v6.1.0) (2022-05-25)
+
+
+### Features
+
+* get resolve permissions contract ([49aaa8c](https://github.com/sprucelabsai/mercury-core-events/commit/49aaa8c))
+
 ## [6.0.4](https://github.com/sprucelabsai/mercury-core-events/compare/v6.0.3...v6.0.4) (2022-05-25)
 
 ## [6.0.3](https://github.com/sprucelabsai/mercury-core-events/compare/v6.0.2...v6.0.3) (2022-05-25)
