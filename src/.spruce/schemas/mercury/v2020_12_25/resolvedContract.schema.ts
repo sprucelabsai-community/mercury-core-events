@@ -18,6 +18,7 @@ const resolvedContractSchema: SpruceSchemas.Mercury.v2020_12_25.ResolvedContract
 	            /** . */
 	            'permissions': {
 	                type: 'schema',
+	                isRequired: true,
 	                isArray: true,
 	                minArrayLength: 0,
 	                options: {schema: resolvedContractPermissionSchema_v2020_12_25,}
