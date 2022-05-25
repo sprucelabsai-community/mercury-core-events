@@ -67,6 +67,9 @@ import mercuryGetPermissionContractEventContract_v2020_12_25, {
 import mercuryGetPersonEventContract_v2020_12_25, {
 	GetPersonEventContract as MercuryGetPersonEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getPerson.v2020_12_25.contract'
+import mercuryGetResolvedPermissionsContractEventContract_v2020_12_25, {
+	GetResolvedPermissionsContractEventContract as MercuryGetResolvedPermissionsContractEventContract_v2020_12_25,
+} from '#spruce/events/mercury/getResolvedPermissionsContract.v2020_12_25.contract'
 import mercuryGetRoleEventContract_v2020_12_25, {
 	GetRoleEventContract as MercuryGetRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getRole.v2020_12_25.contract'
@@ -203,6 +206,7 @@ export default [
 	mercuryGetOrganizationEventContract_v2020_12_25,
 	mercuryGetPermissionContractEventContract_v2020_12_25,
 	mercuryGetPersonEventContract_v2020_12_25,
+	mercuryGetResolvedPermissionsContractEventContract_v2020_12_25,
 	mercuryGetRoleEventContract_v2020_12_25,
 	mercuryGetSkillEventContract_v2020_12_25,
 	mercuryHealthEventContract_v2020_12_25,
@@ -289,6 +293,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'get-permission-contract::v2020_12_25': MercuryGetPermissionContractEventContract_v2020_12_25['eventSignatures']['get-permission-contract::v2020_12_25']
 
 		'get-person::v2020_12_25': MercuryGetPersonEventContract_v2020_12_25['eventSignatures']['get-person::v2020_12_25']
+
+		'get-resolved-permissions-contract::v2020_12_25': MercuryGetResolvedPermissionsContractEventContract_v2020_12_25['eventSignatures']['get-resolved-permissions-contract::v2020_12_25']
 
 		'get-role::v2020_12_25': MercuryGetRoleEventContract_v2020_12_25['eventSignatures']['get-role::v2020_12_25']
 
