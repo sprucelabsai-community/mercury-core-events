@@ -3187,7 +3187,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'contractId': string
 				
-				'permissions'?: SpruceSchemas.Mercury.v2020_12_25.ResolvedContractPermission[]| undefined | null
+				'permissions': SpruceSchemas.Mercury.v2020_12_25.ResolvedContractPermission[]
 		}
 
 		interface ResolvedContractSchema extends SpruceSchema.Schema {
@@ -3205,6 +3205,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'permissions': {
 			                type: 'schema',
+			                isRequired: true,
 			                isArray: true,
 			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ResolvedContractPermissionSchema,}
