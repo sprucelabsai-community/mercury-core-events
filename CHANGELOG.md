@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/sprucelabsai/mercury-core-events/compare/v6.1.13...v6.2.0) (2022-05-29)
+
+
+### Features
+
+* did update person and did singup events ([3c3d506](https://github.com/sprucelabsai/mercury-core-events/commit/3c3d506))
+
 ## [6.1.13](https://github.com/sprucelabsai/mercury-core-events/compare/v6.1.12...v6.1.13) (2022-05-28)
 
 ## [6.1.12](https://github.com/sprucelabsai/mercury-core-events/compare/v6.1.11...v6.1.12) (2022-05-28)
