@@ -40,9 +40,15 @@ import mercuryDidJoinOrganizationEventContract_v2020_12_25, {
 import mercuryDidMessageEventContract_v2020_12_25, {
 	DidMessageEventContract as MercuryDidMessageEventContract_v2020_12_25,
 } from '#spruce/events/mercury/didMessage.v2020_12_25.contract'
+import mercuryDidSignupEventContract_v2020_12_25, {
+	DidSignupEventContract as MercuryDidSignupEventContract_v2020_12_25,
+} from '#spruce/events/mercury/didSignup.v2020_12_25.contract'
 import mercuryDidUpdateFeedEventContract_v2020_12_25, {
 	DidUpdateFeedEventContract as MercuryDidUpdateFeedEventContract_v2020_12_25,
 } from '#spruce/events/mercury/didUpdateFeed.v2020_12_25.contract'
+import mercuryDidUpdatePersonEventContract_v2020_12_25, {
+	DidUpdatePersonEventContract as MercuryDidUpdatePersonEventContract_v2020_12_25,
+} from '#spruce/events/mercury/didUpdatePerson.v2020_12_25.contract'
 import mercuryDoesHonorPermissionContractEventContract_v2020_12_25, {
 	DoesHonorPermissionContractEventContract as MercuryDoesHonorPermissionContractEventContract_v2020_12_25,
 } from '#spruce/events/mercury/doesHonorPermissionContract.v2020_12_25.contract'
@@ -197,7 +203,9 @@ export default [
 	mercuryDidInstallEventContract_v2020_12_25,
 	mercuryDidJoinOrganizationEventContract_v2020_12_25,
 	mercuryDidMessageEventContract_v2020_12_25,
+	mercuryDidSignupEventContract_v2020_12_25,
 	mercuryDidUpdateFeedEventContract_v2020_12_25,
+	mercuryDidUpdatePersonEventContract_v2020_12_25,
 	mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
 	mercuryGetConversationTopicsEventContract_v2020_12_25,
 	mercuryGetEventContractsEventContract_v2020_12_25,
@@ -276,7 +284,11 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 
 		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
 
+		'did-signup::v2020_12_25': MercuryDidSignupEventContract_v2020_12_25['eventSignatures']['did-signup::v2020_12_25']
+
 		'did-update-feed::v2020_12_25': MercuryDidUpdateFeedEventContract_v2020_12_25['eventSignatures']['did-update-feed::v2020_12_25']
+
+		'did-update-person::v2020_12_25': MercuryDidUpdatePersonEventContract_v2020_12_25['eventSignatures']['did-update-person::v2020_12_25']
 
 		'does-honor-permission-contract::v2020_12_25': MercuryDoesHonorPermissionContractEventContract_v2020_12_25['eventSignatures']['does-honor-permission-contract::v2020_12_25']
 
