@@ -1,3 +1,10 @@
+# [9.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v8.0.0...v9.0.0) (2022-06-01)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([acdcf61](https://github.com/sprucelabsai/mercury-core-events/commit/acdcf61))
+
 # [8.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v7.0.2...v8.0.0) (2022-06-01)
 
 
