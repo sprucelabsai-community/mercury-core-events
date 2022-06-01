@@ -1,3 +1,10 @@
+# [11.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v10.0.0...v11.0.0) (2022-06-01)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([335633c](https://github.com/sprucelabsai/mercury-core-events/commit/335633c))
+
 # [10.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v9.0.0...v10.0.0) (2022-06-01)
 
 
