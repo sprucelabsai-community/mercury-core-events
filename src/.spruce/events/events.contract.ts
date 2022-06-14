@@ -55,6 +55,9 @@ import mercuryDidUpdatePersonEventContract_v2020_12_25, {
 import mercuryDoesHonorPermissionContractEventContract_v2020_12_25, {
 	DoesHonorPermissionContractEventContract as MercuryDoesHonorPermissionContractEventContract_v2020_12_25,
 } from '#spruce/events/mercury/doesHonorPermissionContract.v2020_12_25.contract'
+import mercuryGetAnonymousPersonEventContract_v2020_12_25, {
+	GetAnonymousPersonEventContract as MercuryGetAnonymousPersonEventContract_v2020_12_25,
+} from '#spruce/events/mercury/getAnonymousPerson.v2020_12_25.contract'
 import mercuryGetConversationTopicsEventContract_v2020_12_25, {
 	GetConversationTopicsEventContract as MercuryGetConversationTopicsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getConversationTopics.v2020_12_25.contract'
@@ -211,6 +214,7 @@ export default [
 	mercuryDidUpdateFeedEventContract_v2020_12_25,
 	mercuryDidUpdatePersonEventContract_v2020_12_25,
 	mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
+	mercuryGetAnonymousPersonEventContract_v2020_12_25,
 	mercuryGetConversationTopicsEventContract_v2020_12_25,
 	mercuryGetEventContractsEventContract_v2020_12_25,
 	mercuryGetFeedEventContract_v2020_12_25,
@@ -297,6 +301,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'did-update-person::v2020_12_25': MercuryDidUpdatePersonEventContract_v2020_12_25['eventSignatures']['did-update-person::v2020_12_25']
 
 		'does-honor-permission-contract::v2020_12_25': MercuryDoesHonorPermissionContractEventContract_v2020_12_25['eventSignatures']['does-honor-permission-contract::v2020_12_25']
+
+		'get-anonymous-person::v2020_12_25': MercuryGetAnonymousPersonEventContract_v2020_12_25['eventSignatures']['get-anonymous-person::v2020_12_25']
 
 		'get-conversation-topics::v2020_12_25': MercuryGetConversationTopicsEventContract_v2020_12_25['eventSignatures']['get-conversation-topics::v2020_12_25']
 

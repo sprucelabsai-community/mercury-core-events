@@ -33,6 +33,11 @@ const updateRoleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateRoleE
 	                type: 'number',
 	                options: undefined
 	            },
+	            /** . */
+	            'organizationId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	            /** Public. Should I let people that are not part of this organization this role? */
 	            'isPublic': {
 	                label: 'Public',
