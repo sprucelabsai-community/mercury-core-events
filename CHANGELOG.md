@@ -1,3 +1,10 @@
+# [11.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v11.0.42...v11.1.0) (2022-06-14)
+
+
+### Features
+
+* anonymous person events ([7b5e695](https://github.com/sprucelabsai/mercury-core-events/commit/7b5e695))
+
 ## [11.0.42](https://github.com/sprucelabsai/mercury-core-events/compare/v11.0.41...v11.0.42) (2022-06-14)
 
 ## [11.0.41](https://github.com/sprucelabsai/mercury-core-events/compare/v11.0.40...v11.0.41) (2022-06-14)
