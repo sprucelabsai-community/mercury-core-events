@@ -22,6 +22,12 @@ const registerSkillEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Register
 	                type: 'text',
 	                options: undefined
 	            },
+	            /** Public. */
+	            'isPublic': {
+	                label: 'Public',
+	                type: 'boolean',
+	                options: undefined
+	            },
 	            /** Namespace. */
 	            'slug': {
 	                label: 'Namespace',

@@ -4294,6 +4294,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'description'?: string| undefined | null
 				/** Namespace. */
 				'slug': string
+				/** Public. */
+				'isPublic'?: boolean| undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
@@ -4331,6 +4333,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Namespace',
 			                type: 'text',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Public. */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
 			                options: undefined
 			            },
 			            /** . */
@@ -5433,6 +5441,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'description'?: string| undefined | null
 				/** Namespace. */
 				'slug': string
+				/** Public. */
+				'isPublic'?: boolean| undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
@@ -5470,6 +5480,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Namespace',
 			                type: 'text',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Public. */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
 			                options: undefined
 			            },
 			            /** . */
@@ -5924,6 +5940,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name': string
 				/** Description. */
 				'description'?: string| undefined | null
+				/** Public. */
+				'isPublic'?: boolean| undefined | null
 				/** Namespace. */
 				'slug'?: string| undefined | null
 		}
@@ -5945,6 +5963,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'description': {
 			                label: 'Description',
 			                type: 'text',
+			                options: undefined
+			            },
+			            /** Public. */
+			            'isPublic': {
+			                label: 'Public',
+			                type: 'boolean',
 			                options: undefined
 			            },
 			            /** Namespace. */
