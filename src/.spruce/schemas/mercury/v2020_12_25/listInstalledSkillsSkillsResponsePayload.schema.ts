@@ -36,6 +36,12 @@ const listInstalledSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v202
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** Public. */
+	            'isPublic': {
+	                label: 'Public',
+	                type: 'boolean',
+	                options: undefined
+	            },
 	            /** . */
 	            'dateCreated': {
 	                type: 'dateTime',
