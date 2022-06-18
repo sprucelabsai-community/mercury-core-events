@@ -1852,7 +1852,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** Name. */
 				'name': string
-				/** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
 				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
 				/** Description. */
 				'description'?: string| undefined | null
@@ -1877,11 +1877,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: undefined
 			            },
-			            /** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+			            /** Base. A best practices starting point for a role based on the generalized roles at a company. */
 			            'base': {
 			                label: 'Base',
 			                type: 'select',
-			                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
+			                hint: 'A best practices starting point for a role based on the generalized roles at a company.',
 			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"},{"label":"Guest","value":"guest"}],}
 			            },
 			            /** Description. */
@@ -5257,7 +5257,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'id': string
 				/** Name. */
 				'name': string
-				/** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
 				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
 				/** Description. */
 				'description'?: string| undefined | null
@@ -5295,11 +5295,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: undefined
 			            },
-			            /** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+			            /** Base. A best practices starting point for a role based on the generalized roles at a company. */
 			            'base': {
 			                label: 'Base',
 			                type: 'select',
-			                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
+			                hint: 'A best practices starting point for a role based on the generalized roles at a company.',
 			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"},{"label":"Guest","value":"guest"}],}
 			            },
 			            /** Description. */
@@ -8055,7 +8055,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** Name. */
 				'name'?: string| undefined | null
-				/** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
 				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
 				/** Description. */
 				'description'?: string| undefined | null
@@ -8079,11 +8079,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                options: undefined
 			            },
-			            /** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
+			            /** Base. A best practices starting point for a role based on the generalized roles at a company. */
 			            'base': {
 			                label: 'Base',
 			                type: 'select',
-			                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
+			                hint: 'A best practices starting point for a role based on the generalized roles at a company.',
 			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"},{"label":"Guest","value":"guest"}],}
 			            },
 			            /** Description. */
