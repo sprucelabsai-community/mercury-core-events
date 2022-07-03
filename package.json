@@ -82,7 +82,7 @@
     "@sprucelabs/mercury-types": "^35.0.20",
     "@sprucelabs/schema": "^28.2.64",
     "@sprucelabs/spruce-core-schemas": "^34.0.22",
-    "@sprucelabs/spruce-event-utils": "^27.0.24"
+    "@sprucelabs/spruce-event-utils": "^27.0.26"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
