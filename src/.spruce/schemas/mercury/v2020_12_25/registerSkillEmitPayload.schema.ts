@@ -22,10 +22,19 @@ const registerSkillEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Register
 	                type: 'text',
 	                options: undefined
 	            },
-	            /** Public. */
-	            'isPublic': {
-	                label: 'Public',
+	            /** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+	            'isPublished': {
+	                label: 'Published',
 	                type: 'boolean',
+	                hint: 'Does this skill show up in the marketplace and can other devs use it as a dependency?',
+	                options: undefined
+	            },
+	            /** Global. Does this skill require needing to be installed anywhere. */
+	            'canBeInstalled': {
+	                label: 'Global',
+	                type: 'boolean',
+	                hint: 'Does this skill require needing to be installed anywhere.',
+	                defaultValue: true,
 	                options: undefined
 	            },
 	            /** Namespace. */

@@ -25,6 +25,11 @@ const listSkillsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsE
 	                type: 'boolean',
 	                options: undefined
 	            },
+	            /** . */
+	            'shouldOnlyShowInstallableSkills': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	    }
 }
 

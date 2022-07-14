@@ -4294,8 +4294,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'description'?: string| undefined | null
 				/** Namespace. */
 				'slug': string
-				/** Public. */
-				'isPublic'?: boolean| undefined | null
+				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+				'isPublished'?: boolean| undefined | null
+				/** Global. Does this skill require needing to be installed anywhere. */
+				'canBeInstalled'?: boolean| undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
@@ -4335,10 +4337,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: undefined
 			            },
-			            /** Public. */
-			            'isPublic': {
-			                label: 'Public',
+			            /** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+			            'isPublished': {
+			                label: 'Published',
 			                type: 'boolean',
+			                hint: 'Does this skill show up in the marketplace and can other devs use it as a dependency?',
+			                options: undefined
+			            },
+			            /** Global. Does this skill require needing to be installed anywhere. */
+			            'canBeInstalled': {
+			                label: 'Global',
+			                type: 'boolean',
+			                hint: 'Does this skill require needing to be installed anywhere.',
+			                defaultValue: true,
 			                options: undefined
 			            },
 			            /** . */
@@ -5360,6 +5371,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'namespaces'?: string[]| undefined | null
 				
 				'shouldShowGlobalSkills'?: boolean| undefined | null
+				
+				'shouldOnlyShowInstallableSkills'?: boolean| undefined | null
 		}
 
 		interface ListSkillsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5381,6 +5394,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'shouldShowGlobalSkills': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldOnlyShowInstallableSkills': {
 			                type: 'boolean',
 			                options: undefined
 			            },
@@ -5441,8 +5459,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'description'?: string| undefined | null
 				/** Namespace. */
 				'slug': string
-				/** Public. */
-				'isPublic'?: boolean| undefined | null
+				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+				'isPublished'?: boolean| undefined | null
+				/** Global. Does this skill require needing to be installed anywhere. */
+				'canBeInstalled'?: boolean| undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
@@ -5482,10 +5502,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: undefined
 			            },
-			            /** Public. */
-			            'isPublic': {
-			                label: 'Public',
+			            /** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+			            'isPublished': {
+			                label: 'Published',
 			                type: 'boolean',
+			                hint: 'Does this skill show up in the marketplace and can other devs use it as a dependency?',
+			                options: undefined
+			            },
+			            /** Global. Does this skill require needing to be installed anywhere. */
+			            'canBeInstalled': {
+			                label: 'Global',
+			                type: 'boolean',
+			                hint: 'Does this skill require needing to be installed anywhere.',
+			                defaultValue: true,
 			                options: undefined
 			            },
 			            /** . */
@@ -5940,8 +5969,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'name': string
 				/** Description. */
 				'description'?: string| undefined | null
-				/** Public. */
-				'isPublic'?: boolean| undefined | null
+				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+				'isPublished'?: boolean| undefined | null
+				/** Global. Does this skill require needing to be installed anywhere. */
+				'canBeInstalled'?: boolean| undefined | null
 				/** Namespace. */
 				'slug'?: string| undefined | null
 		}
@@ -5965,10 +5996,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                options: undefined
 			            },
-			            /** Public. */
-			            'isPublic': {
-			                label: 'Public',
+			            /** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+			            'isPublished': {
+			                label: 'Published',
 			                type: 'boolean',
+			                hint: 'Does this skill show up in the marketplace and can other devs use it as a dependency?',
+			                options: undefined
+			            },
+			            /** Global. Does this skill require needing to be installed anywhere. */
+			            'canBeInstalled': {
+			                label: 'Global',
+			                type: 'boolean',
+			                hint: 'Does this skill require needing to be installed anywhere.',
+			                defaultValue: true,
 			                options: undefined
 			            },
 			            /** Namespace. */
