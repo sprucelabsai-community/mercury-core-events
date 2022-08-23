@@ -28,6 +28,7 @@ const addRoleEventContract = buildEventContract({
 							manager: {
 								default: true,
 							},
+							skill: true,
 						},
 					},
 					{
@@ -43,6 +44,7 @@ const addRoleEventContract = buildEventContract({
 							manager: {
 								default: true,
 							},
+							skill: true,
 						},
 					},
 					{

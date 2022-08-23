@@ -28,6 +28,7 @@ const removeRoleEventContract = buildEventContract({
 							manager: {
 								default: true,
 							},
+							skill: true,
 						},
 					},
 					{
@@ -43,6 +44,7 @@ const removeRoleEventContract = buildEventContract({
 							manager: {
 								default: true,
 							},
+							skill: true,
 						},
 					},
 					{
