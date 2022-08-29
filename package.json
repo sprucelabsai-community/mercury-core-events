@@ -13,8 +13,7 @@
       "@sprucelabs/spruce-event-plugin",
       "@sprucelabs/spruce-skill-utils",
       "@sprucelabs/spruce-test-fixtures",
-      "@sprucelabs/test-utils",
-      "typescript"
+      "@sprucelabs/test-utils"
     ]
   },
   "files": [
