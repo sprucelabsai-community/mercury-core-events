@@ -20,7 +20,6 @@ const listLocationsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: listLocationsEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */

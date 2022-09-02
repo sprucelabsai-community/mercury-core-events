@@ -12,7 +12,6 @@ const listLocationsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocat
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
 	                options: undefined
 	            },
 	    }
