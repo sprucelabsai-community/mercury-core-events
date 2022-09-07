@@ -1,3 +1,10 @@
+# [12.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v12.0.186...v12.1.0) (2022-09-07)
+
+
+### Features
+
+* can list orgs by id ([0123652](https://github.com/sprucelabsai/mercury-core-events/commit/0123652))
+
 ## [12.0.186](https://github.com/sprucelabsai/mercury-core-events/compare/v12.0.185...v12.0.186) (2022-09-07)
 
 ## [12.0.185](https://github.com/sprucelabsai/mercury-core-events/compare/v12.0.184...v12.0.185) (2022-09-07)
