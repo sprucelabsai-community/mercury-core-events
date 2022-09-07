@@ -4444,6 +4444,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'organizationId'?: string| undefined | null
+				
+				'locationIds'?: string[]| undefined | null
 		}
 
 		interface ListLocationsEmitTargetSchema extends SpruceSchema.Schema {
@@ -4455,6 +4457,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'organizationId': {
 			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationIds': {
+			                type: 'id',
+			                isArray: true,
 			                options: undefined
 			            },
 			    }

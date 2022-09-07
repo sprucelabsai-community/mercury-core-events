@@ -14,6 +14,12 @@ const listLocationsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocat
 	                type: 'id',
 	                options: undefined
 	            },
+	            /** . */
+	            'locationIds': {
+	                type: 'id',
+	                isArray: true,
+	                options: undefined
+	            },
 	    }
 }
 
