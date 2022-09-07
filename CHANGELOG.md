@@ -1,3 +1,10 @@
+# [12.2.0](https://github.com/sprucelabsai/mercury-core-events/compare/v12.1.0...v12.2.0) (2022-09-07)
+
+
+### Features
+
+* list locations location id ([9d23934](https://github.com/sprucelabsai/mercury-core-events/commit/9d23934))
+
 # [12.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v12.0.186...v12.1.0) (2022-09-07)
 
 
