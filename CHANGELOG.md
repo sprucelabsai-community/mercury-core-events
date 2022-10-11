@@ -1,3 +1,10 @@
+# [13.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v12.2.71...v13.0.0) (2022-10-11)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([ca73b37](https://github.com/sprucelabsai/mercury-core-events/commit/ca73b37))
+
 ## [12.2.71](https://github.com/sprucelabsai/mercury-core-events/compare/v12.2.70...v12.2.71) (2022-10-11)
 
 ## [12.2.70](https://github.com/sprucelabsai/mercury-core-events/compare/v12.2.69...v12.2.70) (2022-10-10)
