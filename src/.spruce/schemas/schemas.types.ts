@@ -5877,7 +5877,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	}
 
 
-	namespace SpruceSchemas.Mercury.v2022_10_12 {
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
 		interface RegisteredListener {
@@ -5890,7 +5890,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 
 		interface RegisteredListenerSchema extends SpruceSchema.Schema {
 			id: 'registeredListener',
-			version: 'v2022_10_12',
+			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Registered listener',
 			    fields: {
@@ -5908,7 +5908,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface RegisteredListenerEntity extends SchemaEntity<SpruceSchemas.Mercury.v2022_10_12.RegisteredListenerSchema> {}
+		interface RegisteredListenerEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisteredListenerSchema> {}
 
 	}
 
@@ -5919,7 +5919,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterListenersEmitPayload {
 			
 				
-				'events'?: SpruceSchemas.Mercury.v2022_10_12.RegisteredListener[]| undefined | null
+				'events'?: SpruceSchemas.Mercury.v2020_12_25.RegisteredListener[]| undefined | null
 				
 				'fullyQualifiedEventNames'?: string[]| undefined | null
 		}
@@ -5934,7 +5934,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'events': {
 			                type: 'schema',
 			                isArray: true,
-			                options: {schema: SpruceSchemas.Mercury.v2022_10_12.RegisteredListenerSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisteredListenerSchema,}
 			            },
 			            /** . */
 			            'fullyQualifiedEventNames': {

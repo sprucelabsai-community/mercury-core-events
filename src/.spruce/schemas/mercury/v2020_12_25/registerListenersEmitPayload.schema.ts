@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import registeredListenerSchema_v2022_10_12 from '#spruce/schemas/mercury/v2022_10_12/registeredListener.schema'
+import registeredListenerSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/registeredListener.schema'
 
 const registerListenersEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema  = {
 	id: 'registerListenersEmitPayload',
@@ -13,7 +13,7 @@ const registerListenersEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Regi
 	            'events': {
 	                type: 'schema',
 	                isArray: true,
-	                options: {schema: registeredListenerSchema_v2022_10_12,}
+	                options: {schema: registeredListenerSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'fullyQualifiedEventNames': {

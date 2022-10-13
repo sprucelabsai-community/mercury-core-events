@@ -3,9 +3,9 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const registeredListenerSchema: SpruceSchemas.Mercury.v2022_10_12.RegisteredListenerSchema  = {
+const registeredListenerSchema: SpruceSchemas.Mercury.v2020_12_25.RegisteredListenerSchema  = {
 	id: 'registeredListener',
-	version: 'v2022_10_12',
+	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Registered listener',
 	    fields: {
