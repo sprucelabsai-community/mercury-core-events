@@ -1,3 +1,10 @@
+# [15.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v14.0.4...v15.0.0) (2022-10-13)
+
+
+### Breaking Changes
+
+* register listener tweak ([7bd5338](https://github.com/sprucelabsai/mercury-core-events/commit/7bd5338))
+
 ## [14.0.4](https://github.com/sprucelabsai/mercury-core-events/compare/v14.0.3...v14.0.4) (2022-10-13)
 
 ## [14.0.3](https://github.com/sprucelabsai/mercury-core-events/compare/v14.0.2...v14.0.3) (2022-10-12)
