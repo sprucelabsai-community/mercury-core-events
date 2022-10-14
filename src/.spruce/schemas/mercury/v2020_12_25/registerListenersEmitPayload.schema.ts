@@ -12,7 +12,6 @@ const registerListenersEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Regi
 	            /** . */
 	            'events': {
 	                type: 'schema',
-	                isRequired: true,
 	                isArray: true,
 	                options: {schema: registeredListenerSchema_v2020_12_25,}
 	            },
