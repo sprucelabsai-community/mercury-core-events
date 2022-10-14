@@ -5935,7 +5935,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterListenersEmitPayload {
 			
 				
-				'events'?: SpruceSchemas.Mercury.v2020_12_25.RegisteredListener[]| undefined | null
+				'events': SpruceSchemas.Mercury.v2020_12_25.RegisteredListener[]
 				
 				'fullyQualifiedEventNames'?: string[]| undefined | null
 		}
@@ -5949,6 +5949,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'events': {
 			                type: 'schema',
+			                isRequired: true,
 			                isArray: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisteredListenerSchema,}
 			            },
@@ -5974,7 +5975,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload| undefined | null
+				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
 		}
 
 		interface RegisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5992,6 +5993,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'payload': {
 			                type: 'schema',
+			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema,}
 			            },
 			    }
