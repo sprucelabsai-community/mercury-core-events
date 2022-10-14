@@ -6,7 +6,7 @@ export { default as permissionSchema } from './.spruce/schemas/mercury/v2020_12_
 export { default as permissionContractSchema } from './.spruce/schemas/mercury/v2020_12_25/permissionContract.schema'
 export { default as statusFlagsSchema } from './.spruce/schemas/mercury/v2020_12_25/statusFlags.schema'
 export { default as messageTemplateAddonsSchema } from './.spruce/schemas/mercury/v2020_12_25/messageTemplateAddons.schema'
-export { default as registerListenerSchema } from './.spruce/schemas/mercury/v2020_12_25/registeredListener.schema'
+export { default as registeredListenerSchema } from './.spruce/schemas/mercury/v2020_12_25/registeredListener.schema'
 
 export * from './.spruce/schemas/schemas.types'
 import { SkillEventContract } from '@sprucelabs/mercury-types'
