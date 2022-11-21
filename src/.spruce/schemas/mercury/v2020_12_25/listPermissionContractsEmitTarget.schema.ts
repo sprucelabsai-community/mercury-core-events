@@ -15,7 +15,7 @@ const listPermissionContractsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25
 	                options: undefined
 	            },
 	            /** . */
-	            'skillIds': {
+	            'namespaces': {
 	                type: 'id',
 	                isArray: true,
 	                options: undefined
