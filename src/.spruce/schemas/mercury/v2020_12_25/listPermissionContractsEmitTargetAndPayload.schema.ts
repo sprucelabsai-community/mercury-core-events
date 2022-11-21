@@ -19,7 +19,6 @@ const listPermissionContractsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: listPermissionContractsEmitTargetSchema_v2020_12_25,}
 	            },
 	    }

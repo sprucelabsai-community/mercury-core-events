@@ -17,12 +17,6 @@ const listPermissionContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_
 	                minArrayLength: 0,
 	                options: {schema: listPermissionContractsPermissionContractsSchema_v2020_12_25,}
 	            },
-	            /** . */
-	            'count': {
-	                type: 'number',
-	                isRequired: true,
-	                options: undefined
-	            },
 	    }
 }
 

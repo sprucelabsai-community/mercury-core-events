@@ -12,7 +12,12 @@ const listPermissionContractsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'skillIds': {
+	                type: 'id',
+	                isArray: true,
 	                options: undefined
 	            },
 	    }
