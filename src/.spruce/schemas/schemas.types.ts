@@ -4984,7 +4984,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'organizationId'?: string| undefined | null
 				
-				'skillIds'?: string[]| undefined | null
+				'namespaces'?: string[]| undefined | null
 		}
 
 		interface ListPermissionContractsEmitTargetSchema extends SpruceSchema.Schema {
@@ -4999,7 +4999,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                options: undefined
 			            },
 			            /** . */
-			            'skillIds': {
+			            'namespaces': {
 			                type: 'id',
 			                isArray: true,
 			                options: undefined
