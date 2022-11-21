@@ -4982,7 +4982,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPermissionContractsEmitTarget {
 			
 				
-				'organizationId': string
+				'organizationId'?: string| undefined | null
+				
+				'skillIds'?: string[]| undefined | null
 		}
 
 		interface ListPermissionContractsEmitTargetSchema extends SpruceSchema.Schema {
@@ -4994,7 +4996,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'organizationId': {
 			                type: 'id',
-			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'skillIds': {
+			                type: 'id',
+			                isArray: true,
 			                options: undefined
 			            },
 			    }
@@ -5013,7 +5020,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target': SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsEmitTarget
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsEmitTarget| undefined | null
 		}
 
 		interface ListPermissionContractsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5031,7 +5038,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
-			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsEmitTargetSchema,}
 			            },
 			    }
@@ -5093,8 +5099,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'permissionContracts': SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsPermissionContracts[]
-				
-				'count': number
 		}
 
 		interface ListPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
@@ -5110,12 +5114,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isArray: true,
 			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsPermissionContractsSchema,}
-			            },
-			            /** . */
-			            'count': {
-			                type: 'number',
-			                isRequired: true,
-			                options: undefined
 			            },
 			    }
 		}
