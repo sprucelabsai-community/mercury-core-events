@@ -14,6 +14,7 @@ const syncPermissionContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: fullPermissionContractSchema_v2020_12_25,}
 	            },
 	    }
