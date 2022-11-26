@@ -6994,6 +6994,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
+			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
 			            },
 			    }
