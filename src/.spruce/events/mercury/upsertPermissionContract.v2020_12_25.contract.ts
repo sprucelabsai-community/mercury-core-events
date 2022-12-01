@@ -1,4 +1,3 @@
-import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import upsertPermissionContractEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/upsertPermissionContractEmitTargetAndPayload.schema'
 import upsertPermissionContractResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/upsertPermissionContractResponsePayload.schema'

@@ -1,4 +1,3 @@
-import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import healthEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/healthEmitTargetAndPayload.schema'
 import healthResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/healthResponsePayload.schema'

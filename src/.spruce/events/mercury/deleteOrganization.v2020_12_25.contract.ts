@@ -1,4 +1,3 @@
-import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import deleteOrganizationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/deleteOrganizationEmitTargetAndPayload.schema'
 import deleteOrgResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/deleteOrgResponsePayload.schema'
