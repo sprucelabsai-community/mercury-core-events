@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import { buildPermissionContract } from '@sprucelabs/mercury-types'
 import addRoleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/addRoleEmitTargetAndPayload.schema'

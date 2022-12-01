@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import confirmPinEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/confirmPinEmitTargetAndPayload.schema'
 import confirmPinRespondPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/confirmPinRespondPayload.schema'

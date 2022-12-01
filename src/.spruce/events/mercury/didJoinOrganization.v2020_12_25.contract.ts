@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import didJoinOrganizationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didJoinOrganizationEmitTargetAndPayload.schema'
 import didJoinOrganizationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didJoinOrganizationResponsePayload.schema'

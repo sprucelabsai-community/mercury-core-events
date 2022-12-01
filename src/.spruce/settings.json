@@ -8,7 +8,8 @@
   "installed": [
     "test",
     "schema",
-    "event"
+    "event",
+    "permission"
   ],
   "events": {
     "lastSync": {
