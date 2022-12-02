@@ -11,6 +11,7 @@
       "@sprucelabs/mercury-client",
       "@sprucelabs/mercury-core-events",
       "@sprucelabs/spruce-event-plugin",
+      "@sprucelabs/spruce-permission-plugin",
       "@sprucelabs/spruce-skill-utils",
       "@sprucelabs/spruce-test-fixtures",
       "@sprucelabs/test-utils"
@@ -82,8 +83,7 @@
     "@sprucelabs/mercury-types": "^38.0.0",
     "@sprucelabs/schema": "^28.5.74",
     "@sprucelabs/spruce-core-schemas": "^35.1.70",
-    "@sprucelabs/spruce-event-utils": "^30.0.0",
-    "@sprucelabs/spruce-permission-plugin": "^0.1.8"
+    "@sprucelabs/spruce-event-utils": "^30.0.0"
   },
   "jest": {
     "testRunner": "jest-circus/runner",

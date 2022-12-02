@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import updateLocationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/updateLocationEmitTargetAndPayload.schema'
 import updateLocationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/updateLocationResponsePayload.schema'

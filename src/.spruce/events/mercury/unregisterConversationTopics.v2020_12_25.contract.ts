@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import unregisterConversationTopicsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/unregisterConversationTopicsEmitTargetAndPayload.schema'
 import unregisterConversationTopicsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/unregisterConversationTopicsResponsePayload.schema'

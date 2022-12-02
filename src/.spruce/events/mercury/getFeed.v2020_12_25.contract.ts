@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import getFeedEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getFeedEmitTargetAndPayload.schema'
 import getFeedResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getFeedResponsePayload.schema'

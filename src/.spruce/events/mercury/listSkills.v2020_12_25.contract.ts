@@ -1,3 +1,4 @@
+import '#spruce/permissions/permissions.types'
 import { buildEventContract } from '@sprucelabs/mercury-types'
 import listSkillsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listSkillsEmitTargetAndPayload.schema'
 import listSkillsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listSkillsResponsePayload.schema'
