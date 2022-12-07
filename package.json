@@ -5,7 +5,8 @@
   "skill": {
     "namespace": "mercury-core-events",
     "commandOverrides": {
-      "sync.events": "--shouldSyncOnlyCoreEvents true"
+      "sync.events": "--shouldSyncOnlyCoreEvents true",
+      "sync.permissions": "--shouldSyncCorePermissions true"
     },
     "upgradeIgnoreList": [
       "@sprucelabs/mercury-client",
