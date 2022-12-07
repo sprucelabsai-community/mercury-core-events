@@ -13,7 +13,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-create-person','can-list-people-permission-id','can-scramble-other-person','can-get-anonymous-person','can-get-person-private-fields','can-get-person-by-phone','can-listen-to-did-signup','can-listen-to-did-update',
 		]
 		'feed-contract': [
-			'can-see-other-persons-feed','can-subscribe-to-feed-updates',
+			'can-see-other-persons-feed','can-subscribe-to-feed-updates','can-be-sprucebot',
 		]
 		'hiring-and-promoting': [
 			'can-hire-person','can-fire-person','hire-and-promote-when-not-installed',
