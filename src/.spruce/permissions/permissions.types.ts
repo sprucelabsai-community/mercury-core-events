@@ -22,7 +22,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-install-skills','can-uninstall-skills','can-view-marketplace',
 		]
 		'emit-messaging': [
-			'can-emit-did-message-event','can-listen-to-did-message-event','can-message-anyone',
+			'can-emit-did-message-event','can-listen-to-did-message-event','can-message-others',
 		]
 		'permission-contracts-contract-id': [
 			'can-get-permission-contracts-for-org','can-list-permission-contracts-for-org',
