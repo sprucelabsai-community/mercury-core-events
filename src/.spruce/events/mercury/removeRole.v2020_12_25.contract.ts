@@ -10,7 +10,7 @@ const removeRoleEventContract = buildEventContract({
 			emitPayloadSchema: removeRoleEmitTargetAndPayloadSchema,
 			responsePayloadSchema: removeRoleResponsePayloadSchema,
 			emitPermissionContract: buildPermissionContract({
-				id: 'hiring-and-promoting',
+				id: 'hiring-and-promoting-contract',
 				name: 'Hiring and promoting contract',
 				description:
 					'Various permissions related to emitting hiring and promoting people at organizations and locations.',

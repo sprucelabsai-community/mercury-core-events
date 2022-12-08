@@ -8,7 +8,7 @@ const didUpdatePersonEventContract = buildEventContract({
 			isGlobal: true,
 
 			listenPermissions: {
-				contractId: 'can-crus-people-contract',
+				contractId: 'people-contract',
 				permissionIdsAny: ['can-listen-to-did-update'],
 			},
 			emitPayloadSchema: didUpdatePersonEmitTargetAndPayloadSchema,
