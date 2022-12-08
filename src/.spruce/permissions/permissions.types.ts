@@ -10,7 +10,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-create-role','can-update-role','can-delete-role','can-view-private-roles-at-own-org','can-view-persons-roles',
 		]
 		'feed-contract': [
-			'can-see-other-persons-feed','can-subscribe-to-feed-updates','can-be-sprucebot',
+			'can-see-other-persons-feed','can-subscribe-to-feed-updates',
 		]
 		'can-register-events-contract': [
 			'can-register-global-events',
@@ -51,9 +51,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'locations-contract': [
 			'can-create-location','can-update-location','can-delete-location','can-view-private-locations-at-own-org',
 		]
-		'messaging-contract': [
-			'can-emit-did-message-event','can-listen-to-did-message-event','can-message-others',
-		]
 		'organizations-contract': [
 			'can-update-organization-profile','can-delete-organization','can-view-private-organizations',
 		]
@@ -68,6 +65,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		]
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed',
+		]
+		'messaging-contract': [
+			'can-emit-did-message-event','can-listen-to-did-message-event','can-message-others','can-message-as-sprucebot',
 		]
 	}
 }
