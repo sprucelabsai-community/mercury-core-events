@@ -64,7 +64,7 @@
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^2.0.74",
     "@sprucelabs/jest-json-reporter": "^6.0.553",
-    "@sprucelabs/resolve-path-aliases": "^1.1.163",
+    "@sprucelabs/resolve-path-aliases": "^1.1.164",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^7.7.410",
     "@types/node": "^18.11.18",
@@ -81,10 +81,10 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^38.0.77",
+    "@sprucelabs/mercury-types": "^38.0.78",
     "@sprucelabs/schema": "^28.5.111",
     "@sprucelabs/spruce-core-schemas": "^35.1.142",
-    "@sprucelabs/spruce-event-utils": "^30.0.88"
+    "@sprucelabs/spruce-event-utils": "^30.0.89"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
