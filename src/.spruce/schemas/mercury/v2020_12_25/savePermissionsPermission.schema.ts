@@ -20,7 +20,6 @@ const savePermissionsPermissionSchema: SpruceSchemas.Mercury.v2020_12_25.SavePer
 	            /** . */
 	            'can': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: statusFlagsSchema_v2020_12_25,}
 	            },
 	    }
