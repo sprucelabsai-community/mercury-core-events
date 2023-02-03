@@ -6436,7 +6436,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'permissionPersonId'?: string| undefined | null
 				
-				'skillId'?: string| undefined | null
+				'permissionSkillId'?: string| undefined | null
 				
 				'permissionContractId': string
 		}
@@ -6463,7 +6463,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                options: undefined
 			            },
 			            /** . */
-			            'skillId': {
+			            'permissionSkillId': {
 			                type: 'id',
 			                options: undefined
 			            },
