@@ -142,6 +142,9 @@ import mercuryRemoveRoleEventContract_v2020_12_25, {
 import mercuryRequestPinEventContract_v2020_12_25, {
 	RequestPinEventContract as MercuryRequestPinEventContract_v2020_12_25,
 } from '#spruce/events/mercury/requestPin.v2020_12_25.contract'
+import mercurySavePermissionsEventContract_v2020_12_25, {
+	SavePermissionsEventContract as MercurySavePermissionsEventContract_v2020_12_25,
+} from '#spruce/events/mercury/savePermissions.v2020_12_25.contract'
 import mercuryScrambleAccountEventContract_v2020_12_25, {
 	ScrambleAccountEventContract as MercuryScrambleAccountEventContract_v2020_12_25,
 } from '#spruce/events/mercury/scrambleAccount.v2020_12_25.contract'
@@ -243,6 +246,7 @@ export default [
 	mercuryRegisterSkillEventContract_v2020_12_25,
 	mercuryRemoveRoleEventContract_v2020_12_25,
 	mercuryRequestPinEventContract_v2020_12_25,
+	mercurySavePermissionsEventContract_v2020_12_25,
 	mercuryScrambleAccountEventContract_v2020_12_25,
 	mercurySendMessageEventContract_v2020_12_25,
 	mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
@@ -359,6 +363,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'remove-role::v2020_12_25': MercuryRemoveRoleEventContract_v2020_12_25['eventSignatures']['remove-role::v2020_12_25']
 
 		'request-pin::v2020_12_25': MercuryRequestPinEventContract_v2020_12_25['eventSignatures']['request-pin::v2020_12_25']
+
+		'save-permissions::v2020_12_25': MercurySavePermissionsEventContract_v2020_12_25['eventSignatures']['save-permissions::v2020_12_25']
 
 		'scramble-account::v2020_12_25': MercuryScrambleAccountEventContract_v2020_12_25['eventSignatures']['scramble-account::v2020_12_25']
 
