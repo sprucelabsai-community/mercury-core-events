@@ -25,7 +25,7 @@ const savePermissionsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.SavePer
 	                options: undefined
 	            },
 	            /** . */
-	            'skillId': {
+	            'permissionSkillId': {
 	                type: 'id',
 	                options: undefined
 	            },
