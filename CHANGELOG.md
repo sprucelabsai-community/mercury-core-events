@@ -1,3 +1,10 @@
+# [15.1.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.0.239...v15.1.0) (2023-02-03)
+
+
+### Features
+
+* upgrade! ([e012fc1](https://github.com/sprucelabsai/mercury-core-events/commit/e012fc1))
+
 ## [15.0.239](https://github.com/sprucelabsai/mercury-core-events/compare/v15.0.238...v15.0.239) (2023-02-03)
 
 ## [15.0.238](https://github.com/sprucelabsai/mercury-core-events/compare/v15.0.237...v15.0.238) (2023-01-29)
