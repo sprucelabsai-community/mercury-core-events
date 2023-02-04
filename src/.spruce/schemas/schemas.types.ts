@@ -6436,7 +6436,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'permissionPersonId'?: string| undefined | null
 				
-				'skillId'?: string| undefined | null
+				'permissionSkillId'?: string| undefined | null
 				
 				'permissionContractId': string
 		}
@@ -6463,7 +6463,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                options: undefined
 			            },
 			            /** . */
-			            'skillId': {
+			            'permissionSkillId': {
 			                type: 'id',
 			                options: undefined
 			            },
@@ -6489,7 +6489,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** id. Hyphen separated id for this permission, e.g. can-unlock-doors */
 				'id': string
 				
-				'can'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'can': SpruceSchemas.Mercury.v2020_12_25.StatusFlags
 		}
 
 		interface SavePermissionsPermissionSchema extends SpruceSchema.Schema {
@@ -6509,6 +6509,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'can': {
 			                type: 'schema',
+			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
 			            },
 			    }
