@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import listSkillsSkillsResponsePayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listSkillsSkillsResponsePayload.schema'
+import listSkillsSkillSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listSkillsSkill.schema'
 
 const listSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsResponsePayloadSchema  = {
 	id: 'listSkillsResponsePayload',
@@ -15,7 +15,7 @@ const listSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSki
 	                isRequired: true,
 	                isArray: true,
 	                minArrayLength: 0,
-	                options: {schema: listSkillsSkillsResponsePayloadSchema_v2020_12_25,}
+	                options: {schema: listSkillsSkillSchema_v2020_12_25,}
 	            },
 	    }
 }

@@ -5506,7 +5506,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListSkillsSkillsResponsePayload {
+		interface ListSkillsSkill {
 			
 				/** Id. */
 				'id': string
@@ -5526,8 +5526,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
 		}
 
-		interface ListSkillsSkillsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'listSkillsSkillsResponsePayload',
+		interface ListSkillsSkillSchema extends SpruceSchema.Schema {
+			id: 'listSkillsSkill',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -5588,7 +5588,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface ListSkillsSkillsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillsResponsePayloadSchema> {}
+		interface ListSkillsSkillEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillSchema> {}
 
 	}
 
@@ -5599,7 +5599,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSkillsResponsePayload {
 			
 				
-				'skills': SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillsResponsePayload[]
+				'skills': SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkill[]
 		}
 
 		interface ListSkillsResponsePayloadSchema extends SpruceSchema.Schema {
@@ -5614,7 +5614,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                isArray: true,
 			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillsResponsePayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillSchema,}
 			            },
 			    }
 		}
