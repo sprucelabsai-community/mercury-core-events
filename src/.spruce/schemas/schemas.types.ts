@@ -3401,6 +3401,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'organizationId'?: string| undefined | null
 				
 				'contractPersonId'?: string| undefined | null
+				
+				'contractSkillId'?: string| undefined | null
 		}
 
 		interface GetResolvedPermissionsContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -3421,6 +3423,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'contractPersonId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'contractSkillId': {
 			                type: 'id',
 			                options: undefined
 			            },

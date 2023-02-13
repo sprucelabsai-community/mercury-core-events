@@ -18,7 +18,9 @@ const removeRoleEventContract = buildEventContract({
 				permissions: [
 					{
 						id: 'can-hire-person',
-						name: 'Hire a person',
+						name: 'Hire a person.',
+						description:
+							'by default, a manager and above can hire someone. This means the ability to invite someone with a specific role.',
 						defaults: {
 							owner: {
 								default: true,
@@ -34,7 +36,8 @@ const removeRoleEventContract = buildEventContract({
 					},
 					{
 						id: 'can-fire-person',
-						name: 'Fire a person',
+						name: 'Fire a person.',
+						description: 'By default, managers and above can fire someone.',
 						defaults: {
 							owner: {
 								default: true,
@@ -51,6 +54,8 @@ const removeRoleEventContract = buildEventContract({
 					{
 						id: 'hire-and-promote-when-not-installed',
 						name: 'Can hire even when not installed.',
+						description:
+							'This only applies to skills. It gives them the ability to add people to your organization without being installed.',
 						defaults: {
 							skill: false,
 						},

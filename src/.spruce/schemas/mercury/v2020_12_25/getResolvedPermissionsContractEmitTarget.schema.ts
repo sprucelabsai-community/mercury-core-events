@@ -24,6 +24,11 @@ const getResolvedPermissionsContractEmitTargetSchema: SpruceSchemas.Mercury.v202
 	                type: 'id',
 	                options: undefined
 	            },
+	            /** . */
+	            'contractSkillId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 
