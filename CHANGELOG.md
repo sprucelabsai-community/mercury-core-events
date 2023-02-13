@@ -1,3 +1,10 @@
+# [15.2.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.1.21...v15.2.0) (2023-02-13)
+
+
+### Features
+
+* contract person id ([680b40f](https://github.com/sprucelabsai/mercury-core-events/commit/680b40f))
+
 ## [15.1.21](https://github.com/sprucelabsai/mercury-core-events/compare/v15.1.20...v15.1.21) (2023-02-09)
 
 ## [15.1.20](https://github.com/sprucelabsai/mercury-core-events/compare/v15.1.19...v15.1.20) (2023-02-08)
