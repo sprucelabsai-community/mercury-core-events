@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const listSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillsResponsePayloadSchema  = {
-	id: 'listSkillsSkillsResponsePayload',
+const listSkillsSkillSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsSkillSchema  = {
+	id: 'listSkillsSkill',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -65,6 +65,6 @@ const listSkillsSkillsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.L
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(listSkillsSkillsResponsePayloadSchema)
+SchemaRegistry.getInstance().trackSchema(listSkillsSkillSchema)
 
-export default listSkillsSkillsResponsePayloadSchema
+export default listSkillsSkillSchema
