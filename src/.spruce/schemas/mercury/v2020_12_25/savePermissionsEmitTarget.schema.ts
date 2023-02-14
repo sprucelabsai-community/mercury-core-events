@@ -35,6 +35,11 @@ const savePermissionsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.SavePer
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'roleId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

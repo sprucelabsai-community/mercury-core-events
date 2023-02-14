@@ -6453,6 +6453,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'permissionSkillId'?: string| undefined | null
 				
 				'permissionContractId': string
+				
+				'roleId'?: string| undefined | null
 		}
 
 		interface SavePermissionsEmitTargetSchema extends SpruceSchema.Schema {
@@ -6485,6 +6487,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'permissionContractId': {
 			                type: 'id',
 			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
+			                type: 'id',
 			                options: undefined
 			            },
 			    }
