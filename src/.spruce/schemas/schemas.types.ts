@@ -3550,6 +3550,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'id': string
 				
 				'can': boolean
+				
+				'byStatus': SpruceSchemas.Mercury.v2020_12_25.StatusFlags
 		}
 
 		interface ResolvedContractPermissionSchema extends SpruceSchema.Schema {
@@ -3569,6 +3571,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'boolean',
 			                isRequired: true,
 			                options: undefined
+			            },
+			            /** . */
+			            'byStatus': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
 			            },
 			    }
 		}
