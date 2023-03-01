@@ -3400,6 +3400,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'organizationId'?: string| undefined | null
 				
+				'roleId'?: string| undefined | null
+				
 				'contractPersonId'?: string| undefined | null
 				
 				'contractSkillId'?: string| undefined | null
@@ -3418,6 +3420,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
 			                type: 'id',
 			                options: undefined
 			            },
