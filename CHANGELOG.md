@@ -1,3 +1,10 @@
+# [15.5.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.4.12...v15.5.0) (2023-03-01)
+
+
+### Features
+
+* roleId now part of get resolved permissions target ([01f79dd](https://github.com/sprucelabsai/mercury-core-events/commit/01f79dd))
+
 ## [15.4.12](https://github.com/sprucelabsai/mercury-core-events/compare/v15.4.11...v15.4.12) (2023-02-26)
 
 ## [15.4.11](https://github.com/sprucelabsai/mercury-core-events/compare/v15.4.10...v15.4.11) (2023-02-26)
