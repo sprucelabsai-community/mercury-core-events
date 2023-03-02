@@ -67,7 +67,7 @@
     "@sprucelabs/resolve-path-aliases": "^1.1.180",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^7.7.422",
-    "@types/node": "^18.14.3",
+    "@types/node": "^18.14.4",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.6.0",
     "eslint": "^8.35.0",
@@ -83,8 +83,8 @@
   "dependencies": {
     "@sprucelabs/mercury-types": "^38.0.125",
     "@sprucelabs/schema": "^28.5.136",
-    "@sprucelabs/spruce-core-schemas": "^35.1.184",
-    "@sprucelabs/spruce-event-utils": "^30.0.142"
+    "@sprucelabs/spruce-core-schemas": "^35.1.185",
+    "@sprucelabs/spruce-event-utils": "^30.0.143"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
