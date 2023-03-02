@@ -15,6 +15,7 @@ const syncEventContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	                type: 'text',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: undefined
 	            },
 	    }
