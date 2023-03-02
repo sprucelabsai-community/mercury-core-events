@@ -7169,6 +7169,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                isRequired: true,
 			                isArray: true,
+			                minArrayLength: 0,
 			                options: undefined
 			            },
 			    }
