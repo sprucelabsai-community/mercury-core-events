@@ -1,3 +1,10 @@
+# [16.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.6.0...v16.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* upgrade ([1488ab6](https://github.com/sprucelabsai/mercury-core-events/commit/1488ab6))
+
 # [15.6.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.5.13...v15.6.0) (2023-03-05)
 
 
