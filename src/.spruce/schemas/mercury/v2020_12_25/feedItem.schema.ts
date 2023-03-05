@@ -73,13 +73,13 @@ const feedItemSchema: SpruceSchemas.Mercury.v2020_12_25.FeedItemSchema  = {
 	                options: {schema: linkSchema_v2020_07_22,}
 	            },
 	            /** . */
-	            'toCasualName': {
-	                type: 'text',
+	            'fromPersonId': {
+	                type: 'id',
 	                options: undefined
 	            },
 	            /** . */
-	            'fromPersonId': {
-	                type: 'id',
+	            'toCasualName': {
+	                type: 'text',
 	                options: undefined
 	            },
 	            /** . */

@@ -2981,9 +2981,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
 				
-				'toCasualName'?: string| undefined | null
-				
 				'fromPersonId'?: string| undefined | null
+				
+				'toCasualName'?: string| undefined | null
 				
 				'toPersonId'?: string| undefined | null
 		}
@@ -3057,13 +3057,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.LinkSchema,}
 			            },
 			            /** . */
-			            'toCasualName': {
-			                type: 'text',
+			            'fromPersonId': {
+			                type: 'id',
 			                options: undefined
 			            },
 			            /** . */
-			            'fromPersonId': {
-			                type: 'id',
+			            'toCasualName': {
+			                type: 'text',
 			                options: undefined
 			            },
 			            /** . */
