@@ -10,12 +10,6 @@ const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMes
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
-	            /** . An arbitrary id that can be used to track this message when being sent and not yet assigned an Id. */
-	            'trackingId': {
-	                type: 'id',
-	                hint: 'An arbitrary id that can be used to track this message when being sent and not yet assigned an Id.',
-	                options: undefined
-	            },
 	            /** . */
 	            'classification': {
 	                type: 'select',
