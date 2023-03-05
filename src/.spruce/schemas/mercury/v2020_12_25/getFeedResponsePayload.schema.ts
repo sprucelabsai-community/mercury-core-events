@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import feedSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/feed.schema'
+import feedSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feed.schema'
 import eventPagingResponseSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventPagingResponse.schema'
 
 const getFeedResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedResponsePayloadSchema  = {
@@ -14,7 +14,7 @@ const getFeedResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetFeedRes
 	            'feed': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: feedSchema_v2020_07_22,}
+	                options: {schema: feedSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'paging': {

@@ -3,21 +3,23 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import feedItemSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feedItem.schema'
 
-const didUpdateFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema  = {
-	id: 'didUpdateFeedEmitPayload',
+const feedSchema: SpruceSchemas.Mercury.v2020_12_25.FeedSchema  = {
+	id: 'feed',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . */
-	            'item': {
+	            'items': {
 	                type: 'schema',
 	                isRequired: true,
+	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: feedItemSchema_v2020_12_25,}
 	            },
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(didUpdateFeedEmitPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(feedSchema)
 
-export default didUpdateFeedEmitPayloadSchema
+export default feedSchema
