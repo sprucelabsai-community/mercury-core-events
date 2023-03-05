@@ -1,3 +1,12 @@
+# [18.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v17.0.0...v18.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([aab0e2e](https://github.com/sprucelabsai/mercury-core-events/commit/aab0e2e))
+* **auto-upgrade:** upgraded packages [upgrade-all] ([d39c4b9](https://github.com/sprucelabsai/mercury-core-events/commit/d39c4b9))
+* upgrade ([b6bb23e](https://github.com/sprucelabsai/mercury-core-events/commit/b6bb23e))
+
 # [17.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v16.0.0...v17.0.0) (2023-03-05)
 
 
