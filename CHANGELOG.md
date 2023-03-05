@@ -1,3 +1,11 @@
+# [17.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v16.0.0...v17.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* bump ([18e0103](https://github.com/sprucelabsai/mercury-core-events/commit/18e0103))
+* upgrade ([a9065a0](https://github.com/sprucelabsai/mercury-core-events/commit/a9065a0))
+
 # [16.0.0](https://github.com/sprucelabsai/mercury-core-events/compare/v15.6.0...v16.0.0) (2023-03-05)
 
 
