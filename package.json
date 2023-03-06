@@ -83,7 +83,7 @@
   "dependencies": {
     "@sprucelabs/mercury-types": "^42.0.3",
     "@sprucelabs/schema": "^28.5.141",
-    "@sprucelabs/spruce-core-schemas": "^37.0.5",
+    "@sprucelabs/spruce-core-schemas": "^37.0.6",
     "@sprucelabs/spruce-event-utils": "^34.0.3"
   },
   "jest": {
