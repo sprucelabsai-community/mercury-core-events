@@ -18,50 +18,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface AddRoleEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayload
-		}
-
-		interface AddRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'addRoleEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface AddRoleEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface DidInstallEmitTarget {
 			
 				
@@ -695,6 +651,35 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface DidSignupEmitPayload {
+			
+				
+				'person': SpruceSchemas.Spruce.v2020_07_22.Person
+		}
+
+		interface DidSignupEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didSignupEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		interface DidSignupEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface DidSignupEmitTargetAndPayload {
 			
 				/** Source. */
@@ -732,79 +717,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface DidSignupEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdatePersonEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayload
-		}
-
-		interface DidUpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdatePersonEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidUpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidSignupEmitPayload {
-			
-				
-				'person': SpruceSchemas.Spruce.v2020_07_22.Person
-		}
-
-		interface DidSignupEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didSignupEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'person': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
-			            },
-			    }
-		}
-
-		interface DidSignupEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema> {}
 
 	}
 
@@ -857,7 +769,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdateFeedEmitPayload {
 			
 				
-				'item': SpruceSchemas.Mercury.v2020_12_25.FeedItem
+				'item': SpruceSchemas.Spruce.v2020_07_22.FeedItem
 		}
 
 		interface DidUpdateFeedEmitPayloadSchema extends SpruceSchema.Schema {
@@ -870,7 +782,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'item': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FeedItemSchema,}
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.FeedItemSchema,}
 			            },
 			    }
 		}
@@ -956,6 +868,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface DidUpdatePersonEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayload
+		}
+
+		interface DidUpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdatePersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface AddRoleEmitTarget {
 			
 				
@@ -1021,6 +977,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface AddRoleEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface AddRoleEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayload
+		}
+
+		interface AddRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'addRoleEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface AddRoleEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -2804,43 +2804,34 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface GetFeedEmitTargetAndPayload {
+		interface GetFeedPagingRequest {
 			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTarget| undefined | null
+				'next'?: string| undefined | null
 				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayload
+				'previous'?: string| undefined | null
 		}
 
-		interface GetFeedEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'getFeedEmitTargetAndPayload',
+		interface GetFeedPagingRequestSchema extends SpruceSchema.Schema {
+			id: 'getFeedPagingRequest',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            /** . */
+			            'next': {
+			                type: 'id',
+			                options: undefined
 			            },
 			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayloadSchema,}
+			            'previous': {
+			                type: 'id',
+			                options: undefined
 			            },
 			    }
 		}
 
-		interface GetFeedEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTargetAndPayloadSchema> {}
+		interface GetFeedPagingRequestEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedPagingRequestSchema> {}
 
 	}
 
@@ -2876,41 +2867,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface FeedPredicateEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedPredicateSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface GetFeedPagingRequest {
-			
-				
-				'next'?: string| undefined | null
-				
-				'previous'?: string| undefined | null
-		}
-
-		interface GetFeedPagingRequestSchema extends SpruceSchema.Schema {
-			id: 'getFeedPagingRequest',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'next': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'previous': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface GetFeedPagingRequestEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedPagingRequestSchema> {}
 
 	}
 
@@ -2956,156 +2912,43 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface FeedItem {
+		interface GetFeedEmitTargetAndPayload {
 			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'id': string
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTarget| undefined | null
 				
-				'isMe'?: boolean| undefined | null
-				
-				'message': string
-				
-				'dateCreated': SpruceSchema.DateTimeFieldValue
-				
-				'note'?: string| undefined | null
-				
-				'isSprucebot'?: boolean| undefined | null
-				
-				'source'?: (Record<string, any>)| undefined | null
-				
-				'fromCasualName': string
-				
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
-				
-				'choices'?: SpruceSchemas.Spruce.v2020_07_22.Choice[]| undefined | null
-				
-				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
-				
-				'fromPersonId'?: string| undefined | null
-				
-				'toCasualName'?: string| undefined | null
-				
-				'toPersonId'?: string| undefined | null
+				'payload': SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayload
 		}
 
-		interface FeedItemSchema extends SpruceSchema.Schema {
-			id: 'feedItem',
+		interface GetFeedEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'getFeedEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** . */
-			            'id': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'isMe': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'message': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'dateCreated': {
-			                type: 'dateTime',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'note': {
-			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'isSprucebot': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
+			            /** Source. */
 			            'source': {
-			                type: 'raw',
-			                options: {valueType: `Record<string, any>`,}
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
 			            },
 			            /** . */
-			            'fromCasualName': {
-			                type: 'text',
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
 			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'avatar': {
-			                type: 'image',
-			                options: {requiredSizes: ["*"],}
-			            },
-			            /** . */
-			            'choices': {
-			                type: 'schema',
-			                isArray: true,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.ChoiceSchema,}
-			            },
-			            /** . */
-			            'links': {
-			                type: 'schema',
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.LinkSchema,}
-			            },
-			            /** . */
-			            'fromPersonId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'toCasualName': {
-			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'toPersonId': {
-			                type: 'id',
-			                options: undefined
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayloadSchema,}
 			            },
 			    }
 		}
 
-		interface FeedItemEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedItemSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface Feed {
-			
-				
-				'items': SpruceSchemas.Mercury.v2020_12_25.FeedItem[]
-		}
-
-		interface FeedSchema extends SpruceSchema.Schema {
-			id: 'feed',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'items': {
-			                type: 'schema',
-			                isRequired: true,
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FeedItemSchema,}
-			            },
-			    }
-		}
-
-		interface FeedEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedSchema> {}
+		interface GetFeedEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -3116,7 +2959,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedResponsePayload {
 			
 				
-				'feed': SpruceSchemas.Mercury.v2020_12_25.Feed
+				'feed': SpruceSchemas.Spruce.v2020_07_22.Feed
 				
 				'paging': SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingResponse
 		}
@@ -3131,7 +2974,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'feed': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FeedSchema,}
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.FeedSchema,}
 			            },
 			            /** . */
 			            'paging': {
@@ -4641,6 +4484,133 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface ListOrganizationsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget| undefined | null
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload| undefined | null
+		}
+
+		interface ListOrganizationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'listOrganizationsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface ListOrganizationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrganizationsEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListOrgsEmitPayload {
+			
+				
+				'shouldOnlyShowMine'?: boolean| undefined | null
+				
+				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				
+				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
+				
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+		}
+
+		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'listOrgsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'shouldOnlyShowMine': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldOnlyShowWhereIAmEmployed': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'shouldIncludePrivateOrganizations': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'paging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
+			            },
+			    }
+		}
+
+		interface ListOrgsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListLocationsEmitPayload {
+			
+				
+				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+		}
+
+		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'listLocationsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'shouldOnlyShowWhereIAmEmployed': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'paging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
+			            },
+			    }
+		}
+
+		interface ListLocationsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface ListLocationsEmitTarget {
 			
 				
@@ -4677,34 +4647,42 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListLocationsEmitPayload {
+		interface ListLocationsEmitTargetAndPayload {
 			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTarget| undefined | null
 				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayload| undefined | null
 		}
 
-		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'listLocationsEmitPayload',
+		interface ListLocationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'listLocationsEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** . */
-			            'shouldOnlyShowWhereIAmEmployed': {
-			                type: 'boolean',
-			                options: undefined
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
 			            },
 			            /** . */
-			            'paging': {
+			            'target': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema,}
 			            },
 			    }
 		}
 
-		interface ListLocationsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema> {}
+		interface ListLocationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -4766,98 +4744,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface ListOrgsEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ListOrgsEmitPayload {
-			
-				
-				'shouldOnlyShowMine'?: boolean| undefined | null
-				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
-				
-				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
-				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
-		}
-
-		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'listOrgsEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'shouldOnlyShowMine': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'shouldOnlyShowWhereIAmEmployed': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'shouldIncludePrivateOrganizations': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'paging': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
-			            },
-			    }
-		}
-
-		interface ListOrgsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ListOrganizationsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget| undefined | null
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload| undefined | null
-		}
-
-		interface ListOrganizationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'listOrganizationsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface ListOrganizationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrganizationsEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -6079,43 +5965,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterListenersEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
-		}
-
-		interface RegisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerListenersEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterListenersEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface RegisteredListener {
 			
 				
@@ -6183,6 +6032,43 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface RegisterListenersEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterListenersEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
+		}
+
+		interface RegisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerListenersEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface RegisterListenersEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -6968,6 +6854,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface SendMessageEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
+		}
+
+		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'sendMessageEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface SendMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface SendMessageMessagePayload {
 			
 				/** . An arbitrary id that can be used to track this message when being sent and not yet assigned an Id. */
@@ -7067,50 +6997,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface SendMessageEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface SendMessageEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
-		}
-
-		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'sendMessageEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface SendMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -7248,36 +7134,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SyncEventContractsEmitPayload {
-			
-				
-				'contract': SpruceSchemas.Mercury.v2020_12_25.EventContract
-		}
-
-		interface SyncEventContractsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'syncEventContractsEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
-			    fields: {
-			            /** . */
-			            'contract': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema,}
-			            },
-			    }
-		}
-
-		interface SyncEventContractsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncEventContractsEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface SyncEventContractsEmitTargetAndPayload {
 			
 				/** Source. */
@@ -7308,6 +7164,36 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface SyncEventContractsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncEventContractsEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SyncEventContractsEmitPayload {
+			
+				
+				'contract': SpruceSchemas.Mercury.v2020_12_25.EventContract
+		}
+
+		interface SyncEventContractsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'syncEventContractsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
+			    fields: {
+			            /** . */
+			            'contract': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema,}
+			            },
+			    }
+		}
+
+		interface SyncEventContractsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncEventContractsEmitPayloadSchema> {}
 
 	}
 
@@ -9025,49 +8911,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface VoteForFeatureResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.VoteForFeatureResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ListLocationsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTarget| undefined | null
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayload| undefined | null
-		}
-
-		interface ListLocationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'listLocationsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface ListLocationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetAndPayloadSchema> {}
 
 	}
 

@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import feedItemSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feedItem.schema'
+import feedItemSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/feedItem.schema'
 
 const didUpdateFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema  = {
 	id: 'didUpdateFeedEmitPayload',
@@ -13,7 +13,7 @@ const didUpdateFeedEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidUpdat
 	            'item': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: feedItemSchema_v2020_12_25,}
+	                options: {schema: feedItemSchema_v2020_07_22,}
 	            },
 	    }
 }
