@@ -81,10 +81,10 @@
     "typescript": "^5.0.2"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^42.1.17",
+    "@sprucelabs/mercury-types": "^42.1.18",
     "@sprucelabs/schema": "^28.5.153",
-    "@sprucelabs/spruce-core-schemas": "^37.2.16",
-    "@sprucelabs/spruce-event-utils": "^34.0.28"
+    "@sprucelabs/spruce-core-schemas": "^37.2.17",
+    "@sprucelabs/spruce-event-utils": "^34.0.29"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
