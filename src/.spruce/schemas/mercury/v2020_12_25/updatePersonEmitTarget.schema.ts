@@ -14,6 +14,16 @@ const updatePersonEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.UpdatePers
 	                type: 'id',
 	                options: undefined
 	            },
+	            /** . */
+	            'organizationId': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
+	            'locationId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

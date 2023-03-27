@@ -8299,6 +8299,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'personId'?: string| undefined | null
+				
+				'organizationId'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
 		}
 
 		interface UpdatePersonEmitTargetSchema extends SpruceSchema.Schema {
@@ -8309,6 +8313,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'personId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
 			                type: 'id',
 			                options: undefined
 			            },
