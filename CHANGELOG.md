@@ -1,3 +1,10 @@
+# [20.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v19.0.0...v20.0.0) (2023-03-27)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([0cf6599](https://github.com/sprucelabsai-community/mercury-core-events/commit/0cf6599))
+
 # [19.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v18.0.41...v19.0.0) (2023-03-27)
 
 
