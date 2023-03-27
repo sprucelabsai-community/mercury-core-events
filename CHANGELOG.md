@@ -1,3 +1,10 @@
+# [19.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v18.0.41...v19.0.0) (2023-03-27)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([e3babab](https://github.com/sprucelabsai-community/mercury-core-events/commit/e3babab))
+
 ## [18.0.41](https://github.com/sprucelabsai-community/mercury-core-events/compare/v18.0.40...v18.0.41) (2023-03-27)
 
 ## [18.0.40](https://github.com/sprucelabsai-community/mercury-core-events/compare/v18.0.39...v18.0.40) (2023-03-26)
