@@ -94,9 +94,6 @@ import mercuryHealthEventContract_v2020_12_25, {
 import mercuryInstallSkillEventContract_v2020_12_25, {
 	InstallSkillEventContract as MercuryInstallSkillEventContract_v2020_12_25,
 } from '#spruce/events/mercury/installSkill.v2020_12_25.contract'
-import mercuryInvokeChatCallbackEventContract_v2020_12_25, {
-	InvokeChatCallbackEventContract as MercuryInvokeChatCallbackEventContract_v2020_12_25,
-} from '#spruce/events/mercury/invokeChatCallback.v2020_12_25.contract'
 import mercuryIsSkillInstalledEventContract_v2020_12_25, {
 	IsSkillInstalledEventContract as MercuryIsSkillInstalledEventContract_v2020_12_25,
 } from '#spruce/events/mercury/isSkillInstalled.v2020_12_25.contract'
@@ -236,7 +233,6 @@ export default [
 	mercuryGetSkillEventContract_v2020_12_25,
 	mercuryHealthEventContract_v2020_12_25,
 	mercuryInstallSkillEventContract_v2020_12_25,
-	mercuryInvokeChatCallbackEventContract_v2020_12_25,
 	mercuryIsSkillInstalledEventContract_v2020_12_25,
 	mercuryListInstalledSkillsEventContract_v2020_12_25,
 	mercuryListLocationsEventContract_v2020_12_25,
@@ -339,8 +335,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'health::v2020_12_25': MercuryHealthEventContract_v2020_12_25['eventSignatures']['health::v2020_12_25']
 
 		'install-skill::v2020_12_25': MercuryInstallSkillEventContract_v2020_12_25['eventSignatures']['install-skill::v2020_12_25']
-
-		'invoke-chat-callback::v2020_12_25': MercuryInvokeChatCallbackEventContract_v2020_12_25['eventSignatures']['invoke-chat-callback::v2020_12_25']
 
 		'is-skill-installed::v2020_12_25': MercuryIsSkillInstalledEventContract_v2020_12_25['eventSignatures']['is-skill-installed::v2020_12_25']
 
