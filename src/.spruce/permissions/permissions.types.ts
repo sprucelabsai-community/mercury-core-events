@@ -35,6 +35,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed',
 		]
+		'chat-bot-contract': [
+			'can-register-chat-bot',
+		]
 	}
 }
 
