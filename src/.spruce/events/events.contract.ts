@@ -121,9 +121,6 @@ import mercuryListSkillsEventContract_v2020_12_25, {
 import mercuryLogoutEventContract_v2020_12_25, {
 	LogoutEventContract as MercuryLogoutEventContract_v2020_12_25,
 } from '#spruce/events/mercury/logout.v2020_12_25.contract'
-import mercuryRegisterChatBotEventContract_v2020_12_25, {
-	RegisterChatBotEventContract as MercuryRegisterChatBotEventContract_v2020_12_25,
-} from '#spruce/events/mercury/registerChatBot.v2020_12_25.contract'
 import mercuryRegisterConversationTopicsEventContract_v2020_12_25, {
 	RegisterConversationTopicsEventContract as MercuryRegisterConversationTopicsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/registerConversationTopics.v2020_12_25.contract'
@@ -242,7 +239,6 @@ export default [
 	mercuryListRolesEventContract_v2020_12_25,
 	mercuryListSkillsEventContract_v2020_12_25,
 	mercuryLogoutEventContract_v2020_12_25,
-	mercuryRegisterChatBotEventContract_v2020_12_25,
 	mercuryRegisterConversationTopicsEventContract_v2020_12_25,
 	mercuryRegisterEventsEventContract_v2020_12_25,
 	mercuryRegisterListenersEventContract_v2020_12_25,
@@ -353,8 +349,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'list-skills::v2020_12_25': MercuryListSkillsEventContract_v2020_12_25['eventSignatures']['list-skills::v2020_12_25']
 
 		'logout::v2020_12_25': MercuryLogoutEventContract_v2020_12_25['eventSignatures']['logout::v2020_12_25']
-
-		'register-chat-bot::v2020_12_25': MercuryRegisterChatBotEventContract_v2020_12_25['eventSignatures']['register-chat-bot::v2020_12_25']
 
 		'register-conversation-topics::v2020_12_25': MercuryRegisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['register-conversation-topics::v2020_12_25']
 
