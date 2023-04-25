@@ -1,3 +1,10 @@
+# [20.2.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.1.2...v20.2.0) (2023-04-25)
+
+
+### Features
+
+* register chat callbacks! ([7136278](https://github.com/sprucelabsai-community/mercury-core-events/commit/7136278))
+
 ## [20.1.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.1.1...v20.1.2) (2023-04-25)
 
 ## [20.1.1](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.1.0...v20.1.1) (2023-04-25)
