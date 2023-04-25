@@ -1,3 +1,10 @@
+# [20.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.0.27...v20.1.0) (2023-04-25)
+
+
+### Features
+
+* register chat bot events and perms ([3dc9f7e](https://github.com/sprucelabsai-community/mercury-core-events/commit/3dc9f7e))
+
 ## [20.0.27](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.0.26...v20.0.27) (2023-04-24)
 
 ## [20.0.26](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.0.25...v20.0.26) (2023-04-24)
