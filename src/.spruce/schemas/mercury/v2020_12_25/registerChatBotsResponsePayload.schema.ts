@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-
+import chatbotSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/chatbot.schema'
 
 const registerChatBotsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsResponsePayloadSchema  = {
 	id: 'registerChatBotsResponsePayload',
@@ -10,10 +10,12 @@ const registerChatBotsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.R
 	name: '',
 	    fields: {
 	            /** . */
-	            'totalRegisteredBots': {
-	                type: 'number',
+	            'bots': {
+	                type: 'schema',
 	                isRequired: true,
-	                options: undefined
+	                isArray: true,
+	                minArrayLength: 0,
+	                options: {schema: chatbotSchema_v2020_12_25,}
 	            },
 	    }
 }

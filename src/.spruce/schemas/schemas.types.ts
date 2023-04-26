@@ -1059,6 +1059,35 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface RegisterChatBotsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+		}
+
+		interface RegisterChatBotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatBotsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			    }
+		}
+
+		interface RegisterChatBotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface ChatBotCallbacks {
 			
 				
@@ -1157,14 +1186,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterChatBotsPayload {
+		interface RegisterChatBotsResponsePayload {
 			
 				
 				'bots': SpruceSchemas.Mercury.v2020_12_25.Chatbot[]
 		}
 
-		interface RegisterChatBotsPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatBotsPayload',
+		interface RegisterChatBotsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatBotsResponsePayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -1176,72 +1205,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isArray: true,
 			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterChatBotsPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface RegisterChatBotsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsPayload
-		}
-
-		interface RegisterChatBotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatBotsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterChatBotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface RegisterChatBotsResponsePayload {
-			
-				
-				'totalRegisteredBots': number
-		}
-
-		interface RegisterChatBotsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatBotsResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'totalRegisteredBots': {
-			                type: 'number',
-			                isRequired: true,
-			                options: undefined
 			            },
 			    }
 		}
