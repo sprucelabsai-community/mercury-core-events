@@ -1,3 +1,10 @@
+# [20.3.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.2.3...v20.3.0) (2023-04-26)
+
+
+### Features
+
+* chat callbacks and rename ([baeea81](https://github.com/sprucelabsai-community/mercury-core-events/commit/baeea81))
+
 ## [20.2.3](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.2.2...v20.2.3) (2023-04-26)
 
 ## [20.2.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.2.1...v20.2.2) (2023-04-26)
