@@ -94,6 +94,9 @@ import mercuryHealthEventContract_v2020_12_25, {
 import mercuryInstallSkillEventContract_v2020_12_25, {
 	InstallSkillEventContract as MercuryInstallSkillEventContract_v2020_12_25,
 } from '#spruce/events/mercury/installSkill.v2020_12_25.contract'
+import mercuryInvokeChatCallbackEventContract_v2020_12_25, {
+	InvokeChatCallbackEventContract as MercuryInvokeChatCallbackEventContract_v2020_12_25,
+} from '#spruce/events/mercury/invokeChatCallback.v2020_12_25.contract'
 import mercuryIsSkillInstalledEventContract_v2020_12_25, {
 	IsSkillInstalledEventContract as MercuryIsSkillInstalledEventContract_v2020_12_25,
 } from '#spruce/events/mercury/isSkillInstalled.v2020_12_25.contract'
@@ -121,9 +124,9 @@ import mercuryListSkillsEventContract_v2020_12_25, {
 import mercuryLogoutEventContract_v2020_12_25, {
 	LogoutEventContract as MercuryLogoutEventContract_v2020_12_25,
 } from '#spruce/events/mercury/logout.v2020_12_25.contract'
-import mercuryRegisterChatBotEventContract_v2020_12_25, {
-	RegisterChatBotEventContract as MercuryRegisterChatBotEventContract_v2020_12_25,
-} from '#spruce/events/mercury/registerChatBot.v2020_12_25.contract'
+import mercuryRegisterChatBotsEventContract_v2020_12_25, {
+	RegisterChatBotsEventContract as MercuryRegisterChatBotsEventContract_v2020_12_25,
+} from '#spruce/events/mercury/registerChatBots.v2020_12_25.contract'
 import mercuryRegisterConversationTopicsEventContract_v2020_12_25, {
 	RegisterConversationTopicsEventContract as MercuryRegisterConversationTopicsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/registerConversationTopics.v2020_12_25.contract'
@@ -233,6 +236,7 @@ export default [
 	mercuryGetSkillEventContract_v2020_12_25,
 	mercuryHealthEventContract_v2020_12_25,
 	mercuryInstallSkillEventContract_v2020_12_25,
+	mercuryInvokeChatCallbackEventContract_v2020_12_25,
 	mercuryIsSkillInstalledEventContract_v2020_12_25,
 	mercuryListInstalledSkillsEventContract_v2020_12_25,
 	mercuryListLocationsEventContract_v2020_12_25,
@@ -242,7 +246,7 @@ export default [
 	mercuryListRolesEventContract_v2020_12_25,
 	mercuryListSkillsEventContract_v2020_12_25,
 	mercuryLogoutEventContract_v2020_12_25,
-	mercuryRegisterChatBotEventContract_v2020_12_25,
+	mercuryRegisterChatBotsEventContract_v2020_12_25,
 	mercuryRegisterConversationTopicsEventContract_v2020_12_25,
 	mercuryRegisterEventsEventContract_v2020_12_25,
 	mercuryRegisterListenersEventContract_v2020_12_25,
@@ -336,6 +340,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 
 		'install-skill::v2020_12_25': MercuryInstallSkillEventContract_v2020_12_25['eventSignatures']['install-skill::v2020_12_25']
 
+		'invoke-chat-callback::v2020_12_25': MercuryInvokeChatCallbackEventContract_v2020_12_25['eventSignatures']['invoke-chat-callback::v2020_12_25']
+
 		'is-skill-installed::v2020_12_25': MercuryIsSkillInstalledEventContract_v2020_12_25['eventSignatures']['is-skill-installed::v2020_12_25']
 
 		'list-installed-skills::v2020_12_25': MercuryListInstalledSkillsEventContract_v2020_12_25['eventSignatures']['list-installed-skills::v2020_12_25']
@@ -354,7 +360,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 
 		'logout::v2020_12_25': MercuryLogoutEventContract_v2020_12_25['eventSignatures']['logout::v2020_12_25']
 
-		'register-chat-bot::v2020_12_25': MercuryRegisterChatBotEventContract_v2020_12_25['eventSignatures']['register-chat-bot::v2020_12_25']
+		'register-chat-bots::v2020_12_25': MercuryRegisterChatBotsEventContract_v2020_12_25['eventSignatures']['register-chat-bots::v2020_12_25']
 
 		'register-conversation-topics::v2020_12_25': MercuryRegisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['register-conversation-topics::v2020_12_25']
 

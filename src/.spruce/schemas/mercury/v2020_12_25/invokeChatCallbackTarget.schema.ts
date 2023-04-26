@@ -3,27 +3,27 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const chatBotCallbacksSchema: SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacksSchema  = {
-	id: 'chatBotCallbacks',
+const invokeChatCallbackTargetSchema: SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTargetSchema  = {
+	id: 'invokeChatCallbackTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . */
-	            'placeholder': {
+	            'skillId': {
 	                type: 'id',
 	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
-	            'useThisWhenever': {
-	                type: 'text',
+	            'chatPersonId': {
+	                type: 'id',
 	                isRequired: true,
 	                options: undefined
 	            },
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(chatBotCallbacksSchema)
+SchemaRegistry.getInstance().trackSchema(invokeChatCallbackTargetSchema)
 
-export default chatBotCallbacksSchema
+export default invokeChatCallbackTargetSchema

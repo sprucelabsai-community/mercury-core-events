@@ -4,8 +4,8 @@ import { SpruceSchemas } from '../../schemas.types'
 import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventSource.schema'
 import registerChatBotsPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/registerChatBotsPayload.schema'
 
-const registerChatBotEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotEmitTargetAndPayloadSchema  = {
-	id: 'registerChatBotEmitTargetAndPayload',
+const registerChatBotsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsEmitTargetAndPayloadSchema  = {
+	id: 'registerChatBotsEmitTargetAndPayload',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -25,6 +25,6 @@ const registerChatBotEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(registerChatBotEmitTargetAndPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(registerChatBotsEmitTargetAndPayloadSchema)
 
-export default registerChatBotEmitTargetAndPayloadSchema
+export default registerChatBotsEmitTargetAndPayloadSchema
