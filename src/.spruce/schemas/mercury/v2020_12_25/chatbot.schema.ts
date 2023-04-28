@@ -10,12 +10,6 @@ const chatbotSchema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema  = {
 	name: '',
 	    fields: {
 	            /** . */
-	            'title': {
-	                type: 'text',
-	                isRequired: true,
-	                options: undefined
-	            },
-	            /** . */
 	            'yourJobIfYouChooseToAcceptItIs': {
 	                type: 'text',
 	                isRequired: true,

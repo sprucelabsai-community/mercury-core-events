@@ -1128,8 +1128,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface Chatbot {
 			
 				
-				'title': string
-				
 				'yourJobIfYouChooseToAcceptItIs': string
 				
 				'weAreDoneWhen': string
@@ -1147,12 +1145,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
-			            /** . */
-			            'title': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
 			            /** . */
 			            'yourJobIfYouChooseToAcceptItIs': {
 			                type: 'text',
