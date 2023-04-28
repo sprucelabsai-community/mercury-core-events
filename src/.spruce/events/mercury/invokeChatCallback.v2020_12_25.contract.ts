@@ -7,8 +7,8 @@ const invokeChatCallbackEventContract = buildEventContract({
 	eventSignatures: {
 		'invoke-chat-callback::v2020_12_25': {
 			listenPermissions: {
-				contractId: 'chat-bot-contract',
-				permissionIdsAny: ['can-register-chat-bots'],
+				contractId: 'chatbot-contract',
+				permissionIdsAny: ['can-register-chatbots'],
 			},
 			emitPayloadSchema: invokeChatCallbackEmitTargetAndPayloadSchema,
 			responsePayloadSchema: invokeChatCallbackResponsePayloadSchema,

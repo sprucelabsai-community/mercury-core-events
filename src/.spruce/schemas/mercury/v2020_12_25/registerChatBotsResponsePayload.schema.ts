@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import chatbotSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/chatbot.schema'
 
-const registerChatBotsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsResponsePayloadSchema  = {
-	id: 'registerChatBotsResponsePayload',
+const registerChatbotsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsResponsePayloadSchema  = {
+	id: 'registerChatbotsResponsePayload',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -20,6 +20,6 @@ const registerChatBotsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.R
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(registerChatBotsResponsePayloadSchema)
+SchemaRegistry.getInstance().trackSchema(registerChatbotsResponsePayloadSchema)
 
-export default registerChatBotsResponsePayloadSchema
+export default registerChatbotsResponsePayloadSchema

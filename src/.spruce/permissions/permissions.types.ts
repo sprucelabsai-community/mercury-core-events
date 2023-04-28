@@ -38,6 +38,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'chat-bot-contract': [
 			'can-register-chat-bots',
 		]
+		'chatbot-contract': [
+			'can-register-chatbots',
+		]
 	}
 }
 

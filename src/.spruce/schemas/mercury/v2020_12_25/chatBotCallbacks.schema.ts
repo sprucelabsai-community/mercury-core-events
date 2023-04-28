@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const chatBotCallbacksSchema: SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacksSchema  = {
-	id: 'chatBotCallbacks',
+const chatbotCallbacksSchema: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema  = {
+	id: 'chatbotCallbacks',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -24,6 +24,6 @@ const chatBotCallbacksSchema: SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacks
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(chatBotCallbacksSchema)
+SchemaRegistry.getInstance().trackSchema(chatbotCallbacksSchema)
 
-export default chatBotCallbacksSchema
+export default chatbotCallbacksSchema

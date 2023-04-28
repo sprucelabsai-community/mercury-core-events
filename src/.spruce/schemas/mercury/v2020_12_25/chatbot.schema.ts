@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import chatBotCallbacksSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/chatBotCallbacks.schema'
+import chatbotCallbacksSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/chatbotCallbacks.schema'
 
 const chatbotSchema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema  = {
 	id: 'chatbot',
@@ -43,7 +43,7 @@ const chatbotSchema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema  = {
 	                type: 'schema',
 	                isArray: true,
 	                minArrayLength: 0,
-	                options: {schema: chatBotCallbacksSchema_v2020_12_25,}
+	                options: {schema: chatbotCallbacksSchema_v2020_12_25,}
 	            },
 	    }
 }

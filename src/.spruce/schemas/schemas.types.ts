@@ -1059,14 +1059,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterChatBotsEmitTargetAndPayload {
+		interface RegisterChatbotsEmitTargetAndPayload {
 			
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 		}
 
-		interface RegisterChatBotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatBotsEmitTargetAndPayload',
+		interface RegisterChatbotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatbotsEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -1080,7 +1080,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface RegisterChatBotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsEmitTargetAndPayloadSchema> {}
+		interface RegisterChatbotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -1088,7 +1088,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ChatBotCallbacks {
+		interface ChatbotCallbacks {
 			
 				
 				'placeholder': string
@@ -1096,8 +1096,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'useThisWhenever': string
 		}
 
-		interface ChatBotCallbacksSchema extends SpruceSchema.Schema {
-			id: 'chatBotCallbacks',
+		interface ChatbotCallbacksSchema extends SpruceSchema.Schema {
+			id: 'chatbotCallbacks',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -1117,7 +1117,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface ChatBotCallbacksEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacksSchema> {}
+		interface ChatbotCallbacksEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema> {}
 
 	}
 
@@ -1138,7 +1138,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'stateSchema'?: (SpruceSchema.Schema)| undefined | null
 				
-				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacks[]| undefined | null
+				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[]| undefined | null
 		}
 
 		interface ChatbotSchema extends SpruceSchema.Schema {
@@ -1181,7 +1181,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isArray: true,
 			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatBotCallbacksSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema,}
 			            },
 			    }
 		}
@@ -1194,14 +1194,14 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterChatBotsResponsePayload {
+		interface RegisterChatbotsResponsePayload {
 			
 				
 				'bots': SpruceSchemas.Mercury.v2020_12_25.Chatbot[]
 		}
 
-		interface RegisterChatBotsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatBotsResponsePayload',
+		interface RegisterChatbotsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatbotsResponsePayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -1217,7 +1217,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface RegisterChatBotsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatBotsResponsePayloadSchema> {}
+		interface RegisterChatbotsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsResponsePayloadSchema> {}
 
 	}
 
