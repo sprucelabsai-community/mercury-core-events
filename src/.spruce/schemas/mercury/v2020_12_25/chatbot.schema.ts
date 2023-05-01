@@ -39,6 +39,16 @@ const chatbotSchema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema  = {
 	                options: {valueType: `SpruceSchema.Schema`,}
 	            },
 	            /** . */
+	            'model': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
+	            'promptTemplate': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
 	            'callbacks': {
 	                type: 'schema',
 	                isArray: true,

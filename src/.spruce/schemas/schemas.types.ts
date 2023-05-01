@@ -1138,6 +1138,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'stateSchema'?: (SpruceSchema.Schema)| undefined | null
 				
+				'model'?: string| undefined | null
+				
+				'promptTemplate'?: string| undefined | null
+				
 				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[]| undefined | null
 		}
 
@@ -1175,6 +1179,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'stateSchema': {
 			                type: 'raw',
 			                options: {valueType: `SpruceSchema.Schema`,}
+			            },
+			            /** . */
+			            'model': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'promptTemplate': {
+			                type: 'text',
+			                options: undefined
 			            },
 			            /** . */
 			            'callbacks': {

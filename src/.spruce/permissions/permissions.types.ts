@@ -2,8 +2,8 @@ import '@sprucelabs/mercury-types'
 
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface PermissionContractMap {
-		'chat-bot-contract': [
-			'can-register-chat-bots',
+		'chatbot-contract': [
+			'can-register-chatbots',
 		]
 		'events-contract': [
 			'can-register-global-events',
@@ -37,9 +37,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		]
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed',
-		]
-		'chatbot-contract': [
-			'can-register-chatbots',
 		]
 	}
 }
