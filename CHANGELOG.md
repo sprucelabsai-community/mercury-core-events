@@ -1,3 +1,10 @@
+# [20.4.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.3.17...v20.4.0) (2023-05-02)
+
+
+### Features
+
+* list people updated after ([8f05518](https://github.com/sprucelabsai-community/mercury-core-events/commit/8f05518))
+
 ## [20.3.17](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.3.16...v20.3.17) (2023-05-02)
 
 ## [20.3.16](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.3.15...v20.3.16) (2023-05-01)
