@@ -36,16 +36,6 @@ const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePer
 	                options: {requiredSizes: ["*"],}
 	            },
 	            /** . */
-	            'dateCreated': {
-	                type: 'dateTime',
-	                options: undefined
-	            },
-	            /** . */
-	            'dateUpdated': {
-	                type: 'dateTime',
-	                options: undefined
-	            },
-	            /** . */
 	            'dateScrambled': {
 	                type: 'dateTime',
 	                options: undefined

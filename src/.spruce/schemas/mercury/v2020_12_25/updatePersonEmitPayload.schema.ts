@@ -35,11 +35,6 @@ const updatePersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdatePer
 	                type: 'image',
 	                options: {requiredSizes: ["*"],}
 	            },
-	            /** . */
-	            'dateUpdated': {
-	                type: 'dateTime',
-	                options: undefined
-	            },
 	            /** Phone. A number that can be texted */
 	            'phone': {
 	                label: 'Phone',

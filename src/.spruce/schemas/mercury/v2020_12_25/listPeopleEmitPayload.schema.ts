@@ -32,6 +32,11 @@ const listPeopleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleE
 	                type: 'boolean',
 	                options: undefined
 	            },
+	            /** . */
+	            'updatedAfter': {
+	                type: 'dateTime',
+	                options: undefined
+	            },
 	    }
 }
 
