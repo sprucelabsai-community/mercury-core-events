@@ -65,6 +65,11 @@ const listPersonSchema: SpruceSchemas.Mercury.v2020_12_25.ListPersonSchema  = {
 	                options: undefined
 	            },
 	            /** . */
+	            'dateUpdated': {
+	                type: 'dateTime',
+	                options: undefined
+	            },
+	            /** . */
 	            'dateScrambled': {
 	                type: 'dateTime',
 	                options: undefined
