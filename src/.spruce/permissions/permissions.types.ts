@@ -24,7 +24,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-emit-did-message-event','can-listen-to-did-message-event','can-message-others','can-message-as-sprucebot',
 		]
 		'organizations-contract': [
-			'can-update-organization-profile','can-delete-organization','can-view-private-organizations',
+			'can-update-organization-profile','can-delete-organization','can-view-private-organizations','can-list-orgs-for-other-people',
 		]
 		'people-contract': [
 			'can-create-person','can-list-people-permission-id','can-scramble-other-person','can-edit-other-people','can-get-anonymous-person','can-get-person-private-fields','can-get-person-by-phone','can-listen-to-did-signup','can-listen-to-did-update',
