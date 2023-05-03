@@ -8,9 +8,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'events-contract': [
 			'can-register-global-events',
 		]
-		'feed-contract': [
-			'can-see-other-persons-feed','can-subscribe-to-feed-updates',
-		]
 		'hiring-and-promoting-contract': [
 			'can-hire-person','can-fire-person','hire-and-promote-when-not-installed',
 		]
@@ -37,6 +34,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		]
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed',
+		]
+		'feed-contract': [
+			'can-see-other-persons-feed','can-subscribe-to-feed-updates',
 		]
 	}
 }
