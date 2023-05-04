@@ -1,3 +1,10 @@
+# [21.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.4.3...v21.0.0) (2023-05-04)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([c3d1164](https://github.com/sprucelabsai-community/mercury-core-events/commit/c3d1164))
+
 ## [20.4.3](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.4.2...v20.4.3) (2023-05-03)
 
 ## [20.4.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v20.4.1...v20.4.2) (2023-05-02)
