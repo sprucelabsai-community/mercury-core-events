@@ -1,6 +1,6 @@
 {
   "name": "@sprucelabs/mercury-core-events",
-  "version": "21.0.2",
+  "version": "21.0.3",
   "description": "Events Mercury provides out of the box.",
   "skill": {
     "namespace": "mercury-core-events",
