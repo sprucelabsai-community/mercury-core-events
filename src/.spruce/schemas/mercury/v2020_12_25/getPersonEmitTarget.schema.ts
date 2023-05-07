@@ -19,6 +19,11 @@ const getPersonEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmit
 	                type: 'phone',
 	                options: undefined
 	            },
+	            /** . */
+	            'locationId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

@@ -3626,6 +3626,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'personId'?: string| undefined | null
 				
 				'phone'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
 		}
 
 		interface GetPersonEmitTargetSchema extends SpruceSchema.Schema {
@@ -3642,6 +3644,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'phone': {
 			                type: 'phone',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
 			                options: undefined
 			            },
 			    }
