@@ -1,3 +1,10 @@
+# [21.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.0.6...v21.1.0) (2023-05-07)
+
+
+### Features
+
+* location now part of get-person ([9f5f918](https://github.com/sprucelabsai-community/mercury-core-events/commit/9f5f918))
+
 ## [21.0.6](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.0.5...v21.0.6) (2023-05-06)
 
 ## [21.0.5](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.0.4...v21.0.5) (2023-05-05)
