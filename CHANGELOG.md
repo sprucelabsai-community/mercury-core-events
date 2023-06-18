@@ -1,3 +1,10 @@
+# [21.2.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.1.63...v21.2.0) (2023-06-18)
+
+
+### Features
+
+* can register push token ([fc65c3a](https://github.com/sprucelabsai-community/mercury-core-events/commit/fc65c3a))
+
 ## [21.1.63](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.1.62...v21.1.63) (2023-06-17)
 
 ## [21.1.62](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.1.61...v21.1.62) (2023-06-17)
