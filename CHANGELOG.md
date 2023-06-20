@@ -1,3 +1,10 @@
+# [21.3.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.2.3...v21.3.0) (2023-06-20)
+
+
+### Features
+
+* namespace in listing orgs ([2c46676](https://github.com/sprucelabsai-community/mercury-core-events/commit/2c46676))
+
 ## [21.2.3](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.2.2...v21.2.3) (2023-06-19)
 
 ## [21.2.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.2.1...v21.2.2) (2023-06-19)
