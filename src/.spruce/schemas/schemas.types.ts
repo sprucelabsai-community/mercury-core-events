@@ -5054,6 +5054,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'organizationIds'?: string[]| undefined | null
 				
 				'personId'?: string| undefined | null
+				
+				'namespace'?: string| undefined | null
 		}
 
 		interface ListOrgsEmitTargetSchema extends SpruceSchema.Schema {
@@ -5071,6 +5073,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'personId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'namespace': {
 			                type: 'id',
 			                options: undefined
 			            },

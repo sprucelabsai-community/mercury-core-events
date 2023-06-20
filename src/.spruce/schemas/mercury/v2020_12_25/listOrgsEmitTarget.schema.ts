@@ -21,6 +21,11 @@ const listOrgsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTa
 	                type: 'id',
 	                options: undefined
 	            },
+	            /** . */
+	            'namespace': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 
