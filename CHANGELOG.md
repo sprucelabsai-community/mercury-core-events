@@ -1,3 +1,10 @@
+# [22.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.3.12...v22.0.0) (2023-07-08)
+
+
+### Breaking Changes
+
+* upgrade ([5b85772](https://github.com/sprucelabsai-community/mercury-core-events/commit/5b85772))
+
 ## [21.3.12](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.3.11...v21.3.12) (2023-07-08)
 
 ## [21.3.11](https://github.com/sprucelabsai-community/mercury-core-events/compare/v21.3.10...v21.3.11) (2023-07-07)
