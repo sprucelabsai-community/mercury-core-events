@@ -14,16 +14,19 @@ export default class TestClient<Contract extends EventContract>
 {
 	public async emitAndFlattenResponses<
 		EventName extends EventNames<Contract> = EventNames<Contract>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never,
 		ResponsePayload = ResponseSchema extends Schema
 			? SchemaValues<ResponseSchema>
-			: never
+			: never,
 	>(
 		_eventName: EventName,
 		_payload:
@@ -37,16 +40,19 @@ export default class TestClient<Contract extends EventContract>
 
 	public async emit<
 		EventName extends EventNames<Contract> = EventNames<Contract>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never,
 		ResponsePayload = ResponseSchema extends Schema
 			? SchemaValues<ResponseSchema>
-			: never
+			: never,
 	>(
 		_eventName: EventName,
 		_payload:
@@ -76,10 +82,12 @@ export default class TestClient<Contract extends EventContract>
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
-			: never
+			: never,
 	>(
 		_eventName: EventName,
 		_cb: (
