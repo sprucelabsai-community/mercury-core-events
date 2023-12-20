@@ -118,9 +118,15 @@ import mercuryListPermissionContractsEventContract_v2020_12_25, {
 import mercuryListRolesEventContract_v2020_12_25, {
 	ListRolesEventContract as MercuryListRolesEventContract_v2020_12_25,
 } from '#spruce/events/mercury/listRoles.v2020_12_25.contract'
+import mercuryListSecurityQuestionsEventContract_v2020_12_25, {
+	ListSecurityQuestionsEventContract as MercuryListSecurityQuestionsEventContract_v2020_12_25,
+} from '#spruce/events/mercury/listSecurityQuestions.v2020_12_25.contract'
 import mercuryListSkillsEventContract_v2020_12_25, {
 	ListSkillsEventContract as MercuryListSkillsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/listSkills.v2020_12_25.contract'
+import mercuryLoginEventContract_v2020_12_25, {
+	LoginEventContract as MercuryLoginEventContract_v2020_12_25,
+} from '#spruce/events/mercury/login.v2020_12_25.contract'
 import mercuryLogoutEventContract_v2020_12_25, {
 	LogoutEventContract as MercuryLogoutEventContract_v2020_12_25,
 } from '#spruce/events/mercury/logout.v2020_12_25.contract'
@@ -151,6 +157,9 @@ import mercuryRemoveRoleEventContract_v2020_12_25, {
 import mercuryRequestPinEventContract_v2020_12_25, {
 	RequestPinEventContract as MercuryRequestPinEventContract_v2020_12_25,
 } from '#spruce/events/mercury/requestPin.v2020_12_25.contract'
+import mercuryResetPasswordEventContract_v2020_12_25, {
+	ResetPasswordEventContract as MercuryResetPasswordEventContract_v2020_12_25,
+} from '#spruce/events/mercury/resetPassword.v2020_12_25.contract'
 import mercurySavePermissionsEventContract_v2020_12_25, {
 	SavePermissionsEventContract as MercurySavePermissionsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/savePermissions.v2020_12_25.contract'
@@ -160,6 +169,9 @@ import mercuryScrambleAccountEventContract_v2020_12_25, {
 import mercurySendMessageEventContract_v2020_12_25, {
 	SendMessageEventContract as MercurySendMessageEventContract_v2020_12_25,
 } from '#spruce/events/mercury/sendMessage.v2020_12_25.contract'
+import mercurySignupEventContract_v2020_12_25, {
+	SignupEventContract as MercurySignupEventContract_v2020_12_25,
+} from '#spruce/events/mercury/signup.v2020_12_25.contract'
 import mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25, {
 	SubmitErrorMessageFeedbackEventContract as MercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
 } from '#spruce/events/mercury/submitErrorMessageFeedback.v2020_12_25.contract'
@@ -247,7 +259,9 @@ export default [
 	mercuryListPeopleEventContract_v2020_12_25,
 	mercuryListPermissionContractsEventContract_v2020_12_25,
 	mercuryListRolesEventContract_v2020_12_25,
+	mercuryListSecurityQuestionsEventContract_v2020_12_25,
 	mercuryListSkillsEventContract_v2020_12_25,
+	mercuryLoginEventContract_v2020_12_25,
 	mercuryLogoutEventContract_v2020_12_25,
 	mercuryRegisterChatbotsEventContract_v2020_12_25,
 	mercuryRegisterConversationTopicsEventContract_v2020_12_25,
@@ -258,9 +272,11 @@ export default [
 	mercuryRegisterSkillEventContract_v2020_12_25,
 	mercuryRemoveRoleEventContract_v2020_12_25,
 	mercuryRequestPinEventContract_v2020_12_25,
+	mercuryResetPasswordEventContract_v2020_12_25,
 	mercurySavePermissionsEventContract_v2020_12_25,
 	mercuryScrambleAccountEventContract_v2020_12_25,
 	mercurySendMessageEventContract_v2020_12_25,
+	mercurySignupEventContract_v2020_12_25,
 	mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
 	mercurySyncEventContractsEventContract_v2020_12_25,
 	mercurySyncPermissionContractsEventContract_v2020_12_25,
@@ -360,7 +376,11 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 
 		'list-roles::v2020_12_25': MercuryListRolesEventContract_v2020_12_25['eventSignatures']['list-roles::v2020_12_25']
 
+		'list-security-questions::v2020_12_25': MercuryListSecurityQuestionsEventContract_v2020_12_25['eventSignatures']['list-security-questions::v2020_12_25']
+
 		'list-skills::v2020_12_25': MercuryListSkillsEventContract_v2020_12_25['eventSignatures']['list-skills::v2020_12_25']
+
+		'login::v2020_12_25': MercuryLoginEventContract_v2020_12_25['eventSignatures']['login::v2020_12_25']
 
 		'logout::v2020_12_25': MercuryLogoutEventContract_v2020_12_25['eventSignatures']['logout::v2020_12_25']
 
@@ -382,11 +402,15 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 
 		'request-pin::v2020_12_25': MercuryRequestPinEventContract_v2020_12_25['eventSignatures']['request-pin::v2020_12_25']
 
+		'reset-password::v2020_12_25': MercuryResetPasswordEventContract_v2020_12_25['eventSignatures']['reset-password::v2020_12_25']
+
 		'save-permissions::v2020_12_25': MercurySavePermissionsEventContract_v2020_12_25['eventSignatures']['save-permissions::v2020_12_25']
 
 		'scramble-account::v2020_12_25': MercuryScrambleAccountEventContract_v2020_12_25['eventSignatures']['scramble-account::v2020_12_25']
 
 		'send-message::v2020_12_25': MercurySendMessageEventContract_v2020_12_25['eventSignatures']['send-message::v2020_12_25']
+
+		'signup::v2020_12_25': MercurySignupEventContract_v2020_12_25['eventSignatures']['signup::v2020_12_25']
 
 		'submit-error-message-feedback::v2020_12_25': MercurySubmitErrorMessageFeedbackEventContract_v2020_12_25['eventSignatures']['submit-error-message-feedback::v2020_12_25']
 

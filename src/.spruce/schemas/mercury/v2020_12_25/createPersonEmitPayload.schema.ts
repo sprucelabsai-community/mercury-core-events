@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-
+import securityQuestionSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/securityQuestion.schema'
 
 const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayloadSchema  = {
 	id: 'createPersonEmitPayload',
@@ -48,6 +48,17 @@ const createPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreatePer
 	                isRequired: true,
 	                hint: 'A number that can be texted',
 	                options: undefined
+	            },
+	            /** . */
+	            'password': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
+	            'securityQuestions': {
+	                type: 'schema',
+	                isArray: true,
+	                options: {schema: securityQuestionSchema_v2020_12_25,}
 	            },
 	    }
 }
