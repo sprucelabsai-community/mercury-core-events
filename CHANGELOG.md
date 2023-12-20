@@ -1,3 +1,10 @@
+# [22.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.0.189...v22.1.0) (2023-12-20)
+
+
+### Features
+
+* password passed authentication ([c84785c](https://github.com/sprucelabsai-community/mercury-core-events/commit/c84785c))
+
 ## [22.0.189](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.0.188...v22.0.189) (2023-12-19)
 
 ## [22.0.188](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.0.187...v22.0.188) (2023-12-19)
