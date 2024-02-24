@@ -154,6 +154,9 @@ import mercuryRegisterSkillEventContract_v2020_12_25, {
 import mercuryRemoveRoleEventContract_v2020_12_25, {
 	RemoveRoleEventContract as MercuryRemoveRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/removeRole.v2020_12_25.contract'
+import mercuryRequestDataDeletedEventContract_v2020_12_25, {
+	RequestDataDeletedEventContract as MercuryRequestDataDeletedEventContract_v2020_12_25,
+} from '#spruce/events/mercury/requestDataDeleted.v2020_12_25.contract'
 import mercuryRequestPinEventContract_v2020_12_25, {
 	RequestPinEventContract as MercuryRequestPinEventContract_v2020_12_25,
 } from '#spruce/events/mercury/requestPin.v2020_12_25.contract'
@@ -271,6 +274,7 @@ export default [
 	mercuryRegisterPushTokenEventContract_v2020_12_25,
 	mercuryRegisterSkillEventContract_v2020_12_25,
 	mercuryRemoveRoleEventContract_v2020_12_25,
+	mercuryRequestDataDeletedEventContract_v2020_12_25,
 	mercuryRequestPinEventContract_v2020_12_25,
 	mercuryResetPasswordEventContract_v2020_12_25,
 	mercurySavePermissionsEventContract_v2020_12_25,
@@ -399,6 +403,8 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'register-skill::v2020_12_25': MercuryRegisterSkillEventContract_v2020_12_25['eventSignatures']['register-skill::v2020_12_25']
 
 		'remove-role::v2020_12_25': MercuryRemoveRoleEventContract_v2020_12_25['eventSignatures']['remove-role::v2020_12_25']
+
+		'request-data-deleted::v2020_12_25': MercuryRequestDataDeletedEventContract_v2020_12_25['eventSignatures']['request-data-deleted::v2020_12_25']
 
 		'request-pin::v2020_12_25': MercuryRequestPinEventContract_v2020_12_25['eventSignatures']['request-pin::v2020_12_25']
 

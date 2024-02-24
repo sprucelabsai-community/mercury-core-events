@@ -15,9 +15,9 @@ const updateLocationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateL
 	                type: 'text',
 	                options: undefined
 	            },
-	            /** Store number. You can use other symbols, like # or dashes. #123 or 32-US-5 */
+	            /** Location number. You can use other symbols, like # or dashes. #123 or 32-US-5 */
 	            'num': {
-	                label: 'Store number',
+	                label: 'Location number',
 	                type: 'text',
 	                hint: 'You can use other symbols, like # or dashes. #123 or 32-US-5',
 	                options: undefined
