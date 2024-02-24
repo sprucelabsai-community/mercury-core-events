@@ -1,3 +1,10 @@
+# [22.2.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.1.100...v22.2.0) (2024-02-24)
+
+
+### Features
+
+* request data deleted ([1af6551](https://github.com/sprucelabsai-community/mercury-core-events/commit/1af6551))
+
 ## [22.1.100](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.1.99...v22.1.100) (2024-02-23)
 
 ## [22.1.99](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.1.98...v22.1.99) (2024-02-23)
