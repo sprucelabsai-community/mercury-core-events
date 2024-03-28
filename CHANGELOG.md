@@ -1,3 +1,23 @@
+## [22.2.64](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.63...v22.2.64) (2024-03-28)
+
+## [22.2.63](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.62...v22.2.63) (2024-03-28)
+
+## [22.2.62](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.61...v22.2.62) (2024-03-28)
+
+## [22.2.61](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.60...v22.2.61) (2024-03-27)
+
+## [22.2.60](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.59...v22.2.60) (2024-03-27)
+
+## [22.2.59](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.58...v22.2.59) (2024-03-27)
+
+## [22.2.58](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.57...v22.2.58) (2024-03-27)
+
+## [22.2.57](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.56...v22.2.57) (2024-03-26)
+
+## [22.2.56](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.55...v22.2.56) (2024-03-25)
+
+## [22.2.55](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.54...v22.2.55) (2024-03-25)
+
 ## [22.2.54](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.53...v22.2.54) (2024-03-21)
 
 ## [22.2.53](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.52...v22.2.53) (2024-03-21)
