@@ -4,14 +4,14 @@ import syncEventContractsEmitTargetAndPayloadSchema from '#spruce/schemas/mercur
 import syncEventContractsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/syncEventContractsResponsePayload.schema'
 
 const syncEventContractsEventContract = buildEventContract({
-	eventSignatures: {
-		'sync-event-contracts::v2020_12_25': {
-			emitPayloadSchema: syncEventContractsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: syncEventContractsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'sync-event-contracts::v2020_12_25': {
+            emitPayloadSchema: syncEventContractsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: syncEventContractsResponsePayloadSchema,
+        },
+    },
 })
 export default syncEventContractsEventContract
 
 export type SyncEventContractsEventContract =
-	typeof syncEventContractsEventContract
+    typeof syncEventContractsEventContract

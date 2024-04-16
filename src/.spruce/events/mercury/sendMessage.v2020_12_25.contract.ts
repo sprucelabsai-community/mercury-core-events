@@ -4,12 +4,12 @@ import sendMessageEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020
 import sendMessageResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/sendMessageResponsePayload.schema'
 
 const sendMessageEventContract = buildEventContract({
-	eventSignatures: {
-		'send-message::v2020_12_25': {
-			emitPayloadSchema: sendMessageEmitTargetAndPayloadSchema,
-			responsePayloadSchema: sendMessageResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'send-message::v2020_12_25': {
+            emitPayloadSchema: sendMessageEmitTargetAndPayloadSchema,
+            responsePayloadSchema: sendMessageResponsePayloadSchema,
+        },
+    },
 })
 export default sendMessageEventContract
 

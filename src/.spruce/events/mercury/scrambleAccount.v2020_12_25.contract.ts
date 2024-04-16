@@ -4,12 +4,12 @@ import scrambleAccountEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v
 import scrambleAccountResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/scrambleAccountResponsePayload.schema'
 
 const scrambleAccountEventContract = buildEventContract({
-	eventSignatures: {
-		'scramble-account::v2020_12_25': {
-			emitPayloadSchema: scrambleAccountEmitTargetAndPayloadSchema,
-			responsePayloadSchema: scrambleAccountResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'scramble-account::v2020_12_25': {
+            emitPayloadSchema: scrambleAccountEmitTargetAndPayloadSchema,
+            responsePayloadSchema: scrambleAccountResponsePayloadSchema,
+        },
+    },
 })
 export default scrambleAccountEventContract
 

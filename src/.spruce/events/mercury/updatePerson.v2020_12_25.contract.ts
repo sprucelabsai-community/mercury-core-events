@@ -4,12 +4,12 @@ import updatePersonEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v202
 import updatePersonResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/updatePersonResponsePayload.schema'
 
 const updatePersonEventContract = buildEventContract({
-	eventSignatures: {
-		'update-person::v2020_12_25': {
-			emitPayloadSchema: updatePersonEmitTargetAndPayloadSchema,
-			responsePayloadSchema: updatePersonResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'update-person::v2020_12_25': {
+            emitPayloadSchema: updatePersonEmitTargetAndPayloadSchema,
+            responsePayloadSchema: updatePersonResponsePayloadSchema,
+        },
+    },
 })
 export default updatePersonEventContract
 

@@ -4,12 +4,12 @@ import listLocationsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v20
 import listLocationsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listLocationsResponsePayload.schema'
 
 const listLocationsEventContract = buildEventContract({
-	eventSignatures: {
-		'list-locations::v2020_12_25': {
-			emitPayloadSchema: listLocationsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: listLocationsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'list-locations::v2020_12_25': {
+            emitPayloadSchema: listLocationsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: listLocationsResponsePayloadSchema,
+        },
+    },
 })
 export default listLocationsEventContract
 

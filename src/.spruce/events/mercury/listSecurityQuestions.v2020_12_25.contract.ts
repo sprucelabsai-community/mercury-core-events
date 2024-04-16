@@ -4,14 +4,14 @@ import listSecurityQuestionsEmitTargetAndPayloadSchema from '#spruce/schemas/mer
 import listSecurityQuestionsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listSecurityQuestionsResponsePayload.schema'
 
 const listSecurityQuestionsEventContract = buildEventContract({
-	eventSignatures: {
-		'list-security-questions::v2020_12_25': {
-			emitPayloadSchema: listSecurityQuestionsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: listSecurityQuestionsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'list-security-questions::v2020_12_25': {
+            emitPayloadSchema: listSecurityQuestionsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: listSecurityQuestionsResponsePayloadSchema,
+        },
+    },
 })
 export default listSecurityQuestionsEventContract
 
 export type ListSecurityQuestionsEventContract =
-	typeof listSecurityQuestionsEventContract
+    typeof listSecurityQuestionsEventContract

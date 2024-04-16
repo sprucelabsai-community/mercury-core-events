@@ -4,14 +4,16 @@ import doesHonorPermissionContractEmitTargetAndPayloadSchema from '#spruce/schem
 import doesHonorPermissionContractRespondPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/doesHonorPermissionContractRespondPayload.schema'
 
 const doesHonorPermissionContractEventContract = buildEventContract({
-	eventSignatures: {
-		'does-honor-permission-contract::v2020_12_25': {
-			emitPayloadSchema: doesHonorPermissionContractEmitTargetAndPayloadSchema,
-			responsePayloadSchema: doesHonorPermissionContractRespondPayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'does-honor-permission-contract::v2020_12_25': {
+            emitPayloadSchema:
+                doesHonorPermissionContractEmitTargetAndPayloadSchema,
+            responsePayloadSchema:
+                doesHonorPermissionContractRespondPayloadSchema,
+        },
+    },
 })
 export default doesHonorPermissionContractEventContract
 
 export type DoesHonorPermissionContractEventContract =
-	typeof doesHonorPermissionContractEventContract
+    typeof doesHonorPermissionContractEventContract

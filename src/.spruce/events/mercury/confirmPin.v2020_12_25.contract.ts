@@ -4,12 +4,12 @@ import confirmPinEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_
 import confirmPinRespondPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/confirmPinRespondPayload.schema'
 
 const confirmPinEventContract = buildEventContract({
-	eventSignatures: {
-		'confirm-pin::v2020_12_25': {
-			emitPayloadSchema: confirmPinEmitTargetAndPayloadSchema,
-			responsePayloadSchema: confirmPinRespondPayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'confirm-pin::v2020_12_25': {
+            emitPayloadSchema: confirmPinEmitTargetAndPayloadSchema,
+            responsePayloadSchema: confirmPinRespondPayloadSchema,
+        },
+    },
 })
 export default confirmPinEventContract
 

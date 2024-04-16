@@ -4,14 +4,14 @@ import didLeaveOrganizationEmitTargetAndPayloadSchema from '#spruce/schemas/merc
 import didLeaveOrganizationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didLeaveOrganizationResponsePayload.schema'
 
 const didLeaveOrganizationEventContract = buildEventContract({
-	eventSignatures: {
-		'did-leave-organization::v2020_12_25': {
-			emitPayloadSchema: didLeaveOrganizationEmitTargetAndPayloadSchema,
-			responsePayloadSchema: didLeaveOrganizationResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'did-leave-organization::v2020_12_25': {
+            emitPayloadSchema: didLeaveOrganizationEmitTargetAndPayloadSchema,
+            responsePayloadSchema: didLeaveOrganizationResponsePayloadSchema,
+        },
+    },
 })
 export default didLeaveOrganizationEventContract
 
 export type DidLeaveOrganizationEventContract =
-	typeof didLeaveOrganizationEventContract
+    typeof didLeaveOrganizationEventContract

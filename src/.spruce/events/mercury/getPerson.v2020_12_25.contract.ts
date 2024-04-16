@@ -4,12 +4,12 @@ import getPersonEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_1
 import getPersonResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getPersonResponsePayload.schema'
 
 const getPersonEventContract = buildEventContract({
-	eventSignatures: {
-		'get-person::v2020_12_25': {
-			emitPayloadSchema: getPersonEmitTargetAndPayloadSchema,
-			responsePayloadSchema: getPersonResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'get-person::v2020_12_25': {
+            emitPayloadSchema: getPersonEmitTargetAndPayloadSchema,
+            responsePayloadSchema: getPersonResponsePayloadSchema,
+        },
+    },
 })
 export default getPersonEventContract
 

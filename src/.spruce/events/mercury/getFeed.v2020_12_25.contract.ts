@@ -4,12 +4,12 @@ import getFeedEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_
 import getFeedResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getFeedResponsePayload.schema'
 
 const getFeedEventContract = buildEventContract({
-	eventSignatures: {
-		'get-feed::v2020_12_25': {
-			emitPayloadSchema: getFeedEmitTargetAndPayloadSchema,
-			responsePayloadSchema: getFeedResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'get-feed::v2020_12_25': {
+            emitPayloadSchema: getFeedEmitTargetAndPayloadSchema,
+            responsePayloadSchema: getFeedResponsePayloadSchema,
+        },
+    },
 })
 export default getFeedEventContract
 

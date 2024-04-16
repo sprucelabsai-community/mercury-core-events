@@ -4,12 +4,12 @@ import updateRoleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_
 import updateRoleResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/updateRoleResponsePayload.schema'
 
 const updateRoleEventContract = buildEventContract({
-	eventSignatures: {
-		'update-role::v2020_12_25': {
-			emitPayloadSchema: updateRoleEmitTargetAndPayloadSchema,
-			responsePayloadSchema: updateRoleResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'update-role::v2020_12_25': {
+            emitPayloadSchema: updateRoleEmitTargetAndPayloadSchema,
+            responsePayloadSchema: updateRoleResponsePayloadSchema,
+        },
+    },
 })
 export default updateRoleEventContract
 

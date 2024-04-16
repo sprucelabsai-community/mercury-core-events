@@ -4,12 +4,12 @@ import healthEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_2
 import healthResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/healthResponsePayload.schema'
 
 const healthEventContract = buildEventContract({
-	eventSignatures: {
-		'health::v2020_12_25': {
-			emitPayloadSchema: healthEmitTargetAndPayloadSchema,
-			responsePayloadSchema: healthResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'health::v2020_12_25': {
+            emitPayloadSchema: healthEmitTargetAndPayloadSchema,
+            responsePayloadSchema: healthResponsePayloadSchema,
+        },
+    },
 })
 export default healthEventContract
 

@@ -4,12 +4,12 @@ import registerSkillEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v20
 import registerSkillResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerSkillResponsePayload.schema'
 
 const registerSkillEventContract = buildEventContract({
-	eventSignatures: {
-		'register-skill::v2020_12_25': {
-			emitPayloadSchema: registerSkillEmitTargetAndPayloadSchema,
-			responsePayloadSchema: registerSkillResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'register-skill::v2020_12_25': {
+            emitPayloadSchema: registerSkillEmitTargetAndPayloadSchema,
+            responsePayloadSchema: registerSkillResponsePayloadSchema,
+        },
+    },
 })
 export default registerSkillEventContract
 

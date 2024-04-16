@@ -4,12 +4,12 @@ import listSkillsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_
 import listSkillsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listSkillsResponsePayload.schema'
 
 const listSkillsEventContract = buildEventContract({
-	eventSignatures: {
-		'list-skills::v2020_12_25': {
-			emitPayloadSchema: listSkillsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: listSkillsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'list-skills::v2020_12_25': {
+            emitPayloadSchema: listSkillsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: listSkillsResponsePayloadSchema,
+        },
+    },
 })
 export default listSkillsEventContract
 

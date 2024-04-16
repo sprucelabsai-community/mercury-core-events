@@ -4,14 +4,15 @@ import syncPermissionContractsEmitTargetAndPayloadSchema from '#spruce/schemas/m
 import syncPermissionContractsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/syncPermissionContractsResponsePayload.schema'
 
 const syncPermissionContractsEventContract = buildEventContract({
-	eventSignatures: {
-		'sync-permission-contracts::v2020_12_25': {
-			emitPayloadSchema: syncPermissionContractsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: syncPermissionContractsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'sync-permission-contracts::v2020_12_25': {
+            emitPayloadSchema:
+                syncPermissionContractsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: syncPermissionContractsResponsePayloadSchema,
+        },
+    },
 })
 export default syncPermissionContractsEventContract
 
 export type SyncPermissionContractsEventContract =
-	typeof syncPermissionContractsEventContract
+    typeof syncPermissionContractsEventContract

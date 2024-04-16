@@ -4,12 +4,12 @@ import listPeopleEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_
 import listPeopleResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listPeopleResponsePayload.schema'
 
 const listPeopleEventContract = buildEventContract({
-	eventSignatures: {
-		'list-people::v2020_12_25': {
-			emitPayloadSchema: listPeopleEmitTargetAndPayloadSchema,
-			responsePayloadSchema: listPeopleResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'list-people::v2020_12_25': {
+            emitPayloadSchema: listPeopleEmitTargetAndPayloadSchema,
+            responsePayloadSchema: listPeopleResponsePayloadSchema,
+        },
+    },
 })
 export default listPeopleEventContract
 

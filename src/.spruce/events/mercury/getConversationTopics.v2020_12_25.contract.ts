@@ -4,14 +4,14 @@ import getConversationTopicsEmitTargetAndPayloadSchema from '#spruce/schemas/mer
 import getConversationTopicsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getConversationTopicsResponsePayload.schema'
 
 const getConversationTopicsEventContract = buildEventContract({
-	eventSignatures: {
-		'get-conversation-topics::v2020_12_25': {
-			emitPayloadSchema: getConversationTopicsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: getConversationTopicsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'get-conversation-topics::v2020_12_25': {
+            emitPayloadSchema: getConversationTopicsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: getConversationTopicsResponsePayloadSchema,
+        },
+    },
 })
 export default getConversationTopicsEventContract
 
 export type GetConversationTopicsEventContract =
-	typeof getConversationTopicsEventContract
+    typeof getConversationTopicsEventContract

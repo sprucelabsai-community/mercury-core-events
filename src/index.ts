@@ -13,17 +13,17 @@ import { SkillEventContract } from '@sprucelabs/mercury-types'
 import { default as coreEventContractsSplit } from '#spruce/events/events.contract'
 
 export const coreEventContracts: [SkillEventContract] = [
-	//@ts-ignore
-	coreEventContractsSplit.reduce(
-		(contract, current) => {
-			Object.keys(current.eventSignatures).forEach((name) => {
-				//@ts-ignore
-				contract.eventSignatures[name] = current.eventSignatures[name]
-			})
-			return contract
-		},
-		{ eventSignatures: {} }
-	),
+    //@ts-ignore
+    coreEventContractsSplit.reduce(
+        (contract, current) => {
+            Object.keys(current.eventSignatures).forEach((name) => {
+                //@ts-ignore
+                contract.eventSignatures[name] = current.eventSignatures[name]
+            })
+            return contract
+        },
+        { eventSignatures: {} }
+    ),
 ]
 
 export * from '#spruce/events/events.contract'

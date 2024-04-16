@@ -4,12 +4,12 @@ import getLocationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020
 import getLocationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getLocationResponsePayload.schema'
 
 const getLocationEventContract = buildEventContract({
-	eventSignatures: {
-		'get-location::v2020_12_25': {
-			emitPayloadSchema: getLocationEmitTargetAndPayloadSchema,
-			responsePayloadSchema: getLocationResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'get-location::v2020_12_25': {
+            emitPayloadSchema: getLocationEmitTargetAndPayloadSchema,
+            responsePayloadSchema: getLocationResponsePayloadSchema,
+        },
+    },
 })
 export default getLocationEventContract
 

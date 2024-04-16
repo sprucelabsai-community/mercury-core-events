@@ -4,18 +4,18 @@ import invokeChatCallbackEmitTargetAndPayloadSchema from '#spruce/schemas/mercur
 import invokeChatCallbackResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/invokeChatCallbackResponsePayload.schema'
 
 const invokeChatCallbackEventContract = buildEventContract({
-	eventSignatures: {
-		'invoke-chat-callback::v2020_12_25': {
-			listenPermissions: {
-				contractId: 'chatbot-contract',
-				permissionIdsAny: ['can-register-chatbots'],
-			},
-			emitPayloadSchema: invokeChatCallbackEmitTargetAndPayloadSchema,
-			responsePayloadSchema: invokeChatCallbackResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'invoke-chat-callback::v2020_12_25': {
+            listenPermissions: {
+                contractId: 'chatbot-contract',
+                permissionIdsAny: ['can-register-chatbots'],
+            },
+            emitPayloadSchema: invokeChatCallbackEmitTargetAndPayloadSchema,
+            responsePayloadSchema: invokeChatCallbackResponsePayloadSchema,
+        },
+    },
 })
 export default invokeChatCallbackEventContract
 
 export type InvokeChatCallbackEventContract =
-	typeof invokeChatCallbackEventContract
+    typeof invokeChatCallbackEventContract

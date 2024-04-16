@@ -4,12 +4,12 @@ import listRolesEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_1
 import listRolesResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listRolesResponsePayload.schema'
 
 const listRolesEventContract = buildEventContract({
-	eventSignatures: {
-		'list-roles::v2020_12_25': {
-			emitPayloadSchema: listRolesEmitTargetAndPayloadSchema,
-			responsePayloadSchema: listRolesResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'list-roles::v2020_12_25': {
+            emitPayloadSchema: listRolesEmitTargetAndPayloadSchema,
+            responsePayloadSchema: listRolesResponsePayloadSchema,
+        },
+    },
 })
 export default listRolesEventContract
 

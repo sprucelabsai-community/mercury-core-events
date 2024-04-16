@@ -4,18 +4,18 @@ import registerChatbotsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/
 import registerChatbotsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerChatbotsResponsePayload.schema'
 
 const registerChatbotsEventContract = buildEventContract({
-	eventSignatures: {
-		'register-chatbots::v2020_12_25': {
-			isGlobal: true,
+    eventSignatures: {
+        'register-chatbots::v2020_12_25': {
+            isGlobal: true,
 
-			listenPermissions: {
-				contractId: 'chatbot-contract',
-				permissionIdsAny: ['can-register-chatbots'],
-			},
-			emitPayloadSchema: registerChatbotsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: registerChatbotsResponsePayloadSchema,
-		},
-	},
+            listenPermissions: {
+                contractId: 'chatbot-contract',
+                permissionIdsAny: ['can-register-chatbots'],
+            },
+            emitPayloadSchema: registerChatbotsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: registerChatbotsResponsePayloadSchema,
+        },
+    },
 })
 export default registerChatbotsEventContract
 

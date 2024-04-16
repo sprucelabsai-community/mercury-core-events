@@ -4,12 +4,12 @@ import savePermissionsEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v
 import savePermissionsResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/savePermissionsResponsePayload.schema'
 
 const savePermissionsEventContract = buildEventContract({
-	eventSignatures: {
-		'save-permissions::v2020_12_25': {
-			emitPayloadSchema: savePermissionsEmitTargetAndPayloadSchema,
-			responsePayloadSchema: savePermissionsResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'save-permissions::v2020_12_25': {
+            emitPayloadSchema: savePermissionsEmitTargetAndPayloadSchema,
+            responsePayloadSchema: savePermissionsResponsePayloadSchema,
+        },
+    },
 })
 export default savePermissionsEventContract
 

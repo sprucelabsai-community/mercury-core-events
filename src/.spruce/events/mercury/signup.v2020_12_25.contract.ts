@@ -4,12 +4,12 @@ import signupEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_2
 import signupResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/signupResponsePayload.schema'
 
 const signupEventContract = buildEventContract({
-	eventSignatures: {
-		'signup::v2020_12_25': {
-			emitPayloadSchema: signupEmitTargetAndPayloadSchema,
-			responsePayloadSchema: signupResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'signup::v2020_12_25': {
+            emitPayloadSchema: signupEmitTargetAndPayloadSchema,
+            responsePayloadSchema: signupResponsePayloadSchema,
+        },
+    },
 })
 export default signupEventContract
 

@@ -4,12 +4,12 @@ import authenticateEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v202
 import authenticateResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/authenticateResponsePayload.schema'
 
 const authenticateEventContract = buildEventContract({
-	eventSignatures: {
-		'authenticate::v2020_12_25': {
-			emitPayloadSchema: authenticateEmitTargetAndPayloadSchema,
-			responsePayloadSchema: authenticateResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'authenticate::v2020_12_25': {
+            emitPayloadSchema: authenticateEmitTargetAndPayloadSchema,
+            responsePayloadSchema: authenticateResponsePayloadSchema,
+        },
+    },
 })
 export default authenticateEventContract
 

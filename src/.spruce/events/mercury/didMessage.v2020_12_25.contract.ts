@@ -4,20 +4,20 @@ import didMessageEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_
 import didMessageResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/didMessageResponsePayload.schema'
 
 const didMessageEventContract = buildEventContract({
-	eventSignatures: {
-		'did-message::v2020_12_25': {
-			emitPermissions: {
-				contractId: 'messaging-contract',
-				permissionIdsAny: ['can-emit-did-message-event'],
-			},
-			listenPermissions: {
-				contractId: 'messaging-contract',
-				permissionIdsAny: ['can-listen-to-did-message-event'],
-			},
-			emitPayloadSchema: didMessageEmitTargetAndPayloadSchema,
-			responsePayloadSchema: didMessageResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'did-message::v2020_12_25': {
+            emitPermissions: {
+                contractId: 'messaging-contract',
+                permissionIdsAny: ['can-emit-did-message-event'],
+            },
+            listenPermissions: {
+                contractId: 'messaging-contract',
+                permissionIdsAny: ['can-listen-to-did-message-event'],
+            },
+            emitPayloadSchema: didMessageEmitTargetAndPayloadSchema,
+            responsePayloadSchema: didMessageResponsePayloadSchema,
+        },
+    },
 })
 export default didMessageEventContract
 

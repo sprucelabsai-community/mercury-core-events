@@ -4,12 +4,12 @@ import unregisterSkillEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v
 import unregisterSkillResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/unregisterSkillResponsePayload.schema'
 
 const unregisterSkillEventContract = buildEventContract({
-	eventSignatures: {
-		'unregister-skill::v2020_12_25': {
-			emitPayloadSchema: unregisterSkillEmitTargetAndPayloadSchema,
-			responsePayloadSchema: unregisterSkillResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'unregister-skill::v2020_12_25': {
+            emitPayloadSchema: unregisterSkillEmitTargetAndPayloadSchema,
+            responsePayloadSchema: unregisterSkillResponsePayloadSchema,
+        },
+    },
 })
 export default unregisterSkillEventContract
 

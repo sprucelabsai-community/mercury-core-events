@@ -4,12 +4,12 @@ import createLocationEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2
 import createLocationResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/createLocationResponsePayload.schema'
 
 const createLocationEventContract = buildEventContract({
-	eventSignatures: {
-		'create-location::v2020_12_25': {
-			emitPayloadSchema: createLocationEmitTargetAndPayloadSchema,
-			responsePayloadSchema: createLocationResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'create-location::v2020_12_25': {
+            emitPayloadSchema: createLocationEmitTargetAndPayloadSchema,
+            responsePayloadSchema: createLocationResponsePayloadSchema,
+        },
+    },
 })
 export default createLocationEventContract
 

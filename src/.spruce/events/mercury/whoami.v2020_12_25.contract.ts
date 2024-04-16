@@ -4,12 +4,12 @@ import authenticateResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_
 import whoamiEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/whoamiEmitTargetAndPayload.schema'
 
 const whoamiEventContract = buildEventContract({
-	eventSignatures: {
-		'whoami::v2020_12_25': {
-			emitPayloadSchema: whoamiEmitTargetAndPayloadSchema,
-			responsePayloadSchema: authenticateResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'whoami::v2020_12_25': {
+            emitPayloadSchema: whoamiEmitTargetAndPayloadSchema,
+            responsePayloadSchema: authenticateResponsePayloadSchema,
+        },
+    },
 })
 export default whoamiEventContract
 

@@ -4,12 +4,12 @@ import logoutEmitTargetAndPayloadSchema from '#spruce/schemas/mercury/v2020_12_2
 import logoutResponsePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/logoutResponsePayload.schema'
 
 const logoutEventContract = buildEventContract({
-	eventSignatures: {
-		'logout::v2020_12_25': {
-			emitPayloadSchema: logoutEmitTargetAndPayloadSchema,
-			responsePayloadSchema: logoutResponsePayloadSchema,
-		},
-	},
+    eventSignatures: {
+        'logout::v2020_12_25': {
+            emitPayloadSchema: logoutEmitTargetAndPayloadSchema,
+            responsePayloadSchema: logoutResponsePayloadSchema,
+        },
+    },
 })
 export default logoutEventContract
 
