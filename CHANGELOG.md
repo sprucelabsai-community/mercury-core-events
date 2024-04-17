@@ -1,3 +1,10 @@
+# [24.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v23.0.0...v24.0.0) (2024-04-17)
+
+
+### Breaking Changes
+
+* upgrade ([5425998](https://github.com/sprucelabsai-community/mercury-core-events/commit/5425998))
+
 # [23.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v22.2.88...v23.0.0) (2024-04-16)
 
 
