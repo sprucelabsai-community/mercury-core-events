@@ -1,28 +1,24 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
-import getConversationTopicsTopicSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getConversationTopicsTopic.schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-const getConversationTopicsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetConversationTopicsResponsePayloadSchema =
-    {
-        id: 'getConversationTopicsResponsePayload',
-        version: 'v2020_12_25',
-        namespace: 'Mercury',
-        name: '',
-        fields: {
-            /** . */
-            topics: {
-                type: 'schema',
-                isRequired: true,
-                isArray: true,
-                options: {
-                    schema: getConversationTopicsTopicSchema_v2020_12_25,
-                },
-            },
-        },
-    }
+import getConversationTopicsTopicSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getConversationTopicsTopic.schema'
 
-SchemaRegistry.getInstance().trackSchema(
-    getConversationTopicsResponsePayloadSchema
-)
+const getConversationTopicsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetConversationTopicsResponsePayloadSchema  = {
+	id: 'getConversationTopicsResponsePayload',
+	version: 'v2020_12_25',
+	namespace: 'Mercury',
+	name: '',
+	    fields: {
+	            /** . */
+	            'topics': {
+	                type: 'schema',
+	                isRequired: true,
+	                isArray: true,
+	                options: {schema: getConversationTopicsTopicSchema_v2020_12_25,}
+	            },
+	    }
+}
+
+SchemaRegistry.getInstance().trackSchema(getConversationTopicsResponsePayloadSchema)
 
 export default getConversationTopicsResponsePayloadSchema

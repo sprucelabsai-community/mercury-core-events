@@ -1,32 +1,32 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
-import messageSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/message.schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-const didMessageEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema =
-    {
-        id: 'didMessageEmitPayload',
-        version: 'v2020_12_25',
-        namespace: 'Mercury',
-        name: '',
-        fields: {
-            /** . */
-            message: {
-                type: 'schema',
-                isRequired: true,
-                options: { schema: messageSchema_v2020_07_22 },
-            },
-            /** . */
-            conversationState: {
-                type: 'text',
-                options: undefined,
-            },
-            /** . */
-            topic: {
-                type: 'text',
-                options: undefined,
-            },
-        },
-    }
+import messageSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/message.schema'
+
+const didMessageEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema  = {
+	id: 'didMessageEmitPayload',
+	version: 'v2020_12_25',
+	namespace: 'Mercury',
+	name: '',
+	    fields: {
+	            /** . */
+	            'message': {
+	                type: 'schema',
+	                isRequired: true,
+	                options: {schema: messageSchema_v2020_07_22,}
+	            },
+	            /** . */
+	            'conversationState': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
+	            'topic': {
+	                type: 'text',
+	                options: undefined
+	            },
+	    }
+}
 
 SchemaRegistry.getInstance().trackSchema(didMessageEmitPayloadSchema)
 
