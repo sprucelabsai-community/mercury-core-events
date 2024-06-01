@@ -43,6 +43,14 @@ const updatePersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdatePer
 	                hint: 'A number that can be texted',
 	                options: undefined
 	            },
+	            /** Username. An optional username if the person does not want to login using their phone */
+	            'username': {
+	                label: 'Username',
+	                type: 'text',
+	                isPrivate: true,
+	                hint: 'An optional username if the person does not want to login using their phone',
+	                options: undefined
+	            },
 	            /** . */
 	            'password': {
 	                type: 'text',

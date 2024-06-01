@@ -12,7 +12,11 @@ const signupEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SignupEmitPaylo
 	            /** . */
 	            'phone': {
 	                type: 'phone',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'username': {
+	                type: 'text',
 	                options: undefined
 	            },
 	            /** . */
