@@ -6186,7 +6186,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface LoginEmitTarget {
 			
 				
-				'phone': string
+				'phone'?: string| undefined | null
+				
+				'username'?: string| undefined | null
 		}
 
 		interface LoginEmitTargetSchema extends SpruceSchema.Schema {
@@ -6197,8 +6199,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'phone': {
-			                type: 'phone',
-			                isRequired: true,
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** . */
+			            'username': {
+			                type: 'text',
 			                options: undefined
 			            },
 			    }
@@ -6246,7 +6252,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target': SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget| undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayload
 		}
@@ -6266,7 +6272,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
-			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetSchema,}
 			            },
 			            /** . */

@@ -11,8 +11,12 @@ const loginEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetSc
 	    fields: {
 	            /** . */
 	            'phone': {
-	                type: 'phone',
-	                isRequired: true,
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
+	            'username': {
+	                type: 'text',
 	                options: undefined
 	            },
 	    }

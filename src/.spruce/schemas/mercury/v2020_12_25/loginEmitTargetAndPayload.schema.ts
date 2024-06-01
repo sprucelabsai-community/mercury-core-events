@@ -20,7 +20,6 @@ const loginEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.LoginEm
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: loginEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
