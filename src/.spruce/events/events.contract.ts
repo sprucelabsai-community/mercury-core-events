@@ -58,6 +58,7 @@ import mercuryResetPasswordEventContract_v2020_12_25, { ResetPasswordEventContra
 import mercurySavePermissionsEventContract_v2020_12_25, { SavePermissionsEventContract as MercurySavePermissionsEventContract_v2020_12_25  } from '#spruce/events/mercury/savePermissions.v2020_12_25.contract'
 import mercuryScrambleAccountEventContract_v2020_12_25, { ScrambleAccountEventContract as MercuryScrambleAccountEventContract_v2020_12_25  } from '#spruce/events/mercury/scrambleAccount.v2020_12_25.contract'
 import mercurySendMessageEventContract_v2020_12_25, { SendMessageEventContract as MercurySendMessageEventContract_v2020_12_25  } from '#spruce/events/mercury/sendMessage.v2020_12_25.contract'
+import mercurySetAuthorizorStatusEventContract_v2020_12_25, { SetAuthorizorStatusEventContract as MercurySetAuthorizorStatusEventContract_v2020_12_25  } from '#spruce/events/mercury/setAuthorizorStatus.v2020_12_25.contract'
 import mercurySignupEventContract_v2020_12_25, { SignupEventContract as MercurySignupEventContract_v2020_12_25  } from '#spruce/events/mercury/signup.v2020_12_25.contract'
 import mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25, { SubmitErrorMessageFeedbackEventContract as MercurySubmitErrorMessageFeedbackEventContract_v2020_12_25  } from '#spruce/events/mercury/submitErrorMessageFeedback.v2020_12_25.contract'
 import mercurySyncEventContractsEventContract_v2020_12_25, { SyncEventContractsEventContract as MercurySyncEventContractsEventContract_v2020_12_25  } from '#spruce/events/mercury/syncEventContracts.v2020_12_25.contract'
@@ -134,6 +135,7 @@ export default [
     mercurySavePermissionsEventContract_v2020_12_25,
     mercuryScrambleAccountEventContract_v2020_12_25,
     mercurySendMessageEventContract_v2020_12_25,
+    mercurySetAuthorizorStatusEventContract_v2020_12_25,
     mercurySignupEventContract_v2020_12_25,
     mercurySubmitErrorMessageFeedbackEventContract_v2020_12_25,
     mercurySyncEventContractsEventContract_v2020_12_25,
@@ -328,6 +330,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'send-message::v2020_12_25': MercurySendMessageEventContract_v2020_12_25['eventSignatures']['send-message::v2020_12_25'],
+    
+    
+    'set-authorizor-status::v2020_12_25': MercurySetAuthorizorStatusEventContract_v2020_12_25['eventSignatures']['set-authorizor-status::v2020_12_25'],
     
     
     'signup::v2020_12_25': MercurySignupEventContract_v2020_12_25['eventSignatures']['signup::v2020_12_25'],
