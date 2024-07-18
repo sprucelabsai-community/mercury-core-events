@@ -20,7 +20,6 @@ const resetPasswordEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: resetPasswordEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */

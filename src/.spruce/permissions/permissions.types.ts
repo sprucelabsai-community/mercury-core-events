@@ -2,6 +2,9 @@ import '@sprucelabs/mercury-types'
 
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface PermissionContractMap {
+		'authorizer-contract': [
+			'can-update-others-authorizer-status',
+		]
 		'chatbot-contract': [
 			'can-register-chatbots',
 		]
