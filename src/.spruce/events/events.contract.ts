@@ -14,6 +14,7 @@ import mercuryDeleteRoleEventContract_v2020_12_25, { DeleteRoleEventContract as 
 import mercuryDidInstallEventContract_v2020_12_25, { DidInstallEventContract as MercuryDidInstallEventContract_v2020_12_25  } from '#spruce/events/mercury/didInstall.v2020_12_25.contract'
 import mercuryDidJoinOrganizationEventContract_v2020_12_25, { DidJoinOrganizationEventContract as MercuryDidJoinOrganizationEventContract_v2020_12_25  } from '#spruce/events/mercury/didJoinOrganization.v2020_12_25.contract'
 import mercuryDidLeaveOrganizationEventContract_v2020_12_25, { DidLeaveOrganizationEventContract as MercuryDidLeaveOrganizationEventContract_v2020_12_25  } from '#spruce/events/mercury/didLeaveOrganization.v2020_12_25.contract'
+import mercuryDidLogisEventContract_v2020_12_25, { DidLogisEventContract as MercuryDidLogisEventContract_v2020_12_25  } from '#spruce/events/mercury/didLogis.v2020_12_25.contract'
 import mercuryDidMessageEventContract_v2020_12_25, { DidMessageEventContract as MercuryDidMessageEventContract_v2020_12_25  } from '#spruce/events/mercury/didMessage.v2020_12_25.contract'
 import mercuryDidSignupEventContract_v2020_12_25, { DidSignupEventContract as MercuryDidSignupEventContract_v2020_12_25  } from '#spruce/events/mercury/didSignup.v2020_12_25.contract'
 import mercuryDidUpdateFeedEventContract_v2020_12_25, { DidUpdateFeedEventContract as MercuryDidUpdateFeedEventContract_v2020_12_25  } from '#spruce/events/mercury/didUpdateFeed.v2020_12_25.contract'
@@ -46,6 +47,7 @@ import mercuryLoginEventContract_v2020_12_25, { LoginEventContract as MercuryLog
 import mercuryLogoutEventContract_v2020_12_25, { LogoutEventContract as MercuryLogoutEventContract_v2020_12_25  } from '#spruce/events/mercury/logout.v2020_12_25.contract'
 import mercuryRegisterChatbotsEventContract_v2020_12_25, { RegisterChatbotsEventContract as MercuryRegisterChatbotsEventContract_v2020_12_25  } from '#spruce/events/mercury/registerChatbots.v2020_12_25.contract'
 import mercuryRegisterConversationTopicsEventContract_v2020_12_25, { RegisterConversationTopicsEventContract as MercuryRegisterConversationTopicsEventContract_v2020_12_25  } from '#spruce/events/mercury/registerConversationTopics.v2020_12_25.contract'
+import mercuryRegisterDeviceEventContract_v2020_12_25, { RegisterDeviceEventContract as MercuryRegisterDeviceEventContract_v2020_12_25  } from '#spruce/events/mercury/registerDevice.v2020_12_25.contract'
 import mercuryRegisterEventsEventContract_v2020_12_25, { RegisterEventsEventContract as MercuryRegisterEventsEventContract_v2020_12_25  } from '#spruce/events/mercury/registerEvents.v2020_12_25.contract'
 import mercuryRegisterListenersEventContract_v2020_12_25, { RegisterListenersEventContract as MercuryRegisterListenersEventContract_v2020_12_25  } from '#spruce/events/mercury/registerListeners.v2020_12_25.contract'
 import mercuryRegisterProxyTokenEventContract_v2020_12_25, { RegisterProxyTokenEventContract as MercuryRegisterProxyTokenEventContract_v2020_12_25  } from '#spruce/events/mercury/registerProxyToken.v2020_12_25.contract'
@@ -91,6 +93,7 @@ export default [
     mercuryDidInstallEventContract_v2020_12_25,
     mercuryDidJoinOrganizationEventContract_v2020_12_25,
     mercuryDidLeaveOrganizationEventContract_v2020_12_25,
+    mercuryDidLogisEventContract_v2020_12_25,
     mercuryDidMessageEventContract_v2020_12_25,
     mercuryDidSignupEventContract_v2020_12_25,
     mercuryDidUpdateFeedEventContract_v2020_12_25,
@@ -123,6 +126,7 @@ export default [
     mercuryLogoutEventContract_v2020_12_25,
     mercuryRegisterChatbotsEventContract_v2020_12_25,
     mercuryRegisterConversationTopicsEventContract_v2020_12_25,
+    mercuryRegisterDeviceEventContract_v2020_12_25,
     mercuryRegisterEventsEventContract_v2020_12_25,
     mercuryRegisterListenersEventContract_v2020_12_25,
     mercuryRegisterProxyTokenEventContract_v2020_12_25,
@@ -198,6 +202,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'did-leave-organization::v2020_12_25': MercuryDidLeaveOrganizationEventContract_v2020_12_25['eventSignatures']['did-leave-organization::v2020_12_25'],
+    
+    
+    'did-logis::v2020_12_25': MercuryDidLogisEventContract_v2020_12_25['eventSignatures']['did-logis::v2020_12_25'],
     
     
     'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25'],
@@ -294,6 +301,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'register-conversation-topics::v2020_12_25': MercuryRegisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['register-conversation-topics::v2020_12_25'],
+    
+    
+    'register-device::v2020_12_25': MercuryRegisterDeviceEventContract_v2020_12_25['eventSignatures']['register-device::v2020_12_25'],
     
     
     'register-events::v2020_12_25': MercuryRegisterEventsEventContract_v2020_12_25['eventSignatures']['register-events::v2020_12_25'],
