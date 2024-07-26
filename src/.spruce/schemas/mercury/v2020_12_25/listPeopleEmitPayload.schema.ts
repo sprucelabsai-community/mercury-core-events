@@ -37,6 +37,12 @@ const listPeopleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleE
 	                type: 'dateTime',
 	                options: undefined
 	            },
+	            /** . */
+	            'macAddresses': {
+	                type: 'text',
+	                isArray: true,
+	                options: undefined
+	            },
 	    }
 }
 
