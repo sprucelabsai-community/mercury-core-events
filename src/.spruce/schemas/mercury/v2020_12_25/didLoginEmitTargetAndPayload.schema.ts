@@ -5,8 +5,8 @@ import eventSourceSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v202
 import eventTargetSchema_v2021_09_13 from '#spruce/schemas/spruceEventUtils/v2021_09_13/eventTarget.schema'
 import didLoginEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/didLoginEmitPayload.schema'
 
-const didLogisEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidLogisEmitTargetAndPayloadSchema  = {
-	id: 'didLogisEmitTargetAndPayload',
+const didLoginEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitTargetAndPayloadSchema  = {
+	id: 'didLoginEmitTargetAndPayload',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -31,6 +31,6 @@ const didLogisEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidL
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(didLogisEmitTargetAndPayloadSchema)
+SchemaRegistry.getInstance().trackSchema(didLoginEmitTargetAndPayloadSchema)
 
-export default didLogisEmitTargetAndPayloadSchema
+export default didLoginEmitTargetAndPayloadSchema

@@ -491,7 +491,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface DidLogisEmitTargetAndPayload {
+		interface DidLoginEmitTargetAndPayload {
 			
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
@@ -501,8 +501,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayload
 		}
 
-		interface DidLogisEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didLogisEmitTargetAndPayload',
+		interface DidLoginEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didLoginEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -527,7 +527,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		interface DidLogisEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLogisEmitTargetAndPayloadSchema> {}
+		interface DidLoginEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitTargetAndPayloadSchema> {}
 
 	}
 
