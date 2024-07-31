@@ -15,9 +15,10 @@ const setAuthorizerStatusEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.Set
 	                isRequired: true,
 	                options: undefined
 	            },
-	            /** . */
+	            /** . The person to set the status for. If empty, looks at logged in person's status. */
 	            'personId': {
 	                type: 'id',
+	                hint: 'The person to set the status for. If empty, looks at logged in person\'s status.',
 	                options: undefined
 	            },
 	    }
