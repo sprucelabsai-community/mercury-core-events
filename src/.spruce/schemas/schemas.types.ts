@@ -8132,7 +8132,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'locationId': string
-				
+				/** . The person to set the status for. If empty, looks at logged in person's status. */
 				'personId'?: string| undefined | null
 		}
 
@@ -8148,9 +8148,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                isRequired: true,
 			                options: undefined
 			            },
-			            /** . */
+			            /** . The person to set the status for. If empty, looks at logged in person's status. */
 			            'personId': {
 			                type: 'id',
+			                hint: 'The person to set the status for. If empty, looks at logged in person\'s status.',
 			                options: undefined
 			            },
 			    }
