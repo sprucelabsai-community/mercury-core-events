@@ -17,6 +17,7 @@ import mercuryDidLeaveOrganizationEventContract_v2020_12_25, { DidLeaveOrganizat
 import mercuryDidLoginEventContract_v2020_12_25, { DidLoginEventContract as MercuryDidLoginEventContract_v2020_12_25  } from '#spruce/events/mercury/didLogin.v2020_12_25.contract'
 import mercuryDidMessageEventContract_v2020_12_25, { DidMessageEventContract as MercuryDidMessageEventContract_v2020_12_25  } from '#spruce/events/mercury/didMessage.v2020_12_25.contract'
 import mercuryDidSignupEventContract_v2020_12_25, { DidSignupEventContract as MercuryDidSignupEventContract_v2020_12_25  } from '#spruce/events/mercury/didSignup.v2020_12_25.contract'
+import mercuryDidUpdateAuthorizerStatusEventContract_v2020_12_25, { DidUpdateAuthorizerStatusEventContract as MercuryDidUpdateAuthorizerStatusEventContract_v2020_12_25  } from '#spruce/events/mercury/didUpdateAuthorizerStatus.v2020_12_25.contract'
 import mercuryDidUpdateFeedEventContract_v2020_12_25, { DidUpdateFeedEventContract as MercuryDidUpdateFeedEventContract_v2020_12_25  } from '#spruce/events/mercury/didUpdateFeed.v2020_12_25.contract'
 import mercuryDidUpdatePersonEventContract_v2020_12_25, { DidUpdatePersonEventContract as MercuryDidUpdatePersonEventContract_v2020_12_25  } from '#spruce/events/mercury/didUpdatePerson.v2020_12_25.contract'
 import mercuryDoesHonorPermissionContractEventContract_v2020_12_25, { DoesHonorPermissionContractEventContract as MercuryDoesHonorPermissionContractEventContract_v2020_12_25  } from '#spruce/events/mercury/doesHonorPermissionContract.v2020_12_25.contract'
@@ -96,6 +97,7 @@ export default [
     mercuryDidLoginEventContract_v2020_12_25,
     mercuryDidMessageEventContract_v2020_12_25,
     mercuryDidSignupEventContract_v2020_12_25,
+    mercuryDidUpdateAuthorizerStatusEventContract_v2020_12_25,
     mercuryDidUpdateFeedEventContract_v2020_12_25,
     mercuryDidUpdatePersonEventContract_v2020_12_25,
     mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
@@ -211,6 +213,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'did-signup::v2020_12_25': MercuryDidSignupEventContract_v2020_12_25['eventSignatures']['did-signup::v2020_12_25'],
+    
+    
+    'did-update-authorizer-status::v2020_12_25': MercuryDidUpdateAuthorizerStatusEventContract_v2020_12_25['eventSignatures']['did-update-authorizer-status::v2020_12_25'],
     
     
     'did-update-feed::v2020_12_25': MercuryDidUpdateFeedEventContract_v2020_12_25['eventSignatures']['did-update-feed::v2020_12_25'],

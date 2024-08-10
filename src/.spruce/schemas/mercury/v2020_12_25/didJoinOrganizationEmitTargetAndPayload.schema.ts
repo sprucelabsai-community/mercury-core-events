@@ -20,7 +20,6 @@ const didJoinOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: didJoinOrganizationEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */

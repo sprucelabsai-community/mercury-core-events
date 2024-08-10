@@ -88,6 +88,11 @@ const listPersonSchema: SpruceSchemas.Mercury.v2020_12_25.ListPersonSchema  = {
 	                isArray: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'macAddress': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

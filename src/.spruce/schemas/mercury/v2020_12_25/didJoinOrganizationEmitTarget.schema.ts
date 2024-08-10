@@ -12,7 +12,6 @@ const didJoinOrganizationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.Did
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
-	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */

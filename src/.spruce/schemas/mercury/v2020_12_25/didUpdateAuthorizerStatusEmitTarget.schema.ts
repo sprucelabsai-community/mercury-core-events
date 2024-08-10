@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const didLeaveOrganizationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetSchema  = {
-	id: 'didLeaveOrganizationEmitTarget',
+const didUpdateAuthorizerStatusEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetSchema  = {
+	id: 'didUpdateAuthorizerStatusEmitTarget',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -22,6 +22,6 @@ const didLeaveOrganizationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.Di
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(didLeaveOrganizationEmitTargetSchema)
+SchemaRegistry.getInstance().trackSchema(didUpdateAuthorizerStatusEmitTargetSchema)
 
-export default didLeaveOrganizationEmitTargetSchema
+export default didUpdateAuthorizerStatusEmitTargetSchema
