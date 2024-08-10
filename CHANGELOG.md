@@ -1,3 +1,10 @@
+# [24.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.0.266...v24.1.0) (2024-08-10)
+
+
+### Features
+
+* list person gets macAddress and did update auth status tweaks ([ed1c5e5](https://github.com/sprucelabsai-community/mercury-core-events/commit/ed1c5e5))
+
 ## [24.0.266](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.0.265...v24.0.266) (2024-07-31)
 
 ## [24.0.265](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.0.264...v24.0.265) (2024-07-27)
