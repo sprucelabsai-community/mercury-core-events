@@ -20,6 +20,7 @@ const didLeaveOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v202
 	            /** . */
 	            'target': {
 	                type: 'schema',
+	                isRequired: true,
 	                options: {schema: didLeaveOrganizationEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
