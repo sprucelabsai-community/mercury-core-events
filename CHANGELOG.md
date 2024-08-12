@@ -1,3 +1,10 @@
+# [24.2.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.1.2...v24.2.0) (2024-08-12)
+
+
+### Features
+
+* new event signatures ([a65cbc0](https://github.com/sprucelabsai-community/mercury-core-events/commit/a65cbc0))
+
 ## [24.1.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.1.1...v24.1.2) (2024-08-12)
 
 ## [24.1.1](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.1.0...v24.1.1) (2024-08-10)
