@@ -27,6 +27,11 @@ const didJoinOrganizationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Di
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'macAddress': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

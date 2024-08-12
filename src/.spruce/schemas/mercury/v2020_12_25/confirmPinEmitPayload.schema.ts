@@ -21,6 +21,11 @@ const confirmPinEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ConfirmPinE
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'macAddress': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 

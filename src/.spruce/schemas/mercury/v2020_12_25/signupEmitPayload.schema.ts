@@ -36,6 +36,11 @@ const signupEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SignupEmitPaylo
 	                options: undefined
 	            },
 	            /** . */
+	            'macAddress': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
 	            'passwordConfirm': {
 	                type: 'text',
 	                isRequired: true,

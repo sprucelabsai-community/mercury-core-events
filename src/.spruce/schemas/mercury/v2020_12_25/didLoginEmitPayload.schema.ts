@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import personSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/person.schema'
+import personWithMacSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/personWithMac.schema'
 
 const didLoginEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayloadSchema  = {
 	id: 'didLoginEmitPayload',
@@ -13,7 +13,7 @@ const didLoginEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitP
 	            'person': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: personSchema_v2020_07_22,}
+	                options: {schema: personWithMacSchema_v2020_12_25,}
 	            },
 	    }
 }

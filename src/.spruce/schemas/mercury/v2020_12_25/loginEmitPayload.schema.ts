@@ -15,6 +15,11 @@ const loginEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayload
 	                isRequired: true,
 	                options: undefined
 	            },
+	            /** . */
+	            'macAddress': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 
