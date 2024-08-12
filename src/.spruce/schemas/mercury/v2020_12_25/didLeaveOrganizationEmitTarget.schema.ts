@@ -12,6 +12,7 @@ const didLeaveOrganizationEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.Di
 	            /** . */
 	            'organizationId': {
 	                type: 'id',
+	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
