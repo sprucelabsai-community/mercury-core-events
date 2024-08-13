@@ -19,6 +19,11 @@ const loginEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetSc
 	                type: 'text',
 	                options: undefined
 	            },
+	            /** . */
+	            'locationId': {
+	                type: 'id',
+	                options: undefined
+	            },
 	    }
 }
 
