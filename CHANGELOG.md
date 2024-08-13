@@ -1,3 +1,10 @@
+# [24.3.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.2.4...v24.3.0) (2024-08-13)
+
+
+### Features
+
+* login/signup supports targetting ([95a2306](https://github.com/sprucelabsai-community/mercury-core-events/commit/95a2306))
+
 ## [24.2.4](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.2.3...v24.2.4) (2024-08-13)
 
 ## [24.2.3](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.2.2...v24.2.3) (2024-08-13)
