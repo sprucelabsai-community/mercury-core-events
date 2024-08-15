@@ -20,18 +20,18 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface DidUpdatePersonEmitTargetAndPayload {
+		interface LoginEmitTargetAndPayload {
 			
 				/** Source. */
 				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget| undefined | null
 				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayload
+				'payload': SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayload
 		}
 
-		interface DidUpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdatePersonEmitTargetAndPayload',
+		interface LoginEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'loginEmitTargetAndPayload',
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
@@ -45,1597 +45,18 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetSchema,}
 			            },
 			            /** . */
 			            'payload': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayloadSchema,}
 			            },
 			    }
 		}
 
-		interface DidUpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface InvokeChatCallbackEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTarget
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayload
-		}
-
-		interface InvokeChatCallbackEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'invokeChatCallbackEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface InvokeChatCallbackEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface IsSkillInstalledEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTarget
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload| undefined | null
-		}
-
-		interface IsSkillInstalledEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'isSkillInstalledEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface IsSkillInstalledEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidInstallEmitTarget {
-			
-				
-				'organizationId': string
-				
-				'skillId': string
-		}
-
-		interface DidInstallEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didInstallEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'skillId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidInstallEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidInstallEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTarget
-		}
-
-		interface DidInstallEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didInstallEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema,}
-			            },
-			    }
-		}
-
-		interface DidInstallEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidInstallResponsePayload {
-			
-		}
-
-		interface DidInstallResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'didInstallResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			    }
-		}
-
-		interface DidInstallResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidJoinOrganizationEmitTarget {
-			
-				
-				'organizationId': string
-				
-				'locationId'?: string| undefined | null
-		}
-
-		interface DidJoinOrganizationEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didJoinOrganizationEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidJoinOrganizationEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidJoinOrganizationEmitPayload {
-			
-				
-				'personId': string
-				
-				'roleId': string
-				
-				'isFirstRole': boolean
-				
-				'macAddress'?: string| undefined | null
-		}
-
-		interface DidJoinOrganizationEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didJoinOrganizationEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'personId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'roleId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'isFirstRole': {
-			                type: 'boolean',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'macAddress': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidJoinOrganizationEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidJoinOrganizationEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTarget
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayload
-		}
-
-		interface DidJoinOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didJoinOrganizationEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidJoinOrganizationEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface MessageTemplateAddons {
-			
-				
-				'nextINeedYouTo'?: string[]| undefined | null
-				
-				'youShouldKnowThat'?: string[]| undefined | null
-				
-				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
-		}
-
-		interface MessageTemplateAddonsSchema extends SpruceSchema.Schema {
-			id: 'messageTemplateAddons',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'nextINeedYouTo': {
-			                type: 'text',
-			                isArray: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'youShouldKnowThat': {
-			                type: 'text',
-			                isArray: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'links': {
-			                type: 'schema',
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.LinkSchema,}
-			            },
-			    }
-		}
-
-		interface MessageTemplateAddonsEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidJoinOrganizationResponsePayload {
-			
-				
-				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddons| undefined | null
-		}
-
-		interface DidJoinOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'didJoinOrganizationResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'messaging': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema,}
-			            },
-			    }
-		}
-
-		interface DidJoinOrganizationResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLeaveOrganizationEmitTarget {
-			
-				
-				'organizationId': string
-				
-				'locationId'?: string| undefined | null
-		}
-
-		interface DidLeaveOrganizationEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didLeaveOrganizationEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidLeaveOrganizationEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLeaveOrganizationEmitPayload {
-			
-				
-				'personId': string
-				
-				'roleId': string
-				
-				'isLastRole': boolean
-		}
-
-		interface DidLeaveOrganizationEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didLeaveOrganizationEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'personId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'roleId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'isLastRole': {
-			                type: 'boolean',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidLeaveOrganizationEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLeaveOrganizationEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTarget
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayload
-		}
-
-		interface DidLeaveOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didLeaveOrganizationEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidLeaveOrganizationEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLeaveOrganizationResponsePayload {
-			
-		}
-
-		interface DidLeaveOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'didLeaveOrganizationResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			    }
-		}
-
-		interface DidLeaveOrganizationResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLoginEmitPayload {
-			
-				
-				'person': SpruceSchemas.Mercury.v2020_12_25.PersonWithMac
-		}
-
-		interface DidLoginEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didLoginEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'person': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema,}
-			            },
-			    }
-		}
-
-		interface DidLoginEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidLoginEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayload
-		}
-
-		interface DidLoginEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didLoginEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidLoginEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidMessageEmitPayload {
-			
-				
-				'message': SpruceSchemas.Spruce.v2020_07_22.Message
-				
-				'conversationState'?: string| undefined | null
-				
-				'topic'?: string| undefined | null
-		}
-
-		interface DidMessageEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didMessageEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'message': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.MessageSchema,}
-			            },
-			            /** . */
-			            'conversationState': {
-			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'topic': {
-			                type: 'text',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidMessageEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidMessageEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Spruce.v2020_07_22.MessageTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayload
-		}
-
-		interface DidMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didMessageEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.MessageTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ConversationTopic {
-			
-				
-				'key': string
-				
-				'confidence': number
-				
-				'label': string
-		}
-
-		interface ConversationTopicSchema extends SpruceSchema.Schema {
-			id: 'conversationTopic',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'key': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'confidence': {
-			                type: 'number',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'label': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface ConversationTopicEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ConversationTopicSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidMessageResponsePayload {
-			
-				
-				'transitionConversationTo'?: ("greeting" | "discovery" | "topic" | "closing")| undefined | null
-				
-				'repairs'?: string[]| undefined | null
-				
-				'topicChangers'?: string[]| undefined | null
-				
-				'utterance'?: string| undefined | null
-				
-				'suggestedTopics'?: SpruceSchemas.Mercury.v2020_12_25.ConversationTopic[]| undefined | null
-		}
-
-		interface DidMessageResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'didMessageResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'transitionConversationTo': {
-			                type: 'select',
-			                options: {choices: [{"label":"Greeting","value":"greeting"},{"label":"Discovery","value":"discovery"},{"label":"Topic","value":"topic"},{"label":"Closing","value":"closing"}],}
-			            },
-			            /** . */
-			            'repairs': {
-			                type: 'text',
-			                isArray: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'topicChangers': {
-			                type: 'text',
-			                isArray: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'utterance': {
-			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'suggestedTopics': {
-			                type: 'schema',
-			                isArray: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ConversationTopicSchema,}
-			            },
-			    }
-		}
-
-		interface DidMessageResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidSignupEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayload
-		}
-
-		interface DidSignupEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didSignupEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidSignupEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface PersonWithMac {
-			
-				/** Id. */
-				'id': string
-				/** First name. */
-				'firstName'?: string| undefined | null
-				/** Last name. */
-				'lastName'?: string| undefined | null
-				/** Casual name. The name you can use when talking to this person. */
-				'casualName': string
-				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
-				/** Phone. A number that can be texted */
-				'phone'?: string| undefined | null
-				/** Username. An optional username if the person does not want to login using their phone */
-				'username'?: string| undefined | null
-				/** Avatar src. */
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
-				
-				'dateCreated': SpruceSchema.DateTimeFieldValue
-				
-				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
-				
-				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
-				
-				'macAddress'?: string| undefined | null
-		}
-
-		interface PersonWithMacSchema extends SpruceSchema.Schema {
-			id: 'personWithMac',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Id. */
-			            'id': {
-			                label: 'Id',
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** First name. */
-			            'firstName': {
-			                label: 'First name',
-			                type: 'text',
-			                isPrivate: true,
-			                options: undefined
-			            },
-			            /** Last name. */
-			            'lastName': {
-			                label: 'Last name',
-			                type: 'text',
-			                isPrivate: true,
-			                options: undefined
-			            },
-			            /** Casual name. The name you can use when talking to this person. */
-			            'casualName': {
-			                label: 'Casual name',
-			                type: 'text',
-			                isRequired: true,
-			                hint: 'The name you can use when talking to this person.',
-			                options: undefined
-			            },
-			            /** Timezone. */
-			            'timezone': {
-			                label: 'Timezone',
-			                type: 'select',
-			                options: {choices: [{"value":"Pacific/Niue","label":"Niue Time"},{"value":"Pacific/Pago_Pago","label":"Samoa Standard Time"},{"value":"Pacific/Rarotonga","label":"Cook Islands Standard Time"},{"value":"Pacific/Honolulu","label":"Hawaii-Aleutian Standard Time"},{"value":"Pacific/Tahiti","label":"Tahiti Time"},{"value":"Pacific/Marquesas","label":"Marquesas Time"},{"value":"Pacific/Gambier","label":"Gambier Time"},{"value":"America/Adak","label":"Hawaii-Aleutian Time (Adak)"},{"value":"America/Anchorage","label":"Alaska Time - Anchorage"},{"value":"America/Juneau","label":"Alaska Time - Juneau"},{"value":"America/Metlakatla","label":"Alaska Time - Metlakatla"},{"value":"America/Nome","label":"Alaska Time - Nome"},{"value":"America/Sitka","label":"Alaska Time - Sitka"},{"value":"America/Yakutat","label":"Alaska Time - Yakutat"},{"value":"Pacific/Pitcairn","label":"Pitcairn Time"},{"value":"America/Hermosillo","label":"Mexican Pacific Standard Time"},{"value":"America/Dawson_Creek","label":"Mountain Standard Time - Dawson Creek"},{"value":"America/Fort_Nelson","label":"Mountain Standard Time - Fort Nelson"},{"value":"America/Phoenix","label":"Mountain Standard Time - Phoenix"},{"value":"America/Los_Angeles","label":"Pacific Time - Los Angeles"},{"value":"America/Tijuana","label":"Pacific Time - Tijuana"},{"value":"America/Vancouver","label":"Pacific Time - Vancouver"},{"value":"America/Dawson","label":"Yukon Time - Dawson"},{"value":"America/Whitehorse","label":"Yukon Time - Whitehorse"},{"value":"America/Belize","label":"Central Standard Time - Belize"},{"value":"America/Costa_Rica","label":"Central Standard Time - Costa Rica"},{"value":"America/El_Salvador","label":"Central Standard Time - El Salvador"},{"value":"America/Guatemala","label":"Central Standard Time - Guatemala"},{"value":"America/Managua","label":"Central Standard Time - Managua"},{"value":"America/Regina","label":"Central Standard Time - Regina"},{"value":"America/Swift_Current","label":"Central Standard Time - Swift Current"},{"value":"America/Tegucigalpa","label":"Central Standard Time - Tegucigalpa"},{"value":"Pacific/Easter","label":"Easter Island Time"},{"value":"Pacific/Galapagos","label":"Galapagos Time"},{"value":"America/Chihuahua","label":"Mexican Pacific Time - Chihuahua"},{"value":"America/Mazatlan","label":"Mexican Pacific Time - Mazatlan"},{"value":"America/Boise","label":"Mountain Time - Boise"},{"value":"America/Cambridge_Bay","label":"Mountain Time - Cambridge Bay"},{"value":"America/Denver","label":"Mountain Time - Denver"},{"value":"America/Edmonton","label":"Mountain Time - Edmonton"},{"value":"America/Inuvik","label":"Mountain Time - Inuvik"},{"value":"America/Ojinaga","label":"Mountain Time - Ojinaga"},{"value":"America/Yellowknife","label":"Mountain Time - Yellowknife"},{"value":"America/Eirunepe","label":"Acre Standard Time - Eirunepe"},{"value":"America/Rio_Branco","label":"Acre Standard Time - Rio Branco"},{"value":"America/Bahia_Banderas","label":"Central Time - Bahia Banderas"},{"value":"America/North_Dakota/Beulah","label":"Central Time - Beulah, North Dakota"},{"value":"America/North_Dakota/Center","label":"Central Time - Center, North Dakota"},{"value":"America/Chicago","label":"Central Time - Chicago"},{"value":"America/Indiana/Knox","label":"Central Time - Knox, Indiana"},{"value":"America/Matamoros","label":"Central Time - Matamoros"},{"value":"America/Menominee","label":"Central Time - Menominee"},{"value":"America/Merida","label":"Central Time - Merida"},{"value":"America/Mexico_City","label":"Central Time - Mexico City"},{"value":"America/Monterrey","label":"Central Time - Monterrey"},{"value":"America/North_Dakota/New_Salem","label":"Central Time - New Salem, North Dakota"},{"value":"America/Rainy_River","label":"Central Time - Rainy River"},{"value":"America/Rankin_Inlet","label":"Central Time - Rankin Inlet"},{"value":"America/Resolute","label":"Central Time - Resolute"},{"value":"America/Indiana/Tell_City","label":"Central Time - Tell City, Indiana"},{"value":"America/Winnipeg","label":"Central Time - Winnipeg"},{"value":"America/Bogota","label":"Colombia Standard Time"},{"value":"America/Cancun","label":"Eastern Standard Time - Cancun"},{"value":"America/Jamaica","label":"Eastern Standard Time - Jamaica"},{"value":"America/Panama","label":"Eastern Standard Time - Panama"},{"value":"America/Guayaquil","label":"Ecuador Time"},{"value":"America/Lima","label":"Peru Standard Time"},{"value":"America/Boa_Vista","label":"Amazon Standard Time - Boa Vista"},{"value":"America/Campo_Grande","label":"Amazon Standard Time - Campo Grande"},{"value":"America/Cuiaba","label":"Amazon Standard Time - Cuiaba"},{"value":"America/Manaus","label":"Amazon Standard Time - Manaus"},{"value":"America/Porto_Velho","label":"Amazon Standard Time - Porto Velho"},{"value":"America/Barbados","label":"Atlantic Standard Time - Barbados"},{"value":"America/Martinique","label":"Atlantic Standard Time - Martinique"},{"value":"America/Puerto_Rico","label":"Atlantic Standard Time - Puerto Rico"},{"value":"America/Santo_Domingo","label":"Atlantic Standard Time - Santo Domingo"},{"value":"America/La_Paz","label":"Bolivia Time"},{"value":"America/Santiago","label":"Chile Time"},{"value":"America/Havana","label":"Cuba Time"},{"value":"America/Detroit","label":"Eastern Time - Detroit"},{"value":"America/Grand_Turk","label":"Eastern Time - Grand Turk"},{"value":"America/Indiana/Indianapolis","label":"Eastern Time - Indianapolis"},{"value":"America/Iqaluit","label":"Eastern Time - Iqaluit"},{"value":"America/Kentucky/Louisville","label":"Eastern Time - Louisville"},{"value":"America/Indiana/Marengo","label":"Eastern Time - Marengo, Indiana"},{"value":"America/Kentucky/Monticello","label":"Eastern Time - Monticello, Kentucky"},{"value":"America/New_York","label":"Eastern Time - New York"},{"value":"America/Nipigon","label":"Eastern Time - Nipigon"},{"value":"America/Pangnirtung","label":"Eastern Time - Pangnirtung"},{"value":"America/Indiana/Petersburg","label":"Eastern Time - Petersburg, Indiana"},{"value":"America/Port-au-Prince","label":"Eastern Time - Port-au-Prince"},{"value":"America/Thunder_Bay","label":"Eastern Time - Thunder Bay"},{"value":"America/Toronto","label":"Eastern Time - Toronto"},{"value":"America/Indiana/Vevay","label":"Eastern Time - Vevay, Indiana"},{"value":"America/Indiana/Vincennes","label":"Eastern Time - Vincennes, Indiana"},{"value":"America/Indiana/Winamac","label":"Eastern Time - Winamac, Indiana"},{"value":"America/Guyana","label":"Guyana Time"},{"value":"America/Asuncion","label":"Paraguay Time"},{"value":"America/Caracas","label":"Venezuela Time"},{"value":"America/Argentina/Buenos_Aires","label":"Argentina Standard Time - Buenos Aires"},{"value":"America/Argentina/Catamarca","label":"Argentina Standard Time - Catamarca"},{"value":"America/Argentina/Cordoba","label":"Argentina Standard Time - Cordoba"},{"value":"America/Argentina/Jujuy","label":"Argentina Standard Time - Jujuy"},{"value":"America/Argentina/La_Rioja","label":"Argentina Standard Time - La Rioja"},{"value":"America/Argentina/Mendoza","label":"Argentina Standard Time - Mendoza"},{"value":"America/Argentina/Rio_Gallegos","label":"Argentina Standard Time - Rio Gallegos"},{"value":"America/Argentina/Salta","label":"Argentina Standard Time - Salta"},{"value":"America/Argentina/San_Juan","label":"Argentina Standard Time - San Juan"},{"value":"America/Argentina/San_Luis","label":"Argentina Standard Time - San Luis"},{"value":"America/Argentina/Tucuman","label":"Argentina Standard Time - Tucuman"},{"value":"America/Argentina/Ushuaia","label":"Argentina Standard Time - Ushuaia"},{"value":"Atlantic/Bermuda","label":"Atlantic Time - Bermuda"},{"value":"America/Glace_Bay","label":"Atlantic Time - Glace Bay"},{"value":"America/Goose_Bay","label":"Atlantic Time - Goose Bay"},{"value":"America/Halifax","label":"Atlantic Time - Halifax"},{"value":"America/Moncton","label":"Atlantic Time - Moncton"},{"value":"America/Thule","label":"Atlantic Time - Thule"},{"value":"America/Araguaina","label":"Brasilia Standard Time - Araguaina"},{"value":"America/Bahia","label":"Brasilia Standard Time - Bahia"},{"value":"America/Belem","label":"Brasilia Standard Time - Belem"},{"value":"America/Fortaleza","label":"Brasilia Standard Time - Fortaleza"},{"value":"America/Maceio","label":"Brasilia Standard Time - Maceio"},{"value":"America/Recife","label":"Brasilia Standard Time - Recife"},{"value":"America/Santarem","label":"Brasilia Standard Time - Santarem"},{"value":"America/Sao_Paulo","label":"Brasilia Standard Time - Sao Paulo"},{"value":"Atlantic/Stanley","label":"Falkland Islands Standard Time"},{"value":"America/Cayenne","label":"French Guiana Time"},{"value":"Antarctica/Palmer","label":"Palmer Time"},{"value":"America/Punta_Arenas","label":"Punta Arenas Time"},{"value":"Antarctica/Rothera","label":"Rothera Time"},{"value":"America/Paramaribo","label":"Suriname Time"},{"value":"America/Montevideo","label":"Uruguay Standard Time"},{"value":"America/St_Johns","label":"Newfoundland Time"},{"value":"America/Noronha","label":"Fernando de Noronha Standard Time"},{"value":"Atlantic/South_Georgia","label":"South Georgia Time"},{"value":"America/Miquelon","label":"St. Pierre & Miquelon Time"},{"value":"America/Nuuk","label":"West Greenland Time"},{"value":"Atlantic/Cape_Verde","label":"Cape Verde Standard Time"},{"value":"Atlantic/Azores","label":"Azores Time"},{"value":"UTC","label":"Coordinated Universal Time"},{"value":"America/Scoresbysund","label":"East Greenland Time"},{"value":"Etc/GMT","label":"Greenwich Mean Time"},{"value":"Africa/Abidjan","label":"Greenwich Mean Time - Abidjan"},{"value":"Africa/Bissau","label":"Greenwich Mean Time - Bissau"},{"value":"America/Danmarkshavn","label":"Greenwich Mean Time - Danmarkshavn"},{"value":"Africa/Monrovia","label":"Greenwich Mean Time - Monrovia"},{"value":"Atlantic/Reykjavik","label":"Greenwich Mean Time - Reykjavik"},{"value":"Africa/Sao_Tome","label":"Greenwich Mean Time - São Tomé"},{"value":"Africa/Algiers","label":"Central European Standard Time - Algiers"},{"value":"Africa/Tunis","label":"Central European Standard Time - Tunis"},{"value":"Europe/Dublin","label":"Ireland Time"},{"value":"Africa/Casablanca","label":"Morocco Time"},{"value":"Europe/London","label":"United Kingdom Time"},{"value":"Africa/Lagos","label":"West Africa Standard Time - Lagos"},{"value":"Africa/Ndjamena","label":"West Africa Standard Time - Ndjamena"},{"value":"Atlantic/Canary","label":"Western European Time - Canary"},{"value":"Atlantic/Faroe","label":"Western European Time - Faroe"},{"value":"Europe/Lisbon","label":"Western European Time - Lisbon"},{"value":"Atlantic/Madeira","label":"Western European Time - Madeira"},{"value":"Africa/El_Aaiun","label":"Western Sahara Time"},{"value":"Africa/Juba","label":"Central Africa Time - Juba"},{"value":"Africa/Khartoum","label":"Central Africa Time - Khartoum"},{"value":"Africa/Maputo","label":"Central Africa Time - Maputo"},{"value":"Africa/Windhoek","label":"Central Africa Time - Windhoek"},{"value":"Europe/Amsterdam","label":"Central European Time - Amsterdam"},{"value":"Europe/Andorra","label":"Central European Time - Andorra"},{"value":"Europe/Belgrade","label":"Central European Time - Belgrade"},{"value":"Europe/Berlin","label":"Central European Time - Berlin"},{"value":"Europe/Brussels","label":"Central European Time - Brussels"},{"value":"Europe/Budapest","label":"Central European Time - Budapest"},{"value":"Africa/Ceuta","label":"Central European Time - Ceuta"},{"value":"Europe/Copenhagen","label":"Central European Time - Copenhagen"},{"value":"Europe/Gibraltar","label":"Central European Time - Gibraltar"},{"value":"Europe/Luxembourg","label":"Central European Time - Luxembourg"},{"value":"Europe/Madrid","label":"Central European Time - Madrid"},{"value":"Europe/Malta","label":"Central European Time - Malta"},{"value":"Europe/Monaco","label":"Central European Time - Monaco"},{"value":"Europe/Oslo","label":"Central European Time - Oslo"},{"value":"Europe/Paris","label":"Central European Time - Paris"},{"value":"Europe/Prague","label":"Central European Time - Prague"},{"value":"Europe/Rome","label":"Central European Time - Rome"},{"value":"Europe/Stockholm","label":"Central European Time - Stockholm"},{"value":"Europe/Tirane","label":"Central European Time - Tirane"},{"value":"Europe/Vienna","label":"Central European Time - Vienna"},{"value":"Europe/Warsaw","label":"Central European Time - Warsaw"},{"value":"Europe/Zurich","label":"Central European Time - Zurich"},{"value":"Africa/Cairo","label":"Eastern European Standard Time - Cairo"},{"value":"Europe/Kaliningrad","label":"Eastern European Standard Time - Kaliningrad"},{"value":"Africa/Tripoli","label":"Eastern European Standard Time - Tripoli"},{"value":"Africa/Johannesburg","label":"South Africa Standard Time"},{"value":"Antarctica/Troll","label":"Troll Time"},{"value":"Asia/Baghdad","label":"Arabian Standard Time - Baghdad"},{"value":"Asia/Qatar","label":"Arabian Standard Time - Qatar"},{"value":"Asia/Riyadh","label":"Arabian Standard Time - Riyadh"},{"value":"Africa/Nairobi","label":"East Africa Time"},{"value":"Asia/Amman","label":"Eastern European Time - Amman"},{"value":"Europe/Athens","label":"Eastern European Time - Athens"},{"value":"Asia/Beirut","label":"Eastern European Time - Beirut"},{"value":"Europe/Bucharest","label":"Eastern European Time - Bucharest"},{"value":"Europe/Chisinau","label":"Eastern European Time - Chisinau"},{"value":"Asia/Damascus","label":"Eastern European Time - Damascus"},{"value":"Asia/Gaza","label":"Eastern European Time - Gaza"},{"value":"Asia/Hebron","label":"Eastern European Time - Hebron"},{"value":"Europe/Helsinki","label":"Eastern European Time - Helsinki"},{"value":"Europe/Kiev","label":"Eastern European Time - Kyiv"},{"value":"Asia/Nicosia","label":"Eastern European Time - Nicosia"},{"value":"Europe/Riga","label":"Eastern European Time - Riga"},{"value":"Europe/Sofia","label":"Eastern European Time - Sofia"},{"value":"Europe/Tallinn","label":"Eastern European Time - Tallinn"},{"value":"Europe/Uzhgorod","label":"Eastern European Time - Uzhhorod"},{"value":"Europe/Vilnius","label":"Eastern European Time - Vilnius"},{"value":"Europe/Zaporozhye","label":"Eastern European Time - Zaporozhye"},{"value":"Asia/Famagusta","label":"Famagusta Time"},{"value":"Asia/Jerusalem","label":"Israel Time"},{"value":"Europe/Kirov","label":"Kirov Time"},{"value":"Europe/Minsk","label":"Moscow Standard Time - Minsk"},{"value":"Europe/Moscow","label":"Moscow Standard Time - Moscow"},{"value":"Europe/Simferopol","label":"Moscow Standard Time - Simferopol"},{"value":"Europe/Istanbul","label":"Turkey Time"},{"value":"Europe/Volgograd","label":"Volgograd Standard Time"},{"value":"Asia/Yerevan","label":"Armenia Standard Time"},{"value":"Europe/Astrakhan","label":"Astrakhan Time"},{"value":"Asia/Baku","label":"Azerbaijan Standard Time"},{"value":"Asia/Tbilisi","label":"Georgia Standard Time"},{"value":"Asia/Dubai","label":"Gulf Standard Time"},{"value":"Indian/Mauritius","label":"Mauritius Standard Time"},{"value":"Indian/Reunion","label":"Réunion Time"},{"value":"Europe/Samara","label":"Samara Standard Time"},{"value":"Europe/Saratov","label":"Saratov Time"},{"value":"Indian/Mahe","label":"Seychelles Time"},{"value":"Europe/Ulyanovsk","label":"Ulyanovsk Time"},{"value":"Asia/Kabul","label":"Afghanistan Time"},{"value":"Asia/Tehran","label":"Iran Time"},{"value":"Indian/Kerguelen","label":"French Southern & Antarctic Time"},{"value":"Indian/Maldives","label":"Maldives Time"},{"value":"Antarctica/Mawson","label":"Mawson Time"},{"value":"Asia/Karachi","label":"Pakistan Standard Time"},{"value":"Asia/Dushanbe","label":"Tajikistan Time"},{"value":"Asia/Ashgabat","label":"Turkmenistan Standard Time"},{"value":"Asia/Samarkand","label":"Uzbekistan Standard Time - Samarkand"},{"value":"Asia/Tashkent","label":"Uzbekistan Standard Time - Tashkent"},{"value":"Asia/Aqtau","label":"West Kazakhstan Time - Aqtau"},{"value":"Asia/Aqtobe","label":"West Kazakhstan Time - Aqtobe"},{"value":"Asia/Atyrau","label":"West Kazakhstan Time - Atyrau"},{"value":"Asia/Oral","label":"West Kazakhstan Time - Oral"},{"value":"Asia/Qyzylorda","label":"West Kazakhstan Time - Qyzylorda"},{"value":"Asia/Yekaterinburg","label":"Yekaterinburg Standard Time"},{"value":"Asia/Colombo","label":"India Standard Time - Colombo"},{"value":"Asia/Kolkata","label":"India Standard Time - Kolkata"},{"value":"Asia/Kathmandu","label":"Nepal Time"},{"value":"Asia/Dhaka","label":"Bangladesh Standard Time"},{"value":"Asia/Thimphu","label":"Bhutan Time"},{"value":"Asia/Almaty","label":"East Kazakhstan Time - Almaty"},{"value":"Asia/Qostanay","label":"East Kazakhstan Time - Kostanay"},{"value":"Indian/Chagos","label":"Indian Ocean Time"},{"value":"Asia/Bishkek","label":"Kyrgyzstan Time"},{"value":"Asia/Omsk","label":"Omsk Standard Time"},{"value":"Asia/Urumqi","label":"Urumqi Time"},{"value":"Antarctica/Vostok","label":"Vostok Time"},{"value":"Indian/Cocos","label":"Cocos Islands Time"},{"value":"Asia/Yangon","label":"Myanmar Time"},{"value":"Asia/Barnaul","label":"Barnaul Time"},{"value":"Indian/Christmas","label":"Christmas Island Time"},{"value":"Antarctica/Davis","label":"Davis Time"},{"value":"Asia/Hovd","label":"Hovd Standard Time"},{"value":"Asia/Bangkok","label":"Indochina Time - Bangkok"},{"value":"Asia/Ho_Chi_Minh","label":"Indochina Time - Ho Chi Minh City"},{"value":"Asia/Krasnoyarsk","label":"Krasnoyarsk Standard Time - Krasnoyarsk"},{"value":"Asia/Novokuznetsk","label":"Krasnoyarsk Standard Time - Novokuznetsk"},{"value":"Asia/Novosibirsk","label":"Novosibirsk Standard Time"},{"value":"Asia/Tomsk","label":"Tomsk Time"},{"value":"Asia/Jakarta","label":"Western Indonesia Time - Jakarta"},{"value":"Asia/Pontianak","label":"Western Indonesia Time - Pontianak"},{"value":"Australia/Perth","label":"Australian Western Standard Time"},{"value":"Asia/Brunei","label":"Brunei Darussalam Time"},{"value":"Asia/Makassar","label":"Central Indonesia Time"},{"value":"Asia/Macau","label":"China Standard Time - Macao"},{"value":"Asia/Shanghai","label":"China Standard Time - Shanghai"},{"value":"Asia/Hong_Kong","label":"Hong Kong Standard Time"},{"value":"Asia/Irkutsk","label":"Irkutsk Standard Time"},{"value":"Asia/Kuala_Lumpur","label":"Malaysia Time - Kuala Lumpur"},{"value":"Asia/Kuching","label":"Malaysia Time - Kuching"},{"value":"Asia/Manila","label":"Philippine Standard Time"},{"value":"Asia/Singapore","label":"Singapore Standard Time"},{"value":"Asia/Taipei","label":"Taipei Standard Time"},{"value":"Asia/Choibalsan","label":"Ulaanbaatar Standard Time - Choibalsan"},{"value":"Asia/Ulaanbaatar","label":"Ulaanbaatar Standard Time - Ulaanbaatar"},{"value":"Australia/Eucla","label":"Australian Central Western Standard Time"},{"value":"Asia/Dili","label":"East Timor Time"},{"value":"Asia/Jayapura","label":"Eastern Indonesia Time"},{"value":"Asia/Tokyo","label":"Japan Standard Time"},{"value":"Asia/Pyongyang","label":"Korean Standard Time - Pyongyang"},{"value":"Asia/Seoul","label":"Korean Standard Time - Seoul"},{"value":"Pacific/Palau","label":"Palau Time"},{"value":"Asia/Chita","label":"Yakutsk Standard Time - Chita"},{"value":"Asia/Khandyga","label":"Yakutsk Standard Time - Khandyga"},{"value":"Asia/Yakutsk","label":"Yakutsk Standard Time - Yakutsk"},{"value":"Australia/Darwin","label":"Australian Central Standard Time"},{"value":"Australia/Adelaide","label":"Central Australia Time - Adelaide"},{"value":"Australia/Broken_Hill","label":"Central Australia Time - Broken Hill"},{"value":"Australia/Brisbane","label":"Australian Eastern Standard Time - Brisbane"},{"value":"Australia/Lindeman","label":"Australian Eastern Standard Time - Lindeman"},{"value":"Pacific/Guam","label":"Chamorro Standard Time"},{"value":"Pacific/Chuuk","label":"Chuuk Time"},{"value":"Australia/Hobart","label":"Eastern Australia Time - Hobart"},{"value":"Antarctica/Macquarie","label":"Eastern Australia Time - Macquarie"},{"value":"Australia/Melbourne","label":"Eastern Australia Time - Melbourne"},{"value":"Australia/Sydney","label":"Eastern Australia Time - Sydney"},{"value":"Pacific/Port_Moresby","label":"Papua New Guinea Time"},{"value":"Asia/Ust-Nera","label":"Vladivostok Standard Time - Ust-Nera"},{"value":"Asia/Vladivostok","label":"Vladivostok Standard Time - Vladivostok"},{"value":"Australia/Lord_Howe","label":"Lord Howe Time"},{"value":"Pacific/Bougainville","label":"Bougainville Time"},{"value":"Antarctica/Casey","label":"Casey Time"},{"value":"Pacific/Kosrae","label":"Kosrae Time"},{"value":"Asia/Magadan","label":"Magadan Standard Time"},{"value":"Pacific/Noumea","label":"New Caledonia Standard Time"},{"value":"Pacific/Norfolk","label":"Norfolk Island Time"},{"value":"Pacific/Pohnpei","label":"Ponape Time"},{"value":"Asia/Sakhalin","label":"Sakhalin Standard Time"},{"value":"Pacific/Guadalcanal","label":"Solomon Islands Time"},{"value":"Asia/Srednekolymsk","label":"Srednekolymsk Time"},{"value":"Pacific/Efate","label":"Vanuatu Standard Time"},{"value":"Asia/Anadyr","label":"Anadyr Standard Time"},{"value":"Pacific/Fiji","label":"Fiji Time"},{"value":"Pacific/Tarawa","label":"Gilbert Islands Time"},{"value":"Pacific/Kwajalein","label":"Marshall Islands Time - Kwajalein"},{"value":"Pacific/Majuro","label":"Marshall Islands Time - Majuro"},{"value":"Pacific/Nauru","label":"Nauru Time"},{"value":"Pacific/Auckland","label":"New Zealand Time"},{"value":"Asia/Kamchatka","label":"Petropavlovsk-Kamchatski Standard Time"},{"value":"Pacific/Funafuti","label":"Tuvalu Time"},{"value":"Pacific/Wake","label":"Wake Island Time"},{"value":"Pacific/Wallis","label":"Wallis & Futuna Time"},{"value":"Pacific/Chatham","label":"Chatham Time"},{"value":"Pacific/Apia","label":"Apia Standard Time"},{"value":"Pacific/Fakaofo","label":"Tokelau Time"},{"value":"Pacific/Tongatapu","label":"Tonga Standard Time"},{"value":"Pacific/Kiritimati","label":"Line Islands Time"}],}
-			            },
-			            /** Phone. A number that can be texted */
-			            'phone': {
-			                label: 'Phone',
-			                type: 'phone',
-			                isPrivate: true,
-			                hint: 'A number that can be texted',
-			                options: undefined
-			            },
-			            /** Username. An optional username if the person does not want to login using their phone */
-			            'username': {
-			                label: 'Username',
-			                type: 'text',
-			                isPrivate: true,
-			                hint: 'An optional username if the person does not want to login using their phone',
-			                options: undefined
-			            },
-			            /** Avatar src. */
-			            'avatar': {
-			                label: 'Avatar src',
-			                type: 'image',
-			                options: {requiredSizes: ["*"],}
-			            },
-			            /** . */
-			            'dateCreated': {
-			                type: 'dateTime',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'dateUpdated': {
-			                type: 'dateTime',
-			                options: undefined
-			            },
-			            /** . */
-			            'dateScrambled': {
-			                type: 'dateTime',
-			                options: undefined
-			            },
-			            /** . */
-			            'macAddress': {
-			                type: 'text',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface PersonWithMacEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidSignupEmitPayload {
-			
-				
-				'person': SpruceSchemas.Mercury.v2020_12_25.PersonWithMac
-		}
-
-		interface DidSignupEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didSignupEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'person': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema,}
-			            },
-			    }
-		}
-
-		interface DidSignupEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateAuthorizerStatusEmitTarget {
-			
-				
-				'organizationId'?: string| undefined | null
-				
-				'locationId'?: string| undefined | null
-		}
-
-		interface DidUpdateAuthorizerStatusEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didUpdateAuthorizerStatusEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidUpdateAuthorizerStatusEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateAuthorizerStatusEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayload
-		}
-
-		interface DidUpdateAuthorizerStatusEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdateAuthorizerStatusEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidUpdateAuthorizerStatusEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface UpdateAuthorizerStatusPerson {
-			
-				
-				'id': string
-				
-				'casualName': string
-		}
-
-		interface UpdateAuthorizerStatusPersonSchema extends SpruceSchema.Schema {
-			id: 'updateAuthorizerStatusPerson',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'id': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'casualName': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface UpdateAuthorizerStatusPersonEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPersonSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateAuthorizerStatusEmitPayload {
-			
-				
-				'person': SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPerson
-				
-				'statuses': ("clockedIn" | "clockedOut" | "onPrem" | "offPrem")[]
-		}
-
-		interface DidUpdateAuthorizerStatusEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdateAuthorizerStatusEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'person': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPersonSchema,}
-			            },
-			            /** . */
-			            'statuses': {
-			                type: 'select',
-			                isRequired: true,
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {choices: [{"label":"Clocked in","value":"clockedIn"},{"label":"Clocked out","value":"clockedOut"},{"label":"On premises","value":"onPrem"},{"label":"Off premises","value":"offPrem"}],}
-			            },
-			    }
-		}
-
-		interface DidUpdateAuthorizerStatusEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateFeedEmitTarget {
-			
-				
-				'locationId'?: string| undefined | null
-				
-				'organizationId'?: string| undefined | null
-				
-				'skillId'?: string| undefined | null
-		}
-
-		interface DidUpdateFeedEmitTargetSchema extends SpruceSchema.Schema {
-			id: 'didUpdateFeedEmitTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'locationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'organizationId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'skillId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface DidUpdateFeedEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateFeedEmitPayload {
-			
-				
-				'item': SpruceSchemas.Spruce.v2020_07_22.FeedItem
-		}
-
-		interface DidUpdateFeedEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdateFeedEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'item': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.FeedItemSchema,}
-			            },
-			    }
-		}
-
-		interface DidUpdateFeedEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdateFeedEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayload
-		}
-
-		interface DidUpdateFeedEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdateFeedEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface DidUpdateFeedEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidUpdatePersonEmitPayload {
-			
-				
-				'person': SpruceSchemas.Spruce.v2020_07_22.Person
-		}
-
-		interface DidUpdatePersonEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'didUpdatePersonEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'person': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
-			            },
-			    }
-		}
-
-		interface DidUpdatePersonEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface InvokeChatCallbackTarget {
-			
-				
-				'skillId': string
-				
-				'chatPersonId': string
-		}
-
-		interface InvokeChatCallbackTargetSchema extends SpruceSchema.Schema {
-			id: 'invokeChatCallbackTarget',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'skillId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'chatPersonId': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface InvokeChatCallbackTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface InvokeChatCallbackPayload {
-			
-				
-				'placeholder': string
-				
-				'state'?: (Record<string, any>)| undefined | null
-		}
-
-		interface InvokeChatCallbackPayloadSchema extends SpruceSchema.Schema {
-			id: 'invokeChatCallbackPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'placeholder': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'state': {
-			                type: 'raw',
-			                options: {valueType: `Record<string, any>`,}
-			            },
-			    }
-		}
-
-		interface InvokeChatCallbackPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface InvokeChatCallbackResponsePayload {
-			
-				
-				'message': string
-		}
-
-		interface InvokeChatCallbackResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'invokeChatCallbackResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'message': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface InvokeChatCallbackResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface RegisterChatbotsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-		}
-
-		interface RegisterChatbotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatbotsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterChatbotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ChatbotCallbacks {
-			
-				
-				'placeholder': string
-				
-				'useThisWhenever': string
-		}
-
-		interface ChatbotCallbacksSchema extends SpruceSchema.Schema {
-			id: 'chatbotCallbacks',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'placeholder': {
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'useThisWhenever': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		interface ChatbotCallbacksEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface Chatbot {
-			
-				
-				'title': string
-				
-				'yourJobIfYouChooseToAcceptItIs': string
-				
-				'weAreDoneWhen': string
-				
-				'pleaseKeepInMindThat'?: string[]| undefined | null
-				
-				'stateSchema'?: (SpruceSchema.Schema)| undefined | null
-				
-				'model'?: string| undefined | null
-				
-				'promptTemplate'?: string| undefined | null
-				
-				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[]| undefined | null
-		}
-
-		interface ChatbotSchema extends SpruceSchema.Schema {
-			id: 'chatbot',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'title': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'yourJobIfYouChooseToAcceptItIs': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'weAreDoneWhen': {
-			                type: 'text',
-			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'pleaseKeepInMindThat': {
-			                type: 'text',
-			                isArray: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'stateSchema': {
-			                type: 'raw',
-			                options: {valueType: `SpruceSchema.Schema`,}
-			            },
-			            /** . */
-			            'model': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'promptTemplate': {
-			                type: 'text',
-			                options: undefined
-			            },
-			            /** . */
-			            'callbacks': {
-			                type: 'schema',
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema,}
-			            },
-			    }
-		}
-
-		interface ChatbotEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface RegisterChatbotsResponsePayload {
-			
-				
-				'bots': SpruceSchemas.Mercury.v2020_12_25.Chatbot[]
-		}
-
-		interface RegisterChatbotsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'registerChatbotsResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'bots': {
-			                type: 'schema',
-			                isRequired: true,
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterChatbotsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsResponsePayloadSchema> {}
+		interface LoginEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -3593,41 +2014,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface FeedPredicate {
-			
-				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
-				
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-		}
-
-		interface FeedPredicateSchema extends SpruceSchema.Schema {
-			id: 'feedPredicate',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
-			            },
-			            /** . */
-			            'source': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			    }
-		}
-
-		interface FeedPredicateEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedPredicateSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface GetFeedPagingRequest {
 			
 				
@@ -3656,6 +2042,41 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface GetFeedPagingRequestEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetFeedPagingRequestSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface FeedPredicate {
+			
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+		}
+
+		interface FeedPredicateSchema extends SpruceSchema.Schema {
+			id: 'feedPredicate',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'source': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			    }
+		}
+
+		interface FeedPredicateEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedPredicateSchema> {}
 
 	}
 
@@ -4985,6 +3406,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface IsSkillInstalledEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTarget
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload| undefined | null
+		}
+
+		interface IsSkillInstalledEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'isSkillInstalledEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface IsSkillInstalledEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface IsSkillInstalledResponsePayload {
 			
 				
@@ -5236,6 +3701,41 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface ListLocationsEmitPayload {
+			
+				
+				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+		}
+
+		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'listLocationsEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'shouldOnlyShowWhereIAmEmployed': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'paging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
+			            },
+			    }
+		}
+
+		interface ListLocationsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface ListLocationsEmitTarget {
 			
 				
@@ -5265,41 +3765,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface ListLocationsEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface ListLocationsEmitPayload {
-			
-				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
-				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
-		}
-
-		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'listLocationsEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'shouldOnlyShowWhereIAmEmployed': {
-			                type: 'boolean',
-			                options: undefined
-			            },
-			            /** . */
-			            'paging': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequestSchema,}
-			            },
-			    }
-		}
-
-		interface ListLocationsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayloadSchema> {}
 
 	}
 
@@ -5425,49 +3890,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListOrganizationsEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget| undefined | null
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload| undefined | null
-		}
-
-		interface ListOrganizationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'listOrganizationsEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface ListOrganizationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrganizationsEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface ListOrgsEmitPayload {
 			
 				
@@ -5510,6 +3932,49 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface ListOrgsEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListOrganizationsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget| undefined | null
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload| undefined | null
+		}
+
+		interface ListOrganizationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'listOrganizationsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface ListOrganizationsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListOrganizationsEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -6129,37 +4594,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface ListRolesResponsePayload {
-			
-				
-				'roles': SpruceSchemas.Mercury.v2020_12_25.ListRole[]
-		}
-
-		interface ListRolesResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'listRolesResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'roles': {
-			                type: 'schema',
-			                isRequired: true,
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListRoleSchema,}
-			            },
-			    }
-		}
-
-		interface ListRolesResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListRolesResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface ListSchemaTarget {
 			
 				
@@ -6289,6 +4723,37 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface ListRoleEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListRoleSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListRolesResponsePayload {
+			
+				
+				'roles': SpruceSchemas.Mercury.v2020_12_25.ListRole[]
+		}
+
+		interface ListRolesResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'listRolesResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'roles': {
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListRoleSchema,}
+			            },
+			    }
+		}
+
+		interface ListRolesResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListRolesResponsePayloadSchema> {}
 
 	}
 
@@ -6669,50 +5134,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface LoginEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface LoginEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayload
-		}
-
-		interface LoginEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'loginEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface LoginEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.LoginEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -7111,43 +5532,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterListenersEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
-		}
-
-		interface RegisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerListenersEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface RegisterListenersEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface RegisteredListener {
 			
 				
@@ -7215,6 +5599,43 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface RegisterListenersEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterListenersEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
+		}
+
+		interface RegisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerListenersEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface RegisterListenersEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -9034,37 +7455,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SyncPermissionContractsResponsePayload {
-			
-				
-				'contractRecords': SpruceSchemas.Mercury.v2020_12_25.FullPermissionContract[]
-		}
-
-		interface SyncPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
-			id: 'syncPermissionContractsResponsePayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** . */
-			            'contractRecords': {
-			                type: 'schema',
-			                isRequired: true,
-			                isArray: true,
-			                minArrayLength: 0,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
-			            },
-			    }
-		}
-
-		interface SyncPermissionContractsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsResponsePayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface SyncPermissionContractsEmitTargetAndPayload {
 			
 				/** Source. */
@@ -9153,6 +7543,37 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface FullPermissionContractEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SyncPermissionContractsResponsePayload {
+			
+				
+				'contractRecords': SpruceSchemas.Mercury.v2020_12_25.FullPermissionContract[]
+		}
+
+		interface SyncPermissionContractsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'syncPermissionContractsResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'contractRecords': {
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FullPermissionContractSchema,}
+			            },
+			    }
+		}
+
+		interface SyncPermissionContractsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsResponsePayloadSchema> {}
 
 	}
 
@@ -10106,6 +8527,49 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface UpdatePersonEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTarget| undefined | null
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayload| undefined | null
+		}
+
+		interface UpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'updatePersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface UpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface SecurityQuestion {
 			
 				
@@ -10720,49 +9184,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface UpdatePersonEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTarget| undefined | null
-				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayload| undefined | null
-		}
-
-		interface UpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'updatePersonEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface UpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface WhoamiEmitTargetAndPayload {
 			
 				/** Source. */
@@ -10785,6 +9206,1585 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface WhoamiEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.WhoamiEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidInstallEmitTarget {
+			
+				
+				'organizationId': string
+				
+				'skillId': string
+		}
+
+		interface DidInstallEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didInstallEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidInstallEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidInstallEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTarget
+		}
+
+		interface DidInstallEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didInstallEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema,}
+			            },
+			    }
+		}
+
+		interface DidInstallEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidInstallResponsePayload {
+			
+		}
+
+		interface DidInstallResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'didInstallResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			    }
+		}
+
+		interface DidInstallResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidJoinOrganizationEmitTarget {
+			
+				
+				'organizationId': string
+				
+				'locationId'?: string| undefined | null
+		}
+
+		interface DidJoinOrganizationEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didJoinOrganizationEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidJoinOrganizationEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidJoinOrganizationEmitPayload {
+			
+				
+				'personId': string
+				
+				'roleId': string
+				
+				'isFirstRole': boolean
+				
+				'macAddress'?: string| undefined | null
+		}
+
+		interface DidJoinOrganizationEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didJoinOrganizationEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'isFirstRole': {
+			                type: 'boolean',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'macAddress': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidJoinOrganizationEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidJoinOrganizationEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTarget
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayload
+		}
+
+		interface DidJoinOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didJoinOrganizationEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidJoinOrganizationEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface MessageTemplateAddons {
+			
+				
+				'nextINeedYouTo'?: string[]| undefined | null
+				
+				'youShouldKnowThat'?: string[]| undefined | null
+				
+				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
+		}
+
+		interface MessageTemplateAddonsSchema extends SpruceSchema.Schema {
+			id: 'messageTemplateAddons',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'nextINeedYouTo': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'youShouldKnowThat': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'links': {
+			                type: 'schema',
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.LinkSchema,}
+			            },
+			    }
+		}
+
+		interface MessageTemplateAddonsEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidJoinOrganizationResponsePayload {
+			
+				
+				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddons| undefined | null
+		}
+
+		interface DidJoinOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'didJoinOrganizationResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'messaging': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddonsSchema,}
+			            },
+			    }
+		}
+
+		interface DidJoinOrganizationResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLeaveOrganizationEmitTarget {
+			
+				
+				'organizationId': string
+				
+				'locationId'?: string| undefined | null
+		}
+
+		interface DidLeaveOrganizationEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didLeaveOrganizationEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidLeaveOrganizationEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLeaveOrganizationEmitPayload {
+			
+				
+				'personId': string
+				
+				'roleId': string
+				
+				'isLastRole': boolean
+		}
+
+		interface DidLeaveOrganizationEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didLeaveOrganizationEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'roleId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'isLastRole': {
+			                type: 'boolean',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidLeaveOrganizationEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLeaveOrganizationEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTarget
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayload
+		}
+
+		interface DidLeaveOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didLeaveOrganizationEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidLeaveOrganizationEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLeaveOrganizationResponsePayload {
+			
+		}
+
+		interface DidLeaveOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'didLeaveOrganizationResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			    }
+		}
+
+		interface DidLeaveOrganizationResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLoginEmitPayload {
+			
+				
+				'person': SpruceSchemas.Mercury.v2020_12_25.PersonWithMac
+		}
+
+		interface DidLoginEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didLoginEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema,}
+			            },
+			    }
+		}
+
+		interface DidLoginEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidLoginEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayload
+		}
+
+		interface DidLoginEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didLoginEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidLoginEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidMessageEmitPayload {
+			
+				
+				'message': SpruceSchemas.Spruce.v2020_07_22.Message
+				
+				'conversationState'?: string| undefined | null
+				
+				'topic'?: string| undefined | null
+		}
+
+		interface DidMessageEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didMessageEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'message': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.MessageSchema,}
+			            },
+			            /** . */
+			            'conversationState': {
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** . */
+			            'topic': {
+			                type: 'text',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidMessageEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidMessageEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Spruce.v2020_07_22.MessageTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayload
+		}
+
+		interface DidMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didMessageEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.MessageTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ConversationTopic {
+			
+				
+				'key': string
+				
+				'confidence': number
+				
+				'label': string
+		}
+
+		interface ConversationTopicSchema extends SpruceSchema.Schema {
+			id: 'conversationTopic',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'key': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'confidence': {
+			                type: 'number',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'label': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface ConversationTopicEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ConversationTopicSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidMessageResponsePayload {
+			
+				
+				'transitionConversationTo'?: ("greeting" | "discovery" | "topic" | "closing")| undefined | null
+				
+				'repairs'?: string[]| undefined | null
+				
+				'topicChangers'?: string[]| undefined | null
+				
+				'utterance'?: string| undefined | null
+				
+				'suggestedTopics'?: SpruceSchemas.Mercury.v2020_12_25.ConversationTopic[]| undefined | null
+		}
+
+		interface DidMessageResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'didMessageResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'transitionConversationTo': {
+			                type: 'select',
+			                options: {choices: [{"label":"Greeting","value":"greeting"},{"label":"Discovery","value":"discovery"},{"label":"Topic","value":"topic"},{"label":"Closing","value":"closing"}],}
+			            },
+			            /** . */
+			            'repairs': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'topicChangers': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'utterance': {
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** . */
+			            'suggestedTopics': {
+			                type: 'schema',
+			                isArray: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ConversationTopicSchema,}
+			            },
+			    }
+		}
+
+		interface DidMessageResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidMessageResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface PersonWithMac {
+			
+				/** Id. */
+				'id': string
+				/** First name. */
+				'firstName'?: string| undefined | null
+				/** Last name. */
+				'lastName'?: string| undefined | null
+				/** Casual name. The name you can use when talking to this person. */
+				'casualName': string
+				/** Timezone. */
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				/** Phone. A number that can be texted */
+				'phone'?: string| undefined | null
+				/** Username. An optional username if the person does not want to login using their phone */
+				'username'?: string| undefined | null
+				/** Avatar src. */
+				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
+				
+				'dateCreated': SpruceSchema.DateTimeFieldValue
+				
+				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				
+				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				
+				'macAddress'?: string| undefined | null
+		}
+
+		interface PersonWithMacSchema extends SpruceSchema.Schema {
+			id: 'personWithMac',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Id. */
+			            'id': {
+			                label: 'Id',
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** First name. */
+			            'firstName': {
+			                label: 'First name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Last name. */
+			            'lastName': {
+			                label: 'Last name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Casual name. The name you can use when talking to this person. */
+			            'casualName': {
+			                label: 'Casual name',
+			                type: 'text',
+			                isRequired: true,
+			                hint: 'The name you can use when talking to this person.',
+			                options: undefined
+			            },
+			            /** Timezone. */
+			            'timezone': {
+			                label: 'Timezone',
+			                type: 'select',
+			                options: {choices: [{"value":"Pacific/Niue","label":"Niue Time"},{"value":"Pacific/Pago_Pago","label":"Samoa Standard Time"},{"value":"Pacific/Rarotonga","label":"Cook Islands Standard Time"},{"value":"Pacific/Honolulu","label":"Hawaii-Aleutian Standard Time"},{"value":"Pacific/Tahiti","label":"Tahiti Time"},{"value":"Pacific/Marquesas","label":"Marquesas Time"},{"value":"Pacific/Gambier","label":"Gambier Time"},{"value":"America/Adak","label":"Hawaii-Aleutian Time (Adak)"},{"value":"America/Anchorage","label":"Alaska Time - Anchorage"},{"value":"America/Juneau","label":"Alaska Time - Juneau"},{"value":"America/Metlakatla","label":"Alaska Time - Metlakatla"},{"value":"America/Nome","label":"Alaska Time - Nome"},{"value":"America/Sitka","label":"Alaska Time - Sitka"},{"value":"America/Yakutat","label":"Alaska Time - Yakutat"},{"value":"Pacific/Pitcairn","label":"Pitcairn Time"},{"value":"America/Hermosillo","label":"Mexican Pacific Standard Time"},{"value":"America/Dawson_Creek","label":"Mountain Standard Time - Dawson Creek"},{"value":"America/Fort_Nelson","label":"Mountain Standard Time - Fort Nelson"},{"value":"America/Phoenix","label":"Mountain Standard Time - Phoenix"},{"value":"America/Los_Angeles","label":"Pacific Time - Los Angeles"},{"value":"America/Tijuana","label":"Pacific Time - Tijuana"},{"value":"America/Vancouver","label":"Pacific Time - Vancouver"},{"value":"America/Dawson","label":"Yukon Time - Dawson"},{"value":"America/Whitehorse","label":"Yukon Time - Whitehorse"},{"value":"America/Belize","label":"Central Standard Time - Belize"},{"value":"America/Costa_Rica","label":"Central Standard Time - Costa Rica"},{"value":"America/El_Salvador","label":"Central Standard Time - El Salvador"},{"value":"America/Guatemala","label":"Central Standard Time - Guatemala"},{"value":"America/Managua","label":"Central Standard Time - Managua"},{"value":"America/Regina","label":"Central Standard Time - Regina"},{"value":"America/Swift_Current","label":"Central Standard Time - Swift Current"},{"value":"America/Tegucigalpa","label":"Central Standard Time - Tegucigalpa"},{"value":"Pacific/Easter","label":"Easter Island Time"},{"value":"Pacific/Galapagos","label":"Galapagos Time"},{"value":"America/Chihuahua","label":"Mexican Pacific Time - Chihuahua"},{"value":"America/Mazatlan","label":"Mexican Pacific Time - Mazatlan"},{"value":"America/Boise","label":"Mountain Time - Boise"},{"value":"America/Cambridge_Bay","label":"Mountain Time - Cambridge Bay"},{"value":"America/Denver","label":"Mountain Time - Denver"},{"value":"America/Edmonton","label":"Mountain Time - Edmonton"},{"value":"America/Inuvik","label":"Mountain Time - Inuvik"},{"value":"America/Ojinaga","label":"Mountain Time - Ojinaga"},{"value":"America/Yellowknife","label":"Mountain Time - Yellowknife"},{"value":"America/Eirunepe","label":"Acre Standard Time - Eirunepe"},{"value":"America/Rio_Branco","label":"Acre Standard Time - Rio Branco"},{"value":"America/Bahia_Banderas","label":"Central Time - Bahia Banderas"},{"value":"America/North_Dakota/Beulah","label":"Central Time - Beulah, North Dakota"},{"value":"America/North_Dakota/Center","label":"Central Time - Center, North Dakota"},{"value":"America/Chicago","label":"Central Time - Chicago"},{"value":"America/Indiana/Knox","label":"Central Time - Knox, Indiana"},{"value":"America/Matamoros","label":"Central Time - Matamoros"},{"value":"America/Menominee","label":"Central Time - Menominee"},{"value":"America/Merida","label":"Central Time - Merida"},{"value":"America/Mexico_City","label":"Central Time - Mexico City"},{"value":"America/Monterrey","label":"Central Time - Monterrey"},{"value":"America/North_Dakota/New_Salem","label":"Central Time - New Salem, North Dakota"},{"value":"America/Rainy_River","label":"Central Time - Rainy River"},{"value":"America/Rankin_Inlet","label":"Central Time - Rankin Inlet"},{"value":"America/Resolute","label":"Central Time - Resolute"},{"value":"America/Indiana/Tell_City","label":"Central Time - Tell City, Indiana"},{"value":"America/Winnipeg","label":"Central Time - Winnipeg"},{"value":"America/Bogota","label":"Colombia Standard Time"},{"value":"America/Cancun","label":"Eastern Standard Time - Cancun"},{"value":"America/Jamaica","label":"Eastern Standard Time - Jamaica"},{"value":"America/Panama","label":"Eastern Standard Time - Panama"},{"value":"America/Guayaquil","label":"Ecuador Time"},{"value":"America/Lima","label":"Peru Standard Time"},{"value":"America/Boa_Vista","label":"Amazon Standard Time - Boa Vista"},{"value":"America/Campo_Grande","label":"Amazon Standard Time - Campo Grande"},{"value":"America/Cuiaba","label":"Amazon Standard Time - Cuiaba"},{"value":"America/Manaus","label":"Amazon Standard Time - Manaus"},{"value":"America/Porto_Velho","label":"Amazon Standard Time - Porto Velho"},{"value":"America/Barbados","label":"Atlantic Standard Time - Barbados"},{"value":"America/Martinique","label":"Atlantic Standard Time - Martinique"},{"value":"America/Puerto_Rico","label":"Atlantic Standard Time - Puerto Rico"},{"value":"America/Santo_Domingo","label":"Atlantic Standard Time - Santo Domingo"},{"value":"America/La_Paz","label":"Bolivia Time"},{"value":"America/Santiago","label":"Chile Time"},{"value":"America/Havana","label":"Cuba Time"},{"value":"America/Detroit","label":"Eastern Time - Detroit"},{"value":"America/Grand_Turk","label":"Eastern Time - Grand Turk"},{"value":"America/Indiana/Indianapolis","label":"Eastern Time - Indianapolis"},{"value":"America/Iqaluit","label":"Eastern Time - Iqaluit"},{"value":"America/Kentucky/Louisville","label":"Eastern Time - Louisville"},{"value":"America/Indiana/Marengo","label":"Eastern Time - Marengo, Indiana"},{"value":"America/Kentucky/Monticello","label":"Eastern Time - Monticello, Kentucky"},{"value":"America/New_York","label":"Eastern Time - New York"},{"value":"America/Nipigon","label":"Eastern Time - Nipigon"},{"value":"America/Pangnirtung","label":"Eastern Time - Pangnirtung"},{"value":"America/Indiana/Petersburg","label":"Eastern Time - Petersburg, Indiana"},{"value":"America/Port-au-Prince","label":"Eastern Time - Port-au-Prince"},{"value":"America/Thunder_Bay","label":"Eastern Time - Thunder Bay"},{"value":"America/Toronto","label":"Eastern Time - Toronto"},{"value":"America/Indiana/Vevay","label":"Eastern Time - Vevay, Indiana"},{"value":"America/Indiana/Vincennes","label":"Eastern Time - Vincennes, Indiana"},{"value":"America/Indiana/Winamac","label":"Eastern Time - Winamac, Indiana"},{"value":"America/Guyana","label":"Guyana Time"},{"value":"America/Asuncion","label":"Paraguay Time"},{"value":"America/Caracas","label":"Venezuela Time"},{"value":"America/Argentina/Buenos_Aires","label":"Argentina Standard Time - Buenos Aires"},{"value":"America/Argentina/Catamarca","label":"Argentina Standard Time - Catamarca"},{"value":"America/Argentina/Cordoba","label":"Argentina Standard Time - Cordoba"},{"value":"America/Argentina/Jujuy","label":"Argentina Standard Time - Jujuy"},{"value":"America/Argentina/La_Rioja","label":"Argentina Standard Time - La Rioja"},{"value":"America/Argentina/Mendoza","label":"Argentina Standard Time - Mendoza"},{"value":"America/Argentina/Rio_Gallegos","label":"Argentina Standard Time - Rio Gallegos"},{"value":"America/Argentina/Salta","label":"Argentina Standard Time - Salta"},{"value":"America/Argentina/San_Juan","label":"Argentina Standard Time - San Juan"},{"value":"America/Argentina/San_Luis","label":"Argentina Standard Time - San Luis"},{"value":"America/Argentina/Tucuman","label":"Argentina Standard Time - Tucuman"},{"value":"America/Argentina/Ushuaia","label":"Argentina Standard Time - Ushuaia"},{"value":"Atlantic/Bermuda","label":"Atlantic Time - Bermuda"},{"value":"America/Glace_Bay","label":"Atlantic Time - Glace Bay"},{"value":"America/Goose_Bay","label":"Atlantic Time - Goose Bay"},{"value":"America/Halifax","label":"Atlantic Time - Halifax"},{"value":"America/Moncton","label":"Atlantic Time - Moncton"},{"value":"America/Thule","label":"Atlantic Time - Thule"},{"value":"America/Araguaina","label":"Brasilia Standard Time - Araguaina"},{"value":"America/Bahia","label":"Brasilia Standard Time - Bahia"},{"value":"America/Belem","label":"Brasilia Standard Time - Belem"},{"value":"America/Fortaleza","label":"Brasilia Standard Time - Fortaleza"},{"value":"America/Maceio","label":"Brasilia Standard Time - Maceio"},{"value":"America/Recife","label":"Brasilia Standard Time - Recife"},{"value":"America/Santarem","label":"Brasilia Standard Time - Santarem"},{"value":"America/Sao_Paulo","label":"Brasilia Standard Time - Sao Paulo"},{"value":"Atlantic/Stanley","label":"Falkland Islands Standard Time"},{"value":"America/Cayenne","label":"French Guiana Time"},{"value":"Antarctica/Palmer","label":"Palmer Time"},{"value":"America/Punta_Arenas","label":"Punta Arenas Time"},{"value":"Antarctica/Rothera","label":"Rothera Time"},{"value":"America/Paramaribo","label":"Suriname Time"},{"value":"America/Montevideo","label":"Uruguay Standard Time"},{"value":"America/St_Johns","label":"Newfoundland Time"},{"value":"America/Noronha","label":"Fernando de Noronha Standard Time"},{"value":"Atlantic/South_Georgia","label":"South Georgia Time"},{"value":"America/Miquelon","label":"St. Pierre & Miquelon Time"},{"value":"America/Nuuk","label":"West Greenland Time"},{"value":"Atlantic/Cape_Verde","label":"Cape Verde Standard Time"},{"value":"Atlantic/Azores","label":"Azores Time"},{"value":"UTC","label":"Coordinated Universal Time"},{"value":"America/Scoresbysund","label":"East Greenland Time"},{"value":"Etc/GMT","label":"Greenwich Mean Time"},{"value":"Africa/Abidjan","label":"Greenwich Mean Time - Abidjan"},{"value":"Africa/Bissau","label":"Greenwich Mean Time - Bissau"},{"value":"America/Danmarkshavn","label":"Greenwich Mean Time - Danmarkshavn"},{"value":"Africa/Monrovia","label":"Greenwich Mean Time - Monrovia"},{"value":"Atlantic/Reykjavik","label":"Greenwich Mean Time - Reykjavik"},{"value":"Africa/Sao_Tome","label":"Greenwich Mean Time - São Tomé"},{"value":"Africa/Algiers","label":"Central European Standard Time - Algiers"},{"value":"Africa/Tunis","label":"Central European Standard Time - Tunis"},{"value":"Europe/Dublin","label":"Ireland Time"},{"value":"Africa/Casablanca","label":"Morocco Time"},{"value":"Europe/London","label":"United Kingdom Time"},{"value":"Africa/Lagos","label":"West Africa Standard Time - Lagos"},{"value":"Africa/Ndjamena","label":"West Africa Standard Time - Ndjamena"},{"value":"Atlantic/Canary","label":"Western European Time - Canary"},{"value":"Atlantic/Faroe","label":"Western European Time - Faroe"},{"value":"Europe/Lisbon","label":"Western European Time - Lisbon"},{"value":"Atlantic/Madeira","label":"Western European Time - Madeira"},{"value":"Africa/El_Aaiun","label":"Western Sahara Time"},{"value":"Africa/Juba","label":"Central Africa Time - Juba"},{"value":"Africa/Khartoum","label":"Central Africa Time - Khartoum"},{"value":"Africa/Maputo","label":"Central Africa Time - Maputo"},{"value":"Africa/Windhoek","label":"Central Africa Time - Windhoek"},{"value":"Europe/Amsterdam","label":"Central European Time - Amsterdam"},{"value":"Europe/Andorra","label":"Central European Time - Andorra"},{"value":"Europe/Belgrade","label":"Central European Time - Belgrade"},{"value":"Europe/Berlin","label":"Central European Time - Berlin"},{"value":"Europe/Brussels","label":"Central European Time - Brussels"},{"value":"Europe/Budapest","label":"Central European Time - Budapest"},{"value":"Africa/Ceuta","label":"Central European Time - Ceuta"},{"value":"Europe/Copenhagen","label":"Central European Time - Copenhagen"},{"value":"Europe/Gibraltar","label":"Central European Time - Gibraltar"},{"value":"Europe/Luxembourg","label":"Central European Time - Luxembourg"},{"value":"Europe/Madrid","label":"Central European Time - Madrid"},{"value":"Europe/Malta","label":"Central European Time - Malta"},{"value":"Europe/Monaco","label":"Central European Time - Monaco"},{"value":"Europe/Oslo","label":"Central European Time - Oslo"},{"value":"Europe/Paris","label":"Central European Time - Paris"},{"value":"Europe/Prague","label":"Central European Time - Prague"},{"value":"Europe/Rome","label":"Central European Time - Rome"},{"value":"Europe/Stockholm","label":"Central European Time - Stockholm"},{"value":"Europe/Tirane","label":"Central European Time - Tirane"},{"value":"Europe/Vienna","label":"Central European Time - Vienna"},{"value":"Europe/Warsaw","label":"Central European Time - Warsaw"},{"value":"Europe/Zurich","label":"Central European Time - Zurich"},{"value":"Africa/Cairo","label":"Eastern European Standard Time - Cairo"},{"value":"Europe/Kaliningrad","label":"Eastern European Standard Time - Kaliningrad"},{"value":"Africa/Tripoli","label":"Eastern European Standard Time - Tripoli"},{"value":"Africa/Johannesburg","label":"South Africa Standard Time"},{"value":"Antarctica/Troll","label":"Troll Time"},{"value":"Asia/Baghdad","label":"Arabian Standard Time - Baghdad"},{"value":"Asia/Qatar","label":"Arabian Standard Time - Qatar"},{"value":"Asia/Riyadh","label":"Arabian Standard Time - Riyadh"},{"value":"Africa/Nairobi","label":"East Africa Time"},{"value":"Asia/Amman","label":"Eastern European Time - Amman"},{"value":"Europe/Athens","label":"Eastern European Time - Athens"},{"value":"Asia/Beirut","label":"Eastern European Time - Beirut"},{"value":"Europe/Bucharest","label":"Eastern European Time - Bucharest"},{"value":"Europe/Chisinau","label":"Eastern European Time - Chisinau"},{"value":"Asia/Damascus","label":"Eastern European Time - Damascus"},{"value":"Asia/Gaza","label":"Eastern European Time - Gaza"},{"value":"Asia/Hebron","label":"Eastern European Time - Hebron"},{"value":"Europe/Helsinki","label":"Eastern European Time - Helsinki"},{"value":"Europe/Kiev","label":"Eastern European Time - Kyiv"},{"value":"Asia/Nicosia","label":"Eastern European Time - Nicosia"},{"value":"Europe/Riga","label":"Eastern European Time - Riga"},{"value":"Europe/Sofia","label":"Eastern European Time - Sofia"},{"value":"Europe/Tallinn","label":"Eastern European Time - Tallinn"},{"value":"Europe/Uzhgorod","label":"Eastern European Time - Uzhhorod"},{"value":"Europe/Vilnius","label":"Eastern European Time - Vilnius"},{"value":"Europe/Zaporozhye","label":"Eastern European Time - Zaporozhye"},{"value":"Asia/Famagusta","label":"Famagusta Time"},{"value":"Asia/Jerusalem","label":"Israel Time"},{"value":"Europe/Kirov","label":"Kirov Time"},{"value":"Europe/Minsk","label":"Moscow Standard Time - Minsk"},{"value":"Europe/Moscow","label":"Moscow Standard Time - Moscow"},{"value":"Europe/Simferopol","label":"Moscow Standard Time - Simferopol"},{"value":"Europe/Istanbul","label":"Turkey Time"},{"value":"Europe/Volgograd","label":"Volgograd Standard Time"},{"value":"Asia/Yerevan","label":"Armenia Standard Time"},{"value":"Europe/Astrakhan","label":"Astrakhan Time"},{"value":"Asia/Baku","label":"Azerbaijan Standard Time"},{"value":"Asia/Tbilisi","label":"Georgia Standard Time"},{"value":"Asia/Dubai","label":"Gulf Standard Time"},{"value":"Indian/Mauritius","label":"Mauritius Standard Time"},{"value":"Indian/Reunion","label":"Réunion Time"},{"value":"Europe/Samara","label":"Samara Standard Time"},{"value":"Europe/Saratov","label":"Saratov Time"},{"value":"Indian/Mahe","label":"Seychelles Time"},{"value":"Europe/Ulyanovsk","label":"Ulyanovsk Time"},{"value":"Asia/Kabul","label":"Afghanistan Time"},{"value":"Asia/Tehran","label":"Iran Time"},{"value":"Indian/Kerguelen","label":"French Southern & Antarctic Time"},{"value":"Indian/Maldives","label":"Maldives Time"},{"value":"Antarctica/Mawson","label":"Mawson Time"},{"value":"Asia/Karachi","label":"Pakistan Standard Time"},{"value":"Asia/Dushanbe","label":"Tajikistan Time"},{"value":"Asia/Ashgabat","label":"Turkmenistan Standard Time"},{"value":"Asia/Samarkand","label":"Uzbekistan Standard Time - Samarkand"},{"value":"Asia/Tashkent","label":"Uzbekistan Standard Time - Tashkent"},{"value":"Asia/Aqtau","label":"West Kazakhstan Time - Aqtau"},{"value":"Asia/Aqtobe","label":"West Kazakhstan Time - Aqtobe"},{"value":"Asia/Atyrau","label":"West Kazakhstan Time - Atyrau"},{"value":"Asia/Oral","label":"West Kazakhstan Time - Oral"},{"value":"Asia/Qyzylorda","label":"West Kazakhstan Time - Qyzylorda"},{"value":"Asia/Yekaterinburg","label":"Yekaterinburg Standard Time"},{"value":"Asia/Colombo","label":"India Standard Time - Colombo"},{"value":"Asia/Kolkata","label":"India Standard Time - Kolkata"},{"value":"Asia/Kathmandu","label":"Nepal Time"},{"value":"Asia/Dhaka","label":"Bangladesh Standard Time"},{"value":"Asia/Thimphu","label":"Bhutan Time"},{"value":"Asia/Almaty","label":"East Kazakhstan Time - Almaty"},{"value":"Asia/Qostanay","label":"East Kazakhstan Time - Kostanay"},{"value":"Indian/Chagos","label":"Indian Ocean Time"},{"value":"Asia/Bishkek","label":"Kyrgyzstan Time"},{"value":"Asia/Omsk","label":"Omsk Standard Time"},{"value":"Asia/Urumqi","label":"Urumqi Time"},{"value":"Antarctica/Vostok","label":"Vostok Time"},{"value":"Indian/Cocos","label":"Cocos Islands Time"},{"value":"Asia/Yangon","label":"Myanmar Time"},{"value":"Asia/Barnaul","label":"Barnaul Time"},{"value":"Indian/Christmas","label":"Christmas Island Time"},{"value":"Antarctica/Davis","label":"Davis Time"},{"value":"Asia/Hovd","label":"Hovd Standard Time"},{"value":"Asia/Bangkok","label":"Indochina Time - Bangkok"},{"value":"Asia/Ho_Chi_Minh","label":"Indochina Time - Ho Chi Minh City"},{"value":"Asia/Krasnoyarsk","label":"Krasnoyarsk Standard Time - Krasnoyarsk"},{"value":"Asia/Novokuznetsk","label":"Krasnoyarsk Standard Time - Novokuznetsk"},{"value":"Asia/Novosibirsk","label":"Novosibirsk Standard Time"},{"value":"Asia/Tomsk","label":"Tomsk Time"},{"value":"Asia/Jakarta","label":"Western Indonesia Time - Jakarta"},{"value":"Asia/Pontianak","label":"Western Indonesia Time - Pontianak"},{"value":"Australia/Perth","label":"Australian Western Standard Time"},{"value":"Asia/Brunei","label":"Brunei Darussalam Time"},{"value":"Asia/Makassar","label":"Central Indonesia Time"},{"value":"Asia/Macau","label":"China Standard Time - Macao"},{"value":"Asia/Shanghai","label":"China Standard Time - Shanghai"},{"value":"Asia/Hong_Kong","label":"Hong Kong Standard Time"},{"value":"Asia/Irkutsk","label":"Irkutsk Standard Time"},{"value":"Asia/Kuala_Lumpur","label":"Malaysia Time - Kuala Lumpur"},{"value":"Asia/Kuching","label":"Malaysia Time - Kuching"},{"value":"Asia/Manila","label":"Philippine Standard Time"},{"value":"Asia/Singapore","label":"Singapore Standard Time"},{"value":"Asia/Taipei","label":"Taipei Standard Time"},{"value":"Asia/Choibalsan","label":"Ulaanbaatar Standard Time - Choibalsan"},{"value":"Asia/Ulaanbaatar","label":"Ulaanbaatar Standard Time - Ulaanbaatar"},{"value":"Australia/Eucla","label":"Australian Central Western Standard Time"},{"value":"Asia/Dili","label":"East Timor Time"},{"value":"Asia/Jayapura","label":"Eastern Indonesia Time"},{"value":"Asia/Tokyo","label":"Japan Standard Time"},{"value":"Asia/Pyongyang","label":"Korean Standard Time - Pyongyang"},{"value":"Asia/Seoul","label":"Korean Standard Time - Seoul"},{"value":"Pacific/Palau","label":"Palau Time"},{"value":"Asia/Chita","label":"Yakutsk Standard Time - Chita"},{"value":"Asia/Khandyga","label":"Yakutsk Standard Time - Khandyga"},{"value":"Asia/Yakutsk","label":"Yakutsk Standard Time - Yakutsk"},{"value":"Australia/Darwin","label":"Australian Central Standard Time"},{"value":"Australia/Adelaide","label":"Central Australia Time - Adelaide"},{"value":"Australia/Broken_Hill","label":"Central Australia Time - Broken Hill"},{"value":"Australia/Brisbane","label":"Australian Eastern Standard Time - Brisbane"},{"value":"Australia/Lindeman","label":"Australian Eastern Standard Time - Lindeman"},{"value":"Pacific/Guam","label":"Chamorro Standard Time"},{"value":"Pacific/Chuuk","label":"Chuuk Time"},{"value":"Australia/Hobart","label":"Eastern Australia Time - Hobart"},{"value":"Antarctica/Macquarie","label":"Eastern Australia Time - Macquarie"},{"value":"Australia/Melbourne","label":"Eastern Australia Time - Melbourne"},{"value":"Australia/Sydney","label":"Eastern Australia Time - Sydney"},{"value":"Pacific/Port_Moresby","label":"Papua New Guinea Time"},{"value":"Asia/Ust-Nera","label":"Vladivostok Standard Time - Ust-Nera"},{"value":"Asia/Vladivostok","label":"Vladivostok Standard Time - Vladivostok"},{"value":"Australia/Lord_Howe","label":"Lord Howe Time"},{"value":"Pacific/Bougainville","label":"Bougainville Time"},{"value":"Antarctica/Casey","label":"Casey Time"},{"value":"Pacific/Kosrae","label":"Kosrae Time"},{"value":"Asia/Magadan","label":"Magadan Standard Time"},{"value":"Pacific/Noumea","label":"New Caledonia Standard Time"},{"value":"Pacific/Norfolk","label":"Norfolk Island Time"},{"value":"Pacific/Pohnpei","label":"Ponape Time"},{"value":"Asia/Sakhalin","label":"Sakhalin Standard Time"},{"value":"Pacific/Guadalcanal","label":"Solomon Islands Time"},{"value":"Asia/Srednekolymsk","label":"Srednekolymsk Time"},{"value":"Pacific/Efate","label":"Vanuatu Standard Time"},{"value":"Asia/Anadyr","label":"Anadyr Standard Time"},{"value":"Pacific/Fiji","label":"Fiji Time"},{"value":"Pacific/Tarawa","label":"Gilbert Islands Time"},{"value":"Pacific/Kwajalein","label":"Marshall Islands Time - Kwajalein"},{"value":"Pacific/Majuro","label":"Marshall Islands Time - Majuro"},{"value":"Pacific/Nauru","label":"Nauru Time"},{"value":"Pacific/Auckland","label":"New Zealand Time"},{"value":"Asia/Kamchatka","label":"Petropavlovsk-Kamchatski Standard Time"},{"value":"Pacific/Funafuti","label":"Tuvalu Time"},{"value":"Pacific/Wake","label":"Wake Island Time"},{"value":"Pacific/Wallis","label":"Wallis & Futuna Time"},{"value":"Pacific/Chatham","label":"Chatham Time"},{"value":"Pacific/Apia","label":"Apia Standard Time"},{"value":"Pacific/Fakaofo","label":"Tokelau Time"},{"value":"Pacific/Tongatapu","label":"Tonga Standard Time"},{"value":"Pacific/Kiritimati","label":"Line Islands Time"}],}
+			            },
+			            /** Phone. A number that can be texted */
+			            'phone': {
+			                label: 'Phone',
+			                type: 'phone',
+			                isPrivate: true,
+			                hint: 'A number that can be texted',
+			                options: undefined
+			            },
+			            /** Username. An optional username if the person does not want to login using their phone */
+			            'username': {
+			                label: 'Username',
+			                type: 'text',
+			                isPrivate: true,
+			                hint: 'An optional username if the person does not want to login using their phone',
+			                options: undefined
+			            },
+			            /** Avatar src. */
+			            'avatar': {
+			                label: 'Avatar src',
+			                type: 'image',
+			                options: {requiredSizes: ["*"],}
+			            },
+			            /** . */
+			            'dateCreated': {
+			                type: 'dateTime',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'dateUpdated': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			            /** . */
+			            'dateScrambled': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			            /** . */
+			            'macAddress': {
+			                type: 'text',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface PersonWithMacEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidSignupEmitPayload {
+			
+				
+				'person': SpruceSchemas.Mercury.v2020_12_25.PersonWithMac
+		}
+
+		interface DidSignupEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didSignupEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema,}
+			            },
+			    }
+		}
+
+		interface DidSignupEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidSignupEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayload
+		}
+
+		interface DidSignupEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didSignupEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidSignupEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateAuthorizerStatusEmitTarget {
+			
+				
+				'organizationId'?: string| undefined | null
+				
+				'locationId'?: string| undefined | null
+		}
+
+		interface DidUpdateAuthorizerStatusEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didUpdateAuthorizerStatusEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidUpdateAuthorizerStatusEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateAuthorizerStatusEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayload
+		}
+
+		interface DidUpdateAuthorizerStatusEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdateAuthorizerStatusEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdateAuthorizerStatusEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface UpdateAuthorizerStatusPerson {
+			
+				
+				'id': string
+				
+				'casualName': string
+		}
+
+		interface UpdateAuthorizerStatusPersonSchema extends SpruceSchema.Schema {
+			id: 'updateAuthorizerStatusPerson',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'id': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'casualName': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface UpdateAuthorizerStatusPersonEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPersonSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateAuthorizerStatusEmitPayload {
+			
+				
+				'person': SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPerson
+				
+				'statuses': ("clockedIn" | "clockedOut" | "onPrem" | "offPrem")[]
+		}
+
+		interface DidUpdateAuthorizerStatusEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdateAuthorizerStatusEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdateAuthorizerStatusPersonSchema,}
+			            },
+			            /** . */
+			            'statuses': {
+			                type: 'select',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {choices: [{"label":"Clocked in","value":"clockedIn"},{"label":"Clocked out","value":"clockedOut"},{"label":"On premises","value":"onPrem"},{"label":"Off premises","value":"offPrem"}],}
+			            },
+			    }
+		}
+
+		interface DidUpdateAuthorizerStatusEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateFeedEmitTarget {
+			
+				
+				'locationId'?: string| undefined | null
+				
+				'organizationId'?: string| undefined | null
+				
+				'skillId'?: string| undefined | null
+		}
+
+		interface DidUpdateFeedEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'didUpdateFeedEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'locationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'organizationId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface DidUpdateFeedEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateFeedEmitPayload {
+			
+				
+				'item': SpruceSchemas.Spruce.v2020_07_22.FeedItem
+		}
+
+		interface DidUpdateFeedEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdateFeedEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'item': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.FeedItemSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdateFeedEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdateFeedEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayload
+		}
+
+		interface DidUpdateFeedEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdateFeedEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdateFeedEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdatePersonEmitPayload {
+			
+				
+				'person': SpruceSchemas.Spruce.v2020_07_22.Person
+		}
+
+		interface DidUpdatePersonEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdatePersonEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdatePersonEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface InvokeChatCallbackTarget {
+			
+				
+				'skillId': string
+				
+				'chatPersonId': string
+		}
+
+		interface InvokeChatCallbackTargetSchema extends SpruceSchema.Schema {
+			id: 'invokeChatCallbackTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'chatPersonId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface InvokeChatCallbackTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface InvokeChatCallbackPayload {
+			
+				
+				'placeholder': string
+				
+				'state'?: (Record<string, any>)| undefined | null
+		}
+
+		interface InvokeChatCallbackPayloadSchema extends SpruceSchema.Schema {
+			id: 'invokeChatCallbackPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'placeholder': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'state': {
+			                type: 'raw',
+			                options: {valueType: `Record<string, any>`,}
+			            },
+			    }
+		}
+
+		interface InvokeChatCallbackPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface InvokeChatCallbackEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTarget
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayload
+		}
+
+		interface InvokeChatCallbackEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'invokeChatCallbackEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface InvokeChatCallbackEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface InvokeChatCallbackResponsePayload {
+			
+				
+				'message': string
+		}
+
+		interface InvokeChatCallbackResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'invokeChatCallbackResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'message': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface InvokeChatCallbackResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface DidUpdatePersonEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayload
+		}
+
+		interface DidUpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didUpdatePersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface DidUpdatePersonEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterChatbotsEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+		}
+
+		interface RegisterChatbotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatbotsEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			    }
+		}
+
+		interface RegisterChatbotsEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ChatbotCallbacks {
+			
+				
+				'placeholder': string
+				
+				'useThisWhenever': string
+		}
+
+		interface ChatbotCallbacksSchema extends SpruceSchema.Schema {
+			id: 'chatbotCallbacks',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'placeholder': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'useThisWhenever': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface ChatbotCallbacksEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface Chatbot {
+			
+				
+				'title': string
+				
+				'yourJobIfYouChooseToAcceptItIs': string
+				
+				'weAreDoneWhen': string
+				
+				'pleaseKeepInMindThat'?: string[]| undefined | null
+				
+				'stateSchema'?: (SpruceSchema.Schema)| undefined | null
+				
+				'model'?: string| undefined | null
+				
+				'promptTemplate'?: string| undefined | null
+				
+				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[]| undefined | null
+		}
+
+		interface ChatbotSchema extends SpruceSchema.Schema {
+			id: 'chatbot',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'title': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'yourJobIfYouChooseToAcceptItIs': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'weAreDoneWhen': {
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'pleaseKeepInMindThat': {
+			                type: 'text',
+			                isArray: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'stateSchema': {
+			                type: 'raw',
+			                options: {valueType: `SpruceSchema.Schema`,}
+			            },
+			            /** . */
+			            'model': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'promptTemplate': {
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** . */
+			            'callbacks': {
+			                type: 'schema',
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacksSchema,}
+			            },
+			    }
+		}
+
+		interface ChatbotEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterChatbotsResponsePayload {
+			
+				
+				'bots': SpruceSchemas.Mercury.v2020_12_25.Chatbot[]
+		}
+
+		interface RegisterChatbotsResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'registerChatbotsResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'bots': {
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ChatbotSchema,}
+			            },
+			    }
+		}
+
+		interface RegisterChatbotsResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterChatbotsResponsePayloadSchema> {}
 
 	}
 
