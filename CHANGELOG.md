@@ -1,3 +1,5 @@
+## [24.3.24](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.23...v24.3.24) (2024-08-17)
+
 ## [24.3.23](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.22...v24.3.23) (2024-08-17)
 
 ## [24.3.22](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.21...v24.3.22) (2024-08-17)
