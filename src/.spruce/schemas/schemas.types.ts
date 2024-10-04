@@ -2230,6 +2230,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
 				
+				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				
 				'slug'?: string| undefined | null
 		}
 
@@ -2282,6 +2284,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'dateDeleted': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			            /** . */
+			            'dateUpdated': {
 			                type: 'dateTime',
 			                options: undefined
 			            },
@@ -9679,6 +9686,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
 				
+				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				
 				'organizationId'?: string| undefined | null
 		}
 
@@ -9740,6 +9749,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            },
 			            /** . */
 			            'dateDeleted': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			            /** . */
+			            'dateUpdated': {
 			                type: 'dateTime',
 			                options: undefined
 			            },
