@@ -56,6 +56,11 @@ const createLocationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateL
 	                options: undefined
 	            },
 	            /** . */
+	            'dateUpdated': {
+	                type: 'dateTime',
+	                options: undefined
+	            },
+	            /** . */
 	            'slug': {
 	                type: 'text',
 	                options: undefined

@@ -65,6 +65,11 @@ const updateLocationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateL
 	                options: undefined
 	            },
 	            /** . */
+	            'dateUpdated': {
+	                type: 'dateTime',
+	                options: undefined
+	            },
+	            /** . */
 	            'organizationId': {
 	                type: 'id',
 	                options: undefined
