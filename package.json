@@ -58,9 +58,9 @@
     "watch.tsc": "tsc -w"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^6.0.428",
-    "@sprucelabs/jest-json-reporter": "^8.0.444",
-    "@sprucelabs/resolve-path-aliases": "^2.0.423",
+    "@sprucelabs/esm-postbuild": "^6.0.429",
+    "@sprucelabs/jest-json-reporter": "^8.0.445",
+    "@sprucelabs/resolve-path-aliases": "^2.0.424",
     "@sprucelabs/semantic-release": "^5.0.2",
     "@sprucelabs/test": "^9.0.49",
     "@types/node": "^22.7.4",
@@ -76,9 +76,9 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^47.0.494",
+    "@sprucelabs/mercury-types": "^47.0.495",
     "@sprucelabs/schema": "^30.0.483",
-    "@sprucelabs/spruce-core-schemas": "^40.1.438",
+    "@sprucelabs/spruce-core-schemas": "^40.1.439",
     "@sprucelabs/spruce-event-utils": "^40.1.215"
   },
   "jest": {
