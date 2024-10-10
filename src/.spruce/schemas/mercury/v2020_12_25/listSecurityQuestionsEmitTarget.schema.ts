@@ -14,6 +14,11 @@ const listSecurityQuestionsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.L
 	                type: 'phone',
 	                options: undefined
 	            },
+	            /** . */
+	            'username': {
+	                type: 'text',
+	                options: undefined
+	            },
 	    }
 }
 
