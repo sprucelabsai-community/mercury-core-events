@@ -6300,6 +6300,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'phone'?: string| undefined | null
+				
+				'username'?: string| undefined | null
 		}
 
 		interface ListSecurityQuestionsEmitTargetSchema extends SpruceSchema.Schema {
@@ -6311,6 +6313,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'phone': {
 			                type: 'phone',
+			                options: undefined
+			            },
+			            /** . */
+			            'username': {
+			                type: 'text',
 			                options: undefined
 			            },
 			    }
