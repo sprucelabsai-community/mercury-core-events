@@ -1,3 +1,10 @@
+# [25.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.317...v25.0.0) (2024-10-24)
+
+
+### Breaking Changes
+
+* does honor permission contract signature update ([0b9fa23](https://github.com/sprucelabsai-community/mercury-core-events/commit/0b9fa23))
+
 ## [24.3.317](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.316...v24.3.317) (2024-10-22)
 
 ## [24.3.316](https://github.com/sprucelabsai-community/mercury-core-events/compare/v24.3.315...v24.3.316) (2024-10-22)
