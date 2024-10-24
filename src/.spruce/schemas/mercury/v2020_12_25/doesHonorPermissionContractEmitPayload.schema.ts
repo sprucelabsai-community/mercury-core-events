@@ -8,22 +8,13 @@ const doesHonorPermissionContractEmitPayloadSchema: SpruceSchemas.Mercury.v2020_
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	importsWhenRemote: ['import * as MercuryTypes from \'@sprucelabs/mercury-types\'',],
 	    fields: {
 	            /** . */
 	            'id': {
-	                type: 'id',
+	                type: 'raw',
 	                isRequired: true,
-	                options: undefined
-	            },
-	            /** . */
-	            'skillId': {
-	                type: 'id',
-	                options: undefined
-	            },
-	            /** . */
-	            'fqen': {
-	                type: 'text',
-	                options: undefined
+	                options: {valueType: `MercuryTypes.PermissionContractId`,}
 	            },
 	    }
 }

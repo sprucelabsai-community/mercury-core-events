@@ -12,6 +12,7 @@ import { default as SchemaEntity } from '@sprucelabs/schema'
 import * as SpruceSchema from '@sprucelabs/schema'
 
 import '@sprucelabs/spruce-event-utils'
+import * as MercuryTypes from '@sprucelabs/mercury-types'
 import '@sprucelabs/mercury-types'
 
 declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schemas.types' {
@@ -3162,11 +3163,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DoesHonorPermissionContractEmitPayload {
 			
 				
-				'id': string
-				
-				'skillId'?: string| undefined | null
-				
-				'fqen'?: string| undefined | null
+				'id': (MercuryTypes.PermissionContractId)
 		}
 
 		interface DoesHonorPermissionContractEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3174,22 +3171,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			importsWhenRemote: ['import * as MercuryTypes from \'@sprucelabs/mercury-types\'',],
 			    fields: {
 			            /** . */
 			            'id': {
-			                type: 'id',
+			                type: 'raw',
 			                isRequired: true,
-			                options: undefined
-			            },
-			            /** . */
-			            'skillId': {
-			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'fqen': {
-			                type: 'text',
-			                options: undefined
+			                options: {valueType: `MercuryTypes.PermissionContractId`,}
 			            },
 			    }
 		}
