@@ -24,9 +24,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdatePersonEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdatePersonEmitPayload
 		}
@@ -68,7 +68,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface InvokeChatCallbackEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.InvokeChatCallbackTarget
 				
@@ -113,11 +113,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface IsSkillInstalledEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.IsSkillInstalledEmitPayload | undefined | null
 		}
 
 		interface IsSkillInstalledEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -194,7 +194,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidInstallEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTarget
 		}
@@ -254,7 +254,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'organizationId': string
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface DidJoinOrganizationEmitTargetSchema extends SpruceSchema.Schema {
@@ -294,7 +294,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'isFirstRole': boolean
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 		}
 
 		interface DidJoinOrganizationEmitPayloadSchema extends SpruceSchema.Schema {
@@ -340,7 +340,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidJoinOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DidJoinOrganizationEmitTarget
 				
@@ -385,11 +385,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface MessageTemplateAddons {
 			
 				
-				'nextINeedYouTo'?: string[]| undefined | null
+				'nextINeedYouTo'?: string[] | undefined | null
 				
-				'youShouldKnowThat'?: string[]| undefined | null
+				'youShouldKnowThat'?: string[] | undefined | null
 				
-				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
+				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[] | undefined | null
 		}
 
 		interface MessageTemplateAddonsSchema extends SpruceSchema.Schema {
@@ -431,7 +431,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidJoinOrganizationResponsePayload {
 			
 				
-				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddons| undefined | null
+				'messaging'?: SpruceSchemas.Mercury.v2020_12_25.MessageTemplateAddons | undefined | null
 		}
 
 		interface DidJoinOrganizationResponsePayloadSchema extends SpruceSchema.Schema {
@@ -461,7 +461,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'organizationId': string
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface DidLeaveOrganizationEmitTargetSchema extends SpruceSchema.Schema {
@@ -540,7 +540,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidLeaveOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DidLeaveOrganizationEmitTarget
 				
@@ -635,9 +635,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidLoginEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidLoginEmitPayload
 		}
@@ -681,9 +681,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'message': SpruceSchemas.Spruce.v2020_07_22.Message
 				
-				'conversationState'?: string| undefined | null
+				'conversationState'?: string | undefined | null
 				
-				'topic'?: string| undefined | null
+				'topic'?: string | undefined | null
 		}
 
 		interface DidMessageEmitPayloadSchema extends SpruceSchema.Schema {
@@ -722,9 +722,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidMessageEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Spruce.v2020_07_22.MessageTarget| undefined | null
+				'target'?: SpruceSchemas.Spruce.v2020_07_22.MessageTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidMessageEmitPayload
 		}
@@ -811,15 +811,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidMessageResponsePayload {
 			
 				
-				'transitionConversationTo'?: ("greeting" | "discovery" | "topic" | "closing")| undefined | null
+				'transitionConversationTo'?: ("greeting" | "discovery" | "topic" | "closing") | undefined | null
 				
-				'repairs'?: string[]| undefined | null
+				'repairs'?: string[] | undefined | null
 				
-				'topicChangers'?: string[]| undefined | null
+				'topicChangers'?: string[] | undefined | null
 				
-				'utterance'?: string| undefined | null
+				'utterance'?: string | undefined | null
 				
-				'suggestedTopics'?: SpruceSchemas.Mercury.v2020_12_25.ConversationTopic[]| undefined | null
+				'suggestedTopics'?: SpruceSchemas.Mercury.v2020_12_25.ConversationTopic[] | undefined | null
 		}
 
 		interface DidMessageResponsePayloadSchema extends SpruceSchema.Schema {
@@ -870,9 +870,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidSignupEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidSignupEmitPayload
 		}
@@ -916,27 +916,27 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Id. */
 				'id': string
 				/** First name. */
-				'firstName'?: string| undefined | null
+				'firstName'?: string | undefined | null
 				/** Last name. */
-				'lastName'?: string| undefined | null
+				'lastName'?: string | undefined | null
 				/** Casual name. The name you can use when talking to this person. */
 				'casualName': string
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Phone. A number that can be texted */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Username. An optional username if the person does not want to login using their phone */
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				/** Avatar src. */
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
+				'avatar'?: SpruceSchema.ImageFieldValue | undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
-				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateUpdated'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateScrambled'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 		}
 
 		interface PersonWithMacSchema extends SpruceSchema.Schema {
@@ -1066,9 +1066,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdateAuthorizerStatusEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface DidUpdateAuthorizerStatusEmitTargetSchema extends SpruceSchema.Schema {
@@ -1101,9 +1101,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdateAuthorizerStatusEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateAuthorizerStatusEmitPayload
 		}
@@ -1221,11 +1221,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdateFeedEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 		}
 
 		interface DidUpdateFeedEmitTargetSchema extends SpruceSchema.Schema {
@@ -1292,9 +1292,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DidUpdateFeedEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DidUpdateFeedEmitPayload
 		}
@@ -1404,7 +1404,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'placeholder': string
 				
-				'state'?: (Record<string, any>)| undefined | null
+				'state'?: (Record<string, any>) | undefined | null
 		}
 
 		interface InvokeChatCallbackPayloadSchema extends SpruceSchema.Schema {
@@ -1467,7 +1467,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterChatbotsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface RegisterChatbotsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -1539,15 +1539,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'weAreDoneWhen': string
 				
-				'pleaseKeepInMindThat'?: string[]| undefined | null
+				'pleaseKeepInMindThat'?: string[] | undefined | null
 				
-				'stateSchema'?: (SpruceSchema.Schema)| undefined | null
+				'stateSchema'?: (SpruceSchema.Schema) | undefined | null
 				
-				'model'?: string| undefined | null
+				'model'?: string | undefined | null
 				
-				'promptTemplate'?: string| undefined | null
+				'promptTemplate'?: string | undefined | null
 				
-				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[]| undefined | null
+				'callbacks'?: SpruceSchemas.Mercury.v2020_12_25.ChatbotCallbacks[] | undefined | null
 		}
 
 		interface ChatbotSchema extends SpruceSchema.Schema {
@@ -1647,9 +1647,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface AddRoleEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface AddRoleEmitTargetSchema extends SpruceSchema.Schema {
@@ -1719,9 +1719,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface AddRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.AddRoleEmitPayload
 		}
@@ -1784,11 +1784,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface AuthenticateEmitPayload {
 			
 				
-				'token'?: string| undefined | null
+				'token'?: string | undefined | null
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 				
-				'apiKey'?: string| undefined | null
+				'apiKey'?: string | undefined | null
 		}
 
 		interface AuthenticateEmitPayloadSchema extends SpruceSchema.Schema {
@@ -1826,9 +1826,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface AuthenticateEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.AuthenticateEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.AuthenticateEmitPayload | undefined | null
 		}
 
 		interface AuthenticateEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -1862,9 +1862,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface AuthSchema {
 			
 				
-				'person'?: SpruceSchemas.Spruce.v2020_07_22.Person| undefined | null
+				'person'?: SpruceSchemas.Spruce.v2020_07_22.Person | undefined | null
 				
-				'skill'?: SpruceSchemas.Spruce.v2020_07_22.Skill| undefined | null
+				'skill'?: SpruceSchemas.Spruce.v2020_07_22.Skill | undefined | null
 		}
 
 		interface AuthSchemaSchema extends SpruceSchema.Schema {
@@ -1934,7 +1934,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CanListenEmitPayload {
 			
 				
-				'authorizerStatuses'?: ("clockedIn" | "clockedOut" | "onPrem" | "offPrem")| undefined | null
+				'authorizerStatuses'?: ("clockedIn" | "clockedOut" | "onPrem" | "offPrem") | undefined | null
 				
 				'fullyQualifiedEventName': string
 		}
@@ -1970,7 +1970,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CanListenEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.CanListenEmitPayload
 		}
@@ -2007,7 +2007,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CanListenResponsePayload {
 			
 				
-				'can'?: boolean| undefined | null
+				'can'?: boolean | undefined | null
 		}
 
 		interface CanListenResponsePayloadSchema extends SpruceSchema.Schema {
@@ -2035,7 +2035,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ConfirmPinEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface ConfirmPinEmitTargetSchema extends SpruceSchema.Schema {
@@ -2067,7 +2067,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'pin': string
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 		}
 
 		interface ConfirmPinEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2107,9 +2107,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ConfirmPinEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ConfirmPinEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ConfirmPinEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.ConfirmPinEmitPayload
 		}
@@ -2219,19 +2219,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Location number. You can use other symbols, like # or dashes. #123 or 32-US-5 */
-				'num'?: string| undefined | null
+				'num'?: string | undefined | null
 				/** Public. Is this location viewable by guests? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				/** Main Phone. */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Address. */
 				'address': SpruceSchema.AddressFieldValue
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'slug'?: string| undefined | null
+				'slug'?: string | undefined | null
 		}
 
 		interface CreateLocationEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2305,7 +2305,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreateLocationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.CreateLocationEmitTarget
 				
@@ -2381,11 +2381,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Address. */
-				'address'?: SpruceSchema.AddressFieldValue| undefined | null
+				'address'?: SpruceSchema.AddressFieldValue | undefined | null
 				
-				'slug'?: string| undefined | null
+				'slug'?: string | undefined | null
 				/** Public. Is this organization viewable by guests? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 		}
 
 		interface CreateOrgEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2434,7 +2434,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreateOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.CreateOrgEmitPayload
 		}
@@ -2500,23 +2500,23 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreatePersonEmitPayload {
 			
 				/** First name. */
-				'firstName'?: string| undefined | null
+				'firstName'?: string | undefined | null
 				/** Last name. */
-				'lastName'?: string| undefined | null
+				'lastName'?: string | undefined | null
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Avatar src. */
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
+				'avatar'?: SpruceSchema.ImageFieldValue | undefined | null
 				
-				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateScrambled'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				/** Phone. A number that can be texted */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Username. An optional username if the person does not want to login using their phone */
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				
-				'password'?: string| undefined | null
+				'password'?: string | undefined | null
 				
-				'securityQuestions'?: SpruceSchemas.Mercury.v2020_12_25.SecurityQuestion[]| undefined | null
+				'securityQuestions'?: SpruceSchemas.Mercury.v2020_12_25.SecurityQuestion[] | undefined | null
 		}
 
 		interface CreatePersonEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2597,9 +2597,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreatePersonEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayload | undefined | null
 		}
 
 		interface CreatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -2693,15 +2693,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
-				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
+				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest") | undefined | null
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				
-				'dateDeleted'?: number| undefined | null
+				'dateDeleted'?: number | undefined | null
 				/** Public. Should I let people that are not part of this organization this role? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				
-				'isMeta'?: boolean| undefined | null
+				'isMeta'?: boolean | undefined | null
 		}
 
 		interface CreateRoleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -2761,7 +2761,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreateRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.CreateRoleEmitTarget
 				
@@ -2864,7 +2864,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DeleteLocationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DeleteLocationEmitTarget
 		}
@@ -2959,7 +2959,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DeleteOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DeleteOrganizationEmitTarget
 		}
@@ -3062,7 +3062,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DeleteRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.DeleteRoleEmitTarget
 		}
@@ -3128,9 +3128,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DoesHonorPermissionContractEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface DoesHonorPermissionContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -3193,9 +3193,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DoesHonorPermissionContractEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.DoesHonorPermissionContractEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.DoesHonorPermissionContractEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.DoesHonorPermissionContractEmitPayload
 		}
@@ -3266,9 +3266,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetAnonyomousPersonEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface GetAnonyomousPersonEmitTargetSchema extends SpruceSchema.Schema {
@@ -3301,9 +3301,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetAnonymousPersonEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetAnonyomousPersonEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetAnonyomousPersonEmitTarget | undefined | null
 		}
 
 		interface GetAnonymousPersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -3366,7 +3366,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetConversationTopicsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface GetConversationTopicsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -3454,7 +3454,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetEventContractsTarget {
 			
 				
-				'namespaces'?: string[]| undefined | null
+				'namespaces'?: string[] | undefined | null
 		}
 
 		interface GetEventContractsTargetSchema extends SpruceSchema.Schema {
@@ -3483,9 +3483,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetEventContractsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetEventContractsTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetEventContractsTarget | undefined | null
 		}
 
 		interface GetEventContractsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -3549,9 +3549,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 		}
 
 		interface GetFeedEmitTargetSchema extends SpruceSchema.Schema {
@@ -3584,9 +3584,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface FeedPredicate {
 			
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface FeedPredicateSchema extends SpruceSchema.Schema {
@@ -3619,9 +3619,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedPagingRequest {
 			
 				
-				'next'?: string| undefined | null
+				'next'?: string | undefined | null
 				
-				'previous'?: string| undefined | null
+				'previous'?: string | undefined | null
 		}
 
 		interface GetFeedPagingRequestSchema extends SpruceSchema.Schema {
@@ -3654,7 +3654,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedEmitPayload {
 			
 				
-				'paging'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedPagingRequest| undefined | null
+				'paging'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedPagingRequest | undefined | null
 				
 				'predicates': SpruceSchemas.Mercury.v2020_12_25.FeedPredicate[]
 		}
@@ -3692,9 +3692,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetFeedEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.GetFeedEmitPayload
 		}
@@ -3802,7 +3802,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetLocationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.GetLocationTarget
 		}
@@ -3897,7 +3897,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.GetOrganizationEmitTarget
 		}
@@ -3967,7 +3967,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'permissionContractId': string
 				
-				'roleId'?: string| undefined | null
+				'roleId'?: string | undefined | null
 		}
 
 		interface GetPermissionContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -4007,7 +4007,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetPermissionContractEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.GetPermissionContractEmitTarget
 		}
@@ -4046,7 +4046,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'permissionContract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 		}
 
 		interface GetPermissionContractResponsePayloadSchema extends SpruceSchema.Schema {
@@ -4080,11 +4080,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetPersonEmitTarget {
 			
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface GetPersonEmitTargetSchema extends SpruceSchema.Schema {
@@ -4122,7 +4122,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetPersonEmitPayload {
 			
 				
-				'shouldIncludePrivateFields'?: boolean| undefined | null
+				'shouldIncludePrivateFields'?: boolean | undefined | null
 		}
 
 		interface GetPersonEmitPayloadSchema extends SpruceSchema.Schema {
@@ -4150,11 +4150,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetPersonEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitPayload | undefined | null
 		}
 
 		interface GetPersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -4222,15 +4222,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetResolvedPermissionsContractEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'roleId'?: string| undefined | null
+				'roleId'?: string | undefined | null
 				
-				'contractPersonId'?: string| undefined | null
+				'contractPersonId'?: string | undefined | null
 				
-				'contractSkillId'?: string| undefined | null
+				'contractSkillId'?: string | undefined | null
 		}
 
 		interface GetResolvedPermissionsContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -4307,9 +4307,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetResolvedPermissionsContractEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetResolvedPermissionsContractEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetResolvedPermissionsContractEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.GetResolvedPermissionsContractEmitPayload
 		}
@@ -4493,7 +4493,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.GetRoleEmitTarget
 		}
@@ -4588,7 +4588,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetSkillEmitPayload {
 			
 				
-				'shouldIncludeApiKey'?: boolean| undefined | null
+				'shouldIncludeApiKey'?: boolean | undefined | null
 		}
 
 		interface GetSkillEmitPayloadSchema extends SpruceSchema.Schema {
@@ -4616,11 +4616,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface GetSkillEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.GetSkillEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.GetSkillEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.GetSkillEmitPayload | undefined | null
 		}
 
 		interface GetSkillEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -4689,7 +4689,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface HealthEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface HealthEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -4718,7 +4718,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface HealthCheckItem {
 			
 				
-				'status'?: ("passed")| undefined | null
+				'status'?: ("passed") | undefined | null
 		}
 
 		interface HealthCheckItemSchema extends SpruceSchema.Schema {
@@ -4746,9 +4746,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface HealthResponsePayload {
 			
 				
-				'skill'?: SpruceSchemas.Mercury.v2020_12_25.HealthCheckItem| undefined | null
+				'skill'?: SpruceSchemas.Mercury.v2020_12_25.HealthCheckItem | undefined | null
 				
-				'mercury'?: SpruceSchemas.Mercury.v2020_12_25.HealthCheckItem| undefined | null
+				'mercury'?: SpruceSchemas.Mercury.v2020_12_25.HealthCheckItem | undefined | null
 		}
 
 		interface HealthResponsePayloadSchema extends SpruceSchema.Schema {
@@ -4812,7 +4812,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'skillId': string
 				
-				'shouldNotifySkillOfInstall'?: boolean| undefined | null
+				'shouldNotifySkillOfInstall'?: boolean | undefined | null
 		}
 
 		interface InstallSkillEmitPayloadSchema extends SpruceSchema.Schema {
@@ -4846,7 +4846,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface InstallSkillEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTarget
 				
@@ -4941,9 +4941,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface IsSkillInstalledEmitPayload {
 			
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 				
-				'namespace'?: string| undefined | null
+				'namespace'?: string | undefined | null
 		}
 
 		interface IsSkillInstalledEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5034,7 +5034,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListInstalledSkillsEmitPayload {
 			
 				
-				'shouldShowGlobalSkills'?: boolean| undefined | null
+				'shouldShowGlobalSkills'?: boolean | undefined | null
 		}
 
 		interface ListInstalledSkillsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5062,11 +5062,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListInstalledSkillsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListInstalledSkillsEmitPayload | undefined | null
 		}
 
 		interface ListInstalledSkillsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5110,17 +5110,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Namespace. */
 				'slug': string
 				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
-				'isPublished'?: boolean| undefined | null
+				'isPublished'?: boolean | undefined | null
 				/** Global. Does this skill require needing to be installed anywhere. */
-				'canBeInstalled'?: boolean| undefined | null
+				'canBeInstalled'?: boolean | undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 		}
 
 		interface ListInstalledSkillsSkillsResponsePayloadSchema extends SpruceSchema.Schema {
@@ -5227,9 +5227,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListLocationsEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationIds'?: string[]| undefined | null
+				'locationIds'?: string[] | undefined | null
 		}
 
 		interface ListLocationsEmitTargetSchema extends SpruceSchema.Schema {
@@ -5263,9 +5263,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListLocationsEmitPayload {
 			
 				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				'shouldOnlyShowWhereIAmEmployed'?: boolean | undefined | null
 				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest | undefined | null
 		}
 
 		interface ListLocationsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5298,11 +5298,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListLocationsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitPayload | undefined | null
 		}
 
 		interface ListLocationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5372,11 +5372,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListOrgsEmitTarget {
 			
 				
-				'organizationIds'?: string[]| undefined | null
+				'organizationIds'?: string[] | undefined | null
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 				
-				'namespace'?: string| undefined | null
+				'namespace'?: string | undefined | null
 		}
 
 		interface ListOrgsEmitTargetSchema extends SpruceSchema.Schema {
@@ -5416,11 +5416,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListOrganizationsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitPayload | undefined | null
 		}
 
 		interface ListOrganizationsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5459,13 +5459,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListOrgsEmitPayload {
 			
 				
-				'shouldOnlyShowMine'?: boolean| undefined | null
+				'shouldOnlyShowMine'?: boolean | undefined | null
 				
-				'shouldOnlyShowWhereIAmEmployed'?: boolean| undefined | null
+				'shouldOnlyShowWhereIAmEmployed'?: boolean | undefined | null
 				
-				'shouldIncludePrivateOrganizations'?: boolean| undefined | null
+				'shouldIncludePrivateOrganizations'?: boolean | undefined | null
 				
-				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest| undefined | null
+				'paging'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventPagingRequest | undefined | null
 		}
 
 		interface ListOrgsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5539,9 +5539,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPeopleEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface ListPeopleEmitTargetSchema extends SpruceSchema.Schema {
@@ -5574,17 +5574,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPeopleEmitPayload {
 			
 				
-				'personIds'?: string[]| undefined | null
+				'personIds'?: string[] | undefined | null
 				
-				'roleBases'?: string[]| undefined | null
+				'roleBases'?: string[] | undefined | null
 				
-				'roleIds'?: string[]| undefined | null
+				'roleIds'?: string[] | undefined | null
 				
-				'shouldIncludePrivateFields'?: boolean| undefined | null
+				'shouldIncludePrivateFields'?: boolean | undefined | null
 				
-				'updatedAfter'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'updatedAfter'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'macAddresses'?: string[]| undefined | null
+				'macAddresses'?: string[] | undefined | null
 		}
 
 		interface ListPeopleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -5641,11 +5641,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPeopleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitPayload | undefined | null
 		}
 
 		interface ListPeopleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5686,29 +5686,29 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Id. */
 				'id': string
 				/** First name. */
-				'firstName'?: string| undefined | null
+				'firstName'?: string | undefined | null
 				/** Last name. */
-				'lastName'?: string| undefined | null
+				'lastName'?: string | undefined | null
 				/** Casual name. The name you can use when talking to this person. */
 				'casualName': string
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Phone. A number that can be texted */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Username. An optional username if the person does not want to login using their phone */
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				/** Avatar src. */
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
+				'avatar'?: SpruceSchema.ImageFieldValue | undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
-				'dateUpdated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateUpdated'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'dateScrambled'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateScrambled'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'roleIds'?: string[]| undefined | null
+				'roleIds'?: string[] | undefined | null
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 		}
 
 		interface ListPersonSchema extends SpruceSchema.Schema {
@@ -5846,9 +5846,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPermissionContractsEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'namespaces'?: string[]| undefined | null
+				'namespaces'?: string[] | undefined | null
 		}
 
 		interface ListPermissionContractsEmitTargetSchema extends SpruceSchema.Schema {
@@ -5882,9 +5882,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListPermissionContractsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListPermissionContractsEmitTarget | undefined | null
 		}
 
 		interface ListPermissionContractsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -5920,7 +5920,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'id': string
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 				
 				'contract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
 		}
@@ -5993,11 +5993,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListRolesEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 		}
 
 		interface ListRolesEmitTargetSchema extends SpruceSchema.Schema {
@@ -6035,11 +6035,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListRolesEmitPayload {
 			
 				
-				'shouldIncludePrivateRoles'?: boolean| undefined | null
+				'shouldIncludePrivateRoles'?: boolean | undefined | null
 				
-				'shouldIncludeMetaRoles'?: boolean| undefined | null
+				'shouldIncludeMetaRoles'?: boolean | undefined | null
 				
-				'shouldIncludeAllLocations'?: boolean| undefined | null
+				'shouldIncludeAllLocations'?: boolean | undefined | null
 		}
 
 		interface ListRolesEmitPayloadSchema extends SpruceSchema.Schema {
@@ -6077,11 +6077,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListRolesEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitPayload | undefined | null
 		}
 
 		interface ListRolesEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -6151,9 +6151,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSchemaTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface ListSchemaTargetSchema extends SpruceSchema.Schema {
@@ -6190,21 +6190,21 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
-				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
+				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest") | undefined | null
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				
 				'dateCreated': number
 				
-				'dateDeleted'?: number| undefined | null
+				'dateDeleted'?: number | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				/** Public. Should I let people that are not part of this organization this role? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				
-				'isMeta'?: boolean| undefined | null
+				'isMeta'?: boolean | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListSchemaTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListSchemaTarget | undefined | null
 		}
 
 		interface ListRoleSchema extends SpruceSchema.Schema {
@@ -6287,9 +6287,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSecurityQuestionsEmitTarget {
 			
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 		}
 
 		interface ListSecurityQuestionsEmitTargetSchema extends SpruceSchema.Schema {
@@ -6322,9 +6322,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSecurityQuestionsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListSecurityQuestionsEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ListSecurityQuestionsEmitTarget | undefined | null
 		}
 
 		interface ListSecurityQuestionsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -6389,13 +6389,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSkillsEmitPayload {
 			
 				
-				'shouldOnlyShowMine'?: boolean| undefined | null
+				'shouldOnlyShowMine'?: boolean | undefined | null
 				
-				'namespaces'?: string[]| undefined | null
+				'namespaces'?: string[] | undefined | null
 				
-				'shouldShowGlobalSkills'?: boolean| undefined | null
+				'shouldShowGlobalSkills'?: boolean | undefined | null
 				
-				'shouldOnlyShowInstallableSkills'?: boolean| undefined | null
+				'shouldOnlyShowInstallableSkills'?: boolean | undefined | null
 		}
 
 		interface ListSkillsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -6439,9 +6439,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ListSkillsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListSkillsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListSkillsEmitPayload | undefined | null
 		}
 
 		interface ListSkillsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -6479,17 +6479,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Namespace. */
 				'slug': string
 				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
-				'isPublished'?: boolean| undefined | null
+				'isPublished'?: boolean | undefined | null
 				/** Global. Does this skill require needing to be installed anywhere. */
-				'canBeInstalled'?: boolean| undefined | null
+				'canBeInstalled'?: boolean | undefined | null
 				
 				'dateCreated': SpruceSchema.DateTimeFieldValue
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 		}
 
 		interface ListSkillsSkillSchema extends SpruceSchema.Schema {
@@ -6596,11 +6596,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface LoginEmitTarget {
 			
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface LoginEmitTargetSchema extends SpruceSchema.Schema {
@@ -6640,7 +6640,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'password': string
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 		}
 
 		interface LoginEmitPayloadSchema extends SpruceSchema.Schema {
@@ -6674,9 +6674,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface LoginEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.LoginEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.LoginEmitPayload
 		}
@@ -6755,7 +6755,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface LogoutEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface LogoutEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -6866,7 +6866,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterConversationTopicsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterConversationTopicsEmitPayload
 		}
@@ -6953,7 +6953,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterDeviceEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterDeviceEmitPayload
 		}
@@ -7041,7 +7041,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterEventsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterEventsEmitPayload
 		}
@@ -7109,7 +7109,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterListenersEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitPayload
 		}
@@ -7148,7 +7148,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'eventName': string
 				
-				'isGlobal'?: boolean| undefined | null
+				'isGlobal'?: boolean | undefined | null
 		}
 
 		interface RegisteredListenerSchema extends SpruceSchema.Schema {
@@ -7184,7 +7184,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'events': SpruceSchemas.Mercury.v2020_12_25.RegisteredListener[]
 				
-				'fullyQualifiedEventNames'?: string[]| undefined | null
+				'fullyQualifiedEventNames'?: string[] | undefined | null
 		}
 
 		interface RegisterListenersEmitPayloadSchema extends SpruceSchema.Schema {
@@ -7220,7 +7220,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterProxyTokenEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface RegisterProxyTokenEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -7279,9 +7279,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterPushTokenEmitPayload {
 			
 				
-				'iosToken'?: string| undefined | null
+				'iosToken'?: string | undefined | null
 				
-				'androidToken'?: string| undefined | null
+				'androidToken'?: string | undefined | null
 		}
 
 		interface RegisterPushTokenEmitPayloadSchema extends SpruceSchema.Schema {
@@ -7314,9 +7314,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterPushTokenEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.RegisterPushTokenEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.RegisterPushTokenEmitPayload | undefined | null
 		}
 
 		interface RegisterPushTokenEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -7373,13 +7373,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
-				'isPublished'?: boolean| undefined | null
+				'isPublished'?: boolean | undefined | null
 				/** Global. Does this skill require needing to be installed anywhere. */
-				'canBeInstalled'?: boolean| undefined | null
+				'canBeInstalled'?: boolean | undefined | null
 				/** Namespace. */
-				'slug'?: string| undefined | null
+				'slug'?: string | undefined | null
 		}
 
 		interface RegisterSkillEmitPayloadSchema extends SpruceSchema.Schema {
@@ -7436,7 +7436,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RegisterSkillEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterSkillEmitPayload
 		}
@@ -7502,9 +7502,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RemoveRoleEmitTarget {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface RemoveRoleEmitTargetSchema extends SpruceSchema.Schema {
@@ -7574,9 +7574,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RemoveRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RemoveRoleEmitPayload
 		}
@@ -7639,7 +7639,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RequestDataDeletedEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface RequestDataDeletedEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -7718,7 +7718,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface RequestPinEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.RequestPinEmitPayload
 		}
@@ -7784,9 +7784,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ResetPasswordEmitTarget {
 			
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 		}
 
 		interface ResetPasswordEmitTargetSchema extends SpruceSchema.Schema {
@@ -7866,9 +7866,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ResetPasswordEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ResetPasswordEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ResetPasswordEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.ResetPasswordEmitPayload
 		}
@@ -7939,17 +7939,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SavePermissionsEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'permissionPersonId'?: string| undefined | null
+				'permissionPersonId'?: string | undefined | null
 				
-				'permissionSkillId'?: string| undefined | null
+				'permissionSkillId'?: string | undefined | null
 				
 				'permissionContractId': string
 				
-				'roleId'?: string| undefined | null
+				'roleId'?: string | undefined | null
 		}
 
 		interface SavePermissionsEmitTargetSchema extends SpruceSchema.Schema {
@@ -8034,7 +8034,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SavePermissionsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.SavePermissionsEmitTarget
 				
@@ -8147,7 +8147,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ScrambleAccountEmitTarget {
 			
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 		}
 
 		interface ScrambleAccountEmitTargetSchema extends SpruceSchema.Schema {
@@ -8175,9 +8175,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface ScrambleAccountEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTarget | undefined | null
 		}
 
 		interface ScrambleAccountEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -8232,17 +8232,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SendMessageTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 				
-				'roleId'?: string| undefined | null
+				'roleId'?: string | undefined | null
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 		}
 
 		interface SendMessageTargetSchema extends SpruceSchema.Schema {
@@ -8295,19 +8295,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SendMessageMessagePayload {
 			
 				/** . An arbitrary id that can be used to track this message when being sent and not yet assigned an Id. */
-				'trackingId'?: string| undefined | null
+				'trackingId'?: string | undefined | null
 				
 				'classification': ("auth" | "transactional" | "promotional" | "incoming")
 				
 				'body': string
 				
-				'context'?: (Record<string, any>)| undefined | null
+				'context'?: (Record<string, any>) | undefined | null
 				
-				'topicId'?: string| undefined | null
+				'topicId'?: string | undefined | null
 				
-				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[]| undefined | null
+				'links'?: SpruceSchemas.Spruce.v2020_07_22.Link[] | undefined | null
 				
-				'choices'?: SpruceSchemas.Spruce.v2020_07_22.Choice[]| undefined | null
+				'choices'?: SpruceSchemas.Spruce.v2020_07_22.Choice[] | undefined | null
 		}
 
 		interface SendMessageMessagePayloadSchema extends SpruceSchema.Schema {
@@ -8401,9 +8401,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SendMessageEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
 		}
@@ -8476,7 +8476,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'locationId': string
 				/** . The person to set the status for. If empty, looks at logged in person's status. */
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 		}
 
 		interface SetAuthorizerStatusEmitTargetSchema extends SpruceSchema.Schema {
@@ -8543,7 +8543,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SetAuthorizorStatusEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.SetAuthorizerStatusEmitTarget
 				
@@ -8609,7 +8609,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SignupEmitTarget {
 			
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface SignupEmitTargetSchema extends SpruceSchema.Schema {
@@ -8637,17 +8637,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SignupEmitPayload {
 			
 				
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				
-				'firstName'?: string| undefined | null
+				'firstName'?: string | undefined | null
 				
-				'lastName'?: string| undefined | null
+				'lastName'?: string | undefined | null
 				
 				'password': string
 				
-				'macAddress'?: string| undefined | null
+				'macAddress'?: string | undefined | null
 				
 				'passwordConfirm': string
 				
@@ -8719,9 +8719,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SignupEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SignupEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SignupEmitTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SignupEmitPayload
 		}
@@ -8800,7 +8800,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SubmitErrorMessageFeedbackEmitPayload {
 			
 				/** Error code. */
-				'errorCode'?: string| undefined | null
+				'errorCode'?: string | undefined | null
 				/** Error message. */
 				'errorMessage': string
 				/** Stack traces. */
@@ -8864,7 +8864,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SubmitErrorMessageFeedbackEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SubmitErrorMessageFeedbackEmitPayload
 		}
@@ -8901,7 +8901,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SyncEventContractsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SyncEventContractsEmitPayload
 		}
@@ -9063,9 +9063,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface SyncPermissionContractsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.SyncPermissionContractsEmitPayload
 		}
@@ -9109,9 +9109,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'id': string
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 				
-				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget| undefined | null
+				'target'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventTarget | undefined | null
 				
 				'contract': SpruceSchemas.Mercury.v2020_12_25.PermissionContract
 		}
@@ -9195,7 +9195,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UninstallSkillEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UnInstallSkillEmitTarget
 		}
@@ -9253,9 +9253,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterConversationTopicsEmitPayload {
 			
 				
-				'topics'?: string[]| undefined | null
+				'topics'?: string[] | undefined | null
 				
-				'shouldUnregisterAll'?: boolean| undefined | null
+				'shouldUnregisterAll'?: boolean | undefined | null
 		}
 
 		interface UnregisterConversationTopicsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -9289,9 +9289,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterConversationTopicsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterConversationTopicsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterConversationTopicsEmitPayload | undefined | null
 		}
 
 		interface UnregisterConversationTopicsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -9346,9 +9346,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterEventsEmitPayload {
 			
 				
-				'eventNames'?: string[]| undefined | null
+				'eventNames'?: string[] | undefined | null
 				
-				'shouldUnregisterAll'?: boolean| undefined | null
+				'shouldUnregisterAll'?: boolean | undefined | null
 		}
 
 		interface UnregisterEventsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -9382,9 +9382,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterEventsEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterEventsEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterEventsEmitPayload | undefined | null
 		}
 
 		interface UnregisterEventsEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -9439,9 +9439,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterListenersEmitPayload {
 			
 				
-				'fullyQualifiedEventNames'?: string[]| undefined | null
+				'fullyQualifiedEventNames'?: string[] | undefined | null
 				
-				'shouldUnregisterAll'?: boolean| undefined | null
+				'shouldUnregisterAll'?: boolean | undefined | null
 		}
 
 		interface UnregisterListenersEmitPayloadSchema extends SpruceSchema.Schema {
@@ -9475,9 +9475,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterListenersEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterListenersEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UnregisterListenersEmitPayload | undefined | null
 		}
 
 		interface UnregisterListenersEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -9569,7 +9569,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UnregisterSkillEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UnregisterSkillEmitTarget
 		}
@@ -9656,25 +9656,25 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateLocationEmitPayload {
 			
 				/** Name. */
-				'name'?: string| undefined | null
+				'name'?: string | undefined | null
 				/** Location number. You can use other symbols, like # or dashes. #123 or 32-US-5 */
-				'num'?: string| undefined | null
+				'num'?: string | undefined | null
 				/** Slug. */
-				'slug'?: string| undefined | null
+				'slug'?: string | undefined | null
 				/** Public. Is this location viewable by guests? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				/** Main Phone. */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Address. */
-				'address'?: SpruceSchema.AddressFieldValue| undefined | null
+				'address'?: SpruceSchema.AddressFieldValue | undefined | null
 				
-				'dateCreated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateCreated'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 		}
 
 		interface UpdateLocationEmitPayloadSchema extends SpruceSchema.Schema {
@@ -9757,11 +9757,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateLocationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UpdateLocationEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateLocationEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateLocationEmitPayload | undefined | null
 		}
 
 		interface UpdateLocationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -9859,15 +9859,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateOrgEmitPayload {
 			
 				/** Name. */
-				'name'?: string| undefined | null
+				'name'?: string | undefined | null
 				/** Address. */
-				'address'?: SpruceSchema.AddressFieldValue| undefined | null
+				'address'?: SpruceSchema.AddressFieldValue | undefined | null
 				/** Public. Is this organization viewable by guests? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				
-				'dateCreated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateCreated'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 		}
 
 		interface UpdateOrgEmitPayloadSchema extends SpruceSchema.Schema {
@@ -9920,11 +9920,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateOrganizationEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgEmitPayload | undefined | null
 		}
 
 		interface UpdateOrganizationEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -9964,17 +9964,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateOrg {
 			
 				/** Name. */
-				'name'?: string| undefined | null
+				'name'?: string | undefined | null
 				/** Address. */
-				'address'?: SpruceSchema.AddressFieldValue| undefined | null
+				'address'?: SpruceSchema.AddressFieldValue | undefined | null
 				/** Slug. */
-				'slug'?: string| undefined | null
+				'slug'?: string | undefined | null
 				/** Public. Is this organization viewable by guests? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 				
-				'dateCreated'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateCreated'?: SpruceSchema.DateTimeFieldValue | undefined | null
 				
-				'dateDeleted'?: SpruceSchema.DateTimeFieldValue| undefined | null
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
 		}
 
 		interface UpdateOrgSchema extends SpruceSchema.Schema {
@@ -10062,11 +10062,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdatePersonEmitTarget {
 			
 				
-				'personId'?: string| undefined | null
+				'personId'?: string | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				
-				'locationId'?: string| undefined | null
+				'locationId'?: string | undefined | null
 		}
 
 		interface UpdatePersonEmitTargetSchema extends SpruceSchema.Schema {
@@ -10141,21 +10141,21 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdatePersonEmitPayload {
 			
 				/** First name. */
-				'firstName'?: string| undefined | null
+				'firstName'?: string | undefined | null
 				/** Last name. */
-				'lastName'?: string| undefined | null
+				'lastName'?: string | undefined | null
 				/** Timezone. */
-				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati")| undefined | null
+				'timezone'?: ("Pacific/Niue" | "Pacific/Pago_Pago" | "Pacific/Rarotonga" | "Pacific/Honolulu" | "Pacific/Tahiti" | "Pacific/Marquesas" | "Pacific/Gambier" | "America/Adak" | "America/Anchorage" | "America/Juneau" | "America/Metlakatla" | "America/Nome" | "America/Sitka" | "America/Yakutat" | "Pacific/Pitcairn" | "America/Hermosillo" | "America/Dawson_Creek" | "America/Fort_Nelson" | "America/Phoenix" | "America/Los_Angeles" | "America/Tijuana" | "America/Vancouver" | "America/Dawson" | "America/Whitehorse" | "America/Belize" | "America/Costa_Rica" | "America/El_Salvador" | "America/Guatemala" | "America/Managua" | "America/Regina" | "America/Swift_Current" | "America/Tegucigalpa" | "Pacific/Easter" | "Pacific/Galapagos" | "America/Chihuahua" | "America/Mazatlan" | "America/Boise" | "America/Cambridge_Bay" | "America/Denver" | "America/Edmonton" | "America/Inuvik" | "America/Ojinaga" | "America/Yellowknife" | "America/Eirunepe" | "America/Rio_Branco" | "America/Bahia_Banderas" | "America/North_Dakota/Beulah" | "America/North_Dakota/Center" | "America/Chicago" | "America/Indiana/Knox" | "America/Matamoros" | "America/Menominee" | "America/Merida" | "America/Mexico_City" | "America/Monterrey" | "America/North_Dakota/New_Salem" | "America/Rainy_River" | "America/Rankin_Inlet" | "America/Resolute" | "America/Indiana/Tell_City" | "America/Winnipeg" | "America/Bogota" | "America/Cancun" | "America/Jamaica" | "America/Panama" | "America/Guayaquil" | "America/Lima" | "America/Boa_Vista" | "America/Campo_Grande" | "America/Cuiaba" | "America/Manaus" | "America/Porto_Velho" | "America/Barbados" | "America/Martinique" | "America/Puerto_Rico" | "America/Santo_Domingo" | "America/La_Paz" | "America/Santiago" | "America/Havana" | "America/Detroit" | "America/Grand_Turk" | "America/Indiana/Indianapolis" | "America/Iqaluit" | "America/Kentucky/Louisville" | "America/Indiana/Marengo" | "America/Kentucky/Monticello" | "America/New_York" | "America/Nipigon" | "America/Pangnirtung" | "America/Indiana/Petersburg" | "America/Port-au-Prince" | "America/Thunder_Bay" | "America/Toronto" | "America/Indiana/Vevay" | "America/Indiana/Vincennes" | "America/Indiana/Winamac" | "America/Guyana" | "America/Asuncion" | "America/Caracas" | "America/Argentina/Buenos_Aires" | "America/Argentina/Catamarca" | "America/Argentina/Cordoba" | "America/Argentina/Jujuy" | "America/Argentina/La_Rioja" | "America/Argentina/Mendoza" | "America/Argentina/Rio_Gallegos" | "America/Argentina/Salta" | "America/Argentina/San_Juan" | "America/Argentina/San_Luis" | "America/Argentina/Tucuman" | "America/Argentina/Ushuaia" | "Atlantic/Bermuda" | "America/Glace_Bay" | "America/Goose_Bay" | "America/Halifax" | "America/Moncton" | "America/Thule" | "America/Araguaina" | "America/Bahia" | "America/Belem" | "America/Fortaleza" | "America/Maceio" | "America/Recife" | "America/Santarem" | "America/Sao_Paulo" | "Atlantic/Stanley" | "America/Cayenne" | "Antarctica/Palmer" | "America/Punta_Arenas" | "Antarctica/Rothera" | "America/Paramaribo" | "America/Montevideo" | "America/St_Johns" | "America/Noronha" | "Atlantic/South_Georgia" | "America/Miquelon" | "America/Nuuk" | "Atlantic/Cape_Verde" | "Atlantic/Azores" | "UTC" | "America/Scoresbysund" | "Etc/GMT" | "Africa/Abidjan" | "Africa/Bissau" | "America/Danmarkshavn" | "Africa/Monrovia" | "Atlantic/Reykjavik" | "Africa/Sao_Tome" | "Africa/Algiers" | "Africa/Tunis" | "Europe/Dublin" | "Africa/Casablanca" | "Europe/London" | "Africa/Lagos" | "Africa/Ndjamena" | "Atlantic/Canary" | "Atlantic/Faroe" | "Europe/Lisbon" | "Atlantic/Madeira" | "Africa/El_Aaiun" | "Africa/Juba" | "Africa/Khartoum" | "Africa/Maputo" | "Africa/Windhoek" | "Europe/Amsterdam" | "Europe/Andorra" | "Europe/Belgrade" | "Europe/Berlin" | "Europe/Brussels" | "Europe/Budapest" | "Africa/Ceuta" | "Europe/Copenhagen" | "Europe/Gibraltar" | "Europe/Luxembourg" | "Europe/Madrid" | "Europe/Malta" | "Europe/Monaco" | "Europe/Oslo" | "Europe/Paris" | "Europe/Prague" | "Europe/Rome" | "Europe/Stockholm" | "Europe/Tirane" | "Europe/Vienna" | "Europe/Warsaw" | "Europe/Zurich" | "Africa/Cairo" | "Europe/Kaliningrad" | "Africa/Tripoli" | "Africa/Johannesburg" | "Antarctica/Troll" | "Asia/Baghdad" | "Asia/Qatar" | "Asia/Riyadh" | "Africa/Nairobi" | "Asia/Amman" | "Europe/Athens" | "Asia/Beirut" | "Europe/Bucharest" | "Europe/Chisinau" | "Asia/Damascus" | "Asia/Gaza" | "Asia/Hebron" | "Europe/Helsinki" | "Europe/Kiev" | "Asia/Nicosia" | "Europe/Riga" | "Europe/Sofia" | "Europe/Tallinn" | "Europe/Uzhgorod" | "Europe/Vilnius" | "Europe/Zaporozhye" | "Asia/Famagusta" | "Asia/Jerusalem" | "Europe/Kirov" | "Europe/Minsk" | "Europe/Moscow" | "Europe/Simferopol" | "Europe/Istanbul" | "Europe/Volgograd" | "Asia/Yerevan" | "Europe/Astrakhan" | "Asia/Baku" | "Asia/Tbilisi" | "Asia/Dubai" | "Indian/Mauritius" | "Indian/Reunion" | "Europe/Samara" | "Europe/Saratov" | "Indian/Mahe" | "Europe/Ulyanovsk" | "Asia/Kabul" | "Asia/Tehran" | "Indian/Kerguelen" | "Indian/Maldives" | "Antarctica/Mawson" | "Asia/Karachi" | "Asia/Dushanbe" | "Asia/Ashgabat" | "Asia/Samarkand" | "Asia/Tashkent" | "Asia/Aqtau" | "Asia/Aqtobe" | "Asia/Atyrau" | "Asia/Oral" | "Asia/Qyzylorda" | "Asia/Yekaterinburg" | "Asia/Colombo" | "Asia/Kolkata" | "Asia/Kathmandu" | "Asia/Dhaka" | "Asia/Thimphu" | "Asia/Almaty" | "Asia/Qostanay" | "Indian/Chagos" | "Asia/Bishkek" | "Asia/Omsk" | "Asia/Urumqi" | "Antarctica/Vostok" | "Indian/Cocos" | "Asia/Yangon" | "Asia/Barnaul" | "Indian/Christmas" | "Antarctica/Davis" | "Asia/Hovd" | "Asia/Bangkok" | "Asia/Ho_Chi_Minh" | "Asia/Krasnoyarsk" | "Asia/Novokuznetsk" | "Asia/Novosibirsk" | "Asia/Tomsk" | "Asia/Jakarta" | "Asia/Pontianak" | "Australia/Perth" | "Asia/Brunei" | "Asia/Makassar" | "Asia/Macau" | "Asia/Shanghai" | "Asia/Hong_Kong" | "Asia/Irkutsk" | "Asia/Kuala_Lumpur" | "Asia/Kuching" | "Asia/Manila" | "Asia/Singapore" | "Asia/Taipei" | "Asia/Choibalsan" | "Asia/Ulaanbaatar" | "Australia/Eucla" | "Asia/Dili" | "Asia/Jayapura" | "Asia/Tokyo" | "Asia/Pyongyang" | "Asia/Seoul" | "Pacific/Palau" | "Asia/Chita" | "Asia/Khandyga" | "Asia/Yakutsk" | "Australia/Darwin" | "Australia/Adelaide" | "Australia/Broken_Hill" | "Australia/Brisbane" | "Australia/Lindeman" | "Pacific/Guam" | "Pacific/Chuuk" | "Australia/Hobart" | "Antarctica/Macquarie" | "Australia/Melbourne" | "Australia/Sydney" | "Pacific/Port_Moresby" | "Asia/Ust-Nera" | "Asia/Vladivostok" | "Australia/Lord_Howe" | "Pacific/Bougainville" | "Antarctica/Casey" | "Pacific/Kosrae" | "Asia/Magadan" | "Pacific/Noumea" | "Pacific/Norfolk" | "Pacific/Pohnpei" | "Asia/Sakhalin" | "Pacific/Guadalcanal" | "Asia/Srednekolymsk" | "Pacific/Efate" | "Asia/Anadyr" | "Pacific/Fiji" | "Pacific/Tarawa" | "Pacific/Kwajalein" | "Pacific/Majuro" | "Pacific/Nauru" | "Pacific/Auckland" | "Asia/Kamchatka" | "Pacific/Funafuti" | "Pacific/Wake" | "Pacific/Wallis" | "Pacific/Chatham" | "Pacific/Apia" | "Pacific/Fakaofo" | "Pacific/Tongatapu" | "Pacific/Kiritimati") | undefined | null
 				/** Avatar src. */
-				'avatar'?: SpruceSchema.ImageFieldValue| undefined | null
+				'avatar'?: SpruceSchema.ImageFieldValue | undefined | null
 				/** Phone. A number that can be texted */
-				'phone'?: string| undefined | null
+				'phone'?: string | undefined | null
 				/** Username. An optional username if the person does not want to login using their phone */
-				'username'?: string| undefined | null
+				'username'?: string | undefined | null
 				
-				'password'?: string| undefined | null
+				'password'?: string | undefined | null
 				
-				'securityQuestions'?: SpruceSchemas.Mercury.v2020_12_25.SecurityQuestion[]| undefined | null
+				'securityQuestions'?: SpruceSchemas.Mercury.v2020_12_25.SecurityQuestion[] | undefined | null
 		}
 
 		interface UpdatePersonEmitPayloadSchema extends SpruceSchema.Schema {
@@ -10289,17 +10289,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateRoleEmitPayload {
 			
 				/** Name. */
-				'name'?: string| undefined | null
+				'name'?: string | undefined | null
 				/** Base. A best practices starting point for a role based on the generalized roles at a company. */
-				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest")| undefined | null
+				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "anonymous" | "loggedIn" | "guest") | undefined | null
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				
-				'dateDeleted'?: number| undefined | null
+				'dateDeleted'?: number | undefined | null
 				
-				'organizationId'?: string| undefined | null
+				'organizationId'?: string | undefined | null
 				/** Public. Should I let people that are not part of this organization this role? */
-				'isPublic'?: boolean| undefined | null
+				'isPublic'?: boolean | undefined | null
 		}
 
 		interface UpdateRoleEmitPayloadSchema extends SpruceSchema.Schema {
@@ -10358,11 +10358,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdateRoleEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UpdateRoleEmitTarget
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateRoleEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdateRoleEmitPayload | undefined | null
 		}
 
 		interface UpdateRoleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -10437,7 +10437,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'roleId': string
 				
-				'skillId'?: string| undefined | null
+				'skillId'?: string | undefined | null
 		}
 
 		interface UpsertPermissionContractEmitTargetSchema extends SpruceSchema.Schema {
@@ -10485,9 +10485,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. Human readable name for this contract */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Require all permissions. */
-				'requireAllPermissions'?: boolean| undefined | null
+				'requireAllPermissions'?: boolean | undefined | null
 				
 				'permissions': SpruceSchemas.Mercury.v2020_12_25.Permission[]
 		}
@@ -10541,7 +10541,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpsertPermissionContractEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'target': SpruceSchemas.Mercury.v2020_12_25.UpsertPermissionContractEmitTarget
 				
@@ -10652,7 +10652,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface VoteForFeatureEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.VoteForFeatureEmitPayload
 		}
@@ -10718,11 +10718,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface UpdatePersonEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTarget| undefined | null
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTarget | undefined | null
 				
-				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayload| undefined | null
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayload | undefined | null
 		}
 
 		interface UpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -10761,7 +10761,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface WhoamiEmitTargetAndPayload {
 			
 				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource| undefined | null
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
 		}
 
 		interface WhoamiEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
