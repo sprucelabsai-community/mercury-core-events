@@ -5,9 +5,6 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'authorizer-contract': [
 			'can-update-others-authorizer-status',
 		]
-		'chatbot-contract': [
-			'can-register-chatbots',
-		]
 		'events-contract': [
 			'can-register-global-events',
 		]
