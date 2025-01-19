@@ -1,6 +1,6 @@
 {
   "name": "@sprucelabs/mercury-core-events",
-  "version": "25.0.130",
+  "version": "25.0.131",
   "description": "Events Mercury provides out of the box.",
   "skill": {
     "namespace": "mercury-core-events",
@@ -79,7 +79,7 @@
     "@sprucelabs/mercury-types": "^47.2.0",
     "@sprucelabs/schema": "^31.0.19",
     "@sprucelabs/spruce-core-schemas": "^40.1.605",
-    "@sprucelabs/spruce-event-utils": "^40.1.393"
+    "@sprucelabs/spruce-event-utils": "^40.1.394"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
