@@ -9,19 +9,22 @@ const listOrgsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListOrgsEmitP
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
-	            /** . */
+	            /** . Will only return organizations where a person has a role (including guest). */
 	            'shouldOnlyShowMine': {
 	                type: 'boolean',
+	                hint: 'Will only return organizations where a person has a role (including guest).',
 	                options: undefined
 	            },
-	            /** . */
+	            /** . Will only return organizations where a person has a role that indicates they work there. */
 	            'shouldOnlyShowWhereIAmEmployed': {
 	                type: 'boolean',
+	                hint: 'Will only return organizations where a person has a role that indicates they work there.',
 	                options: undefined
 	            },
-	            /** . */
+	            /** . Will include organizations that are marked as private. You have to have permissions to see these (usually means employed there as owner). */
 	            'shouldIncludePrivateOrganizations': {
 	                type: 'boolean',
+	                hint: 'Will include organizations that are marked as private. You have to have permissions to see these (usually means employed there as owner).',
 	                options: undefined
 	            },
 	            /** . */

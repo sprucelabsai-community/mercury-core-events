@@ -8,6 +8,8 @@ const requestDataDeletedEventContract = buildEventContract({
     eventSignatures: {
         'request-data-deleted::v2020_12_25': {
             
+            description: `Request to have your personal data deleted!`,
+            
             
             
             emitPayloadSchema: requestDataDeletedEmitTargetAndPayloadSchema,

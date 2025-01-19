@@ -8,6 +8,8 @@ const signupEventContract = buildEventContract({
     eventSignatures: {
         'signup::v2020_12_25': {
             
+            description: `Signup using a phone/username and password`,
+            
             
             
             emitPayloadSchema: signupEmitTargetAndPayloadSchema,

@@ -8,6 +8,8 @@ const didMessageEventContract = buildEventContract({
     eventSignatures: {
         'did-message::v2020_12_25': {
             
+            description: `Fired whenever a message is sent to and/or from a person.`,
+            
             emitPermissions: {"contractId":"messaging-contract","permissionIdsAny":["can-emit-did-message-event"]},
             listenPermissions: {"contractId":"messaging-contract","permissionIdsAny":["can-listen-to-did-message-event"]},
             emitPayloadSchema: didMessageEmitTargetAndPayloadSchema,

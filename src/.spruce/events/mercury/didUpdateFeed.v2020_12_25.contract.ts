@@ -7,6 +7,8 @@ const didUpdateFeedEventContract = buildEventContract({
     eventSignatures: {
         'did-update-feed::v2020_12_25': {
             
+            description: `Triggered when a feed is updated.`,
+            
             
             listenPermissions: {"contractId":"feed-contract","permissionIdsAny":["can-subscribe-to-feed-updates"]},
             emitPayloadSchema: didUpdateFeedEmitTargetAndPayloadSchema,

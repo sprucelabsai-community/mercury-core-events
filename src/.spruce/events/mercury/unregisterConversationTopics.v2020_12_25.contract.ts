@@ -8,6 +8,8 @@ const unregisterConversationTopicsEventContract = buildEventContract({
     eventSignatures: {
         'unregister-conversation-topics::v2020_12_25': {
             
+            description: `Topics you want me to forget about`,
+            
             
             
             emitPayloadSchema: unregisterConversationTopicsEmitTargetAndPayloadSchema,

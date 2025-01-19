@@ -8,6 +8,8 @@ const doesHonorPermissionContractEventContract = buildEventContract({
     eventSignatures: {
         'does-honor-permission-contract::v2020_12_25': {
             
+            description: `Check a person permissions status against a contract (skills not supported)`,
+            
             
             
             emitPayloadSchema: doesHonorPermissionContractEmitTargetAndPayloadSchema,

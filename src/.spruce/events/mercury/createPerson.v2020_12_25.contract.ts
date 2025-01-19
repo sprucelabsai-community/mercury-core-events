@@ -8,6 +8,8 @@ const createPersonEventContract = buildEventContract({
     eventSignatures: {
         'create-person::v2020_12_25': {
             
+            description: `Create person.`,
+            
             
             
             emitPayloadSchema: createPersonEmitTargetAndPayloadSchema,

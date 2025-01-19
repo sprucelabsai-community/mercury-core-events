@@ -8,6 +8,8 @@ const unregisterListenersEventContract = buildEventContract({
     eventSignatures: {
         'unregister-listeners::v2020_12_25': {
             
+            description: `Tell the mercury the events you no longer want to listen to.`,
+            
             
             
             emitPayloadSchema: unregisterListenersEmitTargetAndPayloadSchema,

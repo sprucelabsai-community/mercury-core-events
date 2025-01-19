@@ -9,9 +9,10 @@ const getPersonEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmi
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
-	            /** . */
+	            /** . Includes PII fields like full name and phone number. */
 	            'shouldIncludePrivateFields': {
 	                type: 'boolean',
+	                hint: 'Includes PII fields like full name and phone number.',
 	                options: undefined
 	            },
 	    }

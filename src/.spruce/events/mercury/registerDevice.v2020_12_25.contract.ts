@@ -8,6 +8,8 @@ const registerDeviceEventContract = buildEventContract({
     eventSignatures: {
         'register-device::v2020_12_25': {
             
+            description: `Register a device for a person.`,
+            
             
             
             emitPayloadSchema: registerDeviceEmitTargetAndPayloadSchema,

@@ -7,6 +7,8 @@ const didUpdateAuthorizerStatusEventContract = buildEventContract({
     eventSignatures: {
         'did-update-authorizer-status::v2020_12_25': {
             
+            description: `Triggered when a person's authorizer status changes`,
+            
             
             listenPermissions: {"contractId":"people-contract","permissionIdsAny":["can-listen-to-authorizor-status-changes"]},
             emitPayloadSchema: didUpdateAuthorizerStatusEmitTargetAndPayloadSchema,

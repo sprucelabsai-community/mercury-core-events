@@ -8,6 +8,8 @@ const getEventContractsEventContract = buildEventContract({
     eventSignatures: {
         'get-event-contracts::v2020_12_25': {
             
+            description: `Get all the events available. Optionally target skills to get just their events.`,
+            
             
             
             emitPayloadSchema: getEventContractsEmitTargetAndPayloadSchema,

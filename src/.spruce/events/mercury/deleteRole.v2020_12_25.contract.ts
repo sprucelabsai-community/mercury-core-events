@@ -8,6 +8,8 @@ const deleteRoleEventContract = buildEventContract({
     eventSignatures: {
         'delete-role::v2020_12_25': {
             
+            description: `Delete a role.`,
+            
             
             
             emitPayloadSchema: deleteRoleEmitTargetAndPayloadSchema,

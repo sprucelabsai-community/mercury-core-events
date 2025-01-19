@@ -8,6 +8,8 @@ const savePermissionsEventContract = buildEventContract({
     eventSignatures: {
         'save-permissions::v2020_12_25': {
             
+            description: `Save permissions!`,
+            
             
             
             emitPayloadSchema: savePermissionsEmitTargetAndPayloadSchema,

@@ -8,6 +8,8 @@ const resetPasswordEventContract = buildEventContract({
     eventSignatures: {
         'reset-password::v2020_12_25': {
             
+            description: `Reset a password for an account that has one.`,
+            
             
             
             emitPayloadSchema: resetPasswordEmitTargetAndPayloadSchema,

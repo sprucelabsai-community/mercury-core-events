@@ -8,6 +8,8 @@ const listSkillsEventContract = buildEventContract({
     eventSignatures: {
         'list-skills::v2020_12_25': {
             
+            description: `List skills`,
+            
             
             
             emitPayloadSchema: listSkillsEmitTargetAndPayloadSchema,

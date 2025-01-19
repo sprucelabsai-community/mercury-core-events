@@ -8,6 +8,8 @@ const didInstallEventContract = buildEventContract({
     eventSignatures: {
         'did-install::v2020_12_25': {
             
+            description: `Triggered when your skill is installed at an organization.`,
+            
             
             
             emitPayloadSchema: didInstallEmitTargetAndPayloadSchema,

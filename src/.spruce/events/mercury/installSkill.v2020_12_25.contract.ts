@@ -8,6 +8,8 @@ const installSkillEventContract = buildEventContract({
     eventSignatures: {
         'install-skill::v2020_12_25': {
             
+            description: `Install a skill at your organization.`,
+            
             
             
             emitPayloadSchema: installSkillEmitTargetAndPayloadSchema,

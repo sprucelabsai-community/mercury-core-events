@@ -8,6 +8,8 @@ const didJoinOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'did-join-organization::v2020_12_25': {
             
+            description: `Triggered when you add a person to an organization or location at an organization.`,
+            
             
             
             emitPayloadSchema: didJoinOrganizationEmitTargetAndPayloadSchema,

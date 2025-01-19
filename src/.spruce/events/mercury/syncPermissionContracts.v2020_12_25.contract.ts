@@ -8,6 +8,8 @@ const syncPermissionContractsEventContract = buildEventContract({
     eventSignatures: {
         'sync-permission-contracts::v2020_12_25': {
             
+            description: `Sync your permission contracts.`,
+            
             
             
             emitPayloadSchema: syncPermissionContractsEmitTargetAndPayloadSchema,

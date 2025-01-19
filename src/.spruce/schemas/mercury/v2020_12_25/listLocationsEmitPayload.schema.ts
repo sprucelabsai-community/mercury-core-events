@@ -9,9 +9,10 @@ const listLocationsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLoca
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
-	            /** . */
+	            /** . Will only return locations where a person has a role that respresent they work there. */
 	            'shouldOnlyShowWhereIAmEmployed': {
 	                type: 'boolean',
+	                hint: 'Will only return locations where a person has a role that respresent they work there.',
 	                options: undefined
 	            },
 	            /** . */

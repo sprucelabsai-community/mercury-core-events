@@ -8,6 +8,8 @@ const sendMessageEventContract = buildEventContract({
     eventSignatures: {
         'send-message::v2020_12_25': {
             
+            description: `Send a message to a person, place, or thing.`,
+            
             
             
             emitPayloadSchema: sendMessageEmitTargetAndPayloadSchema,

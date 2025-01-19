@@ -8,6 +8,8 @@ const createRoleEventContract = buildEventContract({
     eventSignatures: {
         'create-role::v2020_12_25': {
             
+            description: `Create a new role at your organization.`,
+            
             
             
             emitPayloadSchema: createRoleEmitTargetAndPayloadSchema,

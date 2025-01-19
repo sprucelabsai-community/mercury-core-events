@@ -8,6 +8,8 @@ const getSkillEventContract = buildEventContract({
     eventSignatures: {
         'get-skill::v2020_12_25': {
             
+            description: `Get a skill by id`,
+            
             
             
             emitPayloadSchema: getSkillEmitTargetAndPayloadSchema,

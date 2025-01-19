@@ -8,6 +8,8 @@ const logoutEventContract = buildEventContract({
     eventSignatures: {
         'logout::v2020_12_25': {
             
+            description: `Logout as a person or skill (skill logout coming soon).`,
+            
             
             
             emitPayloadSchema: logoutEmitTargetAndPayloadSchema,

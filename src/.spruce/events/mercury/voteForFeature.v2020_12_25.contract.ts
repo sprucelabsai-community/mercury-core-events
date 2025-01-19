@@ -8,6 +8,8 @@ const voteForFeatureEventContract = buildEventContract({
     eventSignatures: {
         'vote-for-feature::v2020_12_25': {
             
+            description: `Vote for a feature and let the Sprucebot team know your thoughts!`,
+            
             
             
             emitPayloadSchema: voteForFeatureEmitTargetAndPayloadSchema,

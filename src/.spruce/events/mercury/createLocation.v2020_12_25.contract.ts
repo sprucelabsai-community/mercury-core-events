@@ -8,6 +8,8 @@ const createLocationEventContract = buildEventContract({
     eventSignatures: {
         'create-location::v2020_12_25': {
             
+            description: `Create a new location at your organization.`,
+            
             
             
             emitPayloadSchema: createLocationEmitTargetAndPayloadSchema,

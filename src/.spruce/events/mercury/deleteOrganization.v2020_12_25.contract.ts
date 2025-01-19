@@ -8,6 +8,8 @@ const deleteOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'delete-organization::v2020_12_25': {
             
+            description: `Delete your organization.`,
+            
             
             
             emitPayloadSchema: deleteOrganizationEmitTargetAndPayloadSchema,

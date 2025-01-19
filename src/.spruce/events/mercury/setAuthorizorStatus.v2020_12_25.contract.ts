@@ -8,6 +8,8 @@ const setAuthorizorStatusEventContract = buildEventContract({
     eventSignatures: {
         'set-authorizor-status::v2020_12_25': {
             
+            description: `Set someone's authorizer status. E.g. are "clockedIn" or "onPremise"`,
+            
             
             
             emitPayloadSchema: setAuthorizorStatusEmitTargetAndPayloadSchema,

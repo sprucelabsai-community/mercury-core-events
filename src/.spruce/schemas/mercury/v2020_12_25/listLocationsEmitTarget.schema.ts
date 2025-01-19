@@ -9,9 +9,10 @@ const listLocationsEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocat
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
-	            /** . */
+	            /** . Will filter locations by this organization. */
 	            'organizationId': {
 	                type: 'id',
+	                hint: 'Will filter locations by this organization.',
 	                options: undefined
 	            },
 	            /** . */

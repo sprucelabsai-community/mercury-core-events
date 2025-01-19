@@ -7,6 +7,8 @@ const submitErrorMessageFeedbackEventContract = buildEventContract({
     eventSignatures: {
         'submit-error-message-feedback::v2020_12_25': {
             
+            description: `Install a skill at your organization.`,
+            
             
             
             emitPayloadSchema: submitErrorMessageFeedbackEmitTargetAndPayloadSchema,

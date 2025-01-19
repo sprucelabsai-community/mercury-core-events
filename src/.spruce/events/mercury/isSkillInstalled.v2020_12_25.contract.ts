@@ -8,6 +8,8 @@ const isSkillInstalledEventContract = buildEventContract({
     eventSignatures: {
         'is-skill-installed::v2020_12_25': {
             
+            description: `Check if a skill is installed at an organization.`,
+            
             
             
             emitPayloadSchema: isSkillInstalledEmitTargetAndPayloadSchema,

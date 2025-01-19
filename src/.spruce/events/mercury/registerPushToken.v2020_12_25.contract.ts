@@ -8,6 +8,8 @@ const registerPushTokenEventContract = buildEventContract({
     eventSignatures: {
         'register-push-token::v2020_12_25': {
             
+            description: `Ah, push it!`,
+            
             
             
             emitPayloadSchema: registerPushTokenEmitTargetAndPayloadSchema,

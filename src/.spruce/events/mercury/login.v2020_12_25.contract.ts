@@ -8,6 +8,8 @@ const loginEventContract = buildEventContract({
     eventSignatures: {
         'login::v2020_12_25': {
             
+            description: `Login using a phone and password`,
+            
             
             
             emitPayloadSchema: loginEmitTargetAndPayloadSchema,

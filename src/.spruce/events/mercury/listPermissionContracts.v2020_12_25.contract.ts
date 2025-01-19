@@ -8,6 +8,8 @@ const listPermissionContractsEventContract = buildEventContract({
     eventSignatures: {
         'list-permission-contracts::v2020_12_25': {
             
+            description: `List permission contracts`,
+            
             
             
             emitPayloadSchema: listPermissionContractsEmitTargetAndPayloadSchema,

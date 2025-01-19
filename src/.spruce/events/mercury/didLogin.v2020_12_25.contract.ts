@@ -7,6 +7,8 @@ const didLoginEventContract = buildEventContract({
     eventSignatures: {
         'did-login::v2020_12_25': {
             isGlobal: true,
+            description: `Triggered everytime a person logs in`,
+            
             
             listenPermissions: {"contractId":"people-contract","permissionIdsAny":["can-listen-to-did-login"]},
             emitPayloadSchema: didLoginEmitTargetAndPayloadSchema,

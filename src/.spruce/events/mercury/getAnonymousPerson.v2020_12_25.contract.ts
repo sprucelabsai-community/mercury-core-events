@@ -8,6 +8,8 @@ const getAnonymousPersonEventContract = buildEventContract({
     eventSignatures: {
         'get-anonymous-person::v2020_12_25': {
             
+            description: `Get an anonymous person placeholder account.`,
+            
             
             
             emitPayloadSchema: getAnonymousPersonEmitTargetAndPayloadSchema,
