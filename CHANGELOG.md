@@ -1,3 +1,10 @@
+# [25.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.0.131...v25.1.0) (2025-01-19)
+
+
+### Features
+
+* ai instructions ([6f73334](https://github.com/sprucelabsai-community/mercury-core-events/commit/6f73334))
+
 ## [25.0.131](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.0.130...v25.0.131) (2025-01-19)
 
 ## [25.0.130](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.0.129...v25.0.130) (2025-01-18)
