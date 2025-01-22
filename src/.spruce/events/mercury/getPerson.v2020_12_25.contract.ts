@@ -8,8 +8,8 @@ const getPersonEventContract = buildEventContract({
     eventSignatures: {
         'get-person::v2020_12_25': {
             
-            description: `Get a person by id.`,
-            aiInstructions: `Get details about the logged in person. The API right now won't let someone get another person's profile, so ignore the target for now. Make sure to pass payload.shouldIncludePrivateFields as true during all conversations.`,
+            description: `Get details about a person (or yourself)`,
+            aiInstructions: `Get details about the logged in person. The API right now won't let someone get another person's profile, so ignore the target for now and don't mention getting a person by id. Make sure to pass payload.shouldIncludePrivateFields as true during all conversations.`,
             
             
             emitPayloadSchema: getPersonEmitTargetAndPayloadSchema,
