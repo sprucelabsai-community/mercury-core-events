@@ -1,3 +1,10 @@
+# [26.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.1.30...v26.0.0) (2025-02-15)
+
+
+### Breaking Changes
+
+* upgrade new timezones ([9ce1f14](https://github.com/sprucelabsai-community/mercury-core-events/commit/9ce1f14))
+
 ## [25.1.30](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.1.29...v25.1.30) (2025-02-14)
 
 ## [25.1.29](https://github.com/sprucelabsai-community/mercury-core-events/compare/v25.1.28...v25.1.29) (2025-02-14)
