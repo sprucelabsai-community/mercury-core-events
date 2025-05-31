@@ -54,6 +54,13 @@ const updateLocationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateL
 	                type: 'address',
 	                options: undefined
 	            },
+	            /** Virtual. Is this a virtual location? */
+	            'isVirtual': {
+	                label: 'Virtual',
+	                type: 'boolean',
+	                hint: 'Is this a virtual location?',
+	                options: undefined
+	            },
 	            /** . */
 	            'dateCreated': {
 	                type: 'dateTime',

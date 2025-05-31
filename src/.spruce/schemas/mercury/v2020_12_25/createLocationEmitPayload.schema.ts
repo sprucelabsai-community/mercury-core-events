@@ -47,7 +47,13 @@ const createLocationEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateL
 	            'address': {
 	                label: 'Address',
 	                type: 'address',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** Virtual. Is this a virtual location? */
+	            'isVirtual': {
+	                label: 'Virtual',
+	                type: 'boolean',
+	                hint: 'Is this a virtual location?',
 	                options: undefined
 	            },
 	            /** . */
