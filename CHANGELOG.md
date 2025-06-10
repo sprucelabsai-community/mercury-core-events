@@ -1,3 +1,10 @@
+# [27.0.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v26.0.90...v27.0.0) (2025-06-10)
+
+
+### Breaking Changes
+
+* upgrade ([124e7d6](https://github.com/sprucelabsai-community/mercury-core-events/commit/124e7d6))
+
 ## [26.0.90](https://github.com/sprucelabsai-community/mercury-core-events/compare/v26.0.89...v26.0.90) (2025-06-07)
 
 ## [26.0.89](https://github.com/sprucelabsai-community/mercury-core-events/compare/v26.0.88...v26.0.89) (2025-06-05)
