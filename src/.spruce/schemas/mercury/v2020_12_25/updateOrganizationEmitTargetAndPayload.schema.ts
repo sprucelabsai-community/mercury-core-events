@@ -26,7 +26,6 @@ const updateOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: updateOrgEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
