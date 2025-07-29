@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import updateOrgSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/updateOrg.schema'
+import organizationSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/organization.schema'
 
 const updateOrgResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOrgResponsePayloadSchema  = {
 	id: 'updateOrgResponsePayload',
@@ -13,7 +13,7 @@ const updateOrgResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateOr
 	            'organization': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: updateOrgSchema_v2020_12_25,}
+	                options: {schema: organizationSchema_v2020_07_22,}
 	            },
 	    }
 }
