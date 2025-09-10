@@ -60,6 +60,14 @@ const personWithMacSchema: SpruceSchemas.Mercury.v2020_12_25.PersonWithMacSchema
 	                hint: 'An optional username if the person does not want to login using their phone',
 	                options: undefined
 	            },
+	            /** Email. An optional email if the person does not want to login using their phone */
+	            'email': {
+	                label: 'Email',
+	                type: 'email',
+	                isPrivate: true,
+	                hint: 'An optional email if the person does not want to login using their phone',
+	                options: undefined
+	            },
 	            /** Avatar src. */
 	            'avatar': {
 	                label: 'Avatar src',
