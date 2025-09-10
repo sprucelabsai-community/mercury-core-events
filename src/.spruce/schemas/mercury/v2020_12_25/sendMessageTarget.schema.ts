@@ -39,6 +39,11 @@ const sendMessageTargetSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarg
 	                type: 'phone',
 	                options: undefined
 	            },
+	            /** . */
+	            'email': {
+	                type: 'email',
+	                options: undefined
+	            },
 	    }
 }
 

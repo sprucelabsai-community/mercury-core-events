@@ -19,7 +19,6 @@ const requestPinEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Re
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: requestPinEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }

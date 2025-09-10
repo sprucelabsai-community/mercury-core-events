@@ -12,7 +12,11 @@ const requestPinEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RequestPinE
 	            /** . */
 	            'phone': {
 	                type: 'phone',
-	                isRequired: true,
+	                options: undefined
+	            },
+	            /** . */
+	            'email': {
+	                type: 'email',
 	                options: undefined
 	            },
 	    }
