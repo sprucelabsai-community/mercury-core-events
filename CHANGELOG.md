@@ -1,3 +1,10 @@
+# [27.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.0.126...v27.1.0) (2025-09-29)
+
+
+### Features
+
+* publish skill event! ([3299a37](https://github.com/sprucelabsai-community/mercury-core-events/commit/3299a37))
+
 ## [27.0.126](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.0.125...v27.0.126) (2025-09-29)
 
 ## [27.0.125](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.0.124...v27.0.125) (2025-09-21)
