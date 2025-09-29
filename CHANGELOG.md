@@ -1,3 +1,10 @@
+# [27.2.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.1.1...v27.2.0) (2025-09-29)
+
+
+### Features
+
+* create person supports email ([de5d1ec](https://github.com/sprucelabsai-community/mercury-core-events/commit/de5d1ec))
+
 ## [27.1.1](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.1.0...v27.1.1) (2025-09-29)
 
 # [27.1.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.0.126...v27.1.0) (2025-09-29)
