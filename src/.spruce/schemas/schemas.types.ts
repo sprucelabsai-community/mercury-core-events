@@ -21,6 +21,43 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface DidInstallEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTarget
+		}
+
+		interface DidInstallEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'didInstallEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema,}
+			            },
+			    }
+		}
+
+		interface DidInstallEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface DidUpdatePersonEmitTargetAndPayload {
 			
 				/** Source. */
@@ -95,43 +132,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface DidInstallEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
-		interface DidInstallEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
-				
-				'target': SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTarget
-		}
-
-		interface DidInstallEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'didInstallEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetSchema,}
-			            },
-			    }
-		}
-
-		interface DidInstallEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.DidInstallEmitTargetAndPayloadSchema> {}
 
 	}
 
@@ -6519,6 +6519,226 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface PublishSkillEmitTarget {
+			
+				
+				'skillId': string
+		}
+
+		interface PublishSkillEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'publishSkillEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'skillId': {
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface PublishSkillEmitTargetEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitTargetSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface PublishSkillEmitPayload {
+			
+				
+				'canBeInstalled'?: boolean | undefined | null
+		}
+
+		interface PublishSkillEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'publishSkillEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'canBeInstalled': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface PublishSkillEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface PublishSkillEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
+				
+				'target': SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitTarget
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitPayload | undefined | null
+		}
+
+		interface PublishSkillEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'publishSkillEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface PublishSkillEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PublishSkillEmitTargetAndPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface PublishedSkill {
+			
+				/** Id. */
+				'id': string
+				/** Name. */
+				'name': string
+				/** Description. */
+				'description'?: string | undefined | null
+				/** Namespace. */
+				'slug': string
+				/** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+				'isPublished'?: boolean | undefined | null
+				/** Global. Does this skill require needing to be installed anywhere. */
+				'canBeInstalled'?: boolean | undefined | null
+				
+				'dateCreated': SpruceSchema.DateTimeFieldValue
+				
+				'dateDeleted'?: SpruceSchema.DateTimeFieldValue | undefined | null
+		}
+
+		interface PublishedSkillSchema extends SpruceSchema.Schema {
+			id: 'publishedSkill',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Id. */
+			            'id': {
+			                label: 'Id',
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Name. */
+			            'name': {
+			                label: 'Name',
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Description. */
+			            'description': {
+			                label: 'Description',
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** Namespace. */
+			            'slug': {
+			                label: 'Namespace',
+			                type: 'text',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** Published. Does this skill show up in the marketplace and can other devs use it as a dependency? */
+			            'isPublished': {
+			                label: 'Published',
+			                type: 'boolean',
+			                hint: 'Does this skill show up in the marketplace and can other devs use it as a dependency?',
+			                options: undefined
+			            },
+			            /** Global. Does this skill require needing to be installed anywhere. */
+			            'canBeInstalled': {
+			                label: 'Global',
+			                type: 'boolean',
+			                hint: 'Does this skill require needing to be installed anywhere.',
+			                defaultValue: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'dateCreated': {
+			                type: 'dateTime',
+			                isRequired: true,
+			                options: undefined
+			            },
+			            /** . */
+			            'dateDeleted': {
+			                type: 'dateTime',
+			                options: undefined
+			            },
+			    }
+		}
+
+		interface PublishedSkillEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PublishedSkillSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface PublishSkillResponsePayload {
+			
+				
+				'skill': SpruceSchemas.Mercury.v2020_12_25.PublishedSkill
+		}
+
+		interface PublishSkillResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'publishSkillResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'skill': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.PublishedSkillSchema,}
+			            },
+			    }
+		}
+
+		interface PublishSkillResponsePayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PublishSkillResponsePayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface RegisterConversationTopicEmitPayloadTopic {
 			
 				/** Key. A way to identify this topic, must be unique for your skill. */
@@ -8021,50 +8241,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface SendMessageEmitTargetAndPayload {
-			
-				/** Source. */
-				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
-				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget | undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
-		}
-
-		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
-			id: 'sendMessageEmitTargetAndPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Source. */
-			            'source': {
-			                label: 'Source',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
-			            },
-			            /** . */
-			            'target': {
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
-			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
-			            },
-			    }
-		}
-
-		interface SendMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema> {}
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface SendMessageMessagePayload {
 			
 				/** . An arbitrary id that can be used to track this message when being sent and not yet assigned an Id. */
@@ -8164,6 +8340,50 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		interface SendMessageEmitPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema> {}
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface SendMessageEmitTargetAndPayload {
+			
+				/** Source. */
+				'source'?: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSource | undefined | null
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.SendMessageTarget | undefined | null
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayload
+		}
+
+		interface SendMessageEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'sendMessageEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Source. */
+			            'source': {
+			                label: 'Source',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.SpruceEventUtils.v2021_09_13.EventSourceSchema,}
+			            },
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		interface SendMessageEmitTargetAndPayloadEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema> {}
 
 	}
 

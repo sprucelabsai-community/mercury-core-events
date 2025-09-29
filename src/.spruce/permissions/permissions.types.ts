@@ -36,7 +36,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-create-role','can-update-role','can-delete-role','can-view-private-roles-at-own-org','can-view-persons-roles',
 		]
 		'skills-contract': [
-			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed',
+			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed','can-publish-own-skills',
 		]
 	}
 }
