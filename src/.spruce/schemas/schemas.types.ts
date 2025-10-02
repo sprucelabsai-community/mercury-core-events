@@ -8242,6 +8242,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** . An arbitrary id that can be used to track this message when being sent and not yet assigned an Id. */
 				'trackingId'?: string | undefined | null
+				/** . If this message is a reply to another message, this is the id of that original message. */
+				'inReplyToMessageId'?: string | undefined | null
 				
 				'classification': ("auth" | "transactional" | "promotional" | "incoming")
 				
@@ -8266,6 +8268,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'trackingId': {
 			                type: 'id',
 			                hint: 'An arbitrary id that can be used to track this message when being sent and not yet assigned an Id.',
+			                options: undefined
+			            },
+			            /** . If this message is a reply to another message, this is the id of that original message. */
+			            'inReplyToMessageId': {
+			                type: 'id',
+			                hint: 'If this message is a reply to another message, this is the id of that original message.',
 			                options: undefined
 			            },
 			            /** . */

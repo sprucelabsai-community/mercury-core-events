@@ -16,6 +16,12 @@ const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMes
 	                hint: 'An arbitrary id that can be used to track this message when being sent and not yet assigned an Id.',
 	                options: undefined
 	            },
+	            /** . If this message is a reply to another message, this is the id of that original message. */
+	            'inReplyToMessageId': {
+	                type: 'id',
+	                hint: 'If this message is a reply to another message, this is the id of that original message.',
+	                options: undefined
+	            },
 	            /** . */
 	            'classification': {
 	                type: 'select',
