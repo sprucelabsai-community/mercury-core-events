@@ -9,7 +9,7 @@ const listLocationsEventContract = buildEventContract({
         'list-locations::v2020_12_25': {
             
             description: `Look through all locations.`,
-            aiInstructions: `Lists all locations. It can be useful to ask if the user if they want to filter by organization and if so, have them select one first (list-organizations event).`,
+            aiInstructions: `Lists all locations. It can be useful to ask if the user if they want to filter by organization and if so, have them select one first (list-organizations event). If only 1 location comes back, you can autoselect it.`,
             
             
             emitPayloadSchema: listLocationsEmitTargetAndPayloadSchema,

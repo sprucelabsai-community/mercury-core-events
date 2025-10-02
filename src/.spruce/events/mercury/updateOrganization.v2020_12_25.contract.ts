@@ -9,7 +9,7 @@ const updateOrganizationEventContract = buildEventContract({
         'update-organization::v2020_12_25': {
             
             description: `Update your organization.`,
-            aiInstructions: `This will allow someone to update any organization where they work (if they have permissions). Since you need an organization's id, you will have to start with the list-organizations event.`,
+            
             
             
             emitPayloadSchema: updateOrganizationEmitTargetAndPayloadSchema,

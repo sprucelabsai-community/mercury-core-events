@@ -9,7 +9,7 @@ const updateLocationEventContract = buildEventContract({
         'update-location::v2020_12_25': {
             
             description: `Update a new location at your organization.`,
-            aiInstructions: `This will allow someone to update any location where they work (if they have permissions). Since you need a location id, you will have to start with the list-locations event.`,
+            
             
             
             emitPayloadSchema: updateLocationEmitTargetAndPayloadSchema,
