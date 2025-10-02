@@ -3,7 +3,7 @@ import '@sprucelabs/mercury-types'
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface PermissionContractMap {
 		'agent-contract': [
-			'can-register-platform-agent',
+			'can-register-platform-agent','can-get-platform-agent',
 		]
 		'authorizer-contract': [
 			'can-update-others-authorizer-status',
