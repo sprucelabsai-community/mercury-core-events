@@ -2,9 +2,6 @@ import '@sprucelabs/mercury-types'
 
 declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 	interface PermissionContractMap {
-		'agent-contract': [
-			'can-register-platform-agent',
-		]
 		'authorizer-contract': [
 			'can-update-others-authorizer-status',
 		]
@@ -40,6 +37,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		]
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed','can-publish-own-skills',
+		]
+		'agent-contract': [
+			'can-register-platform-agent','can-get-platform-agent',
 		]
 	}
 }

@@ -3,8 +3,8 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import agentSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/agent.schema'
 
-const registerAgentResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterAgentResponsePayloadSchema  = {
-	id: 'registerAgentResponsePayload',
+const getAgentResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetAgentResponsePayloadSchema  = {
+	id: 'getAgentResponsePayload',
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
@@ -12,12 +12,11 @@ const registerAgentResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Regi
 	            /** . */
 	            'agent': {
 	                type: 'schema',
-	                isRequired: true,
 	                options: {schema: agentSchema_v2020_07_22,}
 	            },
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(registerAgentResponsePayloadSchema)
+SchemaRegistry.getInstance().trackSchema(getAgentResponsePayloadSchema)
 
-export default registerAgentResponsePayloadSchema
+export default getAgentResponsePayloadSchema
