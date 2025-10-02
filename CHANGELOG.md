@@ -1,3 +1,10 @@
+# [27.4.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.3.2...v27.4.0) (2025-10-02)
+
+
+### Features
+
+* get agent event ([a0e92fa](https://github.com/sprucelabsai-community/mercury-core-events/commit/a0e92fa))
+
 ## [27.3.2](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.3.1...v27.3.2) (2025-10-02)
 
 ## [27.3.1](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.3.0...v27.3.1) (2025-10-02)
