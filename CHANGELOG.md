@@ -1,3 +1,10 @@
+# [27.3.0](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.2.5...v27.3.0) (2025-10-02)
+
+
+### Features
+
+* register-agent event! ([643f2af](https://github.com/sprucelabsai-community/mercury-core-events/commit/643f2af))
+
 ## [27.2.5](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.2.4...v27.2.5) (2025-10-02)
 
 ## [27.2.4](https://github.com/sprucelabsai-community/mercury-core-events/compare/v27.2.3...v27.2.4) (2025-09-30)
