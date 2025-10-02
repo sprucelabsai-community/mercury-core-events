@@ -29,6 +29,11 @@ const sendMessageMessagePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMes
 	                options: {choices: [{"value":"auth","label":"Auth"},{"value":"transactional","label":"transactional"},{"value":"promotional","label":"Promotional"},{"value":"incoming","label":"incoming"}],}
 	            },
 	            /** . */
+	            'subject': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
 	            'body': {
 	                type: 'text',
 	                isRequired: true,
