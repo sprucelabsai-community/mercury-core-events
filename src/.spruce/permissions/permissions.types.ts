@@ -38,6 +38,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 		'skills-contract': [
 			'can-install-skills','can-uninstall-skills','can-view-marketplace','can-check-if-skill-is-installed','can-publish-own-skills',
 		]
+		'agent-contract': [
+			'can-register-platform-agent',
+		]
 	}
 }
 

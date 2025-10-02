@@ -46,6 +46,7 @@ import mercuryListSkillsEventContract_v2020_12_25, { ListSkillsEventContract as 
 import mercuryLoginEventContract_v2020_12_25, { LoginEventContract as MercuryLoginEventContract_v2020_12_25  } from '#spruce/events/mercury/login.v2020_12_25.contract'
 import mercuryLogoutEventContract_v2020_12_25, { LogoutEventContract as MercuryLogoutEventContract_v2020_12_25  } from '#spruce/events/mercury/logout.v2020_12_25.contract'
 import mercuryPublishSkillEventContract_v2020_12_25, { PublishSkillEventContract as MercuryPublishSkillEventContract_v2020_12_25  } from '#spruce/events/mercury/publishSkill.v2020_12_25.contract'
+import mercuryRegisterAgentEventContract_v2020_12_25, { RegisterAgentEventContract as MercuryRegisterAgentEventContract_v2020_12_25  } from '#spruce/events/mercury/registerAgent.v2020_12_25.contract'
 import mercuryRegisterConversationTopicsEventContract_v2020_12_25, { RegisterConversationTopicsEventContract as MercuryRegisterConversationTopicsEventContract_v2020_12_25  } from '#spruce/events/mercury/registerConversationTopics.v2020_12_25.contract'
 import mercuryRegisterDeviceEventContract_v2020_12_25, { RegisterDeviceEventContract as MercuryRegisterDeviceEventContract_v2020_12_25  } from '#spruce/events/mercury/registerDevice.v2020_12_25.contract'
 import mercuryRegisterEventsEventContract_v2020_12_25, { RegisterEventsEventContract as MercuryRegisterEventsEventContract_v2020_12_25  } from '#spruce/events/mercury/registerEvents.v2020_12_25.contract'
@@ -125,6 +126,7 @@ export default [
     mercuryLoginEventContract_v2020_12_25,
     mercuryLogoutEventContract_v2020_12_25,
     mercuryPublishSkillEventContract_v2020_12_25,
+    mercuryRegisterAgentEventContract_v2020_12_25,
     mercuryRegisterConversationTopicsEventContract_v2020_12_25,
     mercuryRegisterDeviceEventContract_v2020_12_25,
     mercuryRegisterEventsEventContract_v2020_12_25,
@@ -298,6 +300,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'publish-skill::v2020_12_25': MercuryPublishSkillEventContract_v2020_12_25['eventSignatures']['publish-skill::v2020_12_25'],
+    
+    
+    'register-agent::v2020_12_25': MercuryRegisterAgentEventContract_v2020_12_25['eventSignatures']['register-agent::v2020_12_25'],
     
     
     'register-conversation-topics::v2020_12_25': MercuryRegisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['register-conversation-topics::v2020_12_25'],
