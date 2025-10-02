@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import agentSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/agent.schema'
+import agentSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/agent.schema'
 
 const registerAgentResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterAgentResponsePayloadSchema  = {
 	id: 'registerAgentResponsePayload',
@@ -13,7 +13,7 @@ const registerAgentResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Regi
 	            'agent': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: agentSchema_v2020_07_22,}
+	                options: {schema: agentSchema_v2020_12_25,}
 	            },
 	    }
 }
