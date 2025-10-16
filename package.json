@@ -76,9 +76,9 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@sprucelabs/mercury-types": "^48.0.126",
+    "@sprucelabs/mercury-types": "^48.0.127",
     "@sprucelabs/schema": "^32.3.0",
-    "@sprucelabs/spruce-core-schemas": "^41.3.21",
+    "@sprucelabs/spruce-core-schemas": "^41.3.22",
     "@sprucelabs/spruce-event-utils": "^41.0.144"
   },
   "jest": {
