@@ -2817,7 +2817,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface DoesHonorPermissionContractEmitPayload {
 			
 				
-				'id': MercuryTypes.PermissionContractId
+				'id': (MercuryTypes.PermissionContractId)
 		}
 
 		interface DoesHonorPermissionContractEmitPayloadSchema extends SpruceSchema.Schema {
@@ -8512,7 +8512,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'body': string
 				
-				'context'?: Record<string, any> | undefined | null
+				'context'?: (Record<string, any>) | undefined | null
 				
 				'topicId'?: string | undefined | null
 				
