@@ -8,7 +8,8 @@ const publishSkillEventContract = buildEventContract({
     eventSignatures: {
         'publish-skill::v2020_12_25': {
             
-            description: `Publish a skill so others can find it and install it.`,
+            description: "Publish a skill so others can find it and install it.",
+            
             
             
             

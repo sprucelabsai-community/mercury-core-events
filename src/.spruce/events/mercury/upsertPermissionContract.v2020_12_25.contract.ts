@@ -8,7 +8,8 @@ const upsertPermissionContractEventContract = buildEventContract({
     eventSignatures: {
         'upsert-permission-contract::v2020_12_25': {
             
-            description: `Upsert a permission contract by contract id.`,
+            description: "Upsert a permission contract by contract id.",
+            
             
             
             

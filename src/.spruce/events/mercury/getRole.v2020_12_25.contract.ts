@@ -8,7 +8,8 @@ const getRoleEventContract = buildEventContract({
     eventSignatures: {
         'get-role::v2020_12_25': {
             
-            description: `Get a role by id.`,
+            description: "Get a role by id.",
+            
             
             
             

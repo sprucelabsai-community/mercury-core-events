@@ -8,7 +8,8 @@ const uninstallSkillEventContract = buildEventContract({
     eventSignatures: {
         'uninstall-skill::v2020_12_25': {
             
-            description: `Uninstall a skill at your organization.`,
+            description: "Uninstall a skill at your organization.",
+            
             
             
             

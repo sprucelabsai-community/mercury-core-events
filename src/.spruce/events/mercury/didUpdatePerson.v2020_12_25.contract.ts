@@ -7,8 +7,9 @@ const didUpdatePersonEventContract = buildEventContract({
     eventSignatures: {
         'did-update-person::v2020_12_25': {
             isGlobal: true,
-            description: `Triggered when a person updates their primary record`,
+            description: "Triggered when a person updates their primary record",
             
+            feed: {"template":"I updated my profile!"},
             
             listenPermissions: {"contractId":"people-contract","permissionIdsAny":["can-listen-to-did-update"]},
             emitPayloadSchema: didUpdatePersonEmitTargetAndPayloadSchema,

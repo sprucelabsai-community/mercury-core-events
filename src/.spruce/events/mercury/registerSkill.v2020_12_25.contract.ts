@@ -8,7 +8,8 @@ const registerSkillEventContract = buildEventContract({
     eventSignatures: {
         'register-skill::v2020_12_25': {
             
-            description: `Tell me about the new skill you want me to learn! 💪`,
+            description: "Tell me about the new skill you want me to learn! 💪",
+            
             
             
             

@@ -8,8 +8,9 @@ const whoamiEventContract = buildEventContract({
     eventSignatures: {
         'whoami::v2020_12_25': {
             
-            description: `Who Am I? We want to know!`,
-            aiInstructions: `Use it get the logged in person.`,
+            description: "Who Am I? We want to know!",
+            aiInstructions: "Use it get the logged in person.",
+            
             
             
             emitPayloadSchema: whoamiEmitTargetAndPayloadSchema,

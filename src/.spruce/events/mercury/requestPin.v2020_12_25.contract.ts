@@ -8,7 +8,8 @@ const requestPinEventContract = buildEventContract({
     eventSignatures: {
         'request-pin::v2020_12_25': {
             
-            description: `Trying to login! I can send you a pin if you need one!`,
+            description: "Trying to login! I can send you a pin if you need one!",
+            
             
             
             

@@ -8,7 +8,8 @@ const getResolvedPermissionsContractEventContract = buildEventContract({
     eventSignatures: {
         'get-resolved-permissions-contract::v2020_12_25': {
             
-            description: `Get resolved permission contract`,
+            description: "Get resolved permission contract",
+            
             
             
             

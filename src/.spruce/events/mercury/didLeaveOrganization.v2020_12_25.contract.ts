@@ -8,8 +8,9 @@ const didLeaveOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'did-leave-organization::v2020_12_25': {
             
-            description: `Triggered when you remove a person from an organization or location at an organization.`,
+            description: "Triggered when you remove a person from an organization or location at an organization.",
             
+            feed: {"template":"I left an organization!"},
             
             
             emitPayloadSchema: didLeaveOrganizationEmitTargetAndPayloadSchema,

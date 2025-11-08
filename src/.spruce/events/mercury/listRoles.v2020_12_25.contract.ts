@@ -8,7 +8,8 @@ const listRolesEventContract = buildEventContract({
     eventSignatures: {
         'list-roles::v2020_12_25': {
             
-            description: `Look through all roles.`,
+            description: "Look through all roles.",
+            
             
             
             

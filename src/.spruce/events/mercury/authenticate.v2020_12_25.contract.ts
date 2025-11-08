@@ -8,7 +8,8 @@ const authenticateEventContract = buildEventContract({
     eventSignatures: {
         'authenticate::v2020_12_25': {
             
-            description: `Authenticate as a person or as a skill.`,
+            description: "Authenticate as a person or as a skill.",
+            
             
             
             

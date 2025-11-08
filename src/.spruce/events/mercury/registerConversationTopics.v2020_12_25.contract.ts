@@ -8,7 +8,8 @@ const registerConversationTopicsEventContract = buildEventContract({
     eventSignatures: {
         'register-conversation-topics::v2020_12_25': {
             
-            description: `Tell Mercury the topics you wanna talk about.`,
+            description: "Tell Mercury the topics you wanna talk about.",
+            
             
             
             

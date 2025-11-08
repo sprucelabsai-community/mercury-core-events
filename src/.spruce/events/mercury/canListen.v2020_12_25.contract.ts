@@ -8,7 +8,8 @@ const canListenEventContract = buildEventContract({
     eventSignatures: {
         'can-listen::v2020_12_25': {
             
-            description: `Can we listen?`,
+            description: "Can we listen?",
+            
             
             
             

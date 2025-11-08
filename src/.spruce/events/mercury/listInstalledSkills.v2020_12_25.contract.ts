@@ -8,7 +8,8 @@ const listInstalledSkillsEventContract = buildEventContract({
     eventSignatures: {
         'list-installed-skills::v2020_12_25': {
             
-            description: `List skills`,
+            description: "List skills",
+            
             
             
             

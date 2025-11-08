@@ -8,7 +8,8 @@ const unregisterEventsEventContract = buildEventContract({
     eventSignatures: {
         'unregister-events::v2020_12_25': {
             
-            description: `Tell the world to forget about the events you share`,
+            description: "Tell the world to forget about the events you share",
+            
             
             
             

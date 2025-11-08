@@ -8,7 +8,8 @@ const getOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'get-organization::v2020_12_25': {
             
-            description: `Get an organization.`,
+            description: "Get an organization.",
+            
             
             
             

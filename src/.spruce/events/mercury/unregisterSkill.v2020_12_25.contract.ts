@@ -8,7 +8,8 @@ const unregisterSkillEventContract = buildEventContract({
     eventSignatures: {
         'unregister-skill::v2020_12_25': {
             
-            description: `Unregister a skill.`,
+            description: "Unregister a skill.",
+            
             
             
             

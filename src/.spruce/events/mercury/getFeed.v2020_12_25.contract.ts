@@ -8,7 +8,8 @@ const getFeedEventContract = buildEventContract({
     eventSignatures: {
         'get-feed::v2020_12_25': {
             
-            description: `Get a feed`,
+            description: "Get a feed",
+            
             
             
             

@@ -8,7 +8,8 @@ const listSecurityQuestionsEventContract = buildEventContract({
     eventSignatures: {
         'list-security-questions::v2020_12_25': {
             
-            description: `Get security questions. If a phone supplied in target it will look for security questions used by that person during signup.`,
+            description: "Get security questions. If a phone supplied in target it will look for security questions used by that person during signup.",
+            
             
             
             

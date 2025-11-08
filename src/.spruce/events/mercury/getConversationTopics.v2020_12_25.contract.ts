@@ -8,7 +8,8 @@ const getConversationTopicsEventContract = buildEventContract({
     eventSignatures: {
         'get-conversation-topics::v2020_12_25': {
             
-            description: `The topics you've said you want to talk about.`,
+            description: "The topics you've said you want to talk about.",
+            
             
             
             

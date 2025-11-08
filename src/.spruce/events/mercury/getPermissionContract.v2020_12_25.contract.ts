@@ -8,7 +8,8 @@ const getPermissionContractEventContract = buildEventContract({
     eventSignatures: {
         'get-permission-contract::v2020_12_25': {
             
-            description: `Get a permission contract by id`,
+            description: "Get a permission contract by id",
+            
             
             
             

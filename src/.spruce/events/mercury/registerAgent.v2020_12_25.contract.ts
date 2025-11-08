@@ -8,7 +8,8 @@ const registerAgentEventContract = buildEventContract({
     eventSignatures: {
         'register-agent::v2020_12_25': {
             
-            description: `Register a new ai agent. You can name it, give it a role, etc.`,
+            description: "Register a new ai agent. You can name it, give it a role, etc.",
+            
             
             
             

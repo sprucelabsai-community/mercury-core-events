@@ -8,7 +8,8 @@ const listPeopleEventContract = buildEventContract({
     eventSignatures: {
         'list-people::v2020_12_25': {
             
-            description: `Listing people.`,
+            description: "Listing people.",
+            
             
             
             

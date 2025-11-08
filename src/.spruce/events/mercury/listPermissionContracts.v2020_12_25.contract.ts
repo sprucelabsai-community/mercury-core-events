@@ -8,7 +8,8 @@ const listPermissionContractsEventContract = buildEventContract({
     eventSignatures: {
         'list-permission-contracts::v2020_12_25': {
             
-            description: `List permission contracts`,
+            description: "List permission contracts",
+            
             
             
             

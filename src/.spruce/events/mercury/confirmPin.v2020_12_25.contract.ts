@@ -8,8 +8,9 @@ const confirmPinEventContract = buildEventContract({
     eventSignatures: {
         'confirm-pin::v2020_12_25': {
             
-            description: `Confirms the pin for login!`,
+            description: "Confirms the pin for login!",
             
+            feed: {"template":"I logged in!"},
             
             
             emitPayloadSchema: confirmPinEmitTargetAndPayloadSchema,

@@ -9,7 +9,8 @@ const addRoleEventContract = buildEventContract({
     eventSignatures: {
         'add-role::v2020_12_25': {
             
-            description: `Set a role for a person at an organization or location.`,
+            description: "Set a role for a person at an organization or location.",
+            
             
             
             

@@ -8,7 +8,8 @@ const deleteLocationEventContract = buildEventContract({
     eventSignatures: {
         'delete-location::v2020_12_25': {
             
-            description: `Delete a location.`,
+            description: "Delete a location.",
+            
             
             
             

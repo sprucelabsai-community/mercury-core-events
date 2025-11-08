@@ -8,7 +8,8 @@ const updateLocationEventContract = buildEventContract({
     eventSignatures: {
         'update-location::v2020_12_25': {
             
-            description: `Update a new location at your organization.`,
+            description: "Update a new location at your organization.",
+            
             
             
             

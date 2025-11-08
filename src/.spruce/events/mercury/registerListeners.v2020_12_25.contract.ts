@@ -7,7 +7,8 @@ const registerListenersEventContract = buildEventContract({
     eventSignatures: {
         'register-listeners::v2020_12_25': {
             
-            description: `Tell the mercury the events you want to listen to.`,
+            description: "Tell the mercury the events you want to listen to.",
+            
             
             
             

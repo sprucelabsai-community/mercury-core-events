@@ -8,7 +8,8 @@ const getLocationEventContract = buildEventContract({
     eventSignatures: {
         'get-location::v2020_12_25': {
             
-            description: `Get a location by id.`,
+            description: "Get a location by id.",
+            
             
             
             

@@ -8,7 +8,8 @@ const scrambleAccountEventContract = buildEventContract({
     eventSignatures: {
         'scramble-account::v2020_12_25': {
             
-            description: `Scramble your account so it no longer can be tied back to you! 🎩`,
+            description: "Scramble your account so it no longer can be tied back to you! 🎩",
+            
             
             
             

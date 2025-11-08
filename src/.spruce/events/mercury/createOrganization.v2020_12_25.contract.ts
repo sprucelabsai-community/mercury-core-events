@@ -8,7 +8,8 @@ const createOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'create-organization::v2020_12_25': {
             
-            description: `Create your organization.`,
+            description: "Create your organization.",
+            
             
             
             

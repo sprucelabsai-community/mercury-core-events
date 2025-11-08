@@ -8,7 +8,8 @@ const updateOrganizationEventContract = buildEventContract({
     eventSignatures: {
         'update-organization::v2020_12_25': {
             
-            description: `Update your organization.`,
+            description: "Update your organization.",
+            
             
             
             

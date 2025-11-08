@@ -8,7 +8,8 @@ const syncEventContractsEventContract = buildEventContract({
     eventSignatures: {
         'sync-event-contracts::v2020_12_25': {
             
-            description: `Keep all your events in sync by registering new ones and removing old ones in a single call!`,
+            description: "Keep all your events in sync by registering new ones and removing old ones in a single call!",
+            
             
             
             

@@ -8,7 +8,8 @@ const healthEventContract = buildEventContract({
     eventSignatures: {
         'health::v2020_12_25': {
             
-            description: `Check the health of the system`,
+            description: "Check the health of the system",
+            
             
             
             

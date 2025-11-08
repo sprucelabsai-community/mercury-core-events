@@ -8,7 +8,8 @@ const registerEventsEventContract = buildEventContract({
     eventSignatures: {
         'register-events::v2020_12_25': {
             
-            description: `Tell the world about the events you share`,
+            description: "Tell the world about the events you share",
+            
             
             
             

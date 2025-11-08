@@ -8,7 +8,8 @@ const updateRoleEventContract = buildEventContract({
     eventSignatures: {
         'update-role::v2020_12_25': {
             
-            description: `Update a new role at your organization.`,
+            description: "Update a new role at your organization.",
+            
             
             
             
