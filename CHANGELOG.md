@@ -1,3 +1,8 @@
+## <small>28.0.9 (2025-11-13)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([fd113a2](https://github.com/sprucelabsai-community/mercury-core-events/commit/fd113a2))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([24bfc40](https://github.com/sprucelabsai-community/mercury-core-events/commit/24bfc40))
+
 ## <small>28.0.8 (2025-11-13)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([6e1fe9d](https://github.com/sprucelabsai-community/mercury-core-events/commit/6e1fe9d))
