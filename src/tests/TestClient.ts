@@ -9,21 +9,21 @@ import {
 } from '@sprucelabs/mercury-types'
 import { SchemaValues, Schema } from '@sprucelabs/schema'
 
-export default class TestClient<Contract extends EventContract>
-    implements MercuryEventEmitter<Contract>
-{
+export default class TestClient<
+    Contract extends EventContract,
+> implements MercuryEventEmitter<Contract> {
     public async emitAndFlattenResponses<
         EventName extends EventNames<Contract> = EventNames<Contract>,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][EventName],
-        EmitSchema extends
-            Schema = IEventSignature['emitPayloadSchema'] extends Schema
-            ? IEventSignature['emitPayloadSchema']
-            : never,
-        ResponseSchema extends
-            Schema = IEventSignature['responsePayloadSchema'] extends Schema
-            ? IEventSignature['responsePayloadSchema']
-            : never,
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][EventName],
+        EmitSchema extends Schema =
+            IEventSignature['emitPayloadSchema'] extends Schema
+                ? IEventSignature['emitPayloadSchema']
+                : never,
+        ResponseSchema extends Schema =
+            IEventSignature['responsePayloadSchema'] extends Schema
+                ? IEventSignature['responsePayloadSchema']
+                : never,
         ResponsePayload = ResponseSchema extends Schema
             ? SchemaValues<ResponseSchema>
             : never,
@@ -40,16 +40,16 @@ export default class TestClient<Contract extends EventContract>
 
     public async emit<
         EventName extends EventNames<Contract> = EventNames<Contract>,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][EventName],
-        EmitSchema extends
-            Schema = IEventSignature['emitPayloadSchema'] extends Schema
-            ? IEventSignature['emitPayloadSchema']
-            : never,
-        ResponseSchema extends
-            Schema = IEventSignature['responsePayloadSchema'] extends Schema
-            ? IEventSignature['responsePayloadSchema']
-            : never,
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][EventName],
+        EmitSchema extends Schema =
+            IEventSignature['emitPayloadSchema'] extends Schema
+                ? IEventSignature['emitPayloadSchema']
+                : never,
+        ResponseSchema extends Schema =
+            IEventSignature['responsePayloadSchema'] extends Schema
+                ? IEventSignature['responsePayloadSchema']
+                : never,
         ResponsePayload = ResponseSchema extends Schema
             ? SchemaValues<ResponseSchema>
             : never,
@@ -82,12 +82,12 @@ export default class TestClient<Contract extends EventContract>
         EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
             Contract['eventSignatures']
         >,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][EventName],
-        EmitSchema extends
-            Schema = IEventSignature['emitPayloadSchema'] extends Schema
-            ? IEventSignature['emitPayloadSchema']
-            : never,
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][EventName],
+        EmitSchema extends Schema =
+            IEventSignature['emitPayloadSchema'] extends Schema
+                ? IEventSignature['emitPayloadSchema']
+                : never,
     >(
         _eventName: EventName,
         _cb: (
