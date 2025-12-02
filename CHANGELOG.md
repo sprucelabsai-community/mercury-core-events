@@ -1,3 +1,8 @@
+## <small>28.1.1 (2025-12-02)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([14b361e](https://github.com/sprucelabsai-community/mercury-core-events/commit/14b361e))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([fc74e22](https://github.com/sprucelabsai-community/mercury-core-events/commit/fc74e22))
+
 ## 28.1.0 (2025-12-02)
 
 * minor: get agent name ([e3b7249](https://github.com/sprucelabsai-community/mercury-core-events/commit/e3b7249))
