@@ -22,6 +22,7 @@ import mercuryDidUpdateFeedEventContract_v2020_12_25, { DidUpdateFeedEventContra
 import mercuryDidUpdatePersonEventContract_v2020_12_25, { DidUpdatePersonEventContract as MercuryDidUpdatePersonEventContract_v2020_12_25  } from '#spruce/events/mercury/didUpdatePerson.v2020_12_25.contract'
 import mercuryDoesHonorPermissionContractEventContract_v2020_12_25, { DoesHonorPermissionContractEventContract as MercuryDoesHonorPermissionContractEventContract_v2020_12_25  } from '#spruce/events/mercury/doesHonorPermissionContract.v2020_12_25.contract'
 import mercuryGetAgentEventContract_v2020_12_25, { GetAgentEventContract as MercuryGetAgentEventContract_v2020_12_25  } from '#spruce/events/mercury/getAgent.v2020_12_25.contract'
+import mercuryGetAgentNameEventContract_v2020_12_25, { GetAgentNameEventContract as MercuryGetAgentNameEventContract_v2020_12_25  } from '#spruce/events/mercury/getAgentName.v2020_12_25.contract'
 import mercuryGetAnonymousPersonEventContract_v2020_12_25, { GetAnonymousPersonEventContract as MercuryGetAnonymousPersonEventContract_v2020_12_25  } from '#spruce/events/mercury/getAnonymousPerson.v2020_12_25.contract'
 import mercuryGetConversationTopicsEventContract_v2020_12_25, { GetConversationTopicsEventContract as MercuryGetConversationTopicsEventContract_v2020_12_25  } from '#spruce/events/mercury/getConversationTopics.v2020_12_25.contract'
 import mercuryGetEventContractsEventContract_v2020_12_25, { GetEventContractsEventContract as MercuryGetEventContractsEventContract_v2020_12_25  } from '#spruce/events/mercury/getEventContracts.v2020_12_25.contract'
@@ -103,6 +104,7 @@ export default [
     mercuryDidUpdatePersonEventContract_v2020_12_25,
     mercuryDoesHonorPermissionContractEventContract_v2020_12_25,
     mercuryGetAgentEventContract_v2020_12_25,
+    mercuryGetAgentNameEventContract_v2020_12_25,
     mercuryGetAnonymousPersonEventContract_v2020_12_25,
     mercuryGetConversationTopicsEventContract_v2020_12_25,
     mercuryGetEventContractsEventContract_v2020_12_25,
@@ -230,6 +232,9 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
     
     
     'get-agent::v2020_12_25': MercuryGetAgentEventContract_v2020_12_25['eventSignatures']['get-agent::v2020_12_25'],
+    
+    
+    'get-agent-name::v2020_12_25': MercuryGetAgentNameEventContract_v2020_12_25['eventSignatures']['get-agent-name::v2020_12_25'],
     
     
     'get-anonymous-person::v2020_12_25': MercuryGetAnonymousPersonEventContract_v2020_12_25['eventSignatures']['get-anonymous-person::v2020_12_25'],
