@@ -1,3 +1,9 @@
+## 28.2.0 (2026-01-07)
+
+* feat: add exports field for proper ESM support in Node.js ([9620eb6](https://github.com/sprucelabsai-community/mercury-core-events/commit/9620eb6))
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([ec4d931](https://github.com/sprucelabsai-community/mercury-core-events/commit/ec4d931))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([2241c05](https://github.com/sprucelabsai-community/mercury-core-events/commit/2241c05))
+
 ## <small>28.1.8 (2026-01-06)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([7c0c6a6](https://github.com/sprucelabsai-community/mercury-core-events/commit/7c0c6a6))
