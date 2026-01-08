@@ -1,3 +1,7 @@
+## 29.1.0 (2026-01-08)
+
+* minor: can get person by email ([d9b4460](https://github.com/sprucelabsai-community/mercury-core-events/commit/d9b4460))
+
 ## <small>29.0.1 (2026-01-08)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([988c431](https://github.com/sprucelabsai-community/mercury-core-events/commit/988c431))
