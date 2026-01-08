@@ -3934,6 +3934,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'phone'?: string | undefined | null
 				
+				'email'?: string | undefined | null
+				
 				'locationId'?: string | undefined | null
 		}
 
@@ -3951,6 +3953,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'phone': {
 			                type: 'phone',
+			                options: undefined
+			            },
+			            /** . */
+			            'email': {
+			                type: 'email',
 			                options: undefined
 			            },
 			            /** . */

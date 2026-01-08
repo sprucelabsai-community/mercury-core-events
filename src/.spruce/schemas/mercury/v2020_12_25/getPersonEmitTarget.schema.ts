@@ -20,6 +20,11 @@ const getPersonEmitTargetSchema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmit
 	                options: undefined
 	            },
 	            /** . */
+	            'email': {
+	                type: 'email',
+	                options: undefined
+	            },
+	            /** . */
 	            'locationId': {
 	                type: 'id',
 	                options: undefined
