@@ -1,3 +1,8 @@
+## <small>29.1.1 (2026-01-19)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([7893969](https://github.com/sprucelabsai-community/mercury-core-events/commit/7893969))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([e530d1e](https://github.com/sprucelabsai-community/mercury-core-events/commit/e530d1e))
+
 ## 29.1.0 (2026-01-08)
 
 * minor: can get person by email ([d9b4460](https://github.com/sprucelabsai-community/mercury-core-events/commit/d9b4460))
