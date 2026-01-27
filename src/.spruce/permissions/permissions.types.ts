@@ -30,7 +30,7 @@ declare module '@sprucelabs/mercury-types/build/types/mercury.types' {
 			'can-delete-organization','can-list-orgs-for-other-people','can-update-organization-profile','can-view-private-organizations',
 		]
 		'people-contract': [
-			'can-create-person','can-edit-other-people','can-get-anonymous-person','can-get-other-person','can-get-person-by-phone','can-get-person-private-fields','can-list-people','can-list-people-by-macs','can-listen-to-authorizor-status-changes','can-listen-to-did-login','can-listen-to-did-signup','can-listen-to-did-update','can-scramble-other-person',
+			'can-create-person','can-edit-other-people','can-edit-other-persons-private-fields','can-get-anonymous-person','can-get-other-person','can-get-person-by-phone','can-get-person-private-fields','can-list-people','can-list-people-by-macs','can-listen-to-authorizor-status-changes','can-listen-to-did-login','can-listen-to-did-signup','can-listen-to-did-update','can-scramble-other-person',
 		]
 		'permission-contract': [
 			'can-get-permission-contracts-for-org','can-list-permission-contracts-for-org','can-list-permission-contracts-globally','can-load-others-permissions','can-save-permissions-globally','can-upsert-permission-contract-for-org',
