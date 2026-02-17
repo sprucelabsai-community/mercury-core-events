@@ -1,3 +1,7 @@
+## <small>29.1.5 (2026-02-17)</small>
+
+* patch: upgrade dependencies ([b862064](https://github.com/sprucelabsai-community/mercury-core-events/commit/b862064))
+
 ## <small>29.1.4 (2026-02-17)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([9a1fd96](https://github.com/sprucelabsai-community/mercury-core-events/commit/9a1fd96))
