@@ -1,3 +1,7 @@
+## <small>29.1.21 (2026-04-07)</small>
+
+* Upgrade dependencies and fix TypeScript 6.0 tsconfig deprecations ([141331f](https://github.com/sprucelabsai-community/mercury-core-events/commit/141331f))
+
 ## <small>29.1.20 (2026-03-13)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([3b1d32a](https://github.com/sprucelabsai-community/mercury-core-events/commit/3b1d32a))
